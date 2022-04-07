@@ -8,25 +8,29 @@ export type TaskType = {
     isDone:boolean
 }
 
-const tasks1:Array<TaskType> = [
+let tasks:Array<TaskType> = [
     {id:1, title:"HTML", isDone:true},
     {id:2, title:"CSS", isDone:false},
     {id:3, title:"React", isDone:true},
     {id:4, title:"Ajax", isDone:false},
+    {id:5, title:"Array", isDone:true},
 ]
-const tasks2:TaskType[] = [
-    {id:1, title:"Redax", isDone:false},
-    {id:2, title:"Array", isDone:true},
-    {id:3, title:"have", isDone:false},
-]
+
 
 
 function App() {
+    const deleteTask = (id:number) => {
+        tasks = tasks.filter(t=>{t.id !== id})
+        console.log(tasks)
+    }
+
     return (
         <div className="App">
-            <TodoList title = {"How to use"} tasks={tasks1} />
-            <TodoList title = {"How to find"} tasks={tasks2}/>
-            <TodoList title = {"How to know"} tasks={tasks1}/>
+            <TodoList
+                title = {"How to use"}
+                tasks={tasks}
+                deleteTask={deleteTask}
+            />
         </div>
     );
 }
