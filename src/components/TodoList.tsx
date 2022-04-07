@@ -25,7 +25,7 @@ export const TodoList = (props:TodoListType) => {
 
             </ul>
             <div>
-                <button>All</button>
+                {/*<button onClick={()={props.tasks("all")}}>All</button>*/}
                 <button>Active</button>
                 <button>Completed</button>
             </div>
