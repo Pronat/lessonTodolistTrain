@@ -10,13 +10,14 @@ export type TaskType = {
 
 const tasks1:Array<TaskType> = [
     {id:1, title:"HTML", isDone:true},
-    {id:2, title:"HTML", isDone:false},
-    {id:3, title:"HTML", isDone:true},
+    {id:2, title:"CSS", isDone:false},
+    {id:3, title:"React", isDone:true},
+    {id:4, title:"Ajax", isDone:false},
 ]
 const tasks2:TaskType[] = [
-    {id:1, title:"HTML", isDone:false},
-    {id:2, title:"HTML", isDone:true},
-    {id:3, title:"HTML", isDone:false},
+    {id:1, title:"Redax", isDone:false},
+    {id:2, title:"Array", isDone:true},
+    {id:3, title:"have", isDone:false},
 ]
 
 
