@@ -19,7 +19,7 @@ export const TodoList = (props:TodoListType) => {
                 props.tasks.map(t=><li key={t.id}>
                     <input type="checkbox" checked={t.isDone}/>
                     <span>{t.title}</span>
-                    <button onClick={()=>{props.deleteTask}}>x</button>
+                    <button onClick={()=>{props.deleteTask(t.id)}}>x</button>
                 </li>)
             }
 
