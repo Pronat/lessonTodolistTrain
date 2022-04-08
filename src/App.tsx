@@ -42,6 +42,10 @@ function App() {
         setTasks(newTasks)
     }
 
+    const changeStatus = (id:string) => {
+        let task = tasks.find(t => t.id === id)
+                    }
+
     return (
         <div className="App">
             <TodoList
