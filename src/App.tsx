@@ -47,7 +47,8 @@ function App() {
       if (task) {
       task.isDone = isDone
   }
-    setTasks(tasks)
+      let copy = [...tasks]
+    setTasks(copy)
     }
 
     return (
