@@ -42,8 +42,12 @@ function App() {
         setTasks(newTasks)
     }
 
-   const changeStatus = () => {
-       const task = tasks.find()
+   const changeStatus = (id:string, isDone:boolean) => {
+       const task = tasks.find(t => t.id === id)
+       if (task) {
+           task.isDone = isDone
+       }
+       setTasks(tasks)
    }
 
 
@@ -56,7 +60,7 @@ function App() {
                 deleteTask={deleteTask}
                 FilterValue={FilterValue}
                 addTask={addTask}
-
+                changeStatus={changeStatus}
             />
         </div>
     );
