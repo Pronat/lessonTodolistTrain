@@ -42,14 +42,11 @@ function App() {
         setTasks(newTasks)
     }
 
-  const changeStatus = (id:string, isDone:boolean) => {
-        let task = tasks.find(t => (t.id === id))
-      if (task) {
-      task.isDone = isDone
-  }
-      let copy = [...tasks]
-    setTasks(copy)
-    }
+   const changeStatus = () => {
+       const task = tasks.find()
+   }
+
+
 
     return (
         <div className="App">
@@ -59,7 +56,7 @@ function App() {
                 deleteTask={deleteTask}
                 FilterValue={FilterValue}
                 addTask={addTask}
-                changeTaskStatus={changeStatus}
+
             />
         </div>
     );
