@@ -43,12 +43,13 @@ function App() {
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
        let todolist = todolists.find(tl=>tl.id === todolistId)
-       if todolist
-
-       )
+        if (todolist) {
+            todolist.filter = value
+            setTodolists([...todolists])
+        }
     }
 
-    let [todolists, setTodolist] = useState<Array<TodolistsType>>([
+    let [todolists, setTodolists] = useState<Array<TodolistsType>>([
         {id: v1(), title: "What to learn", filter: "active"},
         {id: v1(), title: "What to bye", filter: "all"},
 
