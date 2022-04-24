@@ -2,8 +2,15 @@ import React, {useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import {v1} from 'uuid';
+import { title } from 'process';
 
 export type FilterValuesType = "all" | "active" | "completed";
+
+type TodolistsType = {
+    id: string
+    title: string
+    filter: string
+}
 
 function App() {
 
@@ -51,17 +58,35 @@ function App() {
         setFilter(value);
     }
 
+    let todolists:Array<TodolistsType> = [
+        {id: v1(), title: "What to learn", filter: "completed"},
+        {id: v1(), title: "What to by", filter: "active"},
+    ]
 
     return (
         <div className="App">
-            <Todolist title="What to learn"
-                      tasks={tasksForTodolist}
-                      removeTask={removeTask}
-                      changeFilter={changeFilter}
-                      addTask={addTask}
-                      changeTaskStatus={changeStatus}
-                      filter={filter}
-            />
+            {
+                todolists.map(tl=>{
+                    return(
+                        <Todolist title={tl.title}
+                                  tasks={tasksForTodolist}
+                                  removeTask={removeTask}
+                                  changeFilter={changeFilter}
+                                  addTask={addTask}
+                                  changeTaskStatus={changeStatus}
+                                  filter={tl.filter}
+                        />
+                    )
+                })
+            }
+            {/*<Todolist title="What to learn"*/}
+            {/*          tasks={tasksForTodolist}*/}
+            {/*          removeTask={removeTask}*/}
+            {/*          changeFilter={changeFilter}*/}
+            {/*          addTask={addTask}*/}
+            {/*          changeTaskStatus={changeStatus}*/}
+            {/*          filter={filter}*/}
+            {/*/>*/}
         </div>
     );
 }
