@@ -14,7 +14,12 @@ type TodolistsType = {
 
 function App() {
 
-
+     let removeTodolist = (todolistId: string) => {
+         let filteredTodolist = todolists.filter(t=>t.id !== todolistId)
+         setTodolists(filteredTodolist)
+         delete tasksObj[todolistId]
+         setTasks({...tasksObj})
+     }
 
     function removeTask(id: string, todolistId: string) {
         let tasks = tasksObj[todolistId]
@@ -92,6 +97,7 @@ function App() {
                             addTask={addTask}
                             changeTaskStatus={changeStatus}
                             filter={tl.filter}
+                            removeTodolist={removeTodolist}
                         />
                     )
                 })
