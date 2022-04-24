@@ -43,16 +43,33 @@ function App() {
     }
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
-        let task = tasks.find(tl=>tl.id === todolistId)
-        if (task) {
-            tasks.filter =
-        }
+      let todolist = todolists.find(tl=>tl.id === todolistId)
+      if (todolist) {
+          todolist.filter = value
+          setTodolists([...todolists])
+      }
     }
 
+    let todolistId1 = v1()
+    let todolistId2 = v1()
     let [todolists, setTodolists] = useState<Array<TodolistsType>> ([
-        {id: v1(), title: "What to learn", filter: "completed"},
-        {id: v1(), title: "What to by", filter: "active"},
+        {id: todolistId1, title: "What to learn", filter: "completed"},
+        {id: todolistId2, title: "What to by", filter: "active"},
     ])
+    let [allTodolist, setAllTodolist] = useState({
+        todolistId1: [
+            {id: v1(), title: "HTML&CSS", isDone: true},
+            {id: v1(), title: "JS", isDone: true},
+            {id: v1(), title: "ReactJS", isDone: false},
+            {id: v1(), title: "Rest API", isDone: false},
+            {id: v1(), title: "GraphQL", isDone: false},
+        ],
+        todolistId2: [
+            {id: v1(), title: "Milk", isDone: true},
+            {id: v1(), title: "Coffee", isDone: true},
+
+        ]
+    })
 
     return (
         <div className="App">
