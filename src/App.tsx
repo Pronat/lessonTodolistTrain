@@ -27,17 +27,17 @@ function App() {
         let task = {id: v1(), title: title, isDone: false};
         let tasks = tasksObj[todolistId]
         let newTasks = [task, ...tasks];
-        tasksObj[todolis]
-        setTasks(newTasks);
+        tasksObj[todolistId] = newTasks
+        setTasks({...tasksObj});
     }
 
-    function changeStatus(taskId: string, isDone: boolean) {
-        let task = tasksObj.find(t => t.id === taskId);
+    function changeStatus(todolistId: string, isDone: boolean, taskId: string) {
+        let tasks = tasksObj[todolistId]
+        let task = tasks.find(t => t.id === taskId);
         if (task) {
             task.isDone = isDone;
         }
-
-        setTasks([...tasksObj]);
+        setTasks({...tasksObj});
     }
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
