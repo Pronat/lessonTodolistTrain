@@ -98,7 +98,7 @@ function App() {
                             changeTaskStatus={changeStatus}
                             filter={tl.filter}
                             removeTodolist={removeTodolist}
-                        />
+                            />
                     )
                 })
             }
