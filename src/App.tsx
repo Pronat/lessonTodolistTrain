@@ -10,6 +10,10 @@ type TodolistType = {
     filter: FilterValuesType
 }
 
+type TasksStateType = {
+    [key:string]: Array<TaskType>
+}
+
 function App() {
 
 
@@ -56,12 +60,12 @@ function App() {
     ])
 
     let removeTodolist = (id: string) => {
-        setTodolists(todolists.filter(t=>t.id === id))
+        setTodolists(todolists.filter(t=>t.id !== id))
         delete tasks.id
         setTasks({...tasks})
     }
 
-    let [tasks, setTasks] = useState({
+    let [tasks, setTasks] = useState<TasksStateType>({
         [todolistId1]:  [
             {id: v1(), title: "HTML&CSS", isDone: true},
             {id: v1(), title: "JS", isDone: false},
