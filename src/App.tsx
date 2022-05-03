@@ -62,11 +62,7 @@ function App() {
 
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
-        let todolist = todolists.find(tl=>tl.id === todolistId)
-        if (todolist) {
-            todolist.filter = value
-            setTodolists([...todolists])
-        }
+        setTodolists(todolists.map(filt => filt.id === todolistId ? {...filt, filter: value} : filt))
     }
 
 
@@ -84,6 +80,8 @@ function App() {
                     }
                     return (
                         <Todolist
+                            key={tl.id}
+                            todolistId={tl.id}
                             title={tl.title}
                             tasks={tasksForTodolist}
                             removeTask={removeTask}
