@@ -60,31 +60,33 @@ function App() {
 
 
 
-    function changeFilter(value: FilterValuesType, todolistId: string) {
-      setTodolists(todolists.map(t => t.id === todolistId ? {...t, filter: value} : t))
-    }
+    // function changeFilter(value: FilterValuesType, todolistId: string) {
+    //   setTodolists(todolists.map(t => t.id === todolistId ? {...t, filter: value} : t))
+    // }
 
 
     return (
         <div className="App">
             {
                 todolists.map(tl => {
-                    let tasksForTodolist = tasks[tl.id];
-
-                    if (tl.filter === "active") {
-                        tasksForTodolist = tasksForTodolist.filter(t => t.isDone === false);
-                    }
-                    if (tl.filter === "completed") {
-                        tasksForTodolist = tasksForTodolist.filter(t => t.isDone === true);
-                    }
+                    // let tasksForTodolist = tasks[tl.id];
+                    //
+                    // if (tl.filter === "active") {
+                    //     tasksForTodolist = tasksForTodolist.filter(t => t.isDone === false);
+                    // }
+                    // if (tl.filter === "completed") {
+                    //     tasksForTodolist = tasksForTodolist.filter(t => t.isDone === true);
+                    // }
                     return (
                         <Todolist
+                            setTodolists={setTodolists}
+                            todolists={todolists}
                             key={tl.id}
                             todolistId={tl.id}
                             title={tl.title}
-                            tasks={tasksForTodolist}
+                            tasks={tasks[tl.id]}
                             removeTask={removeTask}
-                            changeFilter={changeFilter}
+                            // changeFilter={changeFilter}
                             addTask={addTask}
                             changeTaskStatus={changeStatus}
                             filter={tl.filter}

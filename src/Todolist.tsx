@@ -1,5 +1,5 @@
-import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
-import {FilterValuesType} from './App';
+import React, {ChangeEvent, KeyboardEvent, SetStateAction, useState} from 'react';
+import {FilterValuesType, TodolistsType} from './App';
 
 type TaskType = {
     id: string
@@ -8,11 +8,13 @@ type TaskType = {
 }
 
 type PropsType = {
+    setTodolists: (todolists:Array<TodolistsType>)=>void
+    todolists: Array<TodolistsType>
     todolistId: string
     title: string
     tasks: Array<TaskType>
     removeTask: (taskId: string, todolistId: string) => void
-    changeFilter: (value: FilterValuesType, todolistId: string) => void
+    // changeFilter: (value: FilterValuesType, todolistId: string) => void
     addTask: (todolistId: string, title: string) => void
     changeTaskStatus: (todolistId: string ,taskId: string, isDone: boolean) => void
     filter: FilterValuesType
@@ -22,6 +24,20 @@ export function Todolist(props: PropsType) {
 
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
+
+    function changeFilter(value: FilterValuesType, todolistId: string) {
+        props.setTodolists(props.todolists.map(t => t.id === todolistId ? {...t, filter: value} : t))
+    }
+
+    let tasksForTodolist = tasks[tl.id];
+
+    if (tl.filter === "active") {
+        tasksForTodolist = tasksForTodolist.filter(t => t.isDone === false);
+    }
+    if (tl.filter === "completed") {
+        tasksForTodolist = tasksForTodolist.filter(t => t.isDone === true);
+    }
+
 
     const addTask = () => {
         if (title.trim() !== "") {
