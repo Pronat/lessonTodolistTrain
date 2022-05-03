@@ -29,13 +29,13 @@ export function Todolist(props: PropsType) {
         props.setTodolists(props.todolists.map(t => t.id === todolistId ? {...t, filter: value} : t))
     }
 
-    let tasksForTodolist = tasks[tl.id];
+    let tasksForTodolist = props.tasks
 
-    if (tl.filter === "active") {
-        tasksForTodolist = tasksForTodolist.filter(t => t.isDone === false);
+    if (props.filter === "active") {
+        tasksForTodolist = props.tasks.filter(t => t.isDone === false);
     }
-    if (tl.filter === "completed") {
-        tasksForTodolist = tasksForTodolist.filter(t => t.isDone === true);
+    if (props.filter === "completed") {
+        tasksForTodolist = props.tasks.filter(t => t.isDone === true);
     }
 
 
@@ -59,9 +59,9 @@ export function Todolist(props: PropsType) {
         }
     }
 
-    const onAllClickHandler = () => props.changeFilter("all", props.todolistId);
-    const onActiveClickHandler = () => props.changeFilter("active", props.todolistId);
-    const onCompletedClickHandler = () => props.changeFilter("completed", props.todolistId);
+    const onAllClickHandler = () => changeFilter("all", props.todolistId);
+    const onActiveClickHandler = () => changeFilter("active", props.todolistId);
+    const onCompletedClickHandler = () => changeFilter("completed", props.todolistId);
 
 
     return <div>
