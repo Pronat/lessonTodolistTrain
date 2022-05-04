@@ -14,7 +14,12 @@ function App() {
         <div className="App">
             <NavLink to={'/'}>main</NavLink>---
             <NavLink to={'/login'}>login</NavLink>---
-            <NavLink to={'/profile/'}>profile</NavLink>---
+            <NavLink
+                to={'/profile/'}
+                style={(params)=>{
+                    return {color:params.isActive ? 'limegreen' : 'blue'}
+                }}>
+                profile</NavLink>---
             <NavLink to={'/profile/1'}>profile/1</NavLink>
             <Routes>
                 <Route path={"/*"} element={<div>404</div>}/>
