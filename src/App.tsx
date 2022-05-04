@@ -1,14 +1,27 @@
 import React from 'react';
 import './App.css';
-import { Route } from 'react-router-dom';
+import {NavLink, Route, Routes} from 'react-router-dom';
 
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to React Router!</h1>
+        <NavLink to={'/'}>main</NavLink>---
+        <NavLink to={'/login'}>login</NavLink>---
+        <NavLink to={'/profile/'}>profile</NavLink>---
+        <NavLink to={'/profile/settings'}>settings</NavLink>
+
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
+        <Route path="/*" element={<div>main</div>} />
+        <Route path="/login" element={<div>login</div>} />
+        <Route path="/profile/*" element={
+            <div>
+                profile
+                <Routes>
+                    <Route path="/settings" element={<div>settings</div>} />
+                </Routes>
+            </div>
+        } />
+        {/*<Route path="/profile/settings" element={<div>settings</div>} />*/}
       </Routes>
     </div>
   );
