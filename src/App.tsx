@@ -4,7 +4,6 @@ import {NavLink, Route, Routes, Outlet, useParams, useNavigate} from 'react-rout
 
 const Profile = () => {
     const navigate = useNavigate()
-
     return(
         <div>
             profile
