@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.def {
+  background: lightgreen;
+}
+
+.act {
+  background: indianred;
+}
+
+.active {
+  font-size: 50px;
+}
