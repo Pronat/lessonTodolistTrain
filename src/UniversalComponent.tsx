@@ -5,10 +5,10 @@ type PropsType = {
 
 }
 
-export const UniversalComponent:React.FC<PropsType> = ({title, children}) => {
+export const UniversalComponent: React.FC<PropsType> = ({title, children}) => {
     return (
         <div>
-            <h1>title</h1>
+            <h1>{title}</h1>
             {children}
             <div>
                 <span>Yes</span>

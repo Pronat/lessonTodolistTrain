@@ -47,14 +47,17 @@ function App() {
     }
 
     function addTask(title: string, todolistId: string) {
-        let task = {id: v1(), title: title, isDone: false};
-        //достанем нужный массив по todolistId:
-        let todolistTasks = tasks[todolistId];
-        // перезапишем в этом объекте массив для нужного тудулиста копией, добавив в начало новую таску:
-        tasks[todolistId] = [task, ...todolistTasks];
-        // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-        setTasks({...tasks});
-    }
+        let newTask = {id: v1(), title: title, isDone: false};
+        setTasks({...tasks, [todolistId]:[newTask, ...tasks[todolistId]]})
+        }
+    //     let task = {id: v1(), title: title, isDone: false};
+    //     //достанем нужный массив по todolistId:
+    //     let todolistTasks = tasks[todolistId];
+    //     // перезапишем в этом объекте массив для нужного тудулиста копией, добавив в начало новую таску:
+    //     tasks[todolistId] = [task, ...todolistTasks];
+    //     // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
+    //     setTasks({...tasks});
+    // }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
         //достанем нужный массив по todolistId:
@@ -88,42 +91,51 @@ function App() {
 
     return (
         <div className="App">
-            <UniversalComponent title={'Are you sure?'} >
-                <div>
-                    <input type={'text'}/>
-                    <input type={'text'}/>
-                    <input type={'text'}/>
-                    <input type={'text'}/>
-                </div>
-            </UniversalComponent>
+            {/*<UniversalComponent title={'Are you sure?'} >*/}
+            {/*    <div>*/}
+            {/*        <input type={'text'}/>*/}
+            {/*        <input type={'text'}/>*/}
+            {/*        <input type={'text'}/>*/}
+            {/*        <input type={'text'}/>*/}
+            {/*    </div>*/}
+            {/*</UniversalComponent>*/}
+
+            {/*<UniversalComponent title={'Are you sure222?'} >*/}
+            {/*    <div>*/}
+            {/*        <input type={'checkbox'}/>*/}
+            {/*        <input type={'checkbox'}/>*/}
+            {/*        <input type={'checkbox'}/>*/}
+            {/*        <input type={'checkbox'}/>*/}
+            {/*    </div>*/}
+            {/*</UniversalComponent>*/}
 
 
-            {/*{*/}
-            {/*    todolists.map(tl => {*/}
-            {/*        let allTodolistTasks = tasks[tl.id];*/}
-            {/*        let tasksForTodolist = allTodolistTasks;*/}
+            {
+                todolists.map(tl => {
+                    let allTodolistTasks = tasks[tl.id];
+                    let tasksForTodolist = allTodolistTasks;
 
-            {/*        if (tl.filter === "active") {*/}
-            {/*            tasksForTodolist = allTodolistTasks.filter(t => t.isDone === false);*/}
-            {/*        }*/}
-            {/*        if (tl.filter === "completed") {*/}
-            {/*            tasksForTodolist = allTodolistTasks.filter(t => t.isDone === true);*/}
-            {/*        }*/}
+                    if (tl.filter === "active") {
+                        tasksForTodolist = allTodolistTasks.filter(t => t.isDone === false);
+                    }
+                    if (tl.filter === "completed") {
+                        tasksForTodolist = allTodolistTasks.filter(t => t.isDone === true);
+                    }
 
-            {/*        return <Todolist*/}
-            {/*            key={tl.id}*/}
-            {/*            id={tl.id}*/}
-            {/*            title={tl.title}*/}
-            {/*            tasks={tasksForTodolist}*/}
-            {/*            removeTask={removeTask}*/}
-            {/*            changeFilter={changeFilter}*/}
-            {/*            addTask={addTask}*/}
-            {/*            changeTaskStatus={changeStatus}*/}
-            {/*            filter={tl.filter}*/}
-            {/*            removeTodolist={removeTodolist}*/}
-            {/*        />*/}
-            {/*    })*/}
-            {/*}*/}
+                    return <Todolist
+                        key={tl.id}
+                        id={tl.id}
+                        title={tl.title}
+                        tasks={tasksForTodolist}
+                        removeTask={removeTask}
+                        changeFilter={changeFilter}
+                        addTask={addTask}
+                        changeTaskStatus={changeStatus}
+                        filter={tl.filter}
+                        removeTodolist={removeTodolist}
+                    />
+                })
+            }
 
         </div>
     );
