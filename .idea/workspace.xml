@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9350ead-7161-4945-baaa-843505221dc6" name="Changes" comment="Dopi-Vtornik-2-2">
-      <change afterPath="$PROJECT_DIR$/src/FullInput.tsx" afterDir="false" />
+    <list default="true" id="e9350ead-7161-4945-baaa-843505221dc6" name="Changes" comment="Dopi-Vtornik-2-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UniversalComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniversalComponent.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FullInput.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/FullInput.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +72,7 @@
       <updated>1651951133389</updated>
       <workItem from="1651951135964" duration="852000" />
       <workItem from="1652002872212" duration="3263000" />
-      <workItem from="1652020648470" duration="4764000" />
+      <workItem from="1652020648470" duration="6736000" />
     </task>
     <task id="LOCAL-00001" summary="Dopi-Vtornik-3">
       <created>1651951534117</created>
@@ -112,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652020745301</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Dopi-Vtornik-2-3">
+      <created>1652025720662</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1652025720662</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +139,7 @@
     <MESSAGE value="Dopi-Vtornik-5" />
     <MESSAGE value="Dopi-Vtornik-2-1" />
     <MESSAGE value="Dopi-Vtornik-2-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dopi-Vtornik-2-2" />
+    <MESSAGE value="Dopi-Vtornik-2-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dopi-Vtornik-2-3" />
   </component>
 </project>
