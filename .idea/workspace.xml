@@ -1,52 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
-  <component name="ChangeListManager">
-    <list default="true" id="e9350ead-7161-4945-baaa-843505221dc6" name="Changes" comment="Dopi-Vtornik-2-2">
-      <change afterPath="$PROJECT_DIR$/src/FullInput.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UniversalComponent.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/UniversalComponent.tsx" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="28qjh9qk7meZD8l8vS7FcS5SazW" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
-  </component>
   <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../JS/React/ReactJS Put Samuraya/projects/01-first-project" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="ts.external.directory.path" value="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\node_modules\typescript\lib" />
-    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -64,77 +19,5 @@
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="e9350ead-7161-4945-baaa-843505221dc6" name="Changes" comment="" />
-      <created>1651951133389</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1651951133389</updated>
-      <workItem from="1651951135964" duration="852000" />
-      <workItem from="1652002872212" duration="3263000" />
-      <workItem from="1652020648470" duration="4764000" />
-    </task>
-    <task id="LOCAL-00001" summary="Dopi-Vtornik-3">
-      <created>1651951534117</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1651951534117</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Dopi-Vtornik-4">
-      <created>1651951594392</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1651951594392</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Dopi-Vtornik-5">
-      <created>1652002925329</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1652002925329</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Dopi-Vtornik-2-1">
-      <created>1652020724421</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1652020724421</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Dopi-Vtornik-2-2">
-      <created>1652020745301</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1652020745301</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Dopi-Vtornik-3" />
-    <MESSAGE value="Dopi-Vtornik-4" />
-    <MESSAGE value="Dopi-Vtornik-5" />
-    <MESSAGE value="Dopi-Vtornik-2-1" />
-    <MESSAGE value="Dopi-Vtornik-2-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dopi-Vtornik-2-2" />
   </component>
 </project>

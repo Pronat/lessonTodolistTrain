@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
-import {UniversalComponent} from "./UniversalComponent";
 
 export type FilterValuesType = "all" | "active" | "completed";
 type TodolistType = {
@@ -47,17 +46,14 @@ function App() {
     }
 
     function addTask(title: string, todolistId: string) {
-        let newTask = {id: v1(), title: title, isDone: false};
-        setTasks({...tasks, [todolistId]:[newTask, ...tasks[todolistId]]})
-        }
-    //     let task = {id: v1(), title: title, isDone: false};
-    //     //достанем нужный массив по todolistId:
-    //     let todolistTasks = tasks[todolistId];
-    //     // перезапишем в этом объекте массив для нужного тудулиста копией, добавив в начало новую таску:
-    //     tasks[todolistId] = [task, ...todolistTasks];
-    //     // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-    //     setTasks({...tasks});
-    // }
+        let task = {id: v1(), title: title, isDone: false};
+        //достанем нужный массив по todolistId:
+        let todolistTasks = tasks[todolistId];
+        // перезапишем в этом объекте массив для нужного тудулиста копией, добавив в начало новую таску:
+        tasks[todolistId] = [task, ...todolistTasks];
+        // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
+        setTasks({...tasks});
+    }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
         //достанем нужный массив по todolistId:
@@ -91,25 +87,6 @@ function App() {
 
     return (
         <div className="App">
-            {/*<UniversalComponent title={'Are you sure?'} >*/}
-            {/*    <div>*/}
-            {/*        <input type={'text'}/>*/}
-            {/*        <input type={'text'}/>*/}
-            {/*        <input type={'text'}/>*/}
-            {/*        <input type={'text'}/>*/}
-            {/*    </div>*/}
-            {/*</UniversalComponent>*/}
-
-            {/*<UniversalComponent title={'Are you sure222?'} >*/}
-            {/*    <div>*/}
-            {/*        <input type={'checkbox'}/>*/}
-            {/*        <input type={'checkbox'}/>*/}
-            {/*        <input type={'checkbox'}/>*/}
-            {/*        <input type={'checkbox'}/>*/}
-            {/*    </div>*/}
-            {/*</UniversalComponent>*/}
-
-
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id];
