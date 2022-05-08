@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9350ead-7161-4945-baaa-843505221dc6" name="Changes" comment="">
+    <list default="true" id="e9350ead-7161-4945-baaa-843505221dc6" name="Changes" comment="Dopi-Vtornik-5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/Todolist.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/serviceWorker.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/setupTests.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,6 +46,10 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../JS/React/ReactJS Put Samuraya/projects/01-first-project" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="ts.external.directory.path" value="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -57,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651951133389</updated>
       <workItem from="1651951135964" duration="852000" />
+      <workItem from="1652002872212" duration="3263000" />
     </task>
     <task id="LOCAL-00001" summary="Dopi-Vtornik-3">
       <created>1651951534117</created>
@@ -72,7 +96,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651951594392</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dopi-Vtornik-5">
+      <created>1652002925329</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652002925329</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,6 +123,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dopi-Vtornik-3" />
     <MESSAGE value="Dopi-Vtornik-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dopi-Vtornik-4" />
+    <MESSAGE value="Dopi-Vtornik-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dopi-Vtornik-5" />
   </component>
 </project>
