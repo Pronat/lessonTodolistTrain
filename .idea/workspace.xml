@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83239a69-8c8f-4270-92ea-3b89bbb94279" name="Changes" comment="lesson6-1">
+    <list default="true" id="83239a69-8c8f-4270-92ea-3b89bbb94279" name="Changes" comment="lesson6-2">
+      <change afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
@@ -38,6 +39,11 @@
     <property name="ts.external.directory.path" value="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="es6.move.members.recent.items">
+      <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\AddItemForm.tsx" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -65,7 +71,7 @@
       <updated>1652036858968</updated>
       <workItem from="1652036861852" duration="343000" />
       <workItem from="1652037228828" duration="638000" />
-      <workItem from="1652078599889" duration="3508000" />
+      <workItem from="1652078599889" duration="4244000" />
     </task>
     <task id="LOCAL-00001" summary="lesson6-1">
       <created>1652037093635</created>
@@ -74,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652037093635</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lesson6-2">
+      <created>1652092186416</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652092186416</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -93,6 +106,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson6-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6-1" />
+    <MESSAGE value="lesson6-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6-2" />
   </component>
 </project>
