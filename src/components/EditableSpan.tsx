@@ -5,10 +5,13 @@ type EditableSpanPropsType = {
 }
 
 export const EditableSpan: React.FC<EditableSpanPropsType> = (props) => {
-    let [edit, setEdit] = useState()
+    let [edit, setEdit] = useState(false)
+    const onDoubleClickHandler = () => {
+        setEdit(!edit)
+    }
     return (
         edit
             ? <input value={props.title}/>
-            : <span>{props.title}</span>
+            : <span onDoubleClick={onDoubleClickHandler}>{props.title}</span>
     )
 };
