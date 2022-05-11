@@ -93,6 +93,10 @@ function App() {
         setTasks({...tasks});
     }
 
+    const editTodolist = (todolistId: string, newTitle:string) => {
+      setTodolists(todolists.map(el=>el.id === todolistId ? {...el, title: newTitle} : el))
+    }
+
     return (
         <div className="App">
             <FullInput callBack={addTodolist} />
@@ -119,6 +123,7 @@ function App() {
                         changeTaskStatus={changeStatus}
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
+                        editTodolist={editTodolist}
                     />
                 })
             }
