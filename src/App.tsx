@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
-import { FullInput } from './components/FullInput';
 
 export type FilterValuesType = "all" | "active" | "completed";
 type TodolistType = {
@@ -77,13 +76,6 @@ function App() {
         }
     }
 
-   const addTodolist = (newTitle: string) => {
-        let newId = v1()
-        const newTodolist:TodolistType = {id: newId, title: newTitle, filter: "all"}
-        setTodolists([newTodolist, ...todolists])
-       setTasks({...tasks, [newId]:[]})
-   }
-
     function removeTodolist(id: string) {
         // засунем в стейт список тудулистов, id которых не равны тому, который нужно выкинуть
         setTodolists(todolists.filter(tl => tl.id != id));
@@ -93,17 +85,8 @@ function App() {
         setTasks({...tasks});
     }
 
-    const editTodolist = (todolistId: string,newTitle: string) => {
-      setTodolists(todolists.map(el=>el.id===todolistId ? {...el, title: newTitle} : el))
-    }
-
-    const editTask = (todolistId: string, taskId:string, newTitle: string) => {
-        setTasks({...tasks, [todolistId]:tasks[todolistId].map(el=>el.id === taskId ? {...el, title:newTitle} : el)})
-    }
-
     return (
         <div className="App">
-            <FullInput callBack={addTodolist} />
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id];
@@ -127,8 +110,6 @@ function App() {
                         changeTaskStatus={changeStatus}
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
-                        editTodolist={editTodolist}
-                        editTask={editTask}
                     />
                 })
             }

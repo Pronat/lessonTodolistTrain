@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83239a69-8c8f-4270-92ea-3b89bbb94279" name="Changes" comment="lesson6-13">
+    <list default="true" id="c2c01b87-9b86-4837-87c2-6b12f60f6851" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditableSpan.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FullInput.tsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -27,7 +22,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="28tXRimMcmKulzw9SXGJOjymqt2" />
+  <component name="ProjectId" id="294l7g9kFTjIti8cNCE8aApo9yO" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -42,14 +37,8 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2021.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="es6.move.members.recent.items">
-      <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\EditableSpan.tsx" />
-      <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\AddItemForm.tsx" />
-    </key>
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -71,145 +60,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="83239a69-8c8f-4270-92ea-3b89bbb94279" name="Changes" comment="" />
-      <created>1652036858968</created>
+      <changelist id="c2c01b87-9b86-4837-87c2-6b12f60f6851" name="Changes" comment="" />
+      <created>1652380079713</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1652036858968</updated>
-      <workItem from="1652036861852" duration="343000" />
-      <workItem from="1652037228828" duration="638000" />
-      <workItem from="1652078599889" duration="4457000" />
-      <workItem from="1652093157236" duration="9073000" />
-      <workItem from="1652198523044" duration="176000" />
-      <workItem from="1652198727590" duration="468000" />
-      <workItem from="1652199230214" duration="11532000" />
-      <workItem from="1652215269001" duration="18000" />
-      <workItem from="1652290762980" duration="2719000" />
-      <workItem from="1652294138980" duration="1000" />
-      <workItem from="1652294155667" duration="6820000" />
+      <updated>1652380079713</updated>
+      <workItem from="1652380082645" duration="71000" />
+      <workItem from="1652380199499" duration="1407000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson6-1">
-      <created>1652037093635</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1652037093635</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson6-2">
-      <created>1652092186416</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1652092186416</updated>
-    </task>
-    <task id="LOCAL-00003" summary="lesson6-3">
-      <created>1652092994966</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1652092994966</updated>
-    </task>
-    <task id="LOCAL-00004" summary="lesson6-4">
-      <created>1652097643578</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1652097643578</updated>
-    </task>
-    <task id="LOCAL-00005" summary="lesson6-5">
-      <created>1652125609322</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1652125609322</updated>
-    </task>
-    <task id="LOCAL-00006" summary="lesson6-6">
-      <created>1652211453256</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1652211453256</updated>
-    </task>
-    <task id="LOCAL-00007" summary="lesson6-7">
-      <created>1652212972045</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1652212972045</updated>
-    </task>
-    <task id="LOCAL-00008" summary="lesson6-8">
-      <created>1652213177533</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1652213177533</updated>
-    </task>
-    <task id="LOCAL-00009" summary="lesson6-9">
-      <created>1652214410584</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1652214410584</updated>
-    </task>
-    <task id="LOCAL-00010" summary="lesson6-10">
-      <created>1652215278329</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1652215278329</updated>
-    </task>
-    <task id="LOCAL-00011" summary="lesson6-11">
-      <created>1652292673760</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1652292673760</updated>
-    </task>
-    <task id="LOCAL-00012" summary="lesson6-12">
-      <created>1652296773238</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1652296773238</updated>
-    </task>
-    <task id="LOCAL-00013" summary="lesson6-13">
-      <created>1652297085566</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1652297085566</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson6-1" />
-    <MESSAGE value="lesson6-2" />
-    <MESSAGE value="lesson6-3" />
-    <MESSAGE value="lesson6-4" />
-    <MESSAGE value="lesson6-5" />
-    <MESSAGE value="lesson6-6" />
-    <MESSAGE value="lesson6-7" />
-    <MESSAGE value="lesson6-8" />
-    <MESSAGE value="lesson6-9" />
-    <MESSAGE value="lesson6-10" />
-    <MESSAGE value="lesson6-11" />
-    <MESSAGE value="lesson6-12" />
-    <MESSAGE value="lesson6-13" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6-13" />
   </component>
 </project>
