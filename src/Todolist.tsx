@@ -26,7 +26,10 @@ type PropsType = {
 export function Todolist(props: PropsType) {
 
     const removeTodolist = () => props.removeTodolist(props.id)
-    const changeTodolistTitle = (newTitle: string) => props.changeTodolistTitle(props.id, newTitle)
+    const changeTodolistTitle = (newTitle: string) => {
+        debugger
+        props.changeTodolistTitle(props.id, newTitle)
+    }
 
     const onAllClickHandler = () => props.changeFilter("all", props.id);
     const onActiveClickHandler = () => props.changeFilter("active", props.id);
