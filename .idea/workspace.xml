@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2359bb0-e1ee-4465-bbb3-aeb7aa262a22" name="Changes" comment="lesson6-21">
+    <list default="true" id="a2359bb0-e1ee-4465-bbb3-aeb7aa262a22" name="Changes" comment="lesson6-22">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
@@ -33,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\EditableSpan.tsx" />
@@ -77,7 +77,8 @@
       <updated>1652461373026</updated>
       <workItem from="1652461377301" duration="3083000" />
       <workItem from="1652464543616" duration="31000" />
-      <workItem from="1652464590677" duration="7605000" />
+      <workItem from="1652464590677" duration="8782000" />
+      <workItem from="1652541177224" duration="956000" />
     </task>
     <task id="LOCAL-00001" summary="lesson6-16">
       <created>1652462990389</created>
@@ -121,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652470949894</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lesson6-22">
+      <created>1652472716120</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1652472716120</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +153,7 @@
     <MESSAGE value="lesson6-19" />
     <MESSAGE value="lesson6-20" />
     <MESSAGE value="lesson6-21" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6-21" />
+    <MESSAGE value="lesson6-22" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6-22" />
   </component>
 </project>
