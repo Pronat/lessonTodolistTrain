@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
-import {AddItemForm} from "./AddItemForm";
 
 export type FilterValuesType = "all" | "active" | "completed";
 type TodolistType = {
@@ -68,18 +67,6 @@ function App() {
             setTasks({...tasks});
         }
     }
-    function changeTaskTitle(id: string, newTitle: string, todolistId: string) {
-        //достанем нужный массив по todolistId:
-        let todolistTasks = tasks[todolistId];
-        // найдём нужную таску:
-        let task = todolistTasks.find(t => t.id === id);
-        //изменим таску, если она нашлась
-        if (task) {
-            task.title = newTitle;
-            // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-            setTasks({...tasks});
-        }
-    }
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
         let todolist = todolists.find(tl => tl.id === todolistId);
@@ -98,23 +85,9 @@ function App() {
         setTasks({...tasks});
     }
 
-    const changeTodolistTitle = (id:string, newTitle:string) => {
-        let todolist = todolists.find(tl => tl.id === id);
-        if (todolist) {
-            todolist.title = newTitle;
-            setTodolists([...todolists])
-        }
-    }
-
-    const addTodoList = (title:string) => {
-        let todolist:TodolistType = {id: v1(), title: title, filter: "all"}
-        setTodolists([todolist, ...todolists])
-        setTasks({...tasks, [todolist.id]:[]})
-    }
-
     return (
         <div className="App">
-            <AddItemForm addItem={addTodoList} />
+            <input /><button>x</button>
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id];
@@ -136,10 +109,8 @@ function App() {
                         changeFilter={changeFilter}
                         addTask={addTask}
                         changeTaskStatus={changeStatus}
-                        changeTaskTitle={changeTaskTitle}
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
-                        changeTodolistTitle={changeTodolistTitle}
                     />
                 })
             }
@@ -149,4 +120,3 @@ function App() {
 }
 
 export default App;
-
