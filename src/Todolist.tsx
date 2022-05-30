@@ -32,7 +32,8 @@ export function Todolist(props: PropsType) {
     }
 
     return <div>
-        <h3> {props.title}
+        <h3>
+            {props.title}
             <button onClick={removeTodolist}>x</button>
         </h3>
             <AddItemForm addItem={addTaskHandler}/>
