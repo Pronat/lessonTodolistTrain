@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {useState} from 'react';
 
 type EditableSpanPropsType = {
     title: string
-    editMode: boolean
-}
+   }
 
 export const EditableSpan: React.FC<EditableSpanPropsType> = (props) => {
+    let [editMode, setEditMode] = useState(false)
+    const activateEditMode = () => setEditMode(true)
     return (
-        props.editMode
-            ? <input value={props.title}/>
-            : <span>{props.title}</span>
-    );
+        editMode
+        ? <input value={props.title}/>
+        : <span onDoubleClick={activateEditMode}>{props.title}</span>
+    )
+
 };
 
