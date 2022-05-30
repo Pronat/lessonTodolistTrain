@@ -74,8 +74,8 @@ function App() {
         let task = todolistTasks.find(el=>el.id === id)
         if (task) {
             task.title = title
+            setTasks({...tasks})
         }
-        setTasks({...tasks})
     }
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
@@ -93,6 +93,14 @@ function App() {
         delete tasks[id]; // удаляем св-во из объекта... значением которого являлся массив тасок
         // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
         setTasks({...tasks});
+    }
+
+    function changeTodolistTitle(id: string, title: string) {
+        const todolist = todolists.find(el=>el.id === id)
+        if (todolist) {
+            todolist.title = title;
+            setTodolists([...todolists])
+        }
     }
 
     function addTodolist(title: string) {
@@ -130,6 +138,7 @@ function App() {
                         changeTaskTitle={changeTaskTitle}
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
+                        changeTodolistTitle={changeTodolistTitle}
                     />
                 })
             }
