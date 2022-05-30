@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a2359bb0-e1ee-4465-bbb3-aeb7aa262a22" name="Changes" comment="lesson6-29">
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+    <list default="true" id="a2359bb0-e1ee-4465-bbb3-aeb7aa262a22" name="Changes" comment="lesson6-30">
+      <change afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="es6.move.members.recent.items">
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\EditableSpan.tsx" />
@@ -79,7 +81,9 @@
       <workItem from="1652541177224" duration="4244000" />
       <workItem from="1653717231513" duration="653000" />
       <workItem from="1653720422749" duration="42000" />
-      <workItem from="1653720482298" duration="4595000" />
+      <workItem from="1653720482298" duration="5205000" />
+      <workItem from="1653841542620" duration="2680000" />
+      <workItem from="1653922446727" duration="326000" />
     </task>
     <task id="LOCAL-00001" summary="lesson6-16">
       <created>1652462990389</created>
@@ -179,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653724861848</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="lesson6-30">
+      <created>1653725187318</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653725187318</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,6 +222,7 @@
     <MESSAGE value="lesson6-27" />
     <MESSAGE value="lesson6-28" />
     <MESSAGE value="lesson6-29" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6-29" />
+    <MESSAGE value="lesson6-30" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6-30" />
   </component>
 </project>
