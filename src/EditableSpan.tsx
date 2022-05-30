@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {ChangeEvent, useState} from 'react';
 
 type EditableSpanPropsType = {
     title: string
@@ -6,12 +6,18 @@ type EditableSpanPropsType = {
 
 export const EditableSpan: React.FC<EditableSpanPropsType> = (props) => {
     let [editMode, setEditMode] = useState(false)
-    const activateEditMode = () => setEditMode(true)
+    let [title, setTitle] = useState(props.title)
+    const activateEditMode = () => {
+        setEditMode(true)
+        setTitle(props.title)
+    }
     const deactivateEditMode = () => setEditMode(false)
+    const onChangeTitleHandler = (e:ChangeEvent<HTMLInputElement>) => setTitle(e.currentTarget.value)
+
     return (
         editMode
-        ? <input value={props.title} onBlur={deactivateEditMode} autoFocus />
-        : <span onDoubleClick={activateEditMode}>{props.title}</span>
+        ? <input value={title} onChange={onChangeTitleHandler} onBlur={deactivateEditMode} autoFocus />
+        : <span onDoubleClick={activateEditMode}>{props.title}--{title}</span>
     )
 
 };
