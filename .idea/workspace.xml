@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4449826b-b244-4219-8ae7-7a7fdcfc4d94" name="Changes" comment="lesson7-4">
+    <list default="true" id="4449826b-b244-4219-8ae7-7a7fdcfc4d94" name="Changes" comment="lesson7-5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,6 +67,7 @@
       <workItem from="1654352308055" duration="448000" />
       <workItem from="1654352775666" duration="2708000" />
       <workItem from="1654355888554" duration="952000" />
+      <workItem from="1654359210022" duration="1044000" />
     </task>
     <task id="LOCAL-00001" summary="lesson7-3">
       <created>1654352918907</created>
@@ -83,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654355137162</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson7-5">
+      <created>1654359517565</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654359517565</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +110,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson7-3" />
     <MESSAGE value="lesson7-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson7-4" />
+    <MESSAGE value="lesson7-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson7-5" />
   </component>
 </project>
