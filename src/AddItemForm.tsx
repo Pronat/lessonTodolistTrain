@@ -33,13 +33,14 @@ export function AddItemForm(props: AddItemFormPropsType) {
     return <div>
 
         <TextField id="outlined-basic"
-                   label="Title is required"
+                   label={!error? "Enter text" : "Title is required"}
                    variant="outlined"
                    value={title}
                    onChange={onChangeHandler}
                    onKeyPress={onKeyPressHandler}
                    size={"small"}
                    error={error}
+
         />
 
         <Button variant="contained" color="primary" onClick={addItem} style={{maxWidth: '35px', maxHeight: '35px', minWidth: '35px', minHeight: '35px'}}>+</Button>
