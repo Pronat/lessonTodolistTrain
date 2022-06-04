@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4449826b-b244-4219-8ae7-7a7fdcfc4d94" name="Changes" comment="lesson7-7" />
+    <list default="true" id="4449826b-b244-4219-8ae7-7a7fdcfc4d94" name="Changes" comment="lesson7-8" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,7 +64,7 @@
       <workItem from="1654352308055" duration="448000" />
       <workItem from="1654352775666" duration="2708000" />
       <workItem from="1654355888554" duration="952000" />
-      <workItem from="1654359210022" duration="3965000" />
+      <workItem from="1654359210022" duration="4578000" />
     </task>
     <task id="LOCAL-00001" summary="lesson7-3">
       <created>1654352918907</created>
@@ -101,7 +101,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654364233202</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lesson7-8">
+      <created>1654364585519</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654364585519</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +131,7 @@
     <MESSAGE value="lesson7-5" />
     <MESSAGE value="lesson7-6" />
     <MESSAGE value="lesson7-7" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson7-7" />
+    <MESSAGE value="lesson7-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson7-8" />
   </component>
 </project>
