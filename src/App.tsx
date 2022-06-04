@@ -120,7 +120,7 @@ function App() {
 
     return (
         <div className="App">
-            {/*<ButtonAppBar/>*/}
+            <ButtonAppBar/>
             <AddItemForm addItem={addTodolist} />
             {
                 todolists.map(tl => {
