@@ -1,10 +1,18 @@
 import {TaskType} from "../Todolist";
+import {v1} from "uuid";
 
 export const todolistReducer = (state:Array<TaskType>, action:todolistReducerType)=> {
     switch (action.type) {
-        case "REMOVE-TASK":
-        // let filteredTasks = tasks.filter(t => t.id != id);
-        default: return state.filter(el=>el.id!==action.payload.id);
+        case "REMOVE-TASK": {
+            return state.filter(el => el.id !== action.payload.id);
+        }
+        case "ADD-TASK": {
+            let newTask = {id: v1(), title: action.payload.title, isDone: false};
+            // let newTasks = [task, ...tasks];
+            return [newTask, ...state]
+        }
+        default:
+            return state
     }
 }
 
