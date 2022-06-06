@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4449826b-b244-4219-8ae7-7a7fdcfc4d94" name="Changes" comment="lesson7-14">
+    <list default="true" id="c77039ea-4e07-45d3-b524-5a7502af95bf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/reducers/todolistReducer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ButtonAppBar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,26 +36,23 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2A7Ec1OumukQDqhhmJQWeRdQNWM" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="27qibPN5B2yx4UYvazBWfcKlNLm" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -66,107 +73,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4449826b-b244-4219-8ae7-7a7fdcfc4d94" name="Changes" comment="" />
-      <created>1654352304488</created>
+      <changelist id="c77039ea-4e07-45d3-b524-5a7502af95bf" name="Changes" comment="" />
+      <created>1650054087612</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1654352304488</updated>
-      <workItem from="1654352308055" duration="448000" />
-      <workItem from="1654352775666" duration="2708000" />
-      <workItem from="1654355888554" duration="952000" />
-      <workItem from="1654359210022" duration="6089000" />
-      <workItem from="1654366642979" duration="477000" />
-      <workItem from="1654367140099" duration="767000" />
-      <workItem from="1654368804179" duration="541000" />
-      <workItem from="1654369390682" duration="1952000" />
-      <workItem from="1654375004552" duration="1555000" />
-      <workItem from="1654526993638" duration="3145000" />
+      <updated>1650054087612</updated>
+      <workItem from="1650054088990" duration="1488000" />
+      <workItem from="1650099545140" duration="3238000" />
+      <workItem from="1650220858509" duration="33000" />
+      <workItem from="1654533538451" duration="594000" />
+      <workItem from="1654534275077" duration="1696000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson7-3">
-      <created>1654352918907</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1654352918907</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson7-4">
-      <created>1654355137162</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1654355137162</updated>
-    </task>
-    <task id="LOCAL-00003" summary="lesson7-5">
-      <created>1654359517565</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1654359517565</updated>
-    </task>
-    <task id="LOCAL-00004" summary="lesson7-6">
-      <created>1654360494396</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1654360494396</updated>
-    </task>
-    <task id="LOCAL-00005" summary="lesson7-7">
-      <created>1654364233202</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1654364233202</updated>
-    </task>
-    <task id="LOCAL-00006" summary="lesson7-8">
-      <created>1654364585519</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1654364585519</updated>
-    </task>
-    <task id="LOCAL-00007" summary="lesson7-9">
-      <created>1654365291495</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1654365291495</updated>
-    </task>
-    <task id="LOCAL-00008" summary="lesson7-10">
-      <created>1654367092809</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1654367092809</updated>
-    </task>
-    <task id="LOCAL-00009" summary="lesson7-11">
-      <created>1654369604921</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1654369604922</updated>
-    </task>
-    <task id="LOCAL-00010" summary="lesson7-12">
-      <created>1654375954632</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1654375954632</updated>
-    </task>
-    <task id="LOCAL-00011" summary="lesson7-13">
-      <created>1654531124555</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1654531124555</updated>
-    </task>
-    <task id="LOCAL-00012" summary="lesson7-14">
-      <created>1654531562218</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1654531562218</updated>
-    </task>
-    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,32 +99,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson7-3" />
-    <MESSAGE value="lesson7-4" />
-    <MESSAGE value="lesson7-5" />
-    <MESSAGE value="lesson7-6" />
-    <MESSAGE value="lesson7-7" />
-    <MESSAGE value="lesson7-8" />
-    <MESSAGE value="lesson7-9" />
-    <MESSAGE value="lesson7-10" />
-    <MESSAGE value="lesson7-11" />
-    <MESSAGE value="lesson7-12" />
-    <MESSAGE value="lesson7-13" />
-    <MESSAGE value="lesson7-14" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson7-14" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/App.tsx</url>
-          <line>112</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
