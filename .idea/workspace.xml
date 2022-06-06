@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4449826b-b244-4219-8ae7-7a7fdcfc4d94" name="Changes" comment="lesson7-12">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4449826b-b244-4219-8ae7-7a7fdcfc4d94" name="Changes" comment="lesson7-13">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +79,7 @@
       <workItem from="1654368804179" duration="541000" />
       <workItem from="1654369390682" duration="1952000" />
       <workItem from="1654375004552" duration="1555000" />
-      <workItem from="1654526993638" duration="1726000" />
+      <workItem from="1654526993638" duration="2081000" />
     </task>
     <task id="LOCAL-00001" summary="lesson7-3">
       <created>1654352918907</created>
@@ -152,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654375954632</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="lesson7-13">
+      <created>1654531124555</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1654531124555</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +186,19 @@
     <MESSAGE value="lesson7-10" />
     <MESSAGE value="lesson7-11" />
     <MESSAGE value="lesson7-12" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson7-12" />
+    <MESSAGE value="lesson7-13" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson7-13" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/App.tsx</url>
+          <line>112</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
