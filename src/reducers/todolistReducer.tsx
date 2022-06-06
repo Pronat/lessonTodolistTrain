@@ -9,8 +9,9 @@ export const todolistReducer = (state:Array<TaskType>, action:any)=> {
     }
 }
 
-export const removeTaskAC = () => {
+export const removeTaskAC = (id:string) => {
     return{
-        type: "REMOVE-TASK"
+        type: "REMOVE-TASK",
+        payload:{id}
     }  as const
 }

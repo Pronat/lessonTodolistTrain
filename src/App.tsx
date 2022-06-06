@@ -26,7 +26,7 @@ function App() {
     function removeTask(id: string) {
         // let filteredTasks = tasks.filter(t => t.id != id);
         // setTasks(filteredTasks);
-        tasksDispatch(removeTaskAC())
+        tasksDispatch(removeTaskAC(id))
     }
 
     function addTask(title: string) {
