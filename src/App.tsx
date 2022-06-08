@@ -3,7 +3,7 @@ import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
 import {AddItemForm} from './AddItemForm';
-import {AppBar, Button, IconButton, Toolbar, Typography} from "@mui/material";
+import {AppBar, Button, Container, IconButton, Toolbar, Typography} from "@mui/material";
 
 export type FilterValuesType = "all" | "active" | "completed";
 type TodolistType = {
@@ -120,6 +120,7 @@ function App() {
     return (
         <div className="App">
             <AppBar position="static">
+                <Container fixed>
                 <Toolbar>
                     <IconButton
                         size="large"
@@ -134,6 +135,7 @@ function App() {
                     </Typography>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
+                </Container>
             </AppBar>
             <AddItemForm addItem={addTodolist} />
             {
@@ -164,7 +166,6 @@ function App() {
                     />
                 })
             }
-
         </div>
     );
 }
