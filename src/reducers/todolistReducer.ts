@@ -1,4 +1,5 @@
 import {TaskType} from "../Todolist";
+import {v1} from "uuid";
 
 export const todolistReducer = (state:Array<TaskType>, action:todolistReducerType) => {
   switch (action.type) {
@@ -7,7 +8,8 @@ export const todolistReducer = (state:Array<TaskType>, action:todolistReducerTyp
           return state.filter(t => t.id != action.payload.id)
       }
       case "ADD-TASK": {
-          return state.
+          let newTask = { id: v1(), title: action.payload.title, isDone: false };
+          return [newTask, ...state]
       }
       default: return state
   }
