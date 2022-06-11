@@ -2,7 +2,7 @@ import React, {useReducer, useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import { v1 } from 'uuid';
-import {removeTaskAC, todolistReducer} from "./reducers/todolistReducer";
+import {addTaskAC, removeTaskAC, todolistReducer} from "./reducers/todolistReducer";
 
 export type FilterValuesType = "all" | "active" | "completed";
 
@@ -33,6 +33,7 @@ function App() {
         // let task = { id: v1(), title: title, isDone: false };
         // let newTasks = [task, ...tasks];
         // setTasks(newTasks);
+        tasksDispatch(addTaskAC(title))
     }
 
     let [filter, setFilter] = useState<FilterValuesType>("all");
