@@ -140,6 +140,7 @@ function App() {
                 </Container>
             </AppBar>
             <AddItemForm addItem={addTodolist} />
+            <Grid container>
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id];
@@ -168,6 +169,7 @@ function App() {
                     />
                 })
             }
+            </Grid>
         </div>
     );
 }
