@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-6">
+    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tasks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +127,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655143575170</updated>
-      <workItem from="1655143577238" duration="6872000" />
+      <workItem from="1655143577238" duration="7437000" />
     </task>
     <task id="LOCAL-00001" summary="js-Lesson7">
       <created>1655145557624</created>
@@ -179,7 +178,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655150466718</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="js-Lesson7-7">
+      <created>1655151644903</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1655151644903</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +210,7 @@
     <MESSAGE value="js-Lesson7-4" />
     <MESSAGE value="js-Lesson7-5" />
     <MESSAGE value="js-Lesson7-6" />
-    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-6" />
+    <MESSAGE value="js-Lesson7-7" />
+    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-7" />
   </component>
 </project>

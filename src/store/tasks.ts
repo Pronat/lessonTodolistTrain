@@ -10,7 +10,7 @@ export type ActionType = {
 }
 export type StateType = number
 
-export const salaryReducer = (state:StateType, action: ActionType): StateType => {
+export const salaryReducer = (state:StateType, action:ActionType) => {
     switch (action.type) {
         case "SUM":
             return state + action.n
