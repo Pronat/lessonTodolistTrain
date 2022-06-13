@@ -1,4 +1,4 @@
-import {sub, sum} from "./tasks";
+import {div, mult, sub, sum} from "./tasks";
 
 
 test("Test of sum", () => {
@@ -16,4 +16,20 @@ test("Sub with n", () => {
     const n:number = 200
     const result = sub(salary, n)
     expect(result).toBe(1500)
+})
+
+test("result of div", () => {
+    const salary:number = 500
+    const n:number = 2
+    const result = div(salary, n)
+    expect(result).toBe(250)
+})
+
+test("multiply numbers", () => {
+    // const salary:number = 300
+    // const n:number = 2
+    // const result = mult(salary, n)
+    expect(mult(300,2)).toBe(600)
+    expect(mult(0,2)).toBe(0)
+    expect(mult(100,5)).toBe(500)
 })
