@@ -33,3 +33,4 @@ test("multiply numbers", () => {
     expect(mult(0,2)).toBe(0)
     expect(mult(100,5)).toBe(500)
 })
+

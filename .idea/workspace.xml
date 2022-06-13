@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-3">
+    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tasks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.ts" afterDir="false" />
@@ -128,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655143575170</updated>
-      <workItem from="1655143577238" duration="4210000" />
+      <workItem from="1655143577238" duration="4967000" />
     </task>
     <task id="LOCAL-00001" summary="js-Lesson7">
       <created>1655145557624</created>
@@ -158,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655148021341</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="js-Lesson7-4">
+      <created>1655148950991</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1655148950991</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +187,7 @@
     <MESSAGE value="js-Lesson7-1" />
     <MESSAGE value="js-Lesson7-2" />
     <MESSAGE value="js-Lesson7-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-3" />
+    <MESSAGE value="js-Lesson7-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-4" />
   </component>
 </project>
