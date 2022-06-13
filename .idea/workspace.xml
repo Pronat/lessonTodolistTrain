@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7">
+    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tasks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.ts" afterDir="false" />
@@ -41,12 +41,52 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "E:/JS_React/React/SamurayPaidCourse/ToDoListForDelete/lessonTodolistTrain/node_modules/react-scripts",
     "nodejs_package_manager_path": "yarn",
     "ts.external.directory.path": "E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.Sub with n">
+    <configuration name="Sub with n" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
+      <test-names>
+        <test-name value="Sub with n" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Sum with n" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
+      <test-names>
+        <test-name value="Sum with n" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test - sum" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
+      <test-names>
+        <test-name value="Test - sum" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Test of sum" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -60,8 +100,22 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="test" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.test" />
+        <item itemvalue="Jest.Sub with n" />
+        <item itemvalue="Jest.Sum with n" />
+        <item itemvalue="Jest.Test - sum" />
         <item itemvalue="Jest.Test of sum" />
       </list>
     </recent_temporary>
@@ -74,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655143575170</updated>
-      <workItem from="1655143577238" duration="1941000" />
+      <workItem from="1655143577238" duration="3057000" />
     </task>
     <task id="LOCAL-00001" summary="js-Lesson7">
       <created>1655145557624</created>
@@ -83,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1655145557624</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="js-Lesson7-1">
+      <created>1655146663126</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655146663127</updated>
+    </task>
+    <task id="LOCAL-00003" summary="js-Lesson7-2">
+      <created>1655146878628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655146878628</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -102,6 +170,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="js-Lesson7" />
-    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7" />
+    <MESSAGE value="js-Lesson7-1" />
+    <MESSAGE value="js-Lesson7-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-2" />
   </component>
 </project>
