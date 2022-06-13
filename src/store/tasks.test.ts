@@ -7,4 +7,6 @@ test("Test of sum", () => {
     const n: number = 200
     // 2. Выполнение тестируемого кода:
     const result = sum(salary, n)
+    // 3. Проверка результата
+    expect(result).toBe(1000)
 })
