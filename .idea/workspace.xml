@@ -4,23 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39f1b97f-aa51-4d30-a443-908590790cec" name="Changes" comment="lesson7-39">
-      <change afterPath="$PROJECT_DIR$/src/reducers/filterReducer.ts" afterDir="false" />
+    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/todolistReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/todolistReducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/filterReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/reducers/todolistReducer.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,8 +27,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2ARRbxqUUT5s86zk0s9gG7j0ntU" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2AX6RLrgPbJ0PZlghCI64jmCVnF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,75 +41,21 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
+    "nodejs_package_manager_path": "yarn",
     "ts.external.directory.path": "E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.start" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="39f1b97f-aa51-4d30-a443-908590790cec" name="Changes" comment="" />
-      <created>1654970492867</created>
+      <changelist id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="" />
+      <created>1655143575170</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1654970492867</updated>
-      <workItem from="1654970496622" duration="153000" />
-      <workItem from="1654970673878" duration="6503000" />
+      <updated>1655143575170</updated>
+      <workItem from="1655143577238" duration="738000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson7-35">
-      <created>1654970975741</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1654970975741</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson7-36">
-      <created>1654972669416</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1654972669416</updated>
-    </task>
-    <task id="LOCAL-00003" summary="lesson7-37">
-      <created>1654973140644</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1654973140644</updated>
-    </task>
-    <task id="LOCAL-00004" summary="lesson7-38">
-      <created>1654975877590</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1654975877590</updated>
-    </task>
-    <task id="LOCAL-00005" summary="lesson7-39">
-      <created>1654977620072</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1654977620072</updated>
-    </task>
-    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,13 +71,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson7-35" />
-    <MESSAGE value="lesson7-36" />
-    <MESSAGE value="lesson7-37" />
-    <MESSAGE value="lesson7-38" />
-    <MESSAGE value="lesson7-39" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson7-39" />
   </component>
 </project>
