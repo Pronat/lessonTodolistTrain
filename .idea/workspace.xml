@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-5">
+    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tasks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +47,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Jest.result of div">
+  <component name="RunManager" selected="Jest.case SUM of salaryReducer test">
     <configuration name="Sub with n" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -73,7 +74,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Test - sum" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="case SUM of salaryReducer test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -82,7 +83,7 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
       <test-names>
-        <test-name value="Test - sum" />
+        <test-name value="case SUM of salaryReducer test" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -111,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.case SUM of salaryReducer test" />
         <item itemvalue="npm.test" />
         <item itemvalue="Jest.result of div" />
         <item itemvalue="Jest.Sub with n" />
         <item itemvalue="Jest.Sum with n" />
-        <item itemvalue="Jest.Test - sum" />
       </list>
     </recent_temporary>
   </component>
@@ -127,7 +128,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655143575170</updated>
-      <workItem from="1655143577238" duration="5712000" />
+      <workItem from="1655143577238" duration="6872000" />
     </task>
     <task id="LOCAL-00001" summary="js-Lesson7">
       <created>1655145557624</created>
@@ -171,7 +172,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655149872893</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="js-Lesson7-6">
+      <created>1655150466718</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1655150466718</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +203,7 @@
     <MESSAGE value="js-Lesson7-3" />
     <MESSAGE value="js-Lesson7-4" />
     <MESSAGE value="js-Lesson7-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-5" />
+    <MESSAGE value="js-Lesson7-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-6" />
   </component>
 </project>
