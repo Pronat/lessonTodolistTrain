@@ -47,5 +47,6 @@ test("case SUM of salaryReducer test", () => {
     const result = salaryReducer(salary, action)
     expect(result).toBe(1000)
     expect(salaryReducer(salary, testAction)).toBe(800)
+    expect(salaryReducer(salary, action)).toBe(800)
 
 })
