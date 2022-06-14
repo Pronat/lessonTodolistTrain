@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-8">
+    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-9">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/tasks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,8 +46,8 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Jest.case SUM of salaryReducer test">
-    <configuration name="Sub with n" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.tasks.test.ts">
+    <configuration name="DIV of salaryReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -57,11 +56,11 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
       <test-names>
-        <test-name value="Sub with n" />
+        <test-name value="DIV of salaryReducer" />
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="Sum with n" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="MULT of salaryReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -70,7 +69,20 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
       <test-names>
-        <test-name value="Sum with n" />
+        <test-name value="MULT of salaryReducer" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="SUB of the salary reducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
+      <test-names>
+        <test-name value="SUB of the salary reducer" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -87,36 +99,23 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="result of div" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="tasks.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
+      <scope-kind value="TEST_FILE" />
       <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
-      <test-names>
-        <test-name value="result of div" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="test" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="test" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.tasks.test.ts" />
+        <item itemvalue="Jest.MULT of salaryReducer" />
         <item itemvalue="Jest.case SUM of salaryReducer test" />
-        <item itemvalue="npm.test" />
-        <item itemvalue="Jest.result of div" />
-        <item itemvalue="Jest.Sub with n" />
-        <item itemvalue="Jest.Sum with n" />
+        <item itemvalue="Jest.DIV of salaryReducer" />
+        <item itemvalue="Jest.SUB of the salary reducer" />
       </list>
     </recent_temporary>
   </component>
@@ -129,7 +128,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655143575170</updated>
       <workItem from="1655143577238" duration="7576000" />
-      <workItem from="1655221424960" duration="1722000" />
+      <workItem from="1655221424960" duration="4307000" />
     </task>
     <task id="LOCAL-00001" summary="js-Lesson7">
       <created>1655145557624</created>
@@ -194,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655152340402</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="js-Lesson7-9">
+      <created>1655223192196</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1655223192196</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -221,6 +227,7 @@
     <MESSAGE value="js-Lesson7-6" />
     <MESSAGE value="js-Lesson7-7" />
     <MESSAGE value="js-Lesson7-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-8" />
+    <MESSAGE value="js-Lesson7-9" />
+    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-9" />
   </component>
 </project>

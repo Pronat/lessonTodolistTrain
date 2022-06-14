@@ -47,6 +47,41 @@ test("case SUM of salaryReducer test", () => {
     const result = salaryReducer(salary, action)
     expect(result).toBe(1000)
     expect(salaryReducer(salary, testAction)).toBe(800)
-    expect(salaryReducer(salary, action)).toBe(800)
+    expect(salaryReducer(salary, action)).toBe(1000)
+})
+
+test("SUB of the salary reducer", () => {
+    const salary: StateType = 500
+    const action: ActionType = {
+        type: "SUB",
+        n: 100
+    }
+    const result = salaryReducer(salary, action)
+    expect(result).toBe(400)
+})
+
+test("DIV of salaryReducer", () => {
+    const state: StateType = 1200
+    const action: ActionType = {
+        type: "DIV",
+        n: 100,
+    }
+    const result = salaryReducer(state, action)
+    expect(result).toBe(12)
+})
+
+test("MULT of salaryReducer", () => {
+    const salary: StateType = 5000
+    const action: ActionType = {
+        type: "MULT",
+        n: 25
+    }
+    const testAction:ActionType = {
+        type: "TEST",
+        n: 25
+    }
+    const result = salaryReducer(salary, action)
+    expect(result).toBe(125000)
+    expect(salaryReducer(salary, testAction)).toBe(5000)
 
 })
