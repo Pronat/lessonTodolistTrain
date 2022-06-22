@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="lesson8-2">
+    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="lesson8-3">
       <change beforePath="$PROJECT_DIR$/src/state/user-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/user-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +71,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655838995462</updated>
       <workItem from="1655838999839" duration="1727000" />
-      <workItem from="1655901806576" duration="3318000" />
+      <workItem from="1655901806576" duration="4309000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-1">
       <created>1655901895901</created>
@@ -87,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655904392209</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson8-3">
+      <created>1655906053104</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1655906053104</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -107,6 +114,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson8-1" />
     <MESSAGE value="lesson8-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-2" />
+    <MESSAGE value="lesson8-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-3" />
   </component>
 </project>

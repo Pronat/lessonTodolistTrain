@@ -10,13 +10,15 @@ type ActionType = {
     [key:string]:any
 }
 
-export const userReducer = (state: StateType, action: any) => {
+export const userReducer = (state: StateType, action: ActionType) => {
     switch (action.type) {
-        case 'Ver 1':
-
-        case 'Ver 2':
-
+        case 'CHANGE AGE':
+            state.age = state.age + 1
+            return state
+        case 'CHANGE-CHILDREN-COUNT':
+            state.childrenCount = state.childrenCount + 1
+            return state
         default:
-            throw new Error('I dont understand this action type')
+            throw new Error('wrong actioon type')
     }
 }
