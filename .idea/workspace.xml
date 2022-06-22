@@ -4,21 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="js-Lesson7-9">
+    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/tasks.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/tasks.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/tasks.test.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/tasks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,7 +28,8 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2AX6RLrgPbJ0PZlghCI64jmCVnF" />
+  <component name="ProjectId" id="2AtpyY4DFvmFLChld4HhiJVl3Gy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,194 +43,40 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;E:/JS_React/React/SamurayPaidCourse/ToDoListForDelete/lessonTodolistTrain/node_modules/react-scripts&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\JS_React\\React\\SamurayPaidCourse\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Jest.tasks.test.ts">
-    <configuration name="DIV of salaryReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
       <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
-      <test-names>
-        <test-name value="DIV of salaryReducer" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="MULT of salaryReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
-      <test-names>
-        <test-name value="MULT of salaryReducer" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="SUB of the salary reducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
-      <test-names>
-        <test-name value="SUB of the salary reducer" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="case SUM of salaryReducer test" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
-      <test-names>
-        <test-name value="case SUM of salaryReducer test" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="tasks.test.ts" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST_FILE" />
-      <test-file value="$PROJECT_DIR$/src/store/tasks.test.ts" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.tasks.test.ts" />
-        <item itemvalue="Jest.MULT of salaryReducer" />
-        <item itemvalue="Jest.case SUM of salaryReducer test" />
-        <item itemvalue="Jest.DIV of salaryReducer" />
-        <item itemvalue="Jest.SUB of the salary reducer" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0cf37474-feac-4b09-ba1f-acfc096b305d" name="Changes" comment="" />
-      <created>1655143575170</created>
+      <changelist id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="" />
+      <created>1655838995462</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1655143575170</updated>
-      <workItem from="1655143577238" duration="7576000" />
-      <workItem from="1655221424960" duration="4307000" />
+      <updated>1655838995462</updated>
+      <workItem from="1655838999839" duration="1727000" />
     </task>
-    <task id="LOCAL-00001" summary="js-Lesson7">
-      <created>1655145557624</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1655145557624</updated>
-    </task>
-    <task id="LOCAL-00002" summary="js-Lesson7-1">
-      <created>1655146663126</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1655146663127</updated>
-    </task>
-    <task id="LOCAL-00003" summary="js-Lesson7-2">
-      <created>1655146878628</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1655146878628</updated>
-    </task>
-    <task id="LOCAL-00004" summary="js-Lesson7-3">
-      <created>1655148021341</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1655148021341</updated>
-    </task>
-    <task id="LOCAL-00005" summary="js-Lesson7-4">
-      <created>1655148950991</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1655148950991</updated>
-    </task>
-    <task id="LOCAL-00006" summary="js-Lesson7-5">
-      <created>1655149872893</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1655149872893</updated>
-    </task>
-    <task id="LOCAL-00007" summary="js-Lesson7-6">
-      <created>1655150466718</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1655150466718</updated>
-    </task>
-    <task id="LOCAL-00008" summary="js-Lesson7-7">
-      <created>1655151644903</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1655151644903</updated>
-    </task>
-    <task id="LOCAL-00009" summary="js-Lesson7-8">
-      <created>1655152340402</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1655152340402</updated>
-    </task>
-    <task id="LOCAL-00010" summary="js-Lesson7-9">
-      <created>1655223192196</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1655223192196</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="js-Lesson7" />
-    <MESSAGE value="js-Lesson7-1" />
-    <MESSAGE value="js-Lesson7-2" />
-    <MESSAGE value="js-Lesson7-3" />
-    <MESSAGE value="js-Lesson7-4" />
-    <MESSAGE value="js-Lesson7-5" />
-    <MESSAGE value="js-Lesson7-6" />
-    <MESSAGE value="js-Lesson7-7" />
-    <MESSAGE value="js-Lesson7-8" />
-    <MESSAGE value="js-Lesson7-9" />
-    <option name="LAST_COMMIT_MESSAGE" value="js-Lesson7-9" />
   </component>
 </project>
