@@ -8,12 +8,11 @@ type ActionType = {
 
 export const todolistsReducer = (state: Array<TodolistType>, action: ActionType): Array<TodolistType> => {
     switch (action.type) {
-        case 'REMOVE-TODOLIST': {
-            todolists.filter()
+        case 'REMOVE-TODOLIST' : {
+            return state.filter(el => el.id != action.id)
         }
+            default:
+                throw new Error(`wrong action type`)
 
-
-        default:
-            throw new Error('wrong action type')
     }
 }
