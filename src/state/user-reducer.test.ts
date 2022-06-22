@@ -17,9 +17,10 @@ test('UserReducer should increment only childrenCount', () => {
     expect(endState.age).toBe(15)
 })
 
-test('userReducer should be default', () => {
-    const startState = {age: 34, childrenCount: 45, name: 'Tom'}
-    const endState = userReducer(startState, {type 'NO-TYPE'})
+test('UserReducer should change name of user', () => {
+    const startState = {name: 'Dimych', age: 20, childrenCount: 2}
+    const newName = 'Valera'
+    const endState = userReducer(startState, {type: 'CHANGE-NAME', newName: newName})
 
-    expect(endState.name).toBe('wrong action type')
+    expect(endState.name).toBe(newName)
 })
