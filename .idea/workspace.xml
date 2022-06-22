@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="lesson8-5">
+    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="lesson8-6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/user-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/user-reducer.test.ts" afterDir="false" />
     </list>
@@ -53,7 +53,7 @@
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.UserReducer should increment only childrenCount">
+  <component name="RunManager" selected="Jest.userReducer should be default">
     <configuration name="UserReducer should increment only age" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -106,23 +106,26 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
+    <configuration name="userReducer should be default" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
       <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/user-reducer.test.ts" />
+      <test-names>
+        <test-name value="userReducer should be default" />
+      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.userReducer should be default" />
         <item itemvalue="Jest.UserReducer should increment only childrenCount" />
         <item itemvalue="Jest.UserReducer should increment only age" />
         <item itemvalue="Jest.user reducer should increment only age" />
         <item itemvalue="Jest.renders learn react link" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -135,7 +138,7 @@
       <option name="presentableId" value="Default" />
       <updated>1655838995462</updated>
       <workItem from="1655838999839" duration="1727000" />
-      <workItem from="1655901806576" duration="6407000" />
+      <workItem from="1655901806576" duration="7555000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-1">
       <created>1655901895901</created>
@@ -172,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655907292779</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lesson8-6">
+      <created>1655909164370</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1655909164370</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +205,7 @@
     <MESSAGE value="lesson8-3" />
     <MESSAGE value="lesson8-4" />
     <MESSAGE value="lesson8-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-5" />
+    <MESSAGE value="lesson8-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-6" />
   </component>
 </project>
