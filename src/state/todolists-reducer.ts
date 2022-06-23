@@ -15,9 +15,16 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
         case 'ADD-TODOLIST': {
             return [
                 ...state,
-                {id: v1(), title: action.title, filter: "active"}
+                {id: v1(), title: action.title, filter: "all"}
             ]
         }
+        case "CHANGE-TODOLIST-TITLE": {
+            return [
+                ...state,
+                state.find(tl => tl.id === action.id)
+            ]
+        }
+
         default:
             throw new Error(`Invalid action`)
 
