@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="lesson8-15">
+    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="lesson8-16">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,7 @@
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Add todolist correct">
+  <component name="RunManager" selected="Jest.change filter todolist should be correct">
     <configuration name="Add todolist correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -79,16 +81,16 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="UserReducer should increment only age" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="change filter todolist should be correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/user-reducer.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" />
       <test-names>
-        <test-name value="UserReducer should increment only age" />
+        <test-name value="change filter todolist should be correct" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -117,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.change filter todolist should be correct" />
         <item itemvalue="Jest.Add todolist correct" />
         <item itemvalue="Jest.correct remove todolist" />
         <item itemvalue="Jest.UserReducer should change name of user" />
         <item itemvalue="npm.start" />
-        <item itemvalue="Jest.UserReducer should increment only age" />
       </list>
     </recent_temporary>
   </component>
@@ -138,7 +140,7 @@
       <workItem from="1655917812722" duration="6649000" />
       <workItem from="1655994552373" duration="1020000" />
       <workItem from="1655995819143" duration="56000" />
-      <workItem from="1655995892638" duration="5401000" />
+      <workItem from="1655995892638" duration="7670000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-1">
       <created>1655901895901</created>
@@ -245,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656000986057</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="lesson8-16">
+      <created>1656001574983</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1656001574983</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -278,6 +287,7 @@
     <MESSAGE value="lesson8-13" />
     <MESSAGE value="lesson8-14" />
     <MESSAGE value="lesson8-15" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-15" />
+    <MESSAGE value="lesson8-16" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-16" />
   </component>
 </project>
