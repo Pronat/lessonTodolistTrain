@@ -52,9 +52,11 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionsType
                 ...state
             ]
         }
-
         default:
             throw new Error(`Invalid action`)
-
     }
+}
+
+export const removeTodolistAC = (todolistId: string): RemoveTodolistActionType => {
+    return {type: 'REMOVE-TODOLIST', id: todolistId}
 }
