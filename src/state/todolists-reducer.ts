@@ -11,6 +11,9 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
         case 'REMOVE-TODOLIST' : {
             return state.filter(el => el.id != action.id)
         }
+        case 'ADD-TODOLIST': {
+            return
+        }
             default:
                 throw new Error(`wrong action type`)
 
