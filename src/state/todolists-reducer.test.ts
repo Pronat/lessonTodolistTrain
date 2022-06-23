@@ -30,5 +30,5 @@ test('Add todolist correct', () => {
     expect(endState.length).toBe(3)
     expect(endState[2].title).toBe(newTodolistTitle)
     expect(endState[1].title).toBe("What to buy")
-    expect(endState[0].filter).toBe("all")
+    expect(endState[2].filter).toBe("all")
 })
