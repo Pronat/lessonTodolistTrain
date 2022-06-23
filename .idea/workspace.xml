@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="lesson8-19">
+    <list default="true" id="fd5e42f7-8fa0-400f-9e9b-76385f271fe7" name="Changes" comment="lesson8-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.change filter todolist should be correct">
+  <component name="RunManager" selected="Jest.Add todolist correct">
     <configuration name="Add todolist correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -118,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.change filter todolist should be correct" />
         <item itemvalue="Jest.Add todolist correct" />
+        <item itemvalue="Jest.change filter todolist should be correct" />
         <item itemvalue="Jest.correct remove todolist" />
         <item itemvalue="Jest.UserReducer should change name of user" />
         <item itemvalue="npm.start" />
@@ -139,7 +138,8 @@
       <workItem from="1655917812722" duration="6649000" />
       <workItem from="1655994552373" duration="1020000" />
       <workItem from="1655995819143" duration="56000" />
-      <workItem from="1655995892638" duration="10134000" />
+      <workItem from="1655995892638" duration="10462000" />
+      <workItem from="1656010106619" duration="38000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-1">
       <created>1655901895901</created>
@@ -274,7 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1656008337070</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="lesson8-20">
+      <created>1656009768077</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1656009768077</updated>
+    </task>
+    <task id="LOCAL-00021" summary="lesson8-21">
+      <created>1656010043205</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1656010043205</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +325,8 @@
     <MESSAGE value="lesson8-17" />
     <MESSAGE value="lesson8-18" />
     <MESSAGE value="lesson8-19" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-19" />
+    <MESSAGE value="lesson8-20" />
+    <MESSAGE value="lesson8-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-21" />
   </component>
 </project>
