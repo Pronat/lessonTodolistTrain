@@ -18,3 +18,13 @@ export const todolistsReducer = (state: StateType, action: ActionType) => {
             throw new Error(`Invalid type`)
     }
 }
+
+type removeTodolistACType = ReturnType<typeof removeTodolistAC>
+export const removeTodolistAC = (todolistId1: string) => {
+    return{
+        type: 'REMOVE-TODOLIST',
+        payload: {
+            todolistId1
+        }
+    } as const
+}
