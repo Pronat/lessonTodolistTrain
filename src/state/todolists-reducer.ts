@@ -7,13 +7,13 @@ type StateType = {
 }
 
 type ActionType = {
-[key:string]: string
+[key:string]: any
 }
 
-export const todolistsReducer = (state: any, action: any) => {
+export const todolistsReducer = (state: StateType, action: ActionType) => {
     switch (action.type) {
-        case 'XXX':
-            return state
+        case 'REMOVE-TODOLIST':
+            return state.filter(el => el.id != action.id)
         default:
             throw new Error(`Invalid type`)
     }
