@@ -6,9 +6,7 @@ type StateType = {
     filter: FilterValuesType
 }
 
-type ActionType = {
-[key:string]: any
-}
+type ActionType = todolistIdACType | todolistIdACType
 
 export const todolistsReducer = (state: Array<TodolistType>, action: ActionType) => {
     switch (action.type) {
