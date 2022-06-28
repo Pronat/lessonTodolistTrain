@@ -6,7 +6,7 @@ type StateType = {
     filter: FilterValuesType
 }
 
-type ActionType = todolistIdACType | todolistIdACType
+type ActionType = RemoveTodolistACType | RemoveTodolistACType
 
 export const todolistsReducer = (state: Array<TodolistType>, action: ActionType) => {
     switch (action.type) {
@@ -18,12 +18,12 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
     }
 }
 
-type todolistIdACType = ReturnType<typeof removeTodolistAC>
+type RemoveTodolistACType = ReturnType<typeof removeTodolistAC>
 export const removeTodolistAC = (todolistId1: string) => {
     return {
         type: 'REMOVE-TODOLIST',
         payload: {
             todolistId1
         }
-    } as const
+    }
 }
