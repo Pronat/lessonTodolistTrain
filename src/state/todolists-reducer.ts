@@ -6,7 +6,7 @@ type StateType = {
     filter: FilterValuesType
 }
 
-type ActionType = RemoveTodolistACType || AddTodolistACType
+type ActionType = RemoveTodolistACType | AddTodolistACType
 
 export const todolistsReducer = (state: Array<TodolistType>, action: ActionType) => {
     switch (action.type) {
@@ -31,7 +31,7 @@ export const removeTodolistAC = (todolistId1: string) => {
         payload: {
             todolistId1
         }
-    }
+    } as const
 }
 type AddTodolistACType = ReturnType<typeof addTodolistAC>
 export const addTodolistAC = (newTodolistTitle: string) => {
@@ -40,5 +40,5 @@ export const addTodolistAC = (newTodolistTitle: string) => {
         payload: {
             newTodolistTitle
         }
-    }
+    } as const
 }
