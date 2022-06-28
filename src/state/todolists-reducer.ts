@@ -28,7 +28,7 @@ type RemoveTodolistACType = ReturnType<typeof removeTodolistAC>
 export const removeTodolistAC = (todolistId1: string) => {
     return {
         type: 'REMOVE-TODOLIST',
-        payload: {
+        payload:{
             todolistId1
         }
     } as const
