@@ -16,10 +16,9 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
         }
         case 'ADD-TODOLIST': {
             let newTodolist: TodolistType = {id: action.payload.id, title: action.payload.title, filter: 'all'};
-            return {
-                ...state,
-                [todolistId]
-            }
+            return [
+                ...state, newTodolist
+            ]
         }
         default:
             throw new Error(`Invalid type`)
@@ -36,7 +35,7 @@ export const removeTodolistAC = (todolistId1: string) => {
     } as const
 }
 
-type AddTodolistACType = ReturnType<typeof addTodolistAC>
+
 export const addTodolistAC = (id: string, title: string) => {
     return {
         type: 'ADD-TODOLIST',
