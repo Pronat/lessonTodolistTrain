@@ -18,7 +18,7 @@ type PropsType = {
     removeTask: (taskId: string, todolistId: string) => void
     changeFilter: (value: FilterValuesType, todolistId: string) => void
     addTask: (title: string, todolistId: string) => void
-    changeTaskStatus: (id: string, isDone: boolean, todolistId: string) => void
+    changeTaskStatus: (id: string, checked: boolean, todolistId: string) => void
     removeTodolist: (id: string) => void
     changeTodolistTitle: (id: string, newTitle: string) => void
     filter: FilterValuesType
@@ -52,21 +52,18 @@ export function Todolist(props: PropsType) {
             {
                 props.tasks.map(t => {
                     const onClickHandler = () => props.removeTask(t.id, props.id)
-                    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-                        let newIsDoneValue = e.currentTarget.checked;
-                        props.changeTaskStatus(t.id, newIsDoneValue, props.id);
-                    }
+
                     const onTitleChangeHandler = (newValue: string) => {
                         props.changeTaskTitle(t.id, newValue, props.id);
                     }
 
+                    const onChangeHandler = (tID: string, checked: boolean) => {
+                        props.changeTaskStatus(tID, checked, props.id);
+                    }
 
                     return <div key={t.id} className={t.isDone ? "is-done" : ""}>
-                        {/*<Checkbox*/}
-                        {/*    checked={t.isDone}*/}
-                        {/*    color="primary"*/}
-                        {/*    onChange={onChangeHandler}*/}
-                        {/*/>*/}
+                        <Checkbox checked={t.isDone} callBack={(checked: boolean)=>onChangeHandler(t.id, checked)} />
+
 
                         <EditableSpan value={t.title} onChange={onTitleChangeHandler} />
                         <IconButton onClick={onClickHandler}>
