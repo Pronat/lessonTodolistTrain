@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-47">
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-48">
       <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,20 @@
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.correct change todolist Title">
+  <component name="RunManager" selected="Jest.correct change filter of todolist">
+    <configuration name="correct change filter of todolist" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" />
+      <test-names>
+        <test-name value="correct change filter of todolist" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="correct change todolist Title" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -107,6 +121,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.correct change filter of todolist" />
         <item itemvalue="Jest.correct change todolist Title" />
         <item itemvalue="Jest.correct todolist should be added" />
         <item itemvalue="Jest.useReducer should change name of user" />
@@ -130,7 +145,7 @@
       <workItem from="1656351081310" duration="3626000" />
       <workItem from="1656441909025" duration="695000" />
       <workItem from="1656445031523" duration="2688000" />
-      <workItem from="1656512364839" duration="7867000" />
+      <workItem from="1656512364839" duration="9189000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-25">
       <created>1656138537012</created>
@@ -258,7 +273,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656527182349</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="lesson8-48">
+      <created>1656527598173</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1656527598173</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -295,6 +317,7 @@
     <MESSAGE value="lesson8-45" />
     <MESSAGE value="lesson8-46" />
     <MESSAGE value="lesson8-47" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-47" />
+    <MESSAGE value="lesson8-48" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-48" />
   </component>
 </project>

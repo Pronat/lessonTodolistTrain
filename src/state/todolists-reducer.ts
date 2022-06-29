@@ -7,7 +7,7 @@ type StateType = {
     filter: FilterValuesType
 }
 
-type ActionType = RemoveTodolistACType | AddTodolistACType | ChangeTodolistTitleACType
+type ActionType = RemoveTodolistACType | AddTodolistACType | ChangeTodolistTitleACType | ChangeFilterACType
 
 export const todolistsReducer = (state: Array<TodolistType>, action: ActionType) => {
     switch (action.type) {
@@ -31,6 +31,10 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
            //      ...state
            //  ]
          return state.map(el => el.id === action.payload.id ? {...el, title: action.payload.newTitle} : el)
+        }
+        case 'CHANGE-FILTER': {
+
+            return state.map(el => el.id === action.payload.id ? {...el, filter: action.payload.filter} : el)
         }
         default:
             throw new Error(`Invalid type`)
@@ -63,6 +67,16 @@ export const changeTodolistTitleAC = (id: string, newTitle: string) => {
         type: 'CHANGE-TODOLIST-TITLE',
         payload: {
             id, newTitle
+        }
+    } as const
+}
+
+type ChangeFilterACType = ReturnType<typeof changeFilterAC>
+export const changeFilterAC = (id: string, filter: string) => {
+    return {
+        type: 'CHANGE-FILTER',
+        payload: {
+            id, filter
         }
     } as const
 }
