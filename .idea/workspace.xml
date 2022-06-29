@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-42">
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-43">
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +117,7 @@
       <workItem from="1656351081310" duration="3626000" />
       <workItem from="1656441909025" duration="695000" />
       <workItem from="1656445031523" duration="2688000" />
-      <workItem from="1656512364839" duration="2914000" />
+      <workItem from="1656512364839" duration="3838000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-25">
       <created>1656138537012</created>
@@ -209,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656516595172</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lesson8-43">
+      <created>1656517097049</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1656517097049</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +249,7 @@
     <MESSAGE value="lesson8-40" />
     <MESSAGE value="lesson8-41" />
     <MESSAGE value="lesson8-42" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-42" />
+    <MESSAGE value="lesson8-43" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-43" />
   </component>
 </project>
