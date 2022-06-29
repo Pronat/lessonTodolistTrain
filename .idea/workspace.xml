@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-48">
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.ts" afterDir="false" />
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-49">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,26 +106,23 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="user reducer should increment only age" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
       <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/user-reducer.test.ts" />
-      <test-names>
-        <test-name value="user reducer should increment only age" />
-      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.correct change filter of todolist" />
         <item itemvalue="Jest.correct change todolist Title" />
         <item itemvalue="Jest.correct todolist should be added" />
         <item itemvalue="Jest.useReducer should change name of user" />
-        <item itemvalue="Jest.user reducer should increment only age" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +142,7 @@
       <workItem from="1656351081310" duration="3626000" />
       <workItem from="1656441909025" duration="695000" />
       <workItem from="1656445031523" duration="2688000" />
-      <workItem from="1656512364839" duration="9189000" />
+      <workItem from="1656512364839" duration="10444000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-25">
       <created>1656138537012</created>
@@ -280,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656527598173</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="lesson8-49">
+      <created>1656531113387</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1656531113387</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,6 +322,7 @@
     <MESSAGE value="lesson8-46" />
     <MESSAGE value="lesson8-47" />
     <MESSAGE value="lesson8-48" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-48" />
+    <MESSAGE value="lesson8-49" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-49" />
   </component>
 </project>

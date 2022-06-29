@@ -72,7 +72,7 @@ export const changeTodolistTitleAC = (id: string, newTitle: string) => {
 }
 
 type ChangeFilterACType = ReturnType<typeof changeFilterAC>
-export const changeFilterAC = (id: string, filter: string) => {
+export const changeFilterAC = (id: string, filter: FilterValuesType) => {
     return {
         type: 'CHANGE-FILTER',
         payload: {
