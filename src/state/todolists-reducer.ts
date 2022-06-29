@@ -23,14 +23,14 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
             ]
         }
         case 'CHANGE-TODOLIST-TITLE': {
-            const todolist = state.find(el => el.id === action.payload.id)
-            if (todolist) {
-                todolist.title = action.payload.newTitle
-            }
-            return [
-                ...state,
-
-            ]
+           // const todolist = state.find(el => el.id === action.payload.id)
+           //  if (todolist) {
+           //      todolist.title = action.payload.newTitle
+           //  }
+           //  return [
+           //      ...state
+           //  ]
+         return state.map(el => el.id === action.payload.id ? {...el, title: action.payload.newTitle} : el)
         }
         default:
             throw new Error(`Invalid type`)
