@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-51">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-52" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -143,7 +140,11 @@
       <workItem from="1656351081310" duration="3626000" />
       <workItem from="1656441909025" duration="695000" />
       <workItem from="1656445031523" duration="2688000" />
-      <workItem from="1656512364839" duration="12836000" />
+      <workItem from="1656512364839" duration="13421000" />
+      <workItem from="1656605295977" duration="2040000" />
+      <workItem from="1657114733146" duration="8000" />
+      <workItem from="1657114748573" duration="7000" />
+      <workItem from="1657115567183" duration="602000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-25">
       <created>1656138537012</created>
@@ -299,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656534693538</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="lesson8-52">
+      <created>1656536029295</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1656536029295</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -340,6 +348,7 @@
     <MESSAGE value="lesson8-49" />
     <MESSAGE value="lesson8-50" />
     <MESSAGE value="lesson8-51" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-51" />
+    <MESSAGE value="lesson8-52" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-52" />
   </component>
 </project>

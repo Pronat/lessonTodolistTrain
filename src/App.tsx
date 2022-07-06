@@ -66,7 +66,7 @@ function App() {
         if (task) {
             task.isDone = isDone;
             // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-            setTasks({...tasks});
+            setTasks({...tasks})
         }
     }
 
