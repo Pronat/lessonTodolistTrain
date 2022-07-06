@@ -48,7 +48,7 @@ function App() {
     }
 
     function addTask(title: string, todolistId: string) {
-        let task = {id: v1(), title: title, isDone: false};
+        let task = {id: v1(), title: title, isDone: false}
         //достанем нужный массив по todolistId:
         let todolistTasks = tasks[todolistId];
         // перезапишем в этом объекте массив для нужного тудулиста копией, добавив в начало новую таску:
