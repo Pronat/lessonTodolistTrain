@@ -102,7 +102,7 @@ function App() {
 
     function changeTodolistTitle(id: string, title: string) {
         // найдём нужный todolist
-        const todolist = todolists.find(tl => tl.id === id);
+        const todolist = todolists.find(tl => tl.id === id)
         if (todolist) {
             // если нашёлся - изменим ему заголовок
             todolist.title = title;
