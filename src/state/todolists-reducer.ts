@@ -42,7 +42,7 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionsType
                 // если нашёлся - изменим ему заголовок
                 todolist.filter = action.filter;
             }
-            return [...state];
+            return  [...state];
         }
         default:
             throw new Error("I don't understand this type")
