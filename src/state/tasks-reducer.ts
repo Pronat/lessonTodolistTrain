@@ -13,7 +13,7 @@ export type Action2Type = {
 
 type ActionsType = Action1Type | Action2Type
 
-export const todolistsReducer = (state: Array<TasksStateType>, action: ActionsType): Array<TasksStateType> => {
+export const tasksReducer = (state: Array<TasksStateType>, action: ActionsType): Array<TasksStateType> => {
     switch (action.type) {
         case '1':
             return {...state}
