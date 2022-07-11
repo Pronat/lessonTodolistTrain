@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {TasksStateType} from "../App";
-import {addTaskAC, changeStatusAC, removeTaskAC, tasksReducer,} from "./tasks-reducer";
+import {addTaskAC, changeTaskStatusAC, removeTaskAC, tasksReducer,} from "./tasks-reducer";
 
 test('task should be deleted correct', () => {
     const startState: TasksStateType = {
@@ -50,7 +50,7 @@ test('correct add task', () => {
     expect(endState["todolistId1"][0].isDone).toBe(false)
 })
 
-test('change statu of task correct', () => {
+test('change status of task correct', () => {
     const startState: TasksStateType = {
         "todolistId1": [
             {id: "1", title: "HTML&CSS", isDone: false},
@@ -63,11 +63,11 @@ test('change statu of task correct', () => {
             {id: "3", title: "tea", isDone: false},
         ]
     }
-    const action = changeStatusAC("todolistId2", "1", true)
+    const action = changeTaskStatusAC("todolistId2", "1", true)
     const endState = tasksReducer(startState, action)
 
-    expect(endState["todolistId2"][0]).toBe(true)
-    expect(endState["todolistId2"][1]).toBe(true)
-    expect(endState["todolistId1"][0]).toBe(false)
+    expect(endState["todolistId2"][0].isDone).toBe(true)
+    expect(endState["todolistId2"][1].isDone).toBe(true)
+    expect(endState["todolistId1"][0].isDone).toBe(false)
 
 })
