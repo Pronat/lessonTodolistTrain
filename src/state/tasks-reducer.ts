@@ -9,26 +9,31 @@ export type RemoveTaskActionType = {
 export type AddTaskACType = {
     type: "ADD-TASK",
     todolistId: string,
-    taskTitle: string,
+    title: string,
+}
+
+export type changeStatusACType = {
+    type: "CHANGE-STATUS",
+    todolistId: string,
+    todolistIsDone: boolean
 }
 
 
+type ActionsType = RemoveTaskActionType | AddTaskACType | changeStatusACType
 
-type ActionsType = RemoveTaskActionType | AddTaskACType
-
-export const tasksReducer = (state:TasksStateType, action: ActionsType): TasksStateType => {
+export const tasksReducer = (state: TasksStateType, action: ActionsType): TasksStateType => {
     switch (action.type) {
         case "REMOVE-TASK": {
-            const stateCopy = {...state}
+            let stateCopy = {...state}
             const tasks = state[action.todolistId]
             const filteredTasks = tasks.filter(el => el.id !== action.taskId)
             stateCopy[action.todolistId] = filteredTasks
             return stateCopy
         }
         case "ADD-TASK": {
-            const newTask = {id: v1(), title: action.taskTitle, isDone: false}
-            let stateCopy = {...state}
-            const tasks = stateCopy[action.todolistId]
+            const stateCopy = {...state}
+            const tasks = state[action.todolistId]
+            const newTask = {id: v1(), title: action.title, isDone: false}
             const newTasks = [newTask, ...tasks]
             stateCopy[action.todolistId] = newTasks
             return stateCopy
@@ -45,8 +50,14 @@ export const removeTaskAC = (taskId: string, todolistId: string): RemoveTaskActi
     }
 }
 
-export const addTaskAC = (todolistId: string, taskTitle: string): AddTaskACType => {
+export const addTaskAC = (todolistId: string, title: string): AddTaskACType => {
     return {
-        type: "ADD-TASK", todolistId: todolistId, taskTitle: taskTitle
+        type: "ADD-TASK", todolistId: todolistId, title: title
+    }
+}
+
+export const changeStatusAC = (todolistId: string, todolistIsDone: boolean) => {
+    return {
+        type: "CHANGE-STATUS", todolistId: todolistId, todolistIsDone: todolistIsDone
     }
 }
