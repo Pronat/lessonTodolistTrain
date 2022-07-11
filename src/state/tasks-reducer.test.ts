@@ -21,6 +21,8 @@ test('task should be deleted correct', () => {
 
     expect(endState["todolistId1"].length).toBe(3)
     expect(endState["todolistId2"].length).toBe(2)
-    expect(endState["todolistId2"].every(t => t.id != "2")).toBeTruthy()
+    expect(endState["todolistId2"].every(el=>el.id !== "2")).toBeTruthy()
+    expect(endState["todolistId2"][0].id).toBe("1")
+    expect(endState["todolistId2"][1].id).toBe("3")
 
 })
