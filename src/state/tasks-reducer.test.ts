@@ -63,7 +63,7 @@ test('change statu of task correct', () => {
             {id: "3", title: "tea", isDone: false},
         ]
     }
-    const action = changeStatusAC("todolistId2", "1", "true")
+    const action = changeStatusAC("todolistId2", "1", true)
     const endState = tasksReducer(startState, action)
 
     expect(endState["todolistId2"][0]).toBe(true)
