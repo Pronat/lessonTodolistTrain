@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-24">
-      <change afterPath="$PROJECT_DIR$/src/state/task-reducer.test.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/state/task-reducer.ts" afterDir="false" />
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-25">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/task-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/task-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,14 +168,7 @@
       <workItem from="1657609228821" duration="5111000" />
       <workItem from="1657615995394" duration="68000" />
       <workItem from="1657616078605" duration="593000" />
-      <workItem from="1657625146101" duration="4219000" />
-    </task>
-    <task id="LOCAL-00003" summary="lesson8-27">
-      <created>1656154432102</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1656154432102</updated>
+      <workItem from="1657625146101" duration="5276000" />
     </task>
     <task id="LOCAL-00004" summary="lesson8-28">
       <created>1656154918472</created>
@@ -518,7 +506,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657614979534</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="lesson8-25">
+      <created>1657651796147</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1657651796148</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +531,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson8-56" />
     <MESSAGE value="lesson8-1" />
     <MESSAGE value="lesson8-2" />
     <MESSAGE value="lesson8-3" />
@@ -561,6 +555,7 @@
     <MESSAGE value="lesson8-22" />
     <MESSAGE value="lesson8-23" />
     <MESSAGE value="lesson8-24" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-24" />
+    <MESSAGE value="lesson8-25" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-25" />
   </component>
 </project>
