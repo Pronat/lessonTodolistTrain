@@ -1,6 +1,6 @@
 import {useState} from "react";
 import {TasksStateType} from "../App";
-import {addTaskAC, changeTaskStatusAC, removeTaskAC, tasksReducer,} from "./tasks-reducer";
+import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC, tasksReducer,} from "./tasks-reducer";
 
 test('task should be deleted correct', () => {
     const startState: TasksStateType = {
@@ -85,7 +85,8 @@ test('change task title correct', () => {
         ]
     }
 
-    const action = changeTaskTitleAC("todolistId2", "3", "Ozone")
+    const action = changeTaskTitleAC(
+        "todolistId2", "3", "Ozone")
     const endState = tasksReducer(startState, action)
 
     expect(endState["todolistId2"][0].title).toBe("Milk")
