@@ -2,8 +2,8 @@ import {TasksStateType} from "../App";
 
 type RemoveTaskACType = {
     type: "REMOVE-TASK"
-    todolistId: string
     taskId: string
+    todolistId: string
 }
 
 type ActionType = RemoveTaskACType
@@ -19,8 +19,8 @@ export const taskReduces = (state: TasksStateType, action: ActionType) => {
     }
 }
 
-export const removeTaskAC = (todolistId: string, taskId: string): RemoveTaskACType => {
+export const removeTaskAC = (taskId: string, todolistId: string): RemoveTaskACType => {
     return {
-        type: "REMOVE-TASK", todolistId: todolistId, taskId
+        type: "REMOVE-TASK", taskId: taskId, todolistId: todolistId,
     }
 }

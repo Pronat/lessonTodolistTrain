@@ -17,7 +17,7 @@ test('remove todolist correct', () => {
     }
 
 
-    const action = removeTaskAC("todolistId2", "2")
+    const action = removeTaskAC("2","todolistId2")
     const endState = taskReduces(startState, action)
 
     expect(endState).toEqual({
