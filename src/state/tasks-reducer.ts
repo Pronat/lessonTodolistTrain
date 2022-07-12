@@ -19,6 +19,12 @@ export type changeTaskStatusACType = {
     taskIsDone: boolean
 }
 
+export type changeTaskTitleACType = {
+    todolistId: string,
+    taskId: string,
+    taskTitle: string
+}
+
 
 type ActionsType = RemoveTaskActionType | AddTaskACType | changeTaskStatusACType
 
@@ -70,5 +76,11 @@ export const addTaskAC = (todolistId: string, title: string): AddTaskACType => {
 export const changeTaskStatusAC = (todolistId: string, taskId: string, taskIsDone: boolean) => {
     return {
         type: "CHANGE-TASK-STATUS", todolistId: todolistId, taskId: taskId, taskIsDone: taskIsDone
+    }
+}
+
+export const changeTaskTitleAC = (todolistId: string, taskId: string, taskTitle: string) => {
+    return {
+        type: "CHANGE-TASK-TITLE", todolistId, taskId, taskTitle
     }
 }

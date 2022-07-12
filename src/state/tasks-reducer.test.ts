@@ -69,5 +69,27 @@ test('change status of task correct', () => {
     expect(endState["todolistId2"][0].isDone).toBe(true)
     expect(endState["todolistId2"][1].isDone).toBe(true)
     expect(endState["todolistId1"][0].isDone).toBe(false)
+})
+
+test('change task title correct', () => {
+    const startState: TasksStateType = {
+        "todolistId1": [
+            {id: "1", title: "HTML&CSS", isDone: false},
+            {id: "2", title: "JS", isDone: true},
+            {id: "3", title: "React", isDone: false},
+        ],
+        "todolistId2": [
+            {id: "1", title: "Milk", isDone: false},
+            {id: "2", title: "React Book", isDone: true},
+            {id: "3", title: "tea", isDone: false},
+        ]
+    }
+
+    const action = changeTaskTitleAC("todolistId2", "3", "Ozone")
+    const endState = tasksReducer(startState, action)
+
+    expect(endState["todolistId2"][0].title).toBe("Milk")
+    expect(endState["todolistId2"][2].title).toBe("Ozone")
+    expect(endState["todolistId1"][1].title).toBe("JS")
 
 })

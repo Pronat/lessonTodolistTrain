@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-14">
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-15">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
@@ -34,22 +34,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src/state",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/node_modules/react-scripts",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src/state&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\state" />
@@ -160,7 +160,8 @@
       <workItem from="1657524346657" duration="54000" />
       <workItem from="1657526116610" duration="27000" />
       <workItem from="1657526152015" duration="4000" />
-      <workItem from="1657526396508" duration="24132000" />
+      <workItem from="1657526396508" duration="24201000" />
+      <workItem from="1657599610397" duration="1444000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-25">
       <created>1656138537012</created>
@@ -449,7 +450,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657571376327</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="lesson8-15">
+      <created>1657572580124</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1657572580124</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,7 +475,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson8-46" />
     <MESSAGE value="lesson8-47" />
     <MESSAGE value="lesson8-48" />
     <MESSAGE value="lesson8-49" />
@@ -492,7 +499,8 @@
     <MESSAGE value="lesson8-12" />
     <MESSAGE value="lesson8-13" />
     <MESSAGE value="lesson8-14" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-14" />
+    <MESSAGE value="lesson8-15" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-15" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -500,7 +508,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/state/tasks-reducer.test.ts</url>
           <line>52</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
