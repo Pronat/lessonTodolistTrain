@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-19">
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-20">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +56,7 @@
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.change task title correct">
+  <component name="RunManager" selected="Jest.new property should be added when new todolist is added">
     <configuration name="change statu of task correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -108,7 +109,7 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="task should be deleted correct" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="new property should be added when new todolist is added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
@@ -117,17 +118,17 @@
       <scope-kind value="TEST" />
       <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" />
       <test-names>
-        <test-name value="task should be deleted correct" />
+        <test-name value="new property should be added when new todolist is added" />
       </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.new property should be added when new todolist is added" />
         <item itemvalue="Jest.change task title correct" />
         <item itemvalue="Jest.change status of task correct" />
         <item itemvalue="Jest.change statu of task correct" />
         <item itemvalue="Jest.correct add task" />
-        <item itemvalue="Jest.task should be deleted correct" />
       </list>
     </recent_temporary>
   </component>
@@ -164,7 +165,7 @@
       <workItem from="1657526152015" duration="4000" />
       <workItem from="1657526396508" duration="24201000" />
       <workItem from="1657599610397" duration="4594000" />
-      <workItem from="1657609228821" duration="330000" />
+      <workItem from="1657609228821" duration="2092000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-25">
       <created>1656138537012</created>
@@ -488,7 +489,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657603957863</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="lesson8-20">
+      <created>1657609691560</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1657609691560</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -506,7 +514,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson8-51" />
     <MESSAGE value="lesson8-52" />
     <MESSAGE value="lesson8-53" />
     <MESSAGE value="lesson8-54" />
@@ -531,7 +538,8 @@
     <MESSAGE value="lesson8-17" />
     <MESSAGE value="lesson8-18" />
     <MESSAGE value="lesson8-19" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-19" />
+    <MESSAGE value="lesson8-20" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-20" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
