@@ -1,6 +1,7 @@
 import {useState} from "react";
 import {TasksStateType} from "../App";
 import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC, tasksReducer,} from "./tasks-reducer";
+import {addTodolistAC} from "./todolists-reducer";
 
 test('task should be deleted correct', () => {
     const startState: TasksStateType = {
@@ -92,5 +93,23 @@ test('change task title correct', () => {
     expect(endState["todolistId2"][0].title).toBe("Milk")
     expect(endState["todolistId2"][2].title).toBe("Ozone")
     expect(endState["todolistId1"][1].title).toBe("JS")
+})
+test("new property should be added when new todolist is added", () => {
+    const startState:TasksStateType = {
+        "todolistId1": [
+            {id: "1", title: "HTML&CSS", isDone: false},
+            {id: "2", title: "JS", isDone: true},
+            {id: "3", title: "React", isDone: false},
+        ],
+        "todolistId2": [
+            {id: "1", title: "Milk", isDone: false},
+            {id: "2", title: "React Book", isDone: true},
+            {id: "3", title: "tea", isDone: false},
+        ]
+    }
+    const action = addTodolistAC("newTodolist")
+    const endState = tasksReducer(startState, action)
+
+
 
 })
