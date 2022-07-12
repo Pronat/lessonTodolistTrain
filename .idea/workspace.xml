@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-17">
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-18">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -162,7 +163,7 @@
       <workItem from="1657526116610" duration="27000" />
       <workItem from="1657526152015" duration="4000" />
       <workItem from="1657526396508" duration="24201000" />
-      <workItem from="1657599610397" duration="2317000" />
+      <workItem from="1657599610397" duration="3413000" />
     </task>
     <task id="LOCAL-00001" summary="lesson8-25">
       <created>1656138537012</created>
@@ -472,7 +473,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657601756417</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="lesson8-18">
+      <created>1657602381050</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1657602381051</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -490,7 +498,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson8-49" />
     <MESSAGE value="lesson8-50" />
     <MESSAGE value="lesson8-51" />
     <MESSAGE value="lesson8-52" />
@@ -515,7 +522,8 @@
     <MESSAGE value="lesson8-15" />
     <MESSAGE value="lesson8-16" />
     <MESSAGE value="lesson8-17" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-17" />
+    <MESSAGE value="lesson8-18" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-18" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
