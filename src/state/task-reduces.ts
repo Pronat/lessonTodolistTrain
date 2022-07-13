@@ -25,10 +25,16 @@ export const taskReduces = (state: TasksStateType, action: ActionType) => {
             }
         }
         case "CHANGE-TASK-STATUS": {
-
+            return {
+                ...state,
+                [action.todolistId]: state[action.todolistId].map(el => el.id === action.taskId ? {...el, isDone: action.taskIsDone}: el)
+            }
         }
         case "CHANGE-TASK-TITLE": {
-
+            return {
+                ...state,
+                [action.todolistId]: state[action.todolistId].map(el => el.id === action.taskId ? {...el, title: action.taskTitle}: el)
+            }
         }
         default: {
             return {...state}

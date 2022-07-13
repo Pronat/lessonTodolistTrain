@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-35">
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-36">
       <change beforePath="$PROJECT_DIR$/src/state/task-reduces.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/task-reduces.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,7 @@
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.correct task should be added to the correct array">
+  <component name="RunManager" selected="Jest.correct change title of the task">
     <configuration name="correct change status of the task" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -119,10 +119,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.correct task should be added to the correct array" />
-        <item itemvalue="Jest.remove todolist correct" />
         <item itemvalue="Jest.correct change title of the task" />
         <item itemvalue="Jest.correct change status of the task" />
+        <item itemvalue="Jest.correct task should be added to the correct array" />
+        <item itemvalue="Jest.remove todolist correct" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -165,14 +165,7 @@
       <workItem from="1657616078605" duration="593000" />
       <workItem from="1657625146101" duration="8149000" />
       <workItem from="1657696709236" duration="12107000" />
-      <workItem from="1657731170715" duration="8446000" />
-    </task>
-    <task id="LOCAL-00014" summary="lesson8-43">
-      <created>1656517097049</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1656517097049</updated>
+      <workItem from="1657731170715" duration="8798000" />
     </task>
     <task id="LOCAL-00015" summary="lesson8-44">
       <created>1656518030521</created>
@@ -510,7 +503,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657742793312</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="lesson8-36">
+      <created>1657743287752</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1657743287752</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +528,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson8-11" />
     <MESSAGE value="lesson8-12" />
     <MESSAGE value="lesson8-13" />
     <MESSAGE value="lesson8-14" />
@@ -553,6 +552,7 @@
     <MESSAGE value="lesson8-33" />
     <MESSAGE value="lesson8-34" />
     <MESSAGE value="lesson8-35" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-35" />
+    <MESSAGE value="lesson8-36" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-36" />
   </component>
 </project>
