@@ -13,34 +13,19 @@ type ActionType = RemoveTaskActionType | AddTaskActionType
 export const taskReduces = (state: TasksStateType, action: ActionType) => {
     switch (action.type) {
         case "REMOVE-TASK": {
-            return {
-                ...state,
-                [action.todolistId]: state[action.todolistId].filter(t => t.id !== action.taskId)
-            }
-        }
 
+        }
         case "ADD-TASK": {
-            const newTask = {id: v1(), title: action.taskTitle, isDone: false}
-            return {
-                ...state,
-                [action.todolistId]:[newTask, ...state[action.todolistId]]
-            }
+
         }
         case "CHANGE-TASK-STATUS": {
-           return {
-               ...state,
-               [action.todolistId]: state[action.todolistId].map(el => el.id === action.taskId ? {...el, isDone: action.taskIsDone}: el)
-           }
+
         }
         case "CHANGE-TASK-TITLE": {
-            return {
-                ...state,
-                [action.todolistId]: state[action.todolistId].map(el => el.id === action.taskId ? {...el, title: action.taskTitle}: el)
-            }
-        }
 
+        }
         default: {
-            return {...state}
+
         }
     }
 }
