@@ -11,10 +11,10 @@ type ActionType = RemoveTaskACType
 export const taskReduces = (state: TasksStateType, action: ActionType) => {
     switch (action.type) {
         case "REMOVE-TASK": {
-            const stateCopy = {...state}
-            const tasks = state[action.todolistId]
-            stateCopy[action.todolistId] = tasks.filter(el => el.id !== action.taskId)
-            return stateCopy
+            return {
+                ...state,
+                [action. todolistId]: state[action.todolistId].filter(el => el.id !== action.taskId)
+            }
         }
     }
 }
