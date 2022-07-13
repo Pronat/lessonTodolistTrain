@@ -1,11 +1,11 @@
 import {TasksStateType} from "../App";
 import {v1} from "uuid";
 
-export type RemoveTaskACType = ReturnType<typeof removeTaskAC>
-export type AddTaskACType = ReturnType<typeof addTaskAC>
+export type RemoveTaskActionType = ReturnType<typeof removeTaskAC>
+export type AddTaskActionType = ReturnType<typeof addTaskAC>
 
 
-type ActionType = RemoveTaskACType | AddTaskACType
+type ActionType = RemoveTaskActionType | AddTaskActionType
 
 export const taskReduces = (state: TasksStateType, action: ActionType) => {
     switch (action.type) {
