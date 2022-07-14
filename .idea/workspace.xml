@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-41">
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" afterDir="false" />
+    <list default="true" id="af0d4c0c-f1e5-4ccb-86ca-f2f7fec18705" name="Changes" comment="lesson8-42">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +57,7 @@
       <recent name="E:\JS_React\React\SamurayPaidCourse\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.correct todolist should be added">
+  <component name="RunManager" selected="Jest.new array for tasks should be added when new todolist is added">
     <configuration name="correct change status of the task" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -82,19 +84,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="correct task should be added to the correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
-      <test-names>
-        <test-name value="correct task should be added to the correct array" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="correct todolist should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -105,6 +94,19 @@
       <test-file value="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" />
       <test-names>
         <test-name value="correct todolist should be added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="new array for tasks should be added when new todolist is added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
+      <test-names>
+        <test-name value="new array for tasks should be added when new todolist is added" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -123,11 +125,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.new array for tasks should be added when new todolist is added" />
         <item itemvalue="Jest.correct todolist should be added" />
         <item itemvalue="Jest.correct change title of the task" />
         <item itemvalue="Jest.correct change status of the task" />
         <item itemvalue="Jest.remove todolist correct" />
-        <item itemvalue="Jest.correct task should be added to the correct array" />
       </list>
     </recent_temporary>
   </component>
@@ -170,14 +172,7 @@
       <workItem from="1657625146101" duration="8149000" />
       <workItem from="1657696709236" duration="12107000" />
       <workItem from="1657731170715" duration="9127000" />
-      <workItem from="1657772408579" duration="9393000" />
-    </task>
-    <task id="LOCAL-00020" summary="lesson8-49">
-      <created>1656531113387</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1656531113387</updated>
+      <workItem from="1657772408579" duration="11497000" />
     </task>
     <task id="LOCAL-00021" summary="lesson8-50">
       <created>1656533765902</created>
@@ -515,7 +510,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657785473950</updated>
     </task>
-    <option name="localTasksCounter" value="69" />
+    <task id="LOCAL-00069" summary="lesson8-42">
+      <created>1657787583869</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1657787583869</updated>
+    </task>
+    <option name="localTasksCounter" value="70" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -533,7 +535,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson8-17" />
     <MESSAGE value="lesson8-18" />
     <MESSAGE value="lesson8-19" />
     <MESSAGE value="lesson8-20" />
@@ -558,6 +559,7 @@
     <MESSAGE value="lesson8-39" />
     <MESSAGE value="lesson8-40" />
     <MESSAGE value="lesson8-41" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson8-41" />
+    <MESSAGE value="lesson8-42" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson8-42" />
   </component>
 </project>
