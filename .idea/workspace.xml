@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b805cd57-6f5b-4055-b846-69c38fb75ffc" name="Changes" comment="lesson10-4">
-      <change beforePath="$PROJECT_DIR$/src/AppWithReducers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="b805cd57-6f5b-4055-b846-69c38fb75ffc" name="Changes" comment="lesson10-5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -65,7 +63,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659030539145</updated>
       <workItem from="1659030541653" duration="142000" />
-      <workItem from="1659030697889" duration="4519000" />
+      <workItem from="1659030697889" duration="4879000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-1">
       <created>1659031231794</created>
@@ -102,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659033687952</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lesson10-5">
+      <created>1659035719408</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659035719408</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +129,7 @@
     <MESSAGE value="lesson10-2" />
     <MESSAGE value="lesson10-3" />
     <MESSAGE value="lesson10-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-4" />
+    <MESSAGE value="lesson10-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-5" />
   </component>
 </project>

@@ -68,7 +68,7 @@ function AppWithReducers() {
     }
 
 
-    function changeFilter(todolistId: string, value: FilterValuesType) {
+    function changeFilter(value: FilterValuesType, todolistId: string) {
         let action = changeTodolistFilterAC(todolistId, value)
         dispatchToTodolistsReducer(action)
     }
