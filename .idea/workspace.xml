@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b805cd57-6f5b-4055-b846-69c38fb75ffc" name="Changes" comment="lesson10-5" />
+    <list default="true" id="b805cd57-6f5b-4055-b846-69c38fb75ffc" name="Changes" comment="lesson10-6">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWithReducers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,6 +30,7 @@
     "last_opened_file_path": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src",
     "node.js.detected.package.eslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs.jest.jest_package": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/node_modules/react-scripts",
     "nodejs_package_manager_path": "yarn",
     "ts.external.directory.path": "D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
@@ -37,7 +41,20 @@
       <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Jest.correct todolist should be added">
+    <configuration name="correct todolist should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" />
+      <test-names>
+        <test-name value="correct todolist should be added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -50,6 +67,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.correct todolist should be added" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -63,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659030539145</updated>
       <workItem from="1659030541653" duration="142000" />
-      <workItem from="1659030697889" duration="4879000" />
+      <workItem from="1659030697889" duration="6658000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-1">
       <created>1659031231794</created>
@@ -107,7 +125,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659035719408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lesson10-6">
+      <created>1659036114662</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659036114662</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +155,7 @@
     <MESSAGE value="lesson10-3" />
     <MESSAGE value="lesson10-4" />
     <MESSAGE value="lesson10-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-5" />
+    <MESSAGE value="lesson10-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-6" />
   </component>
 </project>
