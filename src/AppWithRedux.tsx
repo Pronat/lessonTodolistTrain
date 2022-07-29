@@ -13,7 +13,8 @@ import {
     todolistsReducer
 } from "./state/todolists-reducer";
 import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC, tasksReducer} from "./state/tasks-reducer";
-import {useDispatch} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
+import {AppRootState} from "./state/store";
 
 export type FilterValuesType = "all" | "active" | "completed";
 export type TodolistType = {
@@ -32,22 +33,24 @@ function AppWithRedux() {
     let todolistId2 = v1();
 
     const dispatch = useDispatch()
+    const todolists = useSelector<AppRootState, Array<TodolistType>>(state => state.todolists)
+    const tasks = useSelector<AppRootState, TasksStateType>(state => state.tasks)
 
-    let [todolists, dispatchToTodolistsReducer] = useReducer(todolistsReducer, [
-        {id: todolistId1, title: "What to learn", filter: "all"},
-        {id: todolistId2, title: "What to buy", filter: "all"}
-    ])
-
-    let [tasks, dispatchToTaskReducer] = useReducer(tasksReducer, {
-        [todolistId1]: [
-            {id: v1(), title: "HTML&CSS", isDone: true},
-            {id: v1(), title: "JS", isDone: true}
-        ],
-        [todolistId2]: [
-            {id: v1(), title: "Milk", isDone: true},
-            {id: v1(), title: "React Book", isDone: true}
-        ]
-    });
+    // let [todolists, dispatchToTodolistsReducer] = useReducer(todolistsReducer, [
+    //     {id: todolistId1, title: "What to learn", filter: "all"},
+    //     {id: todolistId2, title: "What to buy", filter: "all"}
+    // ])
+    //
+    // let [tasks, dispatchToTaskReducer] = useReducer(tasksReducer, {
+    //     [todolistId1]: [
+    //         {id: v1(), title: "HTML&CSS", isDone: true},
+    //         {id: v1(), title: "JS", isDone: true}
+    //     ],
+    //     [todolistId2]: [
+    //         {id: v1(), title: "Milk", isDone: true},
+    //         {id: v1(), title: "React Book", isDone: true}
+    //     ]
+    // });
 
 
     function removeTask(id: string, todolistId: string) {
@@ -78,7 +81,6 @@ function AppWithRedux() {
 
     function removeTodolist(id: string) {
         let action = removeTodolistAC(id)
-        dispatchToTodolistsReducer(action)
         dispatch(action)
     }
 
@@ -89,7 +91,6 @@ function AppWithRedux() {
 
     function addTodolist(title: string) {
         let action = addTodolistAC(title)
-        dispatchToTodolistsReducer(action)
         dispatch(action)
     }
 
