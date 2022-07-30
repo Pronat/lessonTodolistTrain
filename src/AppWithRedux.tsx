@@ -20,6 +20,8 @@ import {
     RemoveTaskActionType,
     tasksReducer
 } from "./state/tasks-reducer";
+import {useSelector} from "react-redux";
+import {AppRootStateType} from "./state/store";
 
 export type FilterValuesType = "all" | "active" | "completed";
 export type TodolistType = {
@@ -37,21 +39,10 @@ function AppWithRedux() {
     let todolistId1 = v1();
     let todolistId2 = v1();
 
-    let [todolists, dispatchToTodolist] = useReducer(todolistsReducer,[
-        {id: todolistId1, title: "What to learn", filter: "all"},
-        {id: todolistId2, title: "What to buy", filter: "all"}
-    ])
+    const todolists = useSelector<AppRootStateType, Array<TodolistType>>(state => state.todolists)
 
-    let [tasks, dispatchToTask] = useReducer(tasksReducer,{
-        [todolistId1]: [
-            {id: v1(), title: "HTML&CSS", isDone: true},
-            {id: v1(), title: "JS", isDone: true}
-        ],
-        [todolistId2]: [
-            {id: v1(), title: "Milk", isDone: true},
-            {id: v1(), title: "React Book", isDone: true}
-        ]
-    });
+
+    const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
 
 
     function removeTask(id: string, todolistId: string) {
@@ -61,12 +52,12 @@ function AppWithRedux() {
 
     function addTask(title: string, todolistId: string) {
         let action = addTaskAC(title, todolistId)
-      dispatchToTask(action)
+        dispatchToTask(action)
     }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
-       let action = changeTaskStatusAC(id, isDone, todolistId)
-           dispatchToTask(action)
+        let action = changeTaskStatusAC(id, isDone, todolistId)
+        dispatchToTask(action)
     }
 
     function changeTaskTitle(id: string, newTitle: string, todolistId: string) {
