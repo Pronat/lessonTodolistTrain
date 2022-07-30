@@ -20,7 +20,7 @@ import {
     RemoveTaskActionType,
     tasksReducer
 } from "./state/tasks-reducer";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "./state/store";
 
 export type FilterValuesType = "all" | "active" | "completed";
@@ -39,53 +39,48 @@ function AppWithRedux() {
     let todolistId1 = v1();
     let todolistId2 = v1();
 
-    const todolists = useSelector<AppRootStateType, Array<TodolistType>>(state => state.todolists)
 
-
-    const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
 
 
     function removeTask(id: string, todolistId: string) {
         let action = removeTaskAC(id, todolistId)
-        dispatchToTask(action)
+        dispatch(action)
     }
 
     function addTask(title: string, todolistId: string) {
         let action = addTaskAC(title, todolistId)
-        dispatchToTask(action)
+        dispatch(action)
     }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
         let action = changeTaskStatusAC(id, isDone, todolistId)
-        dispatchToTask(action)
+        dispatch(action)
     }
 
     function changeTaskTitle(id: string, newTitle: string, todolistId: string) {
         let action = changeTaskTitleAC(id, newTitle, todolistId)
-        dispatchToTask(action)
+        dispatch(action)
     }
 
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
         let action = changeTodolistFilterAC(todolistId, value)
-        dispatchToTodolist(action)
+        dispatch(action)
     }
 
     function removeTodolist(id: string) {
         let action = removeTodolistAC(id)
-        dispatchToTodolist(action)
-        dispatchToTask(action)
+        dispatch(action)
     }
 
     function changeTodolistTitle(id: string, title: string) {
         let action = changeTodolistTitleAC(id, title)
-        dispatchToTodolist(action)
+        dispatch(action)
     }
 
     function addTodolist(title: string) {
         let action = addTodolistAC(title)
-        dispatchToTodolist(action)
-        dispatchToTask(action)
+        dispatch(action)
     }
 
     return (
