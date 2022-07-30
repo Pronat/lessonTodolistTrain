@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b805cd57-6f5b-4055-b846-69c38fb75ffc" name="Changes" comment="lesson10-20">
+    <list default="true" id="b805cd57-6f5b-4055-b846-69c38fb75ffc" name="Changes" comment="lesson10-21">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +109,7 @@
       <workItem from="1659099851690" duration="3245000" />
       <workItem from="1659120836868" duration="89000" />
       <workItem from="1659120934783" duration="413000" />
-      <workItem from="1659173965698" duration="1308000" />
+      <workItem from="1659173965698" duration="2876000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-1">
       <created>1659031231794</created>
@@ -258,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659174554121</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="lesson10-21">
+      <created>1659176043247</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1659176043247</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,6 +303,7 @@
     <MESSAGE value="lesson10-18" />
     <MESSAGE value="lesson10-19" />
     <MESSAGE value="lesson10-20" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-20" />
+    <MESSAGE value="lesson10-21" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-21" />
   </component>
 </project>
