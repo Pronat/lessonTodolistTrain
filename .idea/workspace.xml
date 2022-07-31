@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52009308-605f-4727-a1d8-c09f402c6460" name="Changes" comment="lesson10-39">
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" afterDir="false" />
+    <list default="true" id="52009308-605f-4727-a1d8-c09f402c6460" name="Changes" comment="lesson10-41">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWithReducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,11 +27,34 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src",
     "nodejs_package_manager_path": "yarn",
     "ts.external.directory.path": "D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.start" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -39,7 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659295228509</updated>
       <workItem from="1659295230228" duration="129000" />
-      <workItem from="1659295375260" duration="1498000" />
+      <workItem from="1659295375260" duration="2282000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-37">
       <created>1659295415590</created>
@@ -62,7 +87,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659296534632</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lesson10-40">
+      <created>1659296886839</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659296886839</updated>
+    </task>
+    <task id="LOCAL-00005" summary="lesson10-41">
+      <created>1659297168258</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659297168258</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -83,6 +122,8 @@
     <MESSAGE value="lesson10-37" />
     <MESSAGE value="lesson10-38" />
     <MESSAGE value="lesson10-39" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-39" />
+    <MESSAGE value="lesson10-40" />
+    <MESSAGE value="lesson10-41" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-41" />
   </component>
 </project>
