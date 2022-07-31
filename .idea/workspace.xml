@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52009308-605f-4727-a1d8-c09f402c6460" name="Changes" comment="lesson10-41">
+    <list default="true" id="52009308-605f-4727-a1d8-c09f402c6460" name="Changes" comment="lesson10-42">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppWithReducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,17 +24,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src" />
@@ -64,7 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1659295228509</updated>
       <workItem from="1659295230228" duration="129000" />
-      <workItem from="1659295375260" duration="2282000" />
+      <workItem from="1659295375260" duration="2443000" />
+      <workItem from="1659297843360" duration="1224000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-37">
       <created>1659295415590</created>
@@ -101,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659297168258</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lesson10-42">
+      <created>1659297677209</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659297677209</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +134,7 @@
     <MESSAGE value="lesson10-39" />
     <MESSAGE value="lesson10-40" />
     <MESSAGE value="lesson10-41" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-41" />
+    <MESSAGE value="lesson10-42" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-42" />
   </component>
 </project>
