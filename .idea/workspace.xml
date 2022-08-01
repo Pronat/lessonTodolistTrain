@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52009308-605f-4727-a1d8-c09f402c6460" name="Changes" comment="lesson10-49">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="52009308-605f-4727-a1d8-c09f402c6460" name="Changes" comment="lesson10-50">
+      <change beforePath="$PROJECT_DIR$/src/AppWithRedux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +72,7 @@
       <workItem from="1659295375260" duration="2443000" />
       <workItem from="1659297843360" duration="1873000" />
       <workItem from="1659348480153" duration="3550000" />
-      <workItem from="1659353984264" duration="1078000" />
+      <workItem from="1659353984264" duration="1424000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-37">
       <created>1659295415590</created>
@@ -165,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659354320486</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="lesson10-50">
+      <created>1659355364399</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1659355364399</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +203,7 @@
     <MESSAGE value="lesson10-47" />
     <MESSAGE value="lesson10-48" />
     <MESSAGE value="lesson10-49" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-49" />
+    <MESSAGE value="lesson10-50" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-50" />
   </component>
 </project>

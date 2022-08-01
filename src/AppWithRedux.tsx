@@ -13,7 +13,7 @@ import {
     todolistsReducer
 } from "./state/todolists-reducer";
 import {addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC, tasksReducer} from "./state/tasks-reducer";
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "./state/store";
 
 export type FilterValuesType = "all" | "active" | "completed";
@@ -35,50 +35,49 @@ function AppWithRedux() {
     const todolists = useSelector<AppRootStateType, Array<TodolistType>>(state => state.todolists)
 
     const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
+    const dispatch = useDispatch()
 
 
 
     function removeTask(id: string, todolistId: string) {
         let action = removeTaskAC(id, todolistId)
-        dispatchToTasks(action)
+        dispatch(action)
     }
 
     function addTask(title: string, todolistId: string) {
         let action = addTaskAC(title, todolistId)
-        dispatchToTasks(action)
+        dispatch(action)
     }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
         let action = changeTaskStatusAC(id, isDone, todolistId)
-       dispatchToTasks(action)
+        dispatch(action)
     }
 
     function changeTaskTitle(id: string, newTitle: string, todolistId: string) {
         let action = changeTaskTitleAC(id, newTitle, todolistId)
-       dispatchToTasks(action)
+        dispatch(action)
     }
 
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
         let action = changeTodolistFilterAC(todolistId, value)
-       dispatchToTodolists(action)
+        dispatch(action)
     }
 
     function removeTodolist(id: string) {
         let action = removeTodolistAC(id)
-      dispatchToTodolists(action)
-        dispatchToTasks(action)
+        dispatch(action)
     }
 
     function changeTodolistTitle(id: string, title: string) {
         let action = changeTodolistTitleAC(id, title)
-       dispatchToTodolists(action)
+        dispatch(action)
     }
 
     function addTodolist(title: string) {
         let action = addTodolistAC(title)
-      dispatchToTodolists(action)
-        dispatchToTasks(action)
+        dispatch(action)
     }
 
     return (
