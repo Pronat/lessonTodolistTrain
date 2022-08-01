@@ -3,8 +3,8 @@ import {todolistsReducer} from "./todolists-reducer";
 import {tasksReducer} from "./tasks-reducer";
 
 const rootReducer = combineReducers({
+    tasks: tasksReducer,
     todolists: todolistsReducer,
-    tasks: tasksReducer
 })
 
 export const store = legacy_createStore(rootReducer)
