@@ -32,11 +32,8 @@ function AppWithRedux() {
     let todolistId1 = v1();
     let todolistId2 = v1();
 
+   let tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
     let todolists = useSelector<AppRootStateType, Array<TodolistType>>(state => state.todolists)
-
-    let tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
-
-    const dispatch = useDispatch()
 
 
     function removeTask(id: string, todolistId: string) {
