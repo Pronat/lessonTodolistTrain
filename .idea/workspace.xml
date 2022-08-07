@@ -1,20 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9aa87491-23ef-48f3-8da7-df444d4d6d9f" name="Changes" comment="lesson10-60">
+    <list default="true" id="a9f42ae8-d82b-420c-b2ee-d3b1cc57f58f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWithReducers.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducers.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppWithRedux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/user-reducer.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/user-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/user-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -22,30 +33,23 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2CzJ8sjj0WSXZgNRDsI4atEtGb3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2D1YfRkovGmwm00OqH78t43zxAW" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src" />
-    </key>
-  </component>
+}]]></component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -66,98 +70,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9aa87491-23ef-48f3-8da7-df444d4d6d9f" name="Changes" comment="" />
-      <created>1659799326132</created>
+      <changelist id="a9f42ae8-d82b-420c-b2ee-d3b1cc57f58f" name="Changes" comment="" />
+      <created>1659868162208</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1659799326132</updated>
-      <workItem from="1659799328694" duration="92000" />
-      <workItem from="1659799431783" duration="1904000" />
-      <workItem from="1659803590909" duration="2382000" />
-      <workItem from="1659806443859" duration="1097000" />
+      <updated>1659868162208</updated>
+      <workItem from="1659868164487" duration="51000" />
+      <workItem from="1659868231240" duration="3453000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson10-53">
-      <created>1659799707585</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1659799707586</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson10-54">
-      <created>1659799806742</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1659799806742</updated>
-    </task>
-    <task id="LOCAL-00003" summary="lesson10-55">
-      <created>1659799965617</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1659799965617</updated>
-    </task>
-    <task id="LOCAL-00004" summary="lesson10-56">
-      <created>1659800143323</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1659800143323</updated>
-    </task>
-    <task id="LOCAL-00005" summary="lesson10-57">
-      <created>1659803207290</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1659803207290</updated>
-    </task>
-    <task id="LOCAL-00006" summary="lesson10-58">
-      <created>1659804047114</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1659804047114</updated>
-    </task>
-    <task id="LOCAL-00007" summary="lesson10-59">
-      <created>1659806287813</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1659806287813</updated>
-    </task>
-    <task id="LOCAL-00008" summary="lesson10-60">
-      <created>1659807213033</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1659807213033</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson10-53" />
-    <MESSAGE value="lesson10-54" />
-    <MESSAGE value="lesson10-55" />
-    <MESSAGE value="lesson10-56" />
-    <MESSAGE value="lesson10-57" />
-    <MESSAGE value="lesson10-58" />
-    <MESSAGE value="lesson10-59" />
-    <MESSAGE value="lesson10-60" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-60" />
   </component>
 </project>
