@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9f42ae8-d82b-420c-b2ee-d3b1cc57f58f" name="Changes" comment="lesson11-15">
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+    <list default="true" id="a9f42ae8-d82b-420c-b2ee-d3b1cc57f58f" name="Changes" comment="lesson11-16">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +34,11 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="es6.move.members.recent.items">
+      <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\Task.tsx" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -59,7 +66,7 @@
       <updated>1659868162208</updated>
       <workItem from="1659868164487" duration="51000" />
       <workItem from="1659868231240" duration="6497000" />
-      <workItem from="1659950256783" duration="9377000" />
+      <workItem from="1659950256783" duration="11078000" />
     </task>
     <task id="LOCAL-00001" summary="lesson11-1">
       <created>1659880038105</created>
@@ -173,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659961554758</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lesson11-16">
+      <created>1659961922062</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1659961922062</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,6 +220,7 @@
     <MESSAGE value="lesson11-13" />
     <MESSAGE value="lesson11-14" />
     <MESSAGE value="lesson11-15" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson11-15" />
+    <MESSAGE value="lesson11-16" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson11-16" />
   </component>
 </project>
