@@ -59,9 +59,14 @@ export const Todolist = React.memo((props: PropsType) => {
         <AddItemForm addItem={addTask}/>
         <div>
             {
-                props.tasks.map(t => {
-
-                })
+                props.tasks.map(t => <Task
+                task={t}
+                changeTaskTitle={props.changeTaskTitle}
+                changeTaskStatus={props.changeTaskStatus}
+                removeTask={props.removeTask}
+                todolistId={props.id}
+                key={props.id}
+                />)
             }
         </div>
         <div style={{ paddingTop: "10px"}}>
@@ -87,15 +92,17 @@ type TaskPropsType = {
     changeTaskStatus: (id: string, isDone: boolean, todolistId: string) => void
     removeTask: (taskId: string, todolistId: string) => void
     task: TaskType
+    todolistId: string
 }
+
 const Task = (props: TaskPropsType) => {
-    const onClickHandler = () => props.removeTask(props.task.id, props.id)
+    const onClickHandler = () => props.removeTask(props.task.id, props.todolistId)
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         let newIsDoneValue = e.currentTarget.checked;
-        props.changeTaskStatus(props.task.id, newIsDoneValue, props.id);
+        props.changeTaskStatus(props.task.id, newIsDoneValue, props.todolistId);
     }
     const onTitleChangeHandler = (newValue: string) => {
-        props.changeTaskTitle(props.task.id, newValue, props.id);
+        props.changeTaskTitle(props.task.id, newValue, props.todolistId);
     }
 
 
