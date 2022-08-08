@@ -86,26 +86,27 @@ type TaskPropsType = {
     changeTaskTitle: (taskId: string, newTitle: string, todolistId: string) => void
     changeTaskStatus: (id: string, isDone: boolean, todolistId: string) => void
     removeTask: (taskId: string, todolistId: string) => void
+    task: TaskType
 }
 const Task = (props: TaskPropsType) => {
-    const onClickHandler = () => props.removeTask(t.id, props.id)
+    const onClickHandler = () => props.removeTask(props.task.id, props.id)
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         let newIsDoneValue = e.currentTarget.checked;
-        props.changeTaskStatus(t.id, newIsDoneValue, props.id);
+        props.changeTaskStatus(props.task.id, newIsDoneValue, props.id);
     }
     const onTitleChangeHandler = (newValue: string) => {
-        props.changeTaskTitle(t.id, newValue, props.id);
+        props.changeTaskTitle(props.task.id, newValue, props.id);
     }
 
 
-    return <div key={t.id} className={t.isDone ? "is-done" : ""}>
+    return <div key={props.task.id} className={props.task.isDone ? "is-done" : ""}>
         <Checkbox
-            checked={t.isDone}
+            checked={props.task.isDone}
             color="primary"
             onChange={onChangeHandler}
         />
 
-        <EditableSpan value={t.title} onChange={onTitleChangeHandler} />
+        <EditableSpan value={props.task.title} onChange={onTitleChangeHandler} />
         <IconButton onClick={onClickHandler}>
             <Delete />
         </IconButton>
