@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a7ea50-a48b-4829-a03b-f7de7b65718c" name="Changes" comment="lesson11-27" />
+    <list default="true" id="f9a7ea50-a48b-4829-a03b-f7de7b65718c" name="Changes" comment="lesson11-28">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660041719924</updated>
       <workItem from="1660041721315" duration="604000" />
-      <workItem from="1660042445089" duration="8237000" />
+      <workItem from="1660042445089" duration="9471000" />
     </task>
     <task id="LOCAL-00001" summary="lesson11-20">
       <created>1660042540262</created>
@@ -114,7 +117,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660064735305</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lesson11-28">
+      <created>1660065616637</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660065616637</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +150,7 @@
     <MESSAGE value="lesson11-25" />
     <MESSAGE value="lesson11-26" />
     <MESSAGE value="lesson11-27" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson11-27" />
+    <MESSAGE value="lesson11-28" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson11-28" />
   </component>
 </project>
