@@ -1,14 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a7ea50-a48b-4829-a03b-f7de7b65718c" name="Changes" comment="lesson11-29">
-      <change afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
+    <list default="true" id="f9a7ea50-a48b-4829-a03b-f7de7b65718c" name="Changes" comment="lesson11-30">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -59,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660041719924</updated>
       <workItem from="1660041721315" duration="604000" />
-      <workItem from="1660042445089" duration="9830000" />
+      <workItem from="1660042445089" duration="10227000" />
     </task>
     <task id="LOCAL-00001" summary="lesson11-20">
       <created>1660042540262</created>
@@ -131,7 +139,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660069280664</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="lesson11-30">
+      <created>1660069612186</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660069612186</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +174,7 @@
     <MESSAGE value="lesson11-27" />
     <MESSAGE value="lesson11-28" />
     <MESSAGE value="lesson11-29" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson11-29" />
+    <MESSAGE value="lesson11-30" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson11-30" />
   </component>
 </project>
