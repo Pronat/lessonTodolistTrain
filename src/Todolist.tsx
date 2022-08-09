@@ -64,13 +64,13 @@ export const Todolist = React.memo((props: PropsType) => {
             {
                 props.tasks.map(t => {
                     console.log('Task')
-                    const removeTask = useCallback((taskId: string) => props.removeTask(t.id, props.id),[props.removeTask, props.id])
-                    const changeTaskStatus = useCallback((taskId: string, newIsDoneValue: boolean) => {
+                    const removeTask = (taskId: string) => props.removeTask(t.id, props.id)
+                    const changeTaskStatus = (taskId: string, newIsDoneValue: boolean) => {
                         props.changeTaskStatus(t.id, newIsDoneValue, props.id);
-                    },[props.changeTaskStatus, props.id])
-                    const changeTaskTitle = useCallback((taskId: string, newValue: string) => {
+                    }
+                    const changeTaskTitle = (taskId: string, newValue: string) => {
                         props.changeTaskTitle(taskId, newValue, props.id);
-                    },[props.changeTaskTitle, props.id])
+                    }
 
                     return <Task
                         key={t.id}
