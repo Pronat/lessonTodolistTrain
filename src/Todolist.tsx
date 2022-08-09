@@ -5,6 +5,7 @@ import {EditableSpan} from './EditableSpan';
 import {Button, Checkbox, IconButton} from '@material-ui/core';
 import {Delete} from '@material-ui/icons';
 import {Task} from "./Task";
+import {Task1} from "./Task1";
 
 export type TaskType = {
     id: string
@@ -63,22 +64,11 @@ export const Todolist = React.memo((props: PropsType) => {
         <div>
             {
                 props.tasks.map(t => {
-                    console.log('Task')
-                    const removeTask = (taskId: string) => props.removeTask(t.id, props.id)
-                    const changeTaskStatus = (taskId: string, newIsDoneValue: boolean) => {
-                        props.changeTaskStatus(t.id, newIsDoneValue, props.id);
-                    }
-                    const changeTaskTitle = (taskId: string, newValue: string) => {
-                        props.changeTaskTitle(taskId, newValue, props.id);
-                    }
 
-                    return <Task
+                    return <Task1
                         key={t.id}
                         task={t}
-                        removeTask={removeTask}
-                        addTask={addTask}
-                        changeTaskStatus={changeTaskStatus}
-                        changeTaskTitle={changeTaskTitle}
+                        todolistId={props.id}
                     />
                 })
             }
