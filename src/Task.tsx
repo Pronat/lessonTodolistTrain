@@ -10,12 +10,14 @@ export type TaskPropsType = {
     changeTaskTitle: (taskId: string, newTitle: string) => void
     changeTaskStatus: (id: string, isDone: boolean) => void
 }
-export const Task = ({
+export const Task = React.memo(({
         task,
     removeTask,
     changeTaskStatus,
-    changeTaskTitle
+    changeTaskTitle,
                      }: TaskPropsType) => {
+
+    console.log('task')
 
     const onClickHandler = () => removeTask(task.id)
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
@@ -27,7 +29,7 @@ export const Task = ({
     }
 
 
-    return <div key={task.id} className={task.isDone ? "is-done" : ""}>
+    return <div className={task.isDone ? "is-done" : ""}>
         <Checkbox
             checked={task.isDone}
             color="primary"
@@ -39,4 +41,4 @@ export const Task = ({
             <Delete />
         </IconButton>
     </div>
-};
+});

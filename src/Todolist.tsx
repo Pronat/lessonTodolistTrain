@@ -54,9 +54,9 @@ export const Todolist = React.memo((props: PropsType) => {
 
 
     return <div>
-        <h3> <EditableSpan value={props.title} onChange={changeTodolistTitle} />
+        <h3><EditableSpan value={props.title} onChange={changeTodolistTitle}/>
             <IconButton onClick={removeTodolist}>
-                <Delete />
+                <Delete/>
             </IconButton>
         </h3>
         <AddItemForm addItem={addTask}/>
@@ -64,25 +64,26 @@ export const Todolist = React.memo((props: PropsType) => {
             {
                 props.tasks.map(t => {
                     console.log('Task')
-                    const removeTask = (taskId: string) => props.removeTask(t.id, props.id)
-                    const changeTaskStatus = (taskId: string, newIsDoneValue: boolean) => {
+                    const removeTask = useCallback((taskId: string) => props.removeTask(t.id, props.id),[props.removeTask, props.id])
+                    const changeTaskStatus = useCallback((taskId: string, newIsDoneValue: boolean) => {
                         props.changeTaskStatus(t.id, newIsDoneValue, props.id);
-                    }
-                    const onTitleChangeHandler = (taskId: string, newValue: string) => {
+                    },[props.changeTaskStatus, props.id])
+                    const changeTaskTitle = useCallback((taskId: string, newValue: string) => {
                         props.changeTaskTitle(taskId, newValue, props.id);
-                    }
+                    },[props.changeTaskTitle, props.id])
 
-                return <Task
-                    task={t}
-                    removeTask={}
-                    addTask={}
-                    changeTaskTitle={}
-                    changeTaskStatus={}
-                        />
+                    return <Task
+                        key={t.id}
+                        task={t}
+                        removeTask={removeTask}
+                        addTask={addTask}
+                        changeTaskStatus={changeTaskStatus}
+                        changeTaskTitle={changeTaskTitle}
+                    />
                 })
             }
         </div>
-        <div style={{ paddingTop: "10px"}}>
+        <div style={{paddingTop: "10px"}}>
             <Button variant={props.filter === 'all' ? 'outlined' : 'text'}
                     onClick={onAllClickHandler}
                     color={'default'}
