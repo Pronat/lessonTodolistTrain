@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9a7ea50-a48b-4829-a03b-f7de7b65718c" name="Changes" comment="lesson11-22">
+    <list default="true" id="f9a7ea50-a48b-4829-a03b-f7de7b65718c" name="Changes" comment="lesson11-23">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AppWithRedux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
     </list>
@@ -59,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660041719924</updated>
       <workItem from="1660041721315" duration="604000" />
-      <workItem from="1660042445089" duration="4568000" />
+      <workItem from="1660042445089" duration="5409000" />
     </task>
     <task id="LOCAL-00001" summary="lesson11-20">
       <created>1660042540262</created>
@@ -82,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660058160139</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lesson11-23">
+      <created>1660059209436</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1660059209436</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +110,7 @@
     <MESSAGE value="lesson11-20" />
     <MESSAGE value="lesson11-21" />
     <MESSAGE value="lesson11-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson11-22" />
+    <MESSAGE value="lesson11-23" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson11-23" />
   </component>
 </project>
