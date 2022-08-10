@@ -4,6 +4,7 @@ import {AddItemForm} from './AddItemForm';
 import {EditableSpan} from './EditableSpan';
 import {Button, Checkbox, IconButton} from '@material-ui/core';
 import {Delete} from '@material-ui/icons';
+import {Task} from "./Task";
 
 export type TaskType = {
     id: string
@@ -71,18 +72,11 @@ export const Todolist = React.memo((props: PropsType) => {
                     }
 
 
-                    return <div key={t.id} className={t.isDone ? "is-done" : ""}>
-                        <Checkbox
-                            checked={t.isDone}
-                            color="primary"
-                            onChange={onChangeHandler}
-                        />
-
-                        <EditableSpan value={t.title} onChange={onTitleChangeHandler} />
-                        <IconButton onClick={onClickHandler}>
-                            <Delete />
-                        </IconButton>
-                    </div>
+                    return <Task key={t.id}
+                                 task={}
+                                 removeTask={removeTask}
+                                 changeTaskStatus={changeTaskStatus}
+                                 changeTaskTitle={changeTaskTitle}
                 })
             }
         </div>

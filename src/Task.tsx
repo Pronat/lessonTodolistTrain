@@ -12,13 +12,15 @@ export type TaskPropsType = {
 }
 
 export const Task = ({
-                         task, removeTask, changeTaskStatus, changeTaskTitle
-
-}: TaskPropsType) => {
+                         task,
+                         removeTask,
+                         changeTaskStatus,
+                         changeTaskTitle
+                     }: TaskPropsType) => {
     const onClickHandler = () => removeTask(task.id)
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         let newIsDoneValue = e.currentTarget.checked;
-       changeTaskStatus(task.id, newIsDoneValue);
+        changeTaskStatus(task.id, newIsDoneValue);
     }
     const onTitleChangeHandler = (newValue: string) => {
         changeTaskTitle(task.id, newValue);
@@ -32,9 +34,9 @@ export const Task = ({
                 onChange={onChangeHandler}
             />
 
-            <EditableSpan value={task.title} onChange={onTitleChangeHandler} />
+            <EditableSpan value={task.title} onChange={onTitleChangeHandler}/>
             <IconButton onClick={onClickHandler}>
-                <Delete />
+                <Delete/>
             </IconButton>
         </div>
     );
