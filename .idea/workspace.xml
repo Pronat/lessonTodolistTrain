@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aebe19f-bb92-4fb6-93f6-5fda497aab18" name="Changes" comment="lesson11-43">
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
+    <list default="true" id="7aebe19f-bb92-4fb6-93f6-5fda497aab18" name="Changes" comment="lesson11-44">
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660117914695</updated>
       <workItem from="1660117917331" duration="76000" />
-      <workItem from="1660118007733" duration="3960000" />
+      <workItem from="1660118007733" duration="4441000" />
     </task>
     <task id="LOCAL-00001" summary="lesson11-37">
       <created>1660118190279</created>
@@ -110,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660121663422</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lesson11-44">
+      <created>1660122163806</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660122163806</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +142,7 @@
     <MESSAGE value="lesson11-41" />
     <MESSAGE value="lesson11-42" />
     <MESSAGE value="lesson11-43" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson11-43" />
+    <MESSAGE value="lesson11-44" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson11-44" />
   </component>
 </project>
