@@ -15,13 +15,13 @@ export const Task = ({
                          task, removeTask, changeTaskStatus, changeTaskTitle
 
 }: TaskPropsType) => {
-    const onClickHandler = () => removeTask(t.id, props.id)
+    const onClickHandler = () => removeTask(task.id)
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
         let newIsDoneValue = e.currentTarget.checked;
-       changeTaskStatus(t.id, newIsDoneValue, props.id);
+       changeTaskStatus(task.id, newIsDoneValue);
     }
     const onTitleChangeHandler = (newValue: string) => {
-        changeTaskTitle(t.id, newValue, props.id);
+        changeTaskTitle(task.id, newValue);
     }
 
     return (
