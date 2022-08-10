@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7aebe19f-bb92-4fb6-93f6-5fda497aab18" name="Changes" comment="lesson11-38">
-      <change beforePath="$PROJECT_DIR$/src/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AddItemForm.tsx" afterDir="false" />
+    <list default="true" id="7aebe19f-bb92-4fb6-93f6-5fda497aab18" name="Changes" comment="lesson11-39">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AppWithRedux.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +61,7 @@
       <option name="presentableId" value="Default" />
       <updated>1660117914695</updated>
       <workItem from="1660117917331" duration="76000" />
-      <workItem from="1660118007733" duration="1360000" />
+      <workItem from="1660118007733" duration="2578000" />
     </task>
     <task id="LOCAL-00001" summary="lesson11-37">
       <created>1660118190279</created>
@@ -75,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660118894109</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="lesson11-39">
+      <created>1660119664506</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1660119664506</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -95,6 +104,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson11-37" />
     <MESSAGE value="lesson11-38" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson11-38" />
+    <MESSAGE value="lesson11-39" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson11-39" />
   </component>
 </project>
