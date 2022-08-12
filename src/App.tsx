@@ -1,87 +1,55 @@
-import React, {useReducer, useState} from 'react';
-import './App.css';
-import {TaskType, Todolist} from './Todolist';
-import {v1} from 'uuid';
-import {AddItemForm} from './AddItemForm';
-import {AppBar, Button, Container, Grid, IconButton, Paper, Toolbar, Typography} from '@material-ui/core';
-import {Menu} from '@material-ui/icons';
-import {
-    addTodolistAC
-} from './state/todolists-reducer';
-
+import React, {Fragment, useCallback, useEffect, useState} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
-import {AppRootStateType} from './state/store';
+import {selectUsers, selectUsersCount} from 'store/selectors';
+import {createUser, plusUserCount} from 'store/actions';
+import {v1} from 'uuid';
+import {CustomButton, UsersCountValue} from 'components';
+import {UsersList} from 'components/UsersList';
+import {generateRandomName} from 'utils';
+import {SetTimeoutType} from 'types';
 
-export type FilterValuesType = "all" | "active" | "completed";
-export type TodolistType = {
-    id: string
-    title: string
-    filter: FilterValuesType
-}
+const DELAY = 500;
 
-export type TasksStateType = {
-    [key: string]: Array<TaskType>
-}
+export const App = () => {
+  debugger
+  const dispatch = useDispatch();
 
+  const users = useSelector(selectUsers);
+  const usersCount = useSelector(selectUsersCount);
 
-function App() {
+  const [isAddNewUser, setIsAddNewUser] = useState<boolean>(false);
 
-    const todolists = useSelector<AppRootStateType, Array<TodolistType>>(state => state.todolists)
-    const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
+  useEffect(() => {
+    let timeoutId: SetTimeoutType = setTimeout((): void => {
+      setIsAddNewUser(false);
+    }, DELAY);
 
-    const dispatch = useDispatch();
+    return () => clearTimeout(timeoutId);
+  }, [users.length]);
 
-    function addTodolist(title: string) {
-        debugger
-        dispatch(addTodolistAC(title))
+  useEffect(() => {
+    if (users.length > 0 && isAddNewUser) {
+      dispatch(plusUserCount());
     }
+  }, [dispatch, users.length, isAddNewUser]);
 
-    return (
-        <div className="App">
-            <AppBar position="static">
-                <Toolbar>
-                    <IconButton edge="start" color="inherit" aria-label="menu">
-                        <Menu/>
-                    </IconButton>
-                    <Typography variant="h6">
-                        News
-                    </Typography>
-                    <Button color="inherit">Login</Button>
-                </Toolbar>
-            </AppBar>
-            <Container fixed>
-                <Grid container style={{padding: "20px"}}>
-                    <AddItemForm addItem={addTodolist}/>
-                </Grid>
-                <Grid container spacing={3}>
-                    {
-                        todolists.map(tl => {
-                            let allTodolistTasks = tasks[tl.id];
-                            let tasksForTodolist = allTodolistTasks;
+  const handleClick = useCallback((): void => {
+    dispatch(createUser({id: v1(), name: generateRandomName()}));
 
-                            if (tl.filter === "active") {
-                                tasksForTodolist = allTodolistTasks.filter(t => t.isDone === false);
-                            }
-                            if (tl.filter === "completed") {
-                                tasksForTodolist = allTodolistTasks.filter(t => t.isDone === true);
-                            }
+    setIsAddNewUser(true);
+  }, [dispatch]);
 
-                            return <Grid item key={tl.id}>
-                                <Paper style={{padding: "10px"}}>
-                                    <Todolist
-                                        id={tl.id}
-                                        title={tl.title}
-                                        tasks={tasksForTodolist}
-                                        filter={tl.filter}
-                                    />
-                                </Paper>
-                            </Grid>
-                        })
-                    }
-                </Grid>
-            </Container>
-        </div>
-    );
-}
+  return (
+    <Fragment>
+      <UsersCountValue usersCount={usersCount} />
 
-export default App;
+      <CustomButton
+        title="Click Me"
+        isButtonDisabled={isAddNewUser}
+        onClick={handleClick}
+      />
+
+      <UsersList users={users} />
+    </Fragment>
+  );
+};
