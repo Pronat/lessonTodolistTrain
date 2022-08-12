@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="48d34809-3494-4e9a-b5f6-4974dafd1eca" name="Default Changelist" comment="lessonDopi1-15" />
+    <list default="true" id="48d34809-3494-4e9a-b5f6-4974dafd1eca" name="Default Changelist" comment="lessonDopi1-16">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +60,7 @@
       <workItem from="1659448642423" duration="34000" />
       <workItem from="1660303865757" duration="4488000" />
       <workItem from="1660309616480" duration="710000" />
+      <workItem from="1660310608438" duration="634000" />
     </task>
     <task id="LOCAL-00001" summary="lessonDopi1-7">
       <created>1660304163743</created>
@@ -106,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660309705810</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lessonDopi1-16">
+      <created>1660310737505</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660310737505</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +143,7 @@
     <MESSAGE value="lessonDopi1-12" />
     <MESSAGE value="lessonDopi1-13" />
     <MESSAGE value="lessonDopi1-14" />
-    <option name="LAST_COMMIT_MESSAGE" value="lessonDopi1-14" />
+    <MESSAGE value="lessonDopi1-16" />
+    <option name="LAST_COMMIT_MESSAGE" value="lessonDopi1-16" />
   </component>
 </project>
