@@ -33,7 +33,6 @@ export const App = () => {
   }, [dispatch, users.length, isAddNewUser]);
 
   const handleClick = useCallback((): void => {
-    debugger
     dispatch(createUser({id: v1(), name: generateRandomName()}));
 
     setIsAddNewUser(true);
