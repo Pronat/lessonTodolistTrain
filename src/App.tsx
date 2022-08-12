@@ -32,7 +32,8 @@ function App() {
     const dispatch = useDispatch();
 
     function addTodolist(title: string) {
-        addTodolistAC(title)
+        debugger
+        dispatch(addTodolistAC(title))
     }
 
     return (

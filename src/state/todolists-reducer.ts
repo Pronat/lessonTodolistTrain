@@ -10,8 +10,10 @@ type ActionsType = AddTodolistActionType
 const initialState: Array<TodolistType> =  []
 
 export const todolistsReducer = (state: Array<TodolistType> = initialState, action: ActionsType): Array<TodolistType> => {
+    debugger
     switch (action.type) {
-        case 'АDD-TODOLIST': {
+        case 'ADD-TODOLIST': {
+            debugger
             return [{
                 id: action.todolistId,
                 title: action.title,
@@ -23,5 +25,5 @@ export const todolistsReducer = (state: Array<TodolistType> = initialState, acti
     }
 }
 
-export const addTodolistAC = (title: string) => ({ type: 'ADD-TODOLIST', title: title, todolistId: v1()})
+export const addTodolistAC = (title: string) => ({ type: 'ADD-TODOLIST', title: title, todolistId: v1()} as const)
 
