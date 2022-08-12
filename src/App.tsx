@@ -11,7 +11,6 @@ import {SetTimeoutType} from 'types';
 const DELAY = 500;
 
 export const App = () => {
-  debugger
   const dispatch = useDispatch();
 
   const users = useSelector(selectUsers);
