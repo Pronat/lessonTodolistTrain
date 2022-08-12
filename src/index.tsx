@@ -6,7 +6,7 @@ import {Provider, RootStateOrAny} from 'react-redux';
 import {store} from "./store";
 
 ReactDOM.render(
-  <Provider store={{store} as RootStateOrAny}>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root')
