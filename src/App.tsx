@@ -1,5 +1,5 @@
+import { Example_4 } from 'examples/example_4_5_6/Example_4';
 import {Fragment} from 'react';
-import {Example_3} from "./examples/example_3/Example_3";
 
 export type UserType = {
   [key: string]: { name: string, id: string }
@@ -17,7 +17,8 @@ const DATA_7: UserType[] = [
 export const App = () => {
   return (
     <Fragment>
-      <Example_3 />
+      <Example_4 />
+      <hr />
     </Fragment>
   );
 };
