@@ -9,7 +9,7 @@ type PropsType = { value: string, onChange: (e: ChangeEvent<HTMLInputElement>) =
 // If change value on input Title component not re-render
 // If change value on input Example_1 component not re-render
 
-export const Example_1 = React.memo(() => {
+export const Example_1 =  React.memo(() => {
   console.log("Example_1")
 
 
