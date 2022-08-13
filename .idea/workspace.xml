@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e52f9cb6-8d67-4ce2-b177-ce37800795e5" name="Default Changelist" comment="lessonDopi2-9">
+    <list default="true" id="e52f9cb6-8d67-4ce2-b177-ce37800795e5" name="Default Changelist" comment="lessonDopi2-10">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/examples/example_1/Example_1.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/examples/example_1/Example_1.tsx" afterDir="false" />
     </list>
@@ -12,6 +12,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29FjYG8bKTBpZwZ7QOLLeULR8mO" />
   <component name="ProjectViewState">
@@ -53,7 +56,7 @@
       <updated>1652715775971</updated>
       <workItem from="1652715778748" duration="767000" />
       <workItem from="1652716881720" duration="277000" />
-      <workItem from="1660379935618" duration="324000" />
+      <workItem from="1660379935618" duration="1249000" />
     </task>
     <task id="LOCAL-00001" summary="lessonDopi2-9">
       <created>1660380020753</created>
@@ -62,7 +65,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660380020753</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lessonDopi2-10">
+      <created>1660380297386</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1660380297386</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,6 +91,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lessonDopi2-9" />
-    <option name="LAST_COMMIT_MESSAGE" value="lessonDopi2-9" />
+    <MESSAGE value="lessonDopi2-10" />
+    <option name="LAST_COMMIT_MESSAGE" value="lessonDopi2-10" />
   </component>
 </project>

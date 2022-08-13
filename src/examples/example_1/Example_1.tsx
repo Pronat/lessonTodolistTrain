@@ -10,15 +10,11 @@ type PropsType = { value: string, onChange: (e: ChangeEvent<HTMLInputElement>) =
 
 export const Example_1 = React.memo(() => {
   console.log("Example_1")
-  const [value, setValue] = useState('');
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setValue(e.currentTarget.value);
-  };
 
   return (
     <div style={{...CONTAINER_STYLES} as any}>
-      <Input value={value} onChange={handleChange} />
+      <Input/>
       <Title title="I am a title" />
     </div>
   );
@@ -31,8 +27,13 @@ const Title = React.memo((props: { title: string }) => {
 })
 
 
-const Input: FC<PropsType> = ({value, onChange}) => {
+const Input= () => {
+  const [value, setValue] = useState('');
+
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setValue(e.currentTarget.value);
+  };
   return (
-    <input type="text" placeholder="Placeholder" value={value} onChange={onChange} />
+    <input type="text" placeholder="Placeholder" value={value} onChange={handleChange} />
   );
 };
