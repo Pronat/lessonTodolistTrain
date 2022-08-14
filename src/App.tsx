@@ -20,6 +20,8 @@ function App() {
         setTasks(filteredTasks);
     }
 
+
+
     let [filter, setFilter] = useState<FilterValuesType>("all");
 
     let tasksForTodolist = tasks;
@@ -40,7 +42,9 @@ function App() {
             <Todolist title="What to learn"
                       tasks={tasksForTodolist}
                       removeTask={removeTask}
-                      changeFilter={changeFilter} />
+                      changeFilter={changeFilter}
+
+            />
         </div>
     );
 }
