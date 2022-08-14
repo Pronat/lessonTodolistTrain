@@ -8,6 +8,8 @@ export type TasksPropsType = {
     isDone: boolean
 }
 
+export type FilterValueType = "all" | "active" | "completed"
+
 function App() {
     const [tasks, setTasks] = useState<Array<TasksPropsType>>([
         {id: 1, title:"What to learn", isDone: false},
@@ -19,7 +21,16 @@ function App() {
 
     const removeTask = (taskId: number) => {
         const newTasks = tasks.filter(t => t.id !== taskId)
-        console.log(newTasks)
+        setTasks(newTasks)
+    }
+
+    let [filter, setFilter] = useState("all")
+    let filteredTasks = tasks
+    if (filteredTasks === "active") {
+        filteredTasks = tasks.filter(t => t.isDone === false)
+    }
+    if (filteredTasks === "completed") {
+
     }
 
     return (
