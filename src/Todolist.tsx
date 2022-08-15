@@ -1,5 +1,6 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import {FilterValuesType} from './App';
+import s from "./App.module.css"
 
 type TaskType = {
     id: string
@@ -19,10 +20,17 @@ type PropsType = {
 export function Todolist(props: PropsType) {
 
     let [title, setTitle] = useState("")
+    let [error, setError] = useState<string | null>(null)
 
     const addTask = () => {
-        props.addTask(title);
-        setTitle("");
+        if (title.trim() !== "") {
+            props.addTask(title);
+            setTitle("");
+        }
+        else {
+            setError("Wrong input!")
+        }
+
     }
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
