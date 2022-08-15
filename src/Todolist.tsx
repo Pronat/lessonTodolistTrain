@@ -1,5 +1,6 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import {FilterValuesType} from './App';
+import s from "./App.module.css"
 
 type TaskType = {
     id: string
@@ -27,7 +28,7 @@ export function Todolist(props: PropsType) {
             setTitle("")
         }
         else {
-            setError
+            setError('Wrong input')
         }
     }
 
@@ -36,6 +37,7 @@ export function Todolist(props: PropsType) {
     }
 
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+        setError(null)
         if (e.charCode === 13) {
             addTask();
         }
@@ -53,8 +55,10 @@ export function Todolist(props: PropsType) {
             <input value={title}
                    onChange={onChangeHandler}
                    onKeyPress={onKeyPressHandler}
+                   className={error ? s.errorBorder : ""}
             />
             <button onClick={addTask}>+</button>
+            {error && <div className={s.errorText}>{error}</div>}
         </div>
         <ul>
             {
