@@ -5,3 +5,11 @@
 .errorText {
   color: red;
 }
+
+.filterColor {
+  background-color: aqua;
+}
+
+.isDone {
+  opacity: 0.3;
+}
