@@ -43,3 +43,24 @@
      color: chartreuse;
      margin-left: 10px;
  }
+
+.block {
+    margin: 10px;
+    position: relative;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px 10px 10px 0;
+    background: #4d5156;
+    color: #bbfbbc;
+}
+
+.block::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 100%;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(60px at top left, transparent 49%, #4d5156 51%) no-repeat right bottom;
+}
