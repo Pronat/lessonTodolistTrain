@@ -36,11 +36,12 @@ export function Todolist(props: PropsType) {
         setTitle(e.currentTarget.value)
     }
 
-    const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+   const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+        setError(null)
         if (e.charCode === 13) {
-            addTask();
+            addTask()
         }
-    }
+   }
 
     const onAllClickHandler = () => props.changeFilter("all");
     const onActiveClickHandler = () => props.changeFilter("active");
@@ -48,6 +49,7 @@ export function Todolist(props: PropsType) {
 
     return <div>
         <h3>{props.title}</h3>
+        {error && <div className={s.errorMessage}>{error}</div>}
         <div>
             <input value={title}
                    onChange={ onChangeHandler }
@@ -55,7 +57,6 @@ export function Todolist(props: PropsType) {
                    className={error ? s.error : ''}
             />
             <button onClick={addTask}>+</button>
-            {error && <div className={s.errorMessage}>{error}</div>}
         </div>
         <ul>
             {

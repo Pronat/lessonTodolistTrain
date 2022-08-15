@@ -1,7 +1,11 @@
 .error {
-  border: #ff1e0f 1px solid
+  border: 2px solid red;
 }
 
 .errorMessage {
-  color: #ff1e0f;
+  color: red;
+}
+
+.active-filter {
+  background-color: aqua;
 }
