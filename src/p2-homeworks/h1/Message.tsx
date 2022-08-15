@@ -11,11 +11,14 @@ export type MessagePropsType = {
 function Message(props: MessagePropsType) {
     return (
         <div className={s.message}>
-            <a href={props.avatar}/>
-            <div>{props.avatar}</div>
+            <div className={s.imgTime}>
+                <img className={s.imgClass} src={props.avatar}/>
+                <div>{props.time}</div>
+            </div>
+
             <div>{props.name}</div>
             <div>{props.message}</div>
-            <div>{props.time}</div>
+
 
         </div>
     )
