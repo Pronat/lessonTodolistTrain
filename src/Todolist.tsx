@@ -53,7 +53,7 @@ export function Todolist(props: PropsType) {
                 props.tasks.map(t => {
 
                     const onClickHandler = () => props.removeTask(t.id)
-                    const isDoneTasksHandler = (e: ChangeEvent<HTMLInputElement>) => {
+                   const isDoneTasksHandler = (e:  ChangeEvent<HTMLInputElement>) => {
                         let newIsDone = e.currentTarget.checked
                         props.isDoneTasks(t.id, newIsDone)
                     }
@@ -65,6 +65,7 @@ export function Todolist(props: PropsType) {
                     </li>
                 })
             }
+
         </ul>
         <div>
             <button onClick={ onAllClickHandler }>All</button>
