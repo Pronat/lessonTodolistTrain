@@ -1,7 +1,7 @@
-.error-border{
+.error {
   border: #ff1e0f 1px solid
 }
 
-.error-message{
+.errorMessage {
   color: #ff1e0f;
 }
