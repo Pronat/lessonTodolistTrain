@@ -29,13 +29,13 @@ function Affairs(props: AffairsPropsType) {
 
             {mappedAffairs}
 
-            <button className={props.filter === "all" ? s.activeButton : ''}
+            <button className={props.filter === "all" ? s.button : ''}
                 onClick={setAll}>All</button>
-            <button className={props.filter === "high" ? s.activeButton : ''}
+            <button className={props.filter === "high" ? s.button : ''}
                 onClick={setHigh}>High</button>
-            <button className={props.filter === "middle" ? s.activeButton : ''}
+            <button className={props.filter === "middle" ? s.button : ''}
                 onClick={setMiddle}>Middle</button>
-            <button className={props.filter === "low" ? s.activeButton : ''}
+            <button className={props.filter === "low" ? s.button : ''}
                 onClick={setLow}>Low</button>
         </div>
     )

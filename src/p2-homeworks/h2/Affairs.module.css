@@ -1,7 +1,14 @@
 .someClass {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 
 }
 
-.activeButton {
+.button {
+
+}
+
+button:focus {
     background-color: aqua;
 }
