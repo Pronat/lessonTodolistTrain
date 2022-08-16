@@ -1,14 +1,3 @@
 .someClass {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
 
-}
-
-.button {
-
-}
-
-button:focus {
-    background-color: aqua;
 }
