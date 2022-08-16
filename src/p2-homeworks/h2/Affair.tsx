@@ -15,7 +15,9 @@ function Affair(props: AffairPropsType) {
     return (
         <div className={s.mainClass}>
             <div>{props.affair.name}</div>
-            <div className={s.priority}>{props.affair.priority}</div>
+            <div className={props.affair.priority === "high" ? s.green : ""
+            || props.affair.priority === "middle" ? s.blue : ""
+            || props.affair.priority === "low" ? s.darksalmon : ""}>{props.affair.priority}</div>
             <div>{props.affair._id}</div>
 
             <button onClick={deleteCallback}>X</button>

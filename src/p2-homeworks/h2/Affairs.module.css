@@ -1,4 +1,6 @@
 .mainClass {
+    margin: 10px;
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,6 +10,18 @@
     background-color: aqua;
 }
 
-.priority {
+.green {
+    color: green;
+}
 
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.darksalmon {
+    color: darksalmon;
 }
