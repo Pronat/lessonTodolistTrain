@@ -1,3 +1,11 @@
 .someClass {
 
 }
+
+.button {
+
+}
+
+button:active {
+    background-color: aqua;
+}
