@@ -35,13 +35,13 @@ export const filterAffairs = (affairs: Array<AffairType>, filter: FilterType): A
         filteredAffairs = affairs.filter(el => el.priority === 'low')
         return filteredAffairs
     }
-    // if (filter === 'middle') return affairs.filter(el => el.priority === 'middle')
-    // if (filter === 'low') return affairs.filter(el => el.priority === 'low')
-    // else return // need to fix
 }
+
 export const deleteAffair = (affairs: Array<AffairType>, _id: number): Array<AffairType> => { // need to fix any
     // return // need to fix
     let newAffairs = affairs
+    newAffairs = affairs.filter(el => el._id !== _id)
+    return newAffairs
 }
 
 function HW2() {
