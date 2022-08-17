@@ -18,16 +18,18 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const [error, setError] = useState<string | null>('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-       setName(e.currentTarget.value)
+        let newName = e.currentTarget.value
+      if (newName.trim() !== '') {
+          setName(newName.trim())
+          setError('')
+      } else {
+          setName('')
+          setError("Wrong input!")
+      }
     }
+
     const addUser = () => {
-        if (name.trim() !== '') {
-            addUserCallback(name)
-            alert(`Hello ${name}!`) // need to fix
-            setError(null)
-        }   else {
-            setError("Wrong input!")
-        }
+       addUserCallback(name)
     }
 
     const totalUsers = users.length // need to fix
