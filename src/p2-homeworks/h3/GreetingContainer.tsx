@@ -1,6 +1,7 @@
 import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
+import resetModuleRegistry = jest.resetModuleRegistry;
 
 type GreetingContainerPropsType = {
     users: UserType[] // need to fix any
@@ -14,23 +15,22 @@ type GreetingContainerPropsType = {
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
     const [name, setName] = useState<string>('') // need to fix any
-    const [error, setError] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string | null>('') // need to fix any
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-        let newName = e.currentTarget.value
-        if (newName.trim() !== '') {
-            addUserCallback(newName)
-            setName('')
-        } else {
-            setError('Wrong input!')
-        }
-        // setName() // need to fix
+       setName(e.currentTarget.value)
     }
     const addUser = () => {
-        alert(`Hello ${name}!`) // need to fix
+        if (name.trim() !== '') {
+            addUserCallback(name)
+            alert(`Hello ${name}!`) // need to fix
+            setError(null)
+        }   else {
+            setError("Wrong input!")
+        }
     }
 
-    const totalUsers = 0 // need to fix
+    const totalUsers = users.length // need to fix
 
     return (
         <Greeting
