@@ -13,11 +13,13 @@ type GreetingContainerPropsType = {
 // более современный и удобный для про :)
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
-    const [name, setName] = useState<any>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+    const [name, setName] = useState<string>('') // need to fix any
+    const [error, setError] = useState<string>('') // need to fix any
 
-    const setNameCallback = (e: any) => { // need to fix any
-        setName('') // need to fix
+    const setNameCallback = (e: number) => { // need to fix any
+        if (name !== )
+        let newName = () => e.currentTarget.value
+        setName(newName) // need to fix
     }
     const addUser = () => {
         alert(`Hello  !`) // need to fix
