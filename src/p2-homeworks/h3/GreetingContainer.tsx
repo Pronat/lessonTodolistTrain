@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {ChangeEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
@@ -16,9 +16,10 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
     const [name, setName] = useState<string>('') // need to fix any
     const [error, setError] = useState<string>('') // need to fix any
 
-    const setNameCallback = (e: number) => { // need to fix any
-        if (name.trim() !== '') {
-            addUserCallback(name)
+    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
+        let newName = e.currentTarget.value
+        if (newName.trim() !== '') {
+            addUserCallback(newName)
             setName('')
         } else {
             setError('Wrong input!')
@@ -26,7 +27,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
         // setName() // need to fix
     }
     const addUser = () => {
-        alert(`Hello  !`) // need to fix
+        alert(`Hello ${name}!`) // need to fix
     }
 
     const totalUsers = 0 // need to fix
