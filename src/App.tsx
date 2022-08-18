@@ -46,7 +46,7 @@ function App() {
         setTasks([...tasks]);
     }
 
-    // let [filter, setFilter] = useState<FilterValuesType>("all");
+    let [filter, setFilter] = useState<FilterValuesType>("all");
     let tasksForTodolist = tasks;
 
     if (filter === "active") {
