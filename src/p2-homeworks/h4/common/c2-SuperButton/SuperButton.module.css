@@ -2,6 +2,10 @@
 
 }
 
+.default:disabled {
+
+}
+
 .red {
     background: red;
 }
