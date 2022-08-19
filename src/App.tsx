@@ -50,8 +50,12 @@ function App() {
 
 
 
-    function changeFilter(value: FilterValuesType) {
-        setFilter(value);
+    function changeFilter(todolistId: string, value: FilterValuesType) {
+        let todolist = todolists.find(el => el.filter === value)
+        if (todolist) {
+            todolist.filter = value
+            setTodolists([...todolists]);
+        }
     }
 
 
