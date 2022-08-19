@@ -40,10 +40,10 @@ function App() {
         setTasks({...tasks})
     }
 
-    function addTask(todolistId: string, taskId: string, title: string) {
+    function addTask(todolistId: string, title: string) {
         let tasksTodolists = tasks[todolistId]
         let newTask = {id: v1(), title, isDone: false}
-        tasks[todolistId] = [...tasksTodolists, newTask]
+        tasks[todolistId] = [newTask, ...tasksTodolists]
         setTasks({...tasks})
     }
 
