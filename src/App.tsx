@@ -36,15 +36,17 @@ function App() {
 
 
 
-    function removeTask(id: string) {
-        let filteredTasks = tasks.filter(t => t.id != id);
-        setTasks(filteredTasks);
+    function removeTask(taskId: string, todolistId: string) {
+        let todolistTasks = tasks[todolistId]
+        todolistTasks = todolistTasks.filter(el => el.id !== taskId)
+        setTasks({...tasks})
     }
 
-    function addTask(title: string) {
-        let task = {id: v1(), title: title, isDone: false};
-        let newTasks = [task, ...tasks];
-        setTasks(newTasks);
+    function addTask(taskId: string, todolistId: string, title: string) {
+       let newTask = {id: v1(), title, isDone: false}
+        let todolistTasks = tasks[todolistId]
+        todolistTasks = [newTask, ...tasks[todolistId]]
+        setTasks({todolistTasks})
     }
 
     function changeStatus(taskId: string, isDone: boolean) {
@@ -69,13 +71,13 @@ function App() {
         <div className="App">
             {
                 todolists.map(el => {
-                    let tasksForTodolist = tasks;
+                    let tasksForTodolist = tasks[el.id];
 
                     if (el.filter === "active") {
-                        tasksForTodolist = tasks.filter(t => t.isDone === false);
+                        tasksForTodolist = tasksForTodolist.filter(el => el.isDone === false);
                     }
                     if (el.filter === "completed") {
-                        tasksForTodolist = tasks.filter(t => t.isDone === true);
+                        tasksForTodolist = tasksForTodolist.filter(t => t.isDone === true);
                     }
                     return (
                         <Todolist
