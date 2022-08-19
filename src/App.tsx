@@ -2,10 +2,21 @@ import React, {useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import {v1} from 'uuid';
+import {stringify} from "querystring";
 
 export type FilterValuesType = "all" | "active" | "completed";
+export type TodolistType = {
+    id: string
+    title: string
+    filter: FilterValuesType
+}
 
 function App() {
+
+    let [todolists, setTodolists] = useState<Array<TodolistType>>([
+        {id: v1(), title: "What to learn", filter: "all"},
+        {id: v1(), title: "What to bye", filter: "all"},
+    ])
 
     let [tasks, setTasks] = useState([
         {id: v1(), title: "HTML&CSS", isDone: true},
