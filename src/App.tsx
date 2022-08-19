@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import {v1} from 'uuid';
-import {stringify} from "querystring";
 
 export type FilterValuesType = "all" | "active" | "completed";
 export type TodolistType = {
@@ -65,14 +64,21 @@ function App() {
 
     return (
         <div className="App">
-            <Todolist title="What to learn"
-                      tasks={tasksForTodolist}
-                      removeTask={removeTask}
-                      changeFilter={changeFilter}
-                      addTask={addTask}
-                      changeTaskStatus={changeStatus}
-                      filter={filter}
-            />
+            {
+            todolists.map(el => {
+                return (
+                <Todolist title="What to learn"
+                          tasks={tasksForTodolist}
+                          removeTask={removeTask}
+                          changeFilter={changeFilter}
+                          addTask={addTask}
+                          changeTaskStatus={changeStatus}
+                          filter={filter}
+                />
+                )
+            })
+
+            }
         </div>
     );
 }
