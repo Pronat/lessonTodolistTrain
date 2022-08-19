@@ -50,14 +50,13 @@ function App() {
 
 
 
-    function changeFilter(todolistId: string, value: FilterValuesType) {
-        let todolist = todolists.find(el => el.filter === value)
+    function changeFilter(todolistId: string, filterValue: FilterValuesType) {
+        let todolist = todolists.find(el => el.id === todolistId)
         if (todolist) {
-            todolist.filter = value
-            setTodolists([...todolists]);
+            todolist.filter = filterValue
+            setTodolists([...todolists])
         }
     }
-
 
     return (
         <div className="App">
