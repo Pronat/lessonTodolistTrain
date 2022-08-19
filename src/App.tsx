@@ -38,24 +38,25 @@ function App() {
 
     function removeTask(taskId: string, todolistId: string) {
         let todolistTasks = tasks[todolistId]
-        todolistTasks = todolistTasks.filter(el => el.id !== taskId)
+        tasks[todolistId] = todolistTasks.filter(el => el.id !== taskId)
         setTasks({...tasks})
     }
 
-    function addTask(taskId: string, todolistId: string, title: string) {
+    function addTask(todolistId: string, title: string) {
        let newTask = {id: v1(), title, isDone: false}
         let todolistTasks = tasks[todolistId]
-        todolistTasks = [newTask, ...tasks[todolistId]]
-        setTasks({todolistTasks})
+        tasks[todolistId] = [newTask, ...todolistTasks]
+        setTasks({...tasks})
     }
 
-    function changeStatus(taskId: string, isDone: boolean) {
-        let task = tasks.find(t => t.id === taskId);
+    function changeStatus(taskId: string, todolistId: string, isDone: boolean) {
+        let todolistTasks = tasks[todolistId]
+        let task = todolistTasks.find(el => el.id === taskId)
         if (task) {
-            task.isDone = isDone;
+            task.isDone = isDone
+            setTasks({...tasks})
         }
 
-        setTasks([...tasks]);
     }
 
 
