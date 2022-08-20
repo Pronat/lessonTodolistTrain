@@ -5,11 +5,12 @@ export type AddItemFormPropsType = {
     id: string
 }
 
-const AddItemForm: React.FC<AddItemFormPropsType> = (props:) => {
+const AddItemForm = (props: AddItemFormPropsType) => {
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
 
     const addTask = () => {
+        debugger
         let newTitle = title.trim();
         if (newTitle !== "") {
             props.addTask(newTitle, props.id);
