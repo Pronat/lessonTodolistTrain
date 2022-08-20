@@ -77,10 +77,14 @@ function App() {
         }
     }
 
-    const addTofolist = (title: string) => {
-        let newTodolist = {id: v1(), title, filter: "all"}
-        setTodolists([newTodolist, ...todolists])
-    }
+   const addTodolist = (title: string) => {
+        let newTodolistId = v1()
+        let newTodolist: TodolistType = {id: newTodolistId, title, filter: "all"}
+       setTodolists([newTodolist, ...todolists])
+       setTasks({
+           ...tasks, [newTodolistId]: []
+       })
+   }
 
     function removeTodolist(id: string) {
         // засунем в стейт список тудулистов, id которых не равны тому, который нужно выкинуть
@@ -93,7 +97,7 @@ function App() {
 
     return (
         <div className="App">
-            <AddItemForm addItem={addTofolist} />
+            <AddItemForm addItem={addTodolist} />
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id];
