@@ -1,6 +1,11 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 
-const AddItemForm = () => {
+export type AddItemFormPropsType = {
+    addTask: (title: string, todolistId: string) => void
+    id: string
+}
+
+const AddItemForm: React.FC<AddItemFormPropsType> = (props:) => {
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
 
