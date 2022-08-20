@@ -1,9 +1,11 @@
 import React from 'react';
 
+type EditableSpanType = {
+    title: string
+}
+
 export const EditableSpan = () => {
     return (
-        <div>
-
-        </div>
+        <span>{t.title}</span>
     );
 };
