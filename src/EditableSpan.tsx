@@ -4,8 +4,10 @@ type EditableSpanType = {
     title: string
 }
 
-export const EditableSpan = () => {
+export const EditableSpan: React.FC<EditableSpanType> = (props) => {
+
+
     return (
-        <span>{t.title}</span>
+        <span>{props.title}</span>
     );
 };
