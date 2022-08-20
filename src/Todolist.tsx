@@ -40,7 +40,6 @@ export function Todolist(props: PropsType) {
 
             <AddItemForm
                 addItem = {addTask}
-
             />
 
         <ul>
