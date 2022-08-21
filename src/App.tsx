@@ -77,6 +77,12 @@ function App() {
         }
     }
 
+    const editTask = (taskId: string, todolistId: string, newTitle: string) => {
+        setTasks({...tasks, [todolistId]: tasks[todolistId]
+                .map(el => el.id === taskId ? {...el, title: newTitle} : el)})
+
+    }
+
     function removeTodolist(id: string) {
         // засунем в стейт список тудулистов, id которых не равны тому, который нужно выкинуть
         setTodolists(todolists.filter(tl => tl.id != id));
@@ -91,7 +97,6 @@ function App() {
         let newTodolist: TodolistType = {id: newTodolistId, title, filter: "all"}
         setTodolists([newTodolist, ...todolists])
         setTasks({...tasks, [newTodolistId]: []})
-
     }
 
     return (
@@ -120,6 +125,7 @@ function App() {
                         changeTaskStatus={changeStatus}
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
+                        editTask={editTask}
                     />
                 })
             }
