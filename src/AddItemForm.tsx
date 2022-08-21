@@ -1,7 +1,7 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 
 export type AddItemFormType = {
-    addItem: string
+    addItem: (title: string) => void
 }
 
 export const AddItemForm: React.FC<AddItemFormType> = (props) => {

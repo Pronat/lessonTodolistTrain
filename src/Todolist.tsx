@@ -31,8 +31,8 @@ export function Todolist(props: PropsType) {
     const onActiveClickHandler = () => props.changeFilter("active", props.id);
     const onCompletedClickHandler = () => props.changeFilter("completed", props.id);
 
-    const addTask = (title: string, todolistId: string) => {
-        props.addTask(title, todolistId)
+    const addTask = (title: string) => {
+        props.addTask(title, props.id)
     }
 
     return <div>
