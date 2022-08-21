@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import './App.css';
 import {TaskType, Todolist} from './Todolist';
 import {v1} from 'uuid';
-import AddItemForm from "./AddItemForm";
 
 export type FilterValuesType = "all" | "active" | "completed";
 type TodolistType = {
@@ -77,15 +76,6 @@ function App() {
         }
     }
 
-   const addTodolist = (title: string) => {
-        let newTodolistId = v1()
-        let newTodolist: TodolistType = {id: newTodolistId, title, filter: "all"}
-       setTodolists([newTodolist, ...todolists])
-       setTasks({
-           ...tasks, [newTodolistId]: []
-       })
-   }
-
     function removeTodolist(id: string) {
         // засунем в стейт список тудулистов, id которых не равны тому, который нужно выкинуть
         setTodolists(todolists.filter(tl => tl.id != id));
@@ -97,7 +87,6 @@ function App() {
 
     return (
         <div className="App">
-            <AddItemForm addItem={addTodolist} />
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id];
