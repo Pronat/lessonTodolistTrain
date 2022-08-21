@@ -80,7 +80,14 @@ function App() {
     const editTask = (taskId: string, todolistId: string, newTitle: string) => {
         setTasks({...tasks, [todolistId]: tasks[todolistId]
                 .map(el => el.id === taskId ? {...el, title: newTitle} : el)})
+    }
 
+    const editTodolist = (todolistId: string, newTitle: string) => {
+       let todolist = todolists.find(el => el.id === todolistId)
+        if (todolist) {
+            todolist.title = newTitle
+            setTodolists([...todolists])
+        }
     }
 
     function removeTodolist(id: string) {
@@ -126,6 +133,7 @@ function App() {
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
                         editTask={editTask}
+                        editTodolist={editTodolist}
                     />
                 })
             }
