@@ -1,9 +1,16 @@
-import React from 'react';
+import React, {useState} from 'react';
 
-export const EditableSpan = () => {
+export type EditableSpanType = {
+    title: string
+}
+
+
+export const EditableSpan: React.FC<EditableSpanType> = (props) => {
+    const [edit, setEdit] = useState(false)
+
     return (
-        <div>
-
-        </div>
+        edit
+        ? <input value={props.title}/>
+        : <span>{props.title}</span>
     );
 };
