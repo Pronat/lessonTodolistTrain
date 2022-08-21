@@ -83,12 +83,10 @@ function App() {
     }
 
     const editTodolist = (todolistId: string, newTitle: string) => {
-       let todolist = todolists.find(el => el.id === todolistId)
-        if (todolist) {
-            todolist.title = newTitle
-            setTodolists([...todolists])
+        setTodolists(todolists.map(el => el.id === todolistId
+           ? {...el, title: newTitle} : el))
         }
-    }
+
 
     function removeTodolist(id: string) {
         // засунем в стейт список тудулистов, id которых не равны тому, который нужно выкинуть
