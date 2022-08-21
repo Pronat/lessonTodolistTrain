@@ -6,13 +6,13 @@ export type EditableSpanType = {
 
 
 export const EditableSpan: React.FC<EditableSpanType> = (props) => {
-    const [edit, setEdit] = useState(false)
-    const editHandler = () => {
+    const[edit, setEdit] = useState(false)
+    let editHandler = () => {
         setEdit(!edit)
     }
     return (
         edit
-            ? <input value = {props.title} onBlur={editHandler} autoFocus={true}/>
-            : <span onDoubleClick={editHandler}>{props.title}</span>
+        ? <input value={props.title} onBlur={editHandler} autoFocus={true}/>
+        : <span onDoubleClick={editHandler}>{props.title}</span>
     )
 }
