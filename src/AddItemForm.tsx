@@ -10,7 +10,7 @@ export const AddItemForm: React.FC<AddItemForm> = (props) => {
     const addTask = () => {
         let newTitle = title.trim();
         if (newTitle !== "") {
-            props.addTask(newTitle);
+            props.addItem(newTitle);
             setTitle("");
         } else {
             setError("Title is required");
