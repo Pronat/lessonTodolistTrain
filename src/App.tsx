@@ -42,7 +42,11 @@ function App() {
         }
 
         const editTodolist = (todolistId: string, title: string) => {
-            setTodolists([...todolists, ])
+            let todolist = todolists.find(el => el.id === todolistId)
+            if (todolist) {
+                todolist.title = title
+                setTodolists([...todolists])
+            }
     }
 
     function removeTask(id: string, todolistId: string) {
