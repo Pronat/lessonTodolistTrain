@@ -36,6 +36,9 @@ function App() {
         ]
     });
 
+        const editTask = (todolistId: string, newTitle: string) => {
+            console.log(newTitle)
+        }
 
     function removeTask(id: string, todolistId: string) {
         //достанем нужный массив по todolistId:
@@ -120,6 +123,7 @@ function App() {
                         changeTaskStatus={changeStatus}
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
+                        editTask={editTask}
                     />
                 })
             }
