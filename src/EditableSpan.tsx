@@ -17,7 +17,7 @@ export const EditableSpan: React.FC<EditableSpanType> = (props) => {
 
     const addTask = () => {
         if (newTitle !== "") {
-            props.callBack(newTitle)
+            addTask()
         }
     }
 

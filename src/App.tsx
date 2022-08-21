@@ -36,8 +36,9 @@ function App() {
         ]
     });
 
-        const editTask = (todolistId: string, newTitle: string) => {
-            console.log(newTitle)
+        const editTask = (todolistId: string, taskId:string, newTitle: string) => {
+            setTasks({...tasks, [todolistId]: tasks[todolistId]
+                    .map(el => el.id === taskId ? {...el, title: newTitle}: el)})
         }
 
     function removeTask(id: string, todolistId: string) {
