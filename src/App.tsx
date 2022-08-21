@@ -41,6 +41,10 @@ function App() {
                     .map(el => el.id === taskId ? {...el, title: newTitle}: el)})
         }
 
+        const editTodolist = (todolistId: string, title: string) => {
+            setTodolists([...todolists, ])
+    }
+
     function removeTask(id: string, todolistId: string) {
         //достанем нужный массив по todolistId:
         let todolistTasks = tasks[todolistId];
@@ -125,6 +129,7 @@ function App() {
                         filter={tl.filter}
                         removeTodolist={removeTodolist}
                         editTask={editTask}
+                        editTodolist={editTodolist}
                     />
                 })
             }
