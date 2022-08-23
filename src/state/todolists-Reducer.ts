@@ -39,8 +39,8 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
             return copyTodolists
         case 'CHANGE-TODOLIST-FILTER':
             let copyTodolists3 = [...state]
-            copyTodolists3 = copyTodolists3.map(el => el.id === action.id ? {...el, filter: action.filter} : el)
-            return copyTodolists3
+            let copyTodolists4 = copyTodolists3.map(el => el.id === action.id ? {...el, filter: action.filter} : el)
+            return copyTodolists4
 
         default:
             throw new Error("I don't understand this type")
