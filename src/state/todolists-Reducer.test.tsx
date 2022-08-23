@@ -47,3 +47,17 @@ test('correct change todolists title', () => {
     expect(endState[0].title).toBe(newTodolistTitle)
     expect(endState[1].title).toBe("What to buy")
 })
+
+test('correct change todolists filter', () => {
+    let todolistId1 = v1();
+    let todolistId2 = v1();
+    let newFilter = "active"
+
+    const startState: Array<TodolistType> = [
+        {id: todolistId1, title: "What to learn", filter: "all"},
+        {id: todolistId2, title: "What to buy", filter: "all"}
+    ]
+    const endState = todolistsReducer(startState, {type: "CHANGE-TODOLIST-FILTER", id: todolistId2, filter: newFilter})
+    expect(endState[0].filter).toBe("all")
+    expect(endState[1].filter).toBe(newFilter)
+})

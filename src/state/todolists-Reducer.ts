@@ -1,4 +1,4 @@
-import {TodolistType} from "../App";
+import {FilterValuesType, TodolistType} from "../App";
 import {v1} from "uuid";
 
 type RemoveTodolistAT = {
@@ -15,7 +15,13 @@ type ChangeTodolistTitleAT = {
     title: string
 }
 
-type ActionType = RemoveTodolistAT | AddTodolistAT | ChangeTodolistTitleAT
+type ChangeTodolistFilterAT = {
+    type: "CHANGE-TODOLIST-FILTER"
+    id: string
+    filter: FilterValuesType
+}
+
+type ActionType = RemoveTodolistAT | AddTodolistAT | ChangeTodolistTitleAT | ChangeTodolistFilterAT
 
 export const todolistsReducer = (state: Array<TodolistType>, action: ActionType) => {
     switch (action.type) {
@@ -31,8 +37,10 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
             let copyTodolists = [...state]
             copyTodolists = copyTodolists.map(el => el.id === action.id ? {...el, title: action.title} : el)
             return copyTodolists
-
-
+        case 'CHANGE-TODOLIST-FILTER':
+            let copyTodolists3 = [...state]
+            copyTodolists3 = copyTodolists3.map(el => el.id === action.id ? {...el, filter: action.filter} : el)
+            return copyTodolists3
 
         default:
             throw new Error("I don't understand this type")
