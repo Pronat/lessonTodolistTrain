@@ -11,6 +11,7 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
             let newTodolists = [...state]
             newTodolists = newTodolists.filter(el => el.id !== action.id)
             return newTodolists
+
         default:
             throw new Error("I don't understand this type")
     }
