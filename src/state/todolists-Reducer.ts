@@ -29,10 +29,8 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
             return [...newTodolists2, newTodolist2]
         case 'CHANGE-TODOLIST-TITLE':
             let copyTodolists = [...state]
-            let copyTodolists2 = copyTodolists.find(el => el.id === action.id)
-            if (copyTodolists2) {
-                copyTodolists2.title = action.title
-            }
+            copyTodolists = copyTodolists.map(el => el.id === action.id ? {...el, title: action.title} : el)
+            return copyTodolists
 
 
 

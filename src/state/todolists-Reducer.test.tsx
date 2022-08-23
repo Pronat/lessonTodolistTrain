@@ -44,6 +44,6 @@ test('correct change todolists title', () => {
         {id: todolistId2, title: "What to buy", filter: "all"}
     ]
     const endState = todolistsReducer(startState, {type: 'CHANGE-TODOLIST-TITLE', id: todolistId1, title: newTodolistTitle})
-    expect(endState.length).toBe(2)
     expect(endState[0].title).toBe(newTodolistTitle)
+    expect(endState[1].title).toBe("What to buy")
 })
