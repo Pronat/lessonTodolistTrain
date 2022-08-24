@@ -2,7 +2,7 @@ import {useState} from "react";
 import {TodolistType} from "../App";
 import {v1} from "uuid";
 import {
-    AddTodolistAC, AddTodolistAT,
+    AddTodolistAC, AddTodolistAT, ChangeTodolistFilterAC,
     ChangeTodolistFilterAT,
     ChangeTodolistTitleAT,
     RemoveTodolistAC, RemoveTodolistAT,
@@ -19,7 +19,7 @@ test('remove todolists should be correct', () => {
     ]
     const action: RemoveTodolistAT = {type: 'REMOVE-TODOLIST', id: todolistId1}
 
-    const endState = todolistsReducer(startState, action)
+    const endState = todolistsReducer(startState, RemoveTodolistAC(todolistId1))
 
     expect(endState.length).toBe(1)
     expect(endState[0].title).toBe("What to buy")
@@ -68,7 +68,7 @@ test('change todolist filter should be correct', () => {
     ]
 
     let action: ChangeTodolistFilterAT = {type: 'CHANGE-TODOLIST-FILTER', id: todolistId1, filter: newFilter}
-    const endState = todolistsReducer(startState, action )
+    const endState = todolistsReducer(startState, ChangeTodolistFilterAC )
 
 
     expect(endState[0].filter).toBe(newFilter)
