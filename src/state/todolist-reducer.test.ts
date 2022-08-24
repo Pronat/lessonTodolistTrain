@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {TodolistType} from "../App";
 import {v1} from "uuid";
-import {RemoveTodolistAC, todolistsReducer} from "./todolist-reducer";
+import {AddTodolistAC, RemoveTodolistAC, todolistsReducer} from "./todolist-reducer";
 
 test('remove todolists should be correct', () => {
     let todolistId1 = v1()
@@ -33,5 +33,20 @@ test('add todolist should be correct', () => {
 
     expect(endState.length).toBe(3)
     expect(endState[2].title).toBe(newTitle)
+})
 
+test('change todolist title should be correct', () => {
+    let todolistId1 = v1()
+    let todolistId2 = v1()
+    let newTitle = 'New title'
+    const startState: Array<TodolistType> = [
+        {id: todolistId1, title: "What to learn", filter: "all"},
+        {id: todolistId2, title: "What to buy", filter: "all"}
+    ]
+
+
+    const endState = todolistsReducer(startState, {type: 'CHANGe-TODOLIST-TITLE', id: todolistId, title: newTitle})
+
+    expect(endState.length).toBe(3)
+    expect(endState[2].title).toBe(newTitle)
 })
