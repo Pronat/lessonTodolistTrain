@@ -1,9 +1,11 @@
 import {TasksStateType} from "../App";
 
 type StateType = TasksStateType
-type ActionType = RemoveTaskAT
+type ActionType = RemoveTaskAT | AddTaskAT
 
 type RemoveTaskAT = ReturnType<typeof RemoveTaskAC>
+
+type AddTaskAT = ReturnType<typeof AddTaskAC>
 
 export const taskReducer = (state: StateType, action: ActionType) => {
     switch (action.type) {
@@ -22,8 +24,8 @@ export const RemoveTaskAC = (todolistId: string, taskId: string) => {
     }as const
 }
 
-export const SomeAC2 = (id: string) => {
+export const AddTaskAC = (todolistId: string, newTitle: string) => {
     return {
-        type: '', id: id
+        type: 'ADD-TASK', todolistId: todolistId, newTitle
     }as const
 }
