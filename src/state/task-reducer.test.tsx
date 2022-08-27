@@ -47,18 +47,9 @@ test('add task should be correct', () => {
         ]
     }
 
-    const endState = taskReducer(startState, AddTaskAC("todolistId", "newTitle"))
+    const newTitle = "New Task Title"
+    const endState = taskReducer(startState, AddTaskAC("todolistId2", "newTitle"))
 
-    expect(endState).toEqual({
-        "todolistId1": [
-            {id: "1", title: "CSS", isDone: false},
-            {id: "2", title: "JS", isDone: true},
-            {id: "3", title: "React", isDone: false}
-        ],
-        "todolistId2": [
-            {id: "1", title: "bread", isDone: false},
-            {id: "3", title: "tea", isDone: false}
-        ]
-    });
+    expect(endState"todolistId1"][0].title).toBe("CSS")
 
 })

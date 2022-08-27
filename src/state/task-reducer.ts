@@ -1,4 +1,5 @@
 import {TasksStateType} from "../App";
+import {v1} from "uuid";
 
 type StateType = TasksStateType
 type ActionType = RemoveTaskAT | AddTaskAT
@@ -13,6 +14,9 @@ export const taskReducer = (state: StateType, action: ActionType) => {
             let tasks = state[action.todolistId]
             state[action.todolistId] = tasks.filter(el => el.id !== action.taskId)
             return {...state}
+        case 'ADD-TASK':
+            let newTask = {id: v1(), title: action.newTitle, isDone: false}
+            return {...state, newTask}
         default:
             throw new Error("I don't understand this type")
     }
