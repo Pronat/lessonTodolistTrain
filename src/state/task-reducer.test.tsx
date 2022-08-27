@@ -97,8 +97,8 @@ test('change task status should be correct', () => {
     const newIsDone = true
     const endState = taskReducer(startState, ChangeTaskStatusAC("todolistId2", "2", newIsDone))
 
-    expect(endState["todolistId1"][0].title).toBe(newIsDone)
-    expect(endState["todolistId1"].length).toBe(3)
-    expect(endState["todolistId2"].length).toBe(3)
+    expect(endState["todolistId2"][1].isDone).toBe(newIsDone)
+    expect(endState["todolistId2"][0].isDone).toBe(false)
+    expect(endState["todolistId1"][0].isDone).toBe(false)
 
 })
