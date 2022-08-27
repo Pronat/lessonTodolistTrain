@@ -42,8 +42,10 @@ export const taskReducer = (state: StateType, action: ActionType) => {
             // }
             // return {...state}
         case "CHANGE-TASK-STATUS":
-            let tasks = state[action.todolistId]
-            let task = tasks.map(t => t.id === action.todolistId)
+            return {
+                ...state,
+                [action.todolistId]: state[action.todolistId].map(el => el.id === action.taskId ? {...el, isDone: action.newIsDone}: el)
+            }
         default:
             throw new Error("I don't understand this type")
     }
@@ -70,5 +72,5 @@ export const ChangeTaskTitleAC = (todolistId: string, taskId: string, newTitle: 
 export const ChangeTaskStatusAC = (todolistId: string, taskId: string, newIsDone: boolean) => {
     return {
         type: 'CHANGE-TASK-STATUS', todolistId, taskId: taskId, newIsDone: newIsDone
-    }
+    } as const
 }
