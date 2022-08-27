@@ -11,12 +11,19 @@ type AddTaskAT = ReturnType<typeof AddTaskAC>
 export const taskReducer = (state: StateType, action: ActionType) => {
     switch (action.type) {
         case 'REMOVE-TASK':
-            let tasks = state[action.todolistId]
-            state[action.todolistId] = tasks.filter(el => el.id !== action.taskId)
-            return {...state}
+            return {
+                ...state,
+                [action.todolistId]: [...state[action.todolistId].filter(el => el.id !== action.taskId)]
+            }
+            // let tasks = state[action.todolistId]
+            // state[action.todolistId] = tasks.filter(el => el.id !== action.taskId)
+            // return {...state}
         case 'ADD-TASK':
             let newTask = {id: v1(), title: action.newTitle, isDone: false}
             return {...state, newTask}
+            return {
+
+            }
         default:
             throw new Error("I don't understand this type")
     }
