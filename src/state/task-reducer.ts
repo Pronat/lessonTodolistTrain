@@ -28,6 +28,13 @@ export const taskReducer = (state: StateType, action: ActionType) => {
             }
             // let newTask = {id: v1(), title: action.newTitle, isDone: false}
             // return {...state, newTask}
+        case "CHANGE-TASK-TITLE":
+            let tasks = state[action.todolistId]
+            let task = tasks.find(el => el.id === action.taskId)
+            if (task) {
+                task.title = action.newTitle
+            }
+            return {...state}
         default:
             throw new Error("I don't understand this type")
     }
