@@ -20,10 +20,12 @@ export const taskReducer = (state: StateType, action: ActionType) => {
             // return {...state}
         case 'ADD-TASK':
             let newTask = {id: v1(), title: action.newTitle, isDone: false}
-            return {...state, newTask}
             return {
-
+                ...state,
+                [action.todolistId]: [...state[action.todolistId], newTask ]
             }
+            // let newTask = {id: v1(), title: action.newTitle, isDone: false}
+            // return {...state, newTask}
         default:
             throw new Error("I don't understand this type")
     }
