@@ -12,7 +12,6 @@ import {FilterValuesType, TodolistType} from '../App';
 let todolistId1: string
 let todolistId2: string
 let startState: Array<TodolistType>
-
 beforeEach(() => {
     todolistId1 = v1();
     todolistId2 = v1();
@@ -23,7 +22,9 @@ beforeEach(() => {
 })
 
 test('correct todolist should be removed', () => {
+
     const endState = todolistsReducer(startState, removeTodolistAC(todolistId1))
+
     expect(endState.length).toBe(1);
     expect(endState[0].id).toBe(todolistId2);
 });
@@ -39,7 +40,10 @@ test('correct todolist should be added', () => {
 });
 
 test('correct todolist should change its name', () => {
+
     let newTodolistTitle = "New Todolist";
+
+
     const action = changeTodolistTitleAC(todolistId2, newTodolistTitle);
 
     const endState = todolistsReducer(startState, action);
@@ -49,7 +53,10 @@ test('correct todolist should change its name', () => {
 });
 
 test('correct filter of todolist should be changed', () => {
+
     let newFilter: FilterValuesType = "completed";
+
+
     const action = changeTodolistFilterAC(todolistId2, newFilter);
     const endState = todolistsReducer(startState, action);
 
