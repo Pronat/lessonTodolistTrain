@@ -23,7 +23,7 @@ export type ChangeTodolistFilterActionType = {
 
 type ActionsType = RemoveTodolistActionType | AddTodolistActionType | ChangeTodolistTitleActionType | ChangeTodolistFilterActionType;
 
-let initialState: Array<TodolistType>
+const initialState: Array<TodolistType> = []
 
 export const todolistsReducer = (state = initialState, action: ActionsType): Array<TodolistType> => {
     switch (action.type) {
@@ -48,7 +48,7 @@ export const todolistsReducer = (state = initialState, action: ActionsType): Arr
             return [...state];
         }
         default:
-            state
+            return state
     }
 }
 
