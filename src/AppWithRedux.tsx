@@ -39,43 +39,41 @@ function AppWithRedux() {
         let dispatch = useDispatch()
 
     function removeTask(id: string, todolistId: string) {
-        dispatchToTasks(removeTaskAC(id, todolistId));
+        dispatch(removeTaskAC(id, todolistId));
     }
 
     function addTask(title: string, todolistId: string) {
-      dispatchToTasks(addTaskAC(title, todolistId));
+        dispatch(addTaskAC(title, todolistId));
     }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
-        dispatchToTasks(changeTaskStatusAC(id, isDone, todolistId))
+        dispatch(changeTaskStatusAC(id, isDone, todolistId))
     }
 
     function changeTaskTitle(id: string, newTitle: string, todolistId: string) {
       let action = changeTaskTitleAC(id, newTitle, todolistId)
-        dispatchToTasks(action)
+        dispatch(action)
     }
 
 
     function changeFilter(value: FilterValuesType, todolistId: string) {
        let action = changeTodolistFilterAC(todolistId, value)
-        dispatchToTodolists(action)
+        dispatch(action)
     }
 
     function removeTodolist(id: string) {
        let action = removeTodolistAC(id)
-        dispatchToTodolists(action)
-        dispatchToTasks(action)
+        dispatch(action)
     }
 
     function changeTodolistTitle(id: string, title: string) {
        let action = changeTodolistTitleAC(id, title)
-        dispatchToTodolists(action)
+        dispatch(action)
     }
 
     function addTodolist(title: string) {
        const action = addTodolistAC(title)
-        dispatchToTodolists(action)
-        dispatchToTasks(action)
+        dispatch(action)
     }
 
     return (
