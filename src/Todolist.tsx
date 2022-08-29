@@ -40,13 +40,13 @@ export const Todolist = React.memo((props: PropsType) => {
     const onActiveClickHandler = () => props.changeFilter("active", props.id);
     const onCompletedClickHandler = () => props.changeFilter("completed", props.id);
 
-    let tasks = props.tasks
+    let allTodolistTasks = props.tasks
 
     if (props.filter === "active") {
-        tasks = tasks.filter(t => t.isDone === false);
+        allTodolistTasks = allTodolistTasks.filter(t => t.isDone === false);
     }
     if (props.filter === "completed") {
-        tasks = tasks.filter(t => t.isDone === true);
+        allTodolistTasks = allTodolistTasks.filter(t => t.isDone === true);
     }
 
     return <div>
