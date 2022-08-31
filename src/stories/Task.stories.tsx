@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {ChangeEvent, useState} from 'react';
 import {ComponentStory, ComponentMeta} from '@storybook/react';
 
 import {Button} from './Button';
@@ -23,10 +23,14 @@ export default {
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof Task> = (args) => {
-  const [task, setTask] = useState({id: 'dfdv', title: 'frfr', isDone: false})
+  const [task, setTask] = useState({id: 'dfdv', title: 'frfr', isDone: true})
   const changeTaskStatus = () => setTask({id: 'dfdv', title: 'frfr', isDone: !task.isDone})
 
-  return <Task changeTaskStatus={changeTaskStatus} changeTaskTitle={} removeTask={} task={task} todolistId={"qqqqq"}/>
+  const changeTaskTitle = (title: string) => {
+    setTask({id: 'dfdv', title: title, isDone: task.isDone})
+  }
+
+  return <Task changeTaskStatus={changeTaskStatus} changeTaskTitle={changeTaskTitle} removeTask={()=>action('removeTask')} task={task} todolistId={"qqqqq"}/>
 }
 
 // export const TaskIsDoneStories = Template.bind({});
