@@ -11,18 +11,17 @@ export default {
   component: AddItemForm,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
-    addItem: {
-      description: 'click inside form'
-    }
+   addItem: {
+     description: 'clicked inside form'
+   }
   },
 } as ComponentMeta<typeof AddItemForm>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
 const Template: ComponentStory<typeof AddItemForm> = (args) => <AddItemForm {...args} />;
 
-export const AddItemFormStories = Template.bind({});
+export const AddItemFormStory = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
-AddItemFormStories.args = {
-  addItem: action('click inside form')
+AddItemFormStory.args = {
+ addItem: action('clicked inside form')
 };
-
