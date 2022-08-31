@@ -6,12 +6,12 @@ import {AddItemForm} from "../AddItemForm";
 
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
-  title: 'RODOLIST/AddItemForm',
+  title: 'TODOLIST/AddItemForm',
   component: AddItemForm,
   // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
   argTypes: {
    addItem: {
-     description: 'button clicked inside from'
+     description: 'button clicked inside form'
    }
   },
 } as ComponentMeta<typeof Button>;
