@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {ComponentStory, ComponentMeta} from '@storybook/react';
 
 import {Button} from './Button';
@@ -13,26 +13,31 @@ export default {
     // More on argTypes: https://storybook.js.org/docs/react/api/argtypes
 
   args: {
-    changeTaskStatus: action('changeTaskStatus'),
-    changeTaskTitle: action('changeTaskTitle'),
-    removeTask: action('removeTask'),
-    todolistId: 'rgr',
+    // changeTaskStatus: action('changeTaskStatus'),
+    // changeTaskTitle: action('changeTaskTitle'),
+    // removeTask: action('removeTask'),
+    // todolistId: 'rgr',
   }
 
 } as ComponentMeta<typeof Task>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
-const Template: ComponentStory<typeof Task> = (args) => <Task {...args} />;
+const Template: ComponentStory<typeof Task> = (args) => {
+  const [task, setTask] = useState({id: 'dfdv', title: 'frfr', isDone: false})
+  const changeTaskStatus = () => setTask({id: 'dfdv', title: 'frfr', isDone: !task.isDone})
 
-export const TaskIsDoneStories = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-TaskIsDoneStories.args = {
-    todolistId: 'rgr',
-};
+  return <Task changeTaskStatus={changeTaskStatus} changeTaskTitle={} removeTask={} task={task} todolistId={"qqqqq"}/>
+}
 
-export const TaskIsNotDoneStories = Template.bind({});
-// More on args: https://storybook.js.org/docs/react/writing-stories/args
-TaskIsNotDoneStories.args = {
-    task: {id: 'dfdv', title: 'frfr', isDone: false},
-};
+// export const TaskIsDoneStories = Template.bind({});
+// // More on args: https://storybook.js.org/docs/react/writing-stories/args
+// TaskIsDoneStories.args = {
+//     todolistId: 'rgr',
+// };
+//
+// export const TaskIsNotDoneStories = Template.bind({});
+// // More on args: https://storybook.js.org/docs/react/writing-stories/args
+// TaskIsNotDoneStories.args = {
+//     task: {id: 'dfdv', title: 'frfr', isDone: false},
+// };
 
