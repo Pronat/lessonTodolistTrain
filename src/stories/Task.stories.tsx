@@ -19,10 +19,15 @@ const Template: ComponentStory<typeof Task> = (args) => <Task {...args} />;
 
 export const TaskIsDoneStory = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
+
+const baseArgs = {
+  changeTaskStatus: action('changeTaskStatus'),
+  changeTaskTitle: action('changeTaskTitle'),
+  removeTask: action('removeTask'),
+}
+
 TaskIsDoneStory.args = {
-    changeTaskStatus: action('changeTaskStatus'),
-    changeTaskTitle: action('changeTaskTitle'),
-    removeTask: action('removeTask'),
+   ...baseArgs,
     task: {id: "wfef", title: "rbrbbrbr", isDone: true},
     todolistId: 'dgdgd'
 };
@@ -30,9 +35,7 @@ TaskIsDoneStory.args = {
 export const TaskIsNotDoneStory = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 TaskIsNotDoneStory.args = {
-    changeTaskStatus: action('changeTaskStatus'),
-    changeTaskTitle: action('changeTaskTitle'),
-    removeTask: action('removeTask'),
+   ...baseArgs,
     task: {id: "wfef", title: "rbrbbrbr", isDone: false},
     todolistId: 'dgdgd'
 };
