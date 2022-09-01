@@ -28,7 +28,6 @@ const Template: ComponentStory<typeof EditableSpan> = (args) => <EditableSpan {.
 export const EditableSpanStory = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 EditableSpanStory.args = {
-  value: '1234',
-  onChange: action('onChange')
+  onChange: action('Value EditableSpan changed')
 };
 
