@@ -26,3 +26,13 @@ TaskIsDoneStory.args = {
     task: {id: "wfef", title: "rbrbbrbr", isDone: true},
     todolistId: 'dgdgd'
 };
+
+export const TaskIsNotDoneStory = Template.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+TaskIsNotDoneStory.args = {
+    changeTaskStatus: action('changeTaskStatus'),
+    changeTaskTitle: action('changeTaskTitle'),
+    removeTask: action('removeTask'),
+    task: {id: "wfef", title: "rbrbbrbr", isDone: false},
+    todolistId: 'dgdgd'
+};
