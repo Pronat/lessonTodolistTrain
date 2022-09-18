@@ -47,6 +47,8 @@ export const DeleteTodolist = () => {
     useEffect(() => {
     }, [])
 
+
+
     return <div> {JSON.stringify(state)}</div>
 }
 export const UpdateTodolistTitle = () => {
