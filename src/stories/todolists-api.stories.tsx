@@ -4,6 +4,7 @@ import axios from "axios";
 export default {
     title: 'API'
 }
+
 const settings = {
     withCredentials: true
 }
@@ -13,11 +14,11 @@ export const GetTodolists = () => {
     useEffect(() => {
         // здесь мы будем делать запрос и ответ закидывать в стейт.
         // который в виде строки будем отображать в div-ке
-        let promise = axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
-
-        promise.then( (res) => {
-            debugger
+       let promise = axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
+        promise.then((res) => {
+            setState(res.data)
         })
+
 
     }, [])
 
