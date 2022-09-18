@@ -6,7 +6,10 @@ export default {
 }
 
 const settings = {
-    withCredentials: true
+    withCredentials: true,
+    headers: {
+        "KEY-API": "79352066-7263-4742-bb95-6ef08001893f"
+    }
 }
 
 export const GetTodolists = () => {
@@ -14,11 +17,12 @@ export const GetTodolists = () => {
     useEffect(() => {
         // здесь мы будем делать запрос и ответ закидывать в стейт.
         // который в виде строки будем отображать в div-ке
-       let promise = axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
+
+    let promise = axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
+
         promise.then((res) => {
             setState(res.data)
         })
-
 
     }, [])
 
@@ -27,6 +31,13 @@ export const GetTodolists = () => {
 export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
+
+        let promise = axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title: "Alex"}, settings)
+
+        promise.then((res) => {
+            debugger
+            setState(res.data)
+        })
     }, [])
 
     return <div> {JSON.stringify(state)}</div>
