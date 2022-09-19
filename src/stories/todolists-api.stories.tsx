@@ -20,9 +20,9 @@ export const GetTodolists = () => {
         // который в виде строки будем отображать в div-ке
 
         todolistsApi.getTodolists()
-        .then((res) => {
-            setState(res.data)
-        })
+            .then((res) => {
+                setState(res.data)
+            })
 
     }, [])
 
@@ -33,9 +33,9 @@ export const CreateTodolist = () => {
     useEffect(() => {
 
         todolistsApi.createTodolist()
-        .then((res) => {
-            setState(res.data)
-        })
+            .then((res) => {
+                setState(res.data)
+            })
     }, [])
 
     return <div> {JSON.stringify(state)}</div>
@@ -43,11 +43,10 @@ export const CreateTodolist = () => {
 export const DeleteTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-
-                todolistsApi.deleteTodolist()
-        .then((res) => {
-            setState(res.data)
-        })
+        todolistsApi.deleteTodolist()
+            .then((res) => {
+                setState(res.data)
+            })
 
     }, [])
 
@@ -57,11 +56,10 @@ export const DeleteTodolist = () => {
 export const UpdateTodolistTitle = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-        let todolistId = "115d2889-3354-479e-8095-562454cc97e4"
         todolistsApi.updateTodolistTitle()
-        .then((arg) => {
-            setState(arg.data)
-        })
+            .then((res) => {
+                setState(res.data)
+            })
 
     }, [])
 
