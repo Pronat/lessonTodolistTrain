@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78930ebc-3969-45d3-8ea1-2bb1016e128e" name="Changes" comment="lesson13-23">
+    <list default="true" id="78930ebc-3969-45d3-8ea1-2bb1016e128e" name="Changes" comment="lesson13-24">
       <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663521957478</updated>
       <workItem from="1663521959807" duration="5457000" />
-      <workItem from="1663608103116" duration="7049000" />
+      <workItem from="1663608103116" duration="7627000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-5">
       <created>1663523087336</created>
@@ -210,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663615011026</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="lesson13-24">
+      <created>1663615557436</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1663615557436</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +253,7 @@
     <MESSAGE value="lesson13-21" />
     <MESSAGE value="lesson13-22" />
     <MESSAGE value="lesson13-23" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson13-23" />
+    <MESSAGE value="lesson13-24" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson13-24" />
   </component>
 </project>

@@ -1,6 +1,14 @@
 import axios from "axios";
 import {CreateTodolist, DeleteTodolist, UpdateTodolistTitle} from "../stories/todolists-api.stories";
 
+export type TodolistApiType = {
+    id: string
+    title: string
+    addedDate: string
+    order: number
+}
+
+
 const settings = {
     withCredentials: true,
     headers: {
