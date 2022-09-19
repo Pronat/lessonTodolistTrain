@@ -54,12 +54,12 @@ export const DeleteTodolist = () => {
 
     return <div> {JSON.stringify(state)}</div>
 }
+
 export const UpdateTodolistTitle = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-        const todolistId = "7f25089e-5a74-4627-ba99-1a1502ed89e5"
-        let title = "Nnn Title"
-        todolistsApi.updateTodolistTitle(todolistId, title)
+        const todolistId = "2ba99110-b240-4844-9154-56da4765c8b0"
+        todolistsApi.updateTodolist(todolistId, "UffffAA")
             .then((res) => {
                 setState(res.data)
             })
