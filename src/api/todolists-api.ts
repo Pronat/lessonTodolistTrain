@@ -27,6 +27,14 @@ type UpdateTodolist = {
     data: {}
 }
 
+type ResponseType<D> = {
+    resultCode: number
+    messages: string[]
+    data: D
+}
+
+
+
 
 
 const settings = {
@@ -42,15 +50,15 @@ export const todolistsApi = {
         return promise
     },
     createTodolist(title: string) {
-        let promise = axios.post<CreateTodolistResponseType>("https://social-network.samuraijs.com/api/1.1/todo-lists", {title: title}, settings)
+        let promise = axios.post<ResponseType<{item: TodolistType}>>("https://social-network.samuraijs.com/api/1.1/todo-lists", {title: title}, settings)
         return promise
     },
     deleteTodolist(todolistId: string) {
-        let promise = axios.delete<DeleteTodolist>(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, settings)
+        let promise = axios.delete<ResponseType<{}>>(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, settings)
         return promise
     },
     updateTodolist(todolistId: string, title: string) {
-        let promise = axios.put<UpdateTodolist>(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, {title: title}, settings)
+        let promise = axios.put<ResponseType<{}>>(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, {title: title}, settings)
         return promise
     }
 

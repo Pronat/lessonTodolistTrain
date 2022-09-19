@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="78930ebc-3969-45d3-8ea1-2bb1016e128e" name="Changes" comment="lesson13-26">
+    <list default="true" id="78930ebc-3969-45d3-8ea1-2bb1016e128e" name="Changes" comment="lesson13-27">
       <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1663521957478</updated>
       <workItem from="1663521959807" duration="5457000" />
-      <workItem from="1663608103116" duration="8606000" />
+      <workItem from="1663608103116" duration="8945000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-5">
       <created>1663523087336</created>
@@ -230,7 +230,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663616740125</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="lesson13-27">
+      <created>1663617083814</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1663617083814</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +277,7 @@
     <MESSAGE value="lesson13-24" />
     <MESSAGE value="lesson13-25" />
     <MESSAGE value="lesson13-26" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson13-26" />
+    <MESSAGE value="lesson13-27" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson13-27" />
   </component>
 </project>
