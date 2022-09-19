@@ -21,10 +21,9 @@ export const todolistsApi = {
         let promise = axios.delete(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, settings)
         return promise
     },
-    updateTodolistTitle() {
-        let todolistId = "028b2df6-7fad-4388-8c30-1d4d8a2491e7"
+    updateTodolistTitle(todolistId: string, title: string) {
         let promise = axios.put(`https://social-network.samuraijs.com/api/1.1/todo-lists${todolistId}`,
-            {title: "RareTitle"}, settings)
+            {title: title}, settings)
         return promise
     }
 
