@@ -13,12 +13,11 @@ export const todolistsApi = {
         let promise = axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
         return promise
     },
-    createTodolist() {
-        let promise = axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title: "ASDerek"}, settings)
+    createTodolist(title: string) {
+        let promise = axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title: title}, settings)
         return promise
     },
-    deleteTodolist() {
-        let todolistId = "f0ae979c-5c2a-4775-ae12-555e13d1a581"
+    deleteTodolist(todolistId: string) {
         let promise = axios.delete(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, settings)
         return promise
     },
