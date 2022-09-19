@@ -58,9 +58,8 @@ export const UpdateTodolistTitle = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
         let todolistId = "115d2889-3354-479e-8095-562454cc97e4"
-        let promise = axios.put(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, {title: "NewTitle"}, settings)
-
-        promise.then((arg) => {
+        todolistsApi.updateTodolistTitle()
+        .then((arg) => {
             setState(arg.data)
         })
 
