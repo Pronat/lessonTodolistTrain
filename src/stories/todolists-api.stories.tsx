@@ -77,7 +77,7 @@ export const GetTasks = () => {
     useEffect(() => {
         // здесь мы будем делать запрос и ответ закидывать в стейт.
         // который в виде строки будем отображать в div-ке
-        const todolistId = "7f25089e-5a74-4627-ba99-1a1502ed89e5"
+        const todolistId = "2ba99110-b240-4844-9154-56da4765c8b0"
         todolistsApi.getTasks(todolistId)
             .then((res) => {
                 setState(res.data)
@@ -85,6 +85,19 @@ export const GetTasks = () => {
 
     }, [])
 
+    return <div> {JSON.stringify(state)}</div>
+}
+
+export const CreateTask = () => {
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+        const todolistId = "2ba99110-b240-4844-9154-56da4765c8b0"
+        let title = "NewTitle"
+        todolistsApi.createTask(todolistId, title)
+            .then((res) => {
+                setState(res.data)
+            })
+    }, [])
     return <div> {JSON.stringify(state)}</div>
 }
 

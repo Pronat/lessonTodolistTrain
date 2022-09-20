@@ -27,7 +27,7 @@ type UpdateTodolist = {
     data: {}
 }
 
-type ResponseType<D> = {
+type ResponseType<D = {}> = {
     resultCode: number
     messages: string[]
     data: D
@@ -51,6 +51,16 @@ type GetTasksResponce = {
     error: string | null
     totalCount: number
     items: TaskType[]
+}
+
+type UpdateTaskType = {
+    title: string
+    description: string
+    completed: boolean
+    status: number
+    priority: number
+    startDate: string
+    deadline: string
 }
 
 
@@ -91,8 +101,13 @@ export const todolistsApi = {
 
     },
 
+    createTask(todolistId: string, title: string) {
+        return instance.post<ResponseType<{item: TodolistType}>>("todo-lists${todolistId}/tasks/", {title: title})
+
+    },
+
     deleteTask(todolistId: string, taskId: string) {
-        return instance.delete(`todo-lists/${todolistId}/tasks/${taskId}`)
+        return instance.delete<ResponseType>(`todo-lists/${todolistId}/tasks/${taskId}`)
     }
 
 }
