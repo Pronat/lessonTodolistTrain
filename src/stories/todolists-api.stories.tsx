@@ -13,6 +13,8 @@ const settings = {
     }
 }
 
+
+
 export const GetTodolists = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
@@ -75,7 +77,7 @@ export const GetTasks = () => {
     useEffect(() => {
         // здесь мы будем делать запрос и ответ закидывать в стейт.
         // который в виде строки будем отображать в div-ке
-        let todolistId = "2ba99110-b240-4844-9154-56da4765c8b0"
+        const todolistId = "7f25089e-5a74-4627-ba99-1a1502ed89e5"
         todolistsApi.getTasks(todolistId)
             .then((res) => {
                 setState(res.data)
