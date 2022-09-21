@@ -6,6 +6,7 @@ import Button from '@mui/material/Button';
 import { Delete } from '@mui/icons-material';
 import { Task } from './Task'
 import { FilterValuesType } from './App';
+import {TaskType} from "./api/todolists-api";
 
 
 type PropsType = {
