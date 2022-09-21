@@ -1,5 +1,6 @@
 import { v1 } from 'uuid';
-import { FilterValuesType, TodolistType } from '../App';
+import { FilterValuesType } from '../App';
+import {TodolistType} from "../api/todolists-api";
 
 export type TodolistDomainType = TodolistType & {
     filter: FilterValuesType
@@ -40,7 +41,9 @@ export const todolistsReducer = (state: Array<TodolistDomainType> = initialState
             return [{
                 id: action.todolistId,
                 title: action.title,
-                filter: 'all'
+                filter: 'all',
+                addedDate: '',
+                order: 0
             }, ...state]
         }
         case 'CHANGE-TODOLIST-TITLE': {
