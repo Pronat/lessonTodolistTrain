@@ -8,7 +8,7 @@ export default {
 const settings = {
     withCredentials: true,
     headers: {
-        'API-KEY': "79352066-7263-4742-bb95-6ef08001893f"
+        'API-KEY': '79352066-7263-4742-bb95-6ef08001893f'
     }
 }
 
@@ -53,7 +53,12 @@ export const DeleteTodolist = () => {
 export const UpdateTodolistTitle = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
+        let todolistId = '2d501166-ebc6-47b4-8065-94097ac99c0b'
+        let title = "UpdatedTitle"
+        axios.put(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, {title}, {withCredentials: true, headers: {'API-KEY': '79352066-7263-4742-bb95-6ef08001893f'}})
+            .then( (res) => {
+                setState(res.data)
+            })
     }, [])
-
     return <div>{JSON.stringify(state)}</div>
 }
