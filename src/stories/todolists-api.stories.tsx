@@ -29,8 +29,8 @@ export const GetTodolists = () => {
 export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-        let newTitle = "TraTaTa"
-        let payload = axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title: newTitle}, settings)
+        let title = "TraTaTa"
+        let payload = axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title}, settings)
         payload.then( (res) => {
             setState(res.data)
         })
