@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import axios from "axios";
+import {TodoApi} from "../api/todo-api";
 
 export default {
     title: 'API'
@@ -18,8 +19,8 @@ export const GetTodolists = () => {
         // здесь мы будем делать запрос и ответ закидывать в стейт.
         // который в виде строки будем отображать в div-ке
 
-        let promise = axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
-            promise.then( (res)=> [
+            TodoApi.getTodo()
+            .then( (res)=> [
                 setState(res.data)
             ])
 
@@ -30,8 +31,8 @@ export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
         let title = "TraTaTa"
-        let payload = axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title}, settings)
-        payload.then( (res) => {
+        let promise = axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title}, settings)
+        promise.then( (res) => {
             setState(res.data)
         })
     }, [])
@@ -55,8 +56,8 @@ export const UpdateTodolistTitle = () => {
     useEffect(() => {
         let todolistId = '2d501166-ebc6-47b4-8065-94097ac99c0b'
         let title = "YYYuuu"
-        axios.put(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, {title}, settings)
-            .then( (res) => {
+        let promise = axios.put(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, {title}, settings)
+        promise.then( (res) => {
                 setState(res.data)
             })
     }, [])
