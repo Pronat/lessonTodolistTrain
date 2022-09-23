@@ -31,8 +31,8 @@ export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
         let title = "TraTaTa"
-        let promise = axios.post("https://social-network.samuraijs.com/api/1.1/todo-lists", {title}, settings)
-        promise.then( (res) => {
+       TodoApi.createTodo(title)
+        .then( (res) => {
             setState(res.data)
         })
     }, [])
@@ -56,7 +56,7 @@ export const UpdateTodolistTitle = () => {
     useEffect(() => {
         let todolistId = '2d501166-ebc6-47b4-8065-94097ac99c0b'
         let title = "XXXxxx"
-        TodoApi.createTodo(todolistId, title)
+        TodoApi.updateTodo(todolistId, title)
         .then( (res) => {
                 setState(res.data)
             })

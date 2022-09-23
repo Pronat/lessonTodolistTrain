@@ -16,8 +16,8 @@ export const TodoApi = {
         let promise = axios.delete(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, settings)
         return promise
     },
-    createTodo(todolistId: string, title: string) {
-        let promise = axios.post(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, {title}, settings)
+    createTodo(title: string) {
+        let promise = axios.post(`https://social-network.samuraijs.com/api/1.1/todo-lists/`, {title}, settings)
         return promise
     },
     updateTodo(todolistId: string, title: string) {
