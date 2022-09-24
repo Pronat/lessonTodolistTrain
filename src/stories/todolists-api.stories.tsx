@@ -1,7 +1,15 @@
 import React, {useEffect, useState} from 'react'
+import axios from "axios";
 
 export default {
     title: 'API'
+}
+
+let settings = {
+    withCredentials: true,
+    headers: {
+        "API-KEY": "79352066-7263-4742-bb95-6ef08001893f"
+    }
 }
 
 export const GetTodolists = () => {
@@ -9,7 +17,10 @@ export const GetTodolists = () => {
     useEffect(() => {
         // здесь мы будем делать запрос и ответ закидывать в стейт.
         // который в виде строки будем отображать в div-ке
-
+    let promise = axios.get('https://social-network.samuraijs.com/api/1.1/todo-lists', settings)
+        promise.then((res) => {
+            setState(res.data)
+        })
     }, [])
 
     return <div> {JSON.stringify(state)}</div>
@@ -17,6 +28,11 @@ export const GetTodolists = () => {
 export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
+        let title = "NewTitle"
+        let promise = axios.post('https://social-network.samuraijs.com/api/1.1/todo-lists', {title}, settings)
+        promise.then((res) => {
+            setState(res.data)
+        })
     }, [])
 
     return <div> {JSON.stringify(state)}</div>
@@ -24,6 +40,11 @@ export const CreateTodolist = () => {
 export const DeleteTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
+        let todolistId = '19c6ecc0-318f-450b-8cb9-e55fdc300219'
+        let promise = axios.delete(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, settings)
+        promise.then((res) => {
+            setState(res.data)
+        })
     }, [])
 
     return <div> {JSON.stringify(state)}</div>
@@ -31,6 +52,12 @@ export const DeleteTodolist = () => {
 export const UpdateTodolistTitle = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
+        let todolistId = '8db9495a-0f67-4193-9bfe-aa2670e5f290'
+        let title = "PutTitle"
+        let promise = axios.put(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`,{title}, settings)
+        promise.then((res) => {
+            setState(res.data)
+        })
     }, [])
 
     return <div> {JSON.stringify(state)}</div>
