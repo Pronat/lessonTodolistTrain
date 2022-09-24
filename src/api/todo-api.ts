@@ -8,6 +8,16 @@ export type TodoType = {
 	order: number;
 }
 
+export type CreateTodo = {
+	messages: any[];
+	fieldsErrors: any[];
+	resultCode: number;
+    data: {
+        item: TodoType
+    }
+}
+
+
 
 const instance = axios.create({
     baseURL: "https://social-network.samuraijs.com/api/1.1",
@@ -19,7 +29,7 @@ const instance = axios.create({
 
 export const TodoApi = {
     getTodo() {
-        return instance.get('todo-lists')
+        return instance.get<TodoType[]>('todo-lists')
     },
     deleteTodo(todolistId: string) {
         return instance.delete(`todo-lists/${todolistId}`)
