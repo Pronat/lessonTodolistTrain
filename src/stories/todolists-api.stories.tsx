@@ -63,3 +63,31 @@ export const UpdateTodolistTitle = () => {
     return <div> {JSON.stringify(state)}</div>
 }
 
+
+export const GetTasks = () => {
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+        // здесь мы будем делать запрос и ответ закидывать в стейт.
+        // который в виде строки будем отображать в div-ке
+        let todolistId = '8db9495a-0f67-4193-9bfe-aa2670e5f290'
+        let promise = axios.get(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}/tasks`, settings)
+        promise.then((res) => {
+            setState(res.data)
+        })
+    }, [])
+
+    return <div> {JSON.stringify(state)}</div>
+}
+
+export const CreateTasks = () => {
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+        let title = "NewTask"
+        let promise = axios.post('https://social-network.samuraijs.com/api/1.1/todo-lists', {title}, settings)
+        promise.then((res) => {
+            setState(res.data)
+        })
+    }, [])
+
+    return <div> {JSON.stringify(state)}</div>
+}
