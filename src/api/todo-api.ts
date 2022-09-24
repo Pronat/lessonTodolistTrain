@@ -18,23 +18,19 @@ const instance = axios.create({
 
 
 
-
-
-const settings = {
-    withCredentials: true,
-    headers: {
-        'API-KEY': '79352066-7263-4742-bb95-6ef08001893f'
-    }
-}
+// const settings = {
+//     withCredentials: true,
+//     headers: {
+//         'API-KEY': '79352066-7263-4742-bb95-6ef08001893f'
+//     }
+// }
 
 export const TodoApi = {
     getTodo() {
-        let promise = axios.get("https://social-network.samuraijs.com/api/1.1/todo-lists", settings)
-        return promise
+        return instance.get('todo-lists')
     },
     deleteTodo(todolistId: string) {
-        let promise = axios.delete(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}`, settings)
-        return promise
+        return instance.delete(`todo-lists/${todolistId}`)
     },
     createTodo(title: string) {
         let promise = axios.post(`https://social-network.samuraijs.com/api/1.1/todo-lists/`, {title}, settings)
