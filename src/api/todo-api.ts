@@ -9,14 +9,20 @@ export type TodoType = {
 }
 
 export type CreateTodo = {
-	messages: any[];
-	fieldsErrors: any[];
+	messages: string[];
+	fieldsErrors: string[];
 	resultCode: number;
     data: {
         item: TodoType
     }
 }
 
+export type DeleteType = {
+	data: DeleteTypeData;
+	messages: any[];
+	fieldsErrors: any[];
+	resultCode: number;
+}
 
 
 const instance = axios.create({
@@ -35,7 +41,7 @@ export const TodoApi = {
         return instance.delete(`todo-lists/${todolistId}`)
     },
     createTodo(title: string) {
-        return instance.post(`todo-lists/`, {title})
+        return instance.post<CreateTodo>(`todo-lists/`, {title})
     },
     updateTodo(todolistId: string, title: string) {
         return instance.put(`todo-lists/${todolistId}`, {title})
