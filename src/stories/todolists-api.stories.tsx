@@ -86,7 +86,7 @@ export const CreateTasks = () => {
     useEffect(() => {
         let title = "Ogogogog"
         let todolistId = 'dd13c614-6600-4b2b-bff5-3a26c682e799'
-       todolistApi.createTasks(todolistId, title)
+       todolistApi.createTask(todolistId, title)
         .then((res) => {
             setState(res.data)
         })
@@ -100,8 +100,8 @@ export const DeleteTask = () => {
     useEffect(() => {
         let todolistId = '19c6ecc0-318f-450b-8cb9-e55fdc300219'
         let taskId = '76eb3beb-4e62-4c8f-b611-819253a73e71'
-        let promise = axios.delete(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}/tasks/${taskId}`, settings)
-        promise.then((res) => {
+        todolistApi.deleteTasks(todolistId, taskId)
+        .then((res) => {
             setState(res.data)
         })
     }, [])
@@ -116,8 +116,8 @@ export const UpdateTaskTitle = () => {
         let todolistId = '8db9495a-0f67-4193-9bfe-aa2670e5f290'
         let taskId = '76eb3beb-4e62-4c8f-b611-819253a73e71'
         let title = "PutTaskTitle"
-        let promise = axios.put(`https://social-network.samuraijs.com/api/1.1/todo-lists/${todolistId}/tasks/${taskId}`,{title}, settings)
-        promise.then((res) => {
+        todolistApi.deleteTasks(todolistId, taskId)
+        .then((res) => {
             setState(res.data)
         })
     }, [])
