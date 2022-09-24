@@ -6,11 +6,7 @@ export default {
     title: 'API'
 }
 
-const settings = {
-    withCredentials: true,
-    headers: {
-        'API-KEY': '79352066-7263-4742-bb95-6ef08001893f'
-    }
+
 }
 
 export const GetTodolists = () => {

@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a929a655-be6f-4b4b-82b9-7fb60b53fc20" name="Changes" comment="lesson13-51">
+    <list default="true" id="a929a655-be6f-4b4b-82b9-7fb60b53fc20" name="Changes" comment="lesson13-52">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/todolists-api.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,8 @@
       <updated>1663785809082</updated>
       <workItem from="1663785811348" duration="233000" />
       <workItem from="1663867484390" duration="3260000" />
-      <workItem from="1663954405081" duration="9512000" />
+      <workItem from="1663954405081" duration="9965000" />
+      <workItem from="1664019522580" duration="699000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-41">
       <created>1663875988930</created>
@@ -148,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663964316490</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="lesson13-52">
+      <created>1663965311177</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1663965311177</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +184,7 @@
     <MESSAGE value="lesson13-49" />
     <MESSAGE value="lesson13-50" />
     <MESSAGE value="lesson13-51" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson13-51" />
+    <MESSAGE value="lesson13-52" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson13-52" />
   </component>
 </project>
