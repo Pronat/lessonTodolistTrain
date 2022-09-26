@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="lesson13-72">
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/promises/acync-code.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/acync-code.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,18 +29,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src/promises",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\promises" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -68,6 +75,7 @@
       <workItem from="1664041702822" duration="9139000" />
       <workItem from="1664113442292" duration="5000" />
       <workItem from="1664116048014" duration="2305000" />
+      <workItem from="1664216666480" duration="723000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -146,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664051289670</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="promises-1">
+      <created>1664216730267</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1664216730267</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +190,7 @@
     <MESSAGE value="lesson13-70" />
     <MESSAGE value="lesson13-71" />
     <MESSAGE value="lesson13-72" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson13-72" />
+    <MESSAGE value="promises-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-1" />
   </component>
 </project>
