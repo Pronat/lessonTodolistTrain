@@ -1,21 +1,9 @@
 import React from 'react';
 
 
-const resolvedPromise = Promise.resolve([{}])
-resolvedPromise
-    .then(data => console.log(data))
-    .catch(error => console.warn(error))
 
-
-// const rejectedPromise = Promise.reject({message: "Some Error"})
-// console.log(rejectedPromise)
-//
-// rejectedPromise
-//     .then(data => console.log(data))
-//     .catch(error => console.warn(error))
-
-
-
+axios.get('https://google.com')
+    .then(response => console.log(response.data))
 
 
 
