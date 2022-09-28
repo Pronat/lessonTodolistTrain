@@ -1,7 +1,19 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
-const resolvedPromise = Promise.resolve(100)
+
+const resolvedPromise = Promise.resolve([{}])
+resolvedPromise
+    .then(data => console.log(data))
+    .catch(error => console.warn(error))
+
+
+// const rejectedPromise = Promise.reject({message: "Some Error"})
+// console.log(rejectedPromise)
+//
+// rejectedPromise
+//     .then(data => console.log(data))
+//     .catch(error => console.warn(error))
+
 
 
 

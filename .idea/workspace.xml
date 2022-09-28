@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -46,7 +48,17 @@
       <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\promises" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.storybook">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="storybook" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -59,6 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="npm.storybook" />
       </list>
     </recent_temporary>
@@ -76,7 +89,7 @@
       <workItem from="1664116048014" duration="2305000" />
       <workItem from="1664216666480" duration="4230000" />
       <workItem from="1664305423833" duration="631000" />
-      <workItem from="1664380855299" duration="603000" />
+      <workItem from="1664380855299" duration="1572000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -190,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664222191905</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="promises-5">
+      <created>1664384453948</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1664384453948</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
