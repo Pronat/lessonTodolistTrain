@@ -5,26 +5,25 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-        let myPromise = new Promise((resolve, reject) => {
-            setTimeout( () => {
-                alert("Hello")
-                resolve()
-            }, 3000)
-            console.log(1)
-            console.log(2)
-            console.log(3)
+<script>
+    let myPromise = new Promise((resolve, reject) => {
+        setTimeout(() => {
+            alert("Hello")
+            resolve()
+        }, 3000)
+        console.log(1)
+        console.log(2)
+        console.log(3)
+    });
+    console.log(myPromise)
+
+    // ниже по коду мы можем подписаться, на промис, чтобы он (промис) вызвал нашу функцию, когда он (промис) зарезолвится. Для этого передаём в метод then колбэк-функцию)
+    myPromise.then(() => {
+        console.log("myPromise зарезолвился, и я узнал об этом");
+        console.log(myPromise)
+    })
 
 
-        });
-
-
-        // ниже по коду мы можем подписаться, на промис, чтобы он (промис) вызвал нашу функцию, когда он (промис) зарезолвится. Для этого передаём в метод then колбэк-функцию)
-        myPromise.then(( ) => {
-            console.log("myPromise зарезолвился, и я узнал об этом");
-        })
-
-
-    </script>
+</script>
 </body>
 </html>
