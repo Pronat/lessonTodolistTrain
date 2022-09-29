@@ -6,7 +6,16 @@
 </head>
 <body>
     <script>
-        alert("Hello")
+        let myPromise = new Promise(() => {
+            alert('Hello');
+        });
+
+
+        // ниже по коду мы можем подписаться, на промис, чтобы он (промис) вызвал нашу функцию, когда он (промис) зарезолвится. Для этого передаём в метод then колбэк-функцию)
+        myPromise.then(( ) => {
+            console.log("myPromise зарезолвился, и я узнал об этом");
+        })
+
 
     </script>
 </body>
