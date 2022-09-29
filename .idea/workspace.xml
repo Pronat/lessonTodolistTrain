@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-10">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-11">
       <change beforePath="$PROJECT_DIR$/src/promises/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +94,7 @@
       <workItem from="1664391884663" duration="31000" />
       <workItem from="1664391946718" duration="20000" />
       <workItem from="1664471645942" duration="2841000" />
-      <workItem from="1664475728021" duration="2455000" />
+      <workItem from="1664475728021" duration="2803000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -251,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664477012784</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="promises-11">
+      <created>1664478637283</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1664478637283</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,6 +296,7 @@
     <MESSAGE value="promises-8" />
     <MESSAGE value="promises-9" />
     <MESSAGE value="promises-10" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-10" />
+    <MESSAGE value="promises-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-11" />
   </component>
 </project>
