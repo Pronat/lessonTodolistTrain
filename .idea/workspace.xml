@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-14">
-      <change beforePath="$PROJECT_DIR$/src/promises/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index.html" afterDir="false" />
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-15">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/promises/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +95,7 @@
       <workItem from="1664391884663" duration="31000" />
       <workItem from="1664391946718" duration="20000" />
       <workItem from="1664471645942" duration="2841000" />
-      <workItem from="1664475728021" duration="5136000" />
+      <workItem from="1664475728021" duration="6174000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -279,7 +279,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664480517979</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="promises-15">
+      <created>1664481977192</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1664481977192</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +304,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson13-62" />
     <MESSAGE value="lesson13-63" />
     <MESSAGE value="lesson13-64" />
     <MESSAGE value="lesson13-65" />
@@ -322,6 +328,7 @@
     <MESSAGE value="promises-12" />
     <MESSAGE value="promises-13" />
     <MESSAGE value="promises-14" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-14" />
+    <MESSAGE value="promises-15" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-15" />
   </component>
 </project>

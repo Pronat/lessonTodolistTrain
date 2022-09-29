@@ -6,14 +6,25 @@
 </head>
 <body>
 <script>
-   let pr = new Promise( (resolved, rejected) => {
-           resolved( Math.random())
+   // let pr = new Promise( (resolved, rejected) => {
+   //     setTimeout( () => {
+   //         resolved( Math.random())
+   //     }, 2000)
+   // })
 
-   })
+   let doAfter = (time) => {
+       setTimeout( () => {
+           let pr = new Promise( (resolve, reject) => {
+               resolve()
+           })
 
-   pr.then( (number) => {
-       console.log("pr зарезолвился" + number)
-   })
+       }, time)
+       return
+   }
+
+   doAfter(5).then( () => console.log('я сработал через 5 секунд') );
+   doAfter(3).then( () => console.log('а я сработал через 3 секунд') );
+   doAfter(10).then( () => console.log('я сработал через 10 секунд') );
 
 
 </script>
