@@ -7,14 +7,12 @@
 <body>
 <script>
    let pr = new Promise( (resolved, rejected) => {
-       setTimeout( () => {
-           alert(Math.random())
-           resolved()
-       }, 2000)
+           resolved( Math.random())
+
    })
 
-   pr.then( () => {
-       console.log("22222")
+   pr.then( (number) => {
+       console.log("pr зарезолвился" + number)
    })
 
 
