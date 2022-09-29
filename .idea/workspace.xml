@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-6">
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
@@ -89,7 +89,10 @@
       <workItem from="1664116048014" duration="2305000" />
       <workItem from="1664216666480" duration="4230000" />
       <workItem from="1664305423833" duration="631000" />
-      <workItem from="1664380855299" duration="2378000" />
+      <workItem from="1664380855299" duration="3458000" />
+      <workItem from="1664391884663" duration="31000" />
+      <workItem from="1664391946718" duration="20000" />
+      <workItem from="1664471645942" duration="712000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -217,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664385216483</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="promises-7">
+      <created>1664386185372</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1664386185372</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +262,7 @@
     <MESSAGE value="promises-4" />
     <MESSAGE value="promises-5" />
     <MESSAGE value="promises-6" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-6" />
+    <MESSAGE value="promises-7" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-7" />
   </component>
 </project>
