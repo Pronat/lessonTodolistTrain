@@ -28,9 +28,16 @@
    // promise3.then( () => console.log('и я тоже следом сработал через 3 секунд') );
    // promise3.then( () => console.log('и я') );
 
-   api.sendStudentsCountToItKamasutra(20)
+
+   let micPr = api.getVacanciesCountFromMicrosoft()
+
+
+   let googPr = api.getVacanciesCountFromGoogle()
+
+
+   api.sendStudentsCountToItKamasutra()
        .then(res => {
-           console.log(res.data.message);
+           console.log(res.data);
        });
 
 
