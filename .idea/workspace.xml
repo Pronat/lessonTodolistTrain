@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-19">
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-20">
+      <change afterPath="$PROJECT_DIR$/src/promises/doAfter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/promises/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +15,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
         <option value="HTML File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -95,7 +97,7 @@
       <workItem from="1664391946718" duration="20000" />
       <workItem from="1664471645942" duration="2841000" />
       <workItem from="1664475728021" duration="7764000" />
-      <workItem from="1664559400643" duration="820000" />
+      <workItem from="1664559400643" duration="1626000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -314,7 +316,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664559788201</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="promises-20">
+      <created>1664560301201</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1664560301201</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,7 +341,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson13-67" />
     <MESSAGE value="lesson13-68" />
     <MESSAGE value="lesson13-69" />
     <MESSAGE value="lesson13-70" />
@@ -357,6 +365,7 @@
     <MESSAGE value="promises-17" />
     <MESSAGE value="promises-18" />
     <MESSAGE value="promises-19" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-19" />
+    <MESSAGE value="promises-20" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-20" />
   </component>
 </project>
