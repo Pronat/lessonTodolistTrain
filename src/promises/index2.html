@@ -33,7 +33,12 @@
 
 
    let googPr = api.getVacanciesCountFromGoogle()
+    const allPromise = Promise.all([micPr, googPr])
+   allPromise.then( (res) => {
+       let resFromG = res[0]
+       let resFromM = res[1]
 
+   })
 
    api.sendStudentsCountToItKamasutra()
        .then(res => {
