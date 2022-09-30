@@ -21,12 +21,17 @@
    // doAfter(3).then( () => console.log('а я сработал через 3 секунд') );
    // doAfter(10).then( () => console.log('я сработал через 10 секунд') );
 
-   let promise3 = doAfter(1);
-   promise3.then( () => console.log('я сработал через 3 секунд') )
-   promise3.catch( () => console.log('я словил ошибку') )
+   // let promise3 = doAfter(1);
+   // promise3.then( () => console.log('я сработал через 3 секунд') )
+   // promise3.catch( () => console.log('я словил ошибку') )
 
    // promise3.then( () => console.log('и я тоже следом сработал через 3 секунд') );
    // promise3.then( () => console.log('и я') );
+
+   api.sendStudentsCountToItKamasutra(20)
+       .then(res => {
+           console.log(res.data.message);
+       });
 
 
 

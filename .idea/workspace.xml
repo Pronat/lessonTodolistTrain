@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-22">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-23" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -95,7 +93,7 @@
       <workItem from="1664391946718" duration="20000" />
       <workItem from="1664471645942" duration="2841000" />
       <workItem from="1664475728021" duration="7764000" />
-      <workItem from="1664559400643" duration="3417000" />
+      <workItem from="1664559400643" duration="3585000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -335,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664562038067</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="promises-23">
+      <created>1664566297964</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1664566297964</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +358,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson13-70" />
     <MESSAGE value="lesson13-71" />
     <MESSAGE value="lesson13-72" />
     <MESSAGE value="promises-1" />
@@ -378,6 +382,7 @@
     <MESSAGE value="promises-20" />
     <MESSAGE value="promises-21" />
     <MESSAGE value="promises-22" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-22" />
+    <MESSAGE value="promises-23" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-23" />
   </component>
 </project>
