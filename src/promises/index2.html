@@ -12,7 +12,14 @@
    //     }, 2000)
    // })
 
-
+   let doAfter = (timer) => {
+       let pr = new Promise((resolve, reject) => {
+           setTimeout(() => {
+               resolve()
+           }, timer * 1000)
+       })
+       return pr
+   }
 
    doAfter(5).then( () => console.log('я сработал через 5 секунд') );
    doAfter(3).then( () => console.log('а я сработал через 3 секунд') );

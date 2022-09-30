@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-17" />
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-18">
+      <change beforePath="$PROJECT_DIR$/src/promises/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index2.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -93,6 +95,7 @@
       <workItem from="1664391946718" duration="20000" />
       <workItem from="1664471645942" duration="2841000" />
       <workItem from="1664475728021" duration="7764000" />
+      <workItem from="1664559400643" duration="364000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -297,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664484353803</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="promises-18">
+      <created>1664559518264</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1664559518264</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,7 +325,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson13-65" />
     <MESSAGE value="lesson13-66" />
     <MESSAGE value="lesson13-67" />
     <MESSAGE value="lesson13-68" />
@@ -340,6 +349,7 @@
     <MESSAGE value="promises-15" />
     <MESSAGE value="promises-16" />
     <MESSAGE value="promises-17" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-17" />
+    <MESSAGE value="promises-18" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-18" />
   </component>
 </project>
