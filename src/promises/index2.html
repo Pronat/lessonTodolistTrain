@@ -30,6 +30,17 @@
 
 
    let micPr = api.getVacanciesCountFromMicrosoft()
+       .then(msCount => {
+           console.log(msCount)
+           return api.getVacanciesCountFromGoogle()
+       })
+       .then(gCount => {
+           return api.sendStudentsCountToItKamasutra(gCount)
+       })
+       .then(res => {
+           console.log('from it-kamasutra: ' + res.data)
+       })
+
    let googPr = api.getVacanciesCountFromGoogle()
     const allPromise = Promise.all([micPr, googPr])
    allPromise.then( (res) => {
