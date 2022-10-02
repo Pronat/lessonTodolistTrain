@@ -4,8 +4,8 @@ const api = {
         { count: studentsCount });
     },
     getVacanciesCountFromMicrosoft() {
-        return axios.get("https://microsoft.com")
-           },
+        return axios.get("https://microsoft.com");
+    },
     getVacanciesCountFromGoogle() {
         return axios.get("https://google.com");
     }
