@@ -1,12 +1,13 @@
 <script>
 
-    let myPromise = new Promise((res, rej) => {
+    let myPromise = new Promise((resolve, reject) => {
         setTimeout( () => {
+            return Math.random()
+            resolve()
 
-            res()
-            // rej()
-        }, 2000)
-        alert("Hello")
+            // reject()
+        }, 3000)
+
     })
     myPromise.then((res) => {
         console.log("resolved done", res)

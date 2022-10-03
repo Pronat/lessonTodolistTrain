@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-32">
-      <change afterPath="$PROJECT_DIR$/src/promises/index.html" afterDir="false" />
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-33">
+      <change afterPath="$PROJECT_DIR$/src/promises/index2.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/promises/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +100,7 @@
       <workItem from="1664559400643" duration="6927000" />
       <workItem from="1664723044672" duration="3255000" />
       <workItem from="1664735252464" duration="605000" />
-      <workItem from="1664822459873" duration="319000" />
+      <workItem from="1664822459873" duration="1114000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -409,7 +410,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664735293067</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="promises-33">
+      <created>1664822963597</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1664822963597</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -427,7 +435,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="promises-8" />
     <MESSAGE value="promises-9" />
     <MESSAGE value="promises-10" />
     <MESSAGE value="promises-11" />
@@ -452,6 +459,7 @@
     <MESSAGE value="promises-30" />
     <MESSAGE value="promises-31" />
     <MESSAGE value="promises-32" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-32" />
+    <MESSAGE value="promises-33" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-33" />
   </component>
 </project>
