@@ -1,23 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
 <script>
 
-    let myPromise = new Promise((resolve, reject) => {
-        setTimeout( () => {
-            return Math.random()
-            resolve()
+    // let myPromise = new Promise((resolve, reject) => {
+    //     setTimeout( () => {
+    //
+    //         resolve(Math.random())
+    //
+    //         // reject()
+    //     }, 3000)
+    //
+    // })
+    // myPromise.then((res) => {
+    //     console.log("resolved done" + res)
+    // })
+    //  myPromise.then((res) => {
+    //     console.log("resolved done" + res)
+    // })
+    //
+    // myPromise.catch((err) => {
+    //     console.log("rejected done", err)
+    // })
+    // myPromise.finally(() => {
+    //     console.log("finally done")
+    // })
 
-            // reject()
-        }, 3000)
 
-    })
-    myPromise.then((res) => {
-        console.log("resolved done", res)
-    })
-    myPromise.catch((err) => {
-        console.log("rejected done", err)
-    })
-    myPromise.finally(() => {
-        console.log("finally done")
-    })
+    const doAfter = (num) => {
+        let newPromise = new Promise((resolve, reject) => {
+            setTimeout( () => {
+                resolve()
+            }, num * 1000)
+        })
+        return newPromise
+    }
 
-
+    doAfter(5).then( () => console.log('я сработал через 5 секунд') );
+    doAfter(3).then( () => console.log('а я сработал через 3 секунд') );
+    doAfter(10).then( () => console.log('я сработал через 10 секунд') );
 </script>
+
+</body>
+</html>
+

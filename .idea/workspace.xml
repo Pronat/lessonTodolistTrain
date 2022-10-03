@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-33">
-      <change afterPath="$PROJECT_DIR$/src/promises/index2.html" afterDir="false" />
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-34">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/promises/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/promises/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +99,7 @@
       <workItem from="1664559400643" duration="6927000" />
       <workItem from="1664723044672" duration="3255000" />
       <workItem from="1664735252464" duration="605000" />
-      <workItem from="1664822459873" duration="1114000" />
+      <workItem from="1664822459873" duration="1924000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -417,7 +416,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664822963597</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="promises-34">
+      <created>1664823681430</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1664823681430</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -435,7 +441,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="promises-9" />
     <MESSAGE value="promises-10" />
     <MESSAGE value="promises-11" />
     <MESSAGE value="promises-12" />
@@ -460,6 +465,7 @@
     <MESSAGE value="promises-31" />
     <MESSAGE value="promises-32" />
     <MESSAGE value="promises-33" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-33" />
+    <MESSAGE value="promises-34" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-34" />
   </component>
 </project>
