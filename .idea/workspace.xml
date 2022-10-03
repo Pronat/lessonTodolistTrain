@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-36">
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-37">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/promises/index2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index2.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,7 +99,7 @@
       <workItem from="1664559400643" duration="6927000" />
       <workItem from="1664723044672" duration="3255000" />
       <workItem from="1664735252464" duration="605000" />
-      <workItem from="1664822459873" duration="2685000" />
+      <workItem from="1664822459873" duration="3569000" />
     </task>
     <task id="LOCAL-00001" summary="lesson13-62">
       <created>1664042338368</created>
@@ -436,7 +437,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664824860588</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="promises-37">
+      <created>1664825193639</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1664825193639</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +462,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="promises-12" />
     <MESSAGE value="promises-13" />
     <MESSAGE value="promises-14" />
     <MESSAGE value="promises-15" />
@@ -479,6 +486,7 @@
     <MESSAGE value="promises-34" />
     <MESSAGE value="promises-35" />
     <MESSAGE value="promises-36" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-36" />
+    <MESSAGE value="promises-37" />
+    <option name="LAST_COMMIT_MESSAGE" value="promises-37" />
   </component>
 </project>
