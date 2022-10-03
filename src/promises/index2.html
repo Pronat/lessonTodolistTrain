@@ -35,27 +35,29 @@
     // })
 
 
-    const doAfter = (num) => {
-        let newPromise = new Promise((resolve, reject) => {
-            setTimeout( () => {
-                resolve()
-            }, num * 1000)
-        })
-        return newPromise
-    }
 
-    let callback1 = () => {
-        console.log('Мой промис зарезолвился');
-        return(25)
-    }
-    let callback2 = (e) => console.log('Мой промис тоже зарезолвился следом ' + e) ;
-
-    doAfter(3)
-    .then(callback1)
-    .then(callback2)
-
-
+    // const doAfter = (num) => {
+    //     let newPromise = new Promise((resolve, reject) => {
+    //         setTimeout( () => {
+    //             resolve()
+    //         }, num * 1000)
+    //     })
+    //     return newPromise
+    // }
     //
+    // let callback1 = () => {
+    //     console.log('Мой промис зарезолвился');
+    //     return(25)
+    // }
+    // let callback2 = (e) => console.log('Мой промис тоже зарезолвился следом ' + e) ;
+    //
+    // doAfter(3)
+    // .then(callback1)
+    // .then(callback2)
+
+
+
+
     // doAfter(5).then( () => console.log('я сработал через 5 секунд') );
     // doAfter(3).then( () => console.log('а я сработал через 3 секунд') );
     // doAfter(10).then( () => console.log('я сработал через 10 секунд') );
@@ -74,6 +76,27 @@
     //     .then((i) => {
     //         console.log(i)
     //     })
+
+
+    let pr = new Promise( (resolve) => {
+        let data = {
+            cities: [{title: "Minsk"}, {title: "Kiev"}],
+            website: "it-kamasutra.com"
+        };
+        resolve(data);
+    });
+
+    pr.then( data => {
+        console.log(data);
+    })
+        .then( website => {
+            console.log(website);
+        })
+        .then( () => {
+            console.log()
+        })
+
+
 
 
 </script>
