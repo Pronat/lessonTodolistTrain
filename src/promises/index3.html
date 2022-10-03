@@ -13,10 +13,22 @@
 <script src="api.js"></script>
 
 <script>
-    api.sendStudentsCountToItKamasutra(20)
-        .then(res => {
-            console.log(res);
+    api.getVacanciesCountFromMicrosoft()
+        .then(data => {
+            console.log(data);
         });
+
+    api.getVacanciesCountFromGoogle()
+        .then(data => {
+            console.log(data);
+        });
+
+    api.sendStudentsCountToItKamasutra(XXXX)
+        .then(data => {
+            console.log(data);
+        });
+
+
 </script>
 
 
