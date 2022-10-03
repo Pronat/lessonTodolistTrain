@@ -35,22 +35,33 @@
     // })
 
 
-    const doAfter = (num) => {
-        let newPromise = new Promise((resolve, reject) => {
-            setTimeout( () => {
-                resolve()
-            }, num * 1000)
-        })
-        return newPromise
-    }
+    // const doAfter = (num) => {
+    //     let newPromise = new Promise((resolve, reject) => {
+    //         setTimeout( () => {
+    //             resolve()
+    //         }, num * 1000)
+    //     })
+    //     return newPromise
+    // }
     //
     // doAfter(5).then( () => console.log('я сработал через 5 секунд') );
     // doAfter(3).then( () => console.log('а я сработал через 3 секунд') );
     // doAfter(10).then( () => console.log('я сработал через 10 секунд') );
-    let promise3 = doAfter(3);
-    setTimeout( () => {
-        promise3.then( () => console.log('я сработал через 3 секунд') );
-    }, 1000)
+    // let promise3 = doAfter(3);
+    // setTimeout( () => {
+    //     promise3.then( () => console.log('я сработал через 3 секунд') );
+    // }, 1000)
+
+    let pr = new Promise( (resolve, reject) => {
+        let i = 0
+        setInterval( () => {
+            i++;
+            resolve(i)
+        }, 1000)
+    })
+        .then((i) => {
+            console.log(i)
+        })
 
 
 </script>
