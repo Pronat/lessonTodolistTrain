@@ -86,15 +86,13 @@
         resolve(data);
     });
 
-    pr.then( data => {
-        console.log(data);
+    pr1 = pr.then( data => {
+        console.log(data.website);
     })
-        .then( website => {
+        pr2 = pr1.then( website => {
             console.log(website);
         })
-        .then( () => {
-            console.log()
-        })
+
 
 
 
