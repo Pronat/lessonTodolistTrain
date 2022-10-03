@@ -1,0 +1,18 @@
+<script>
+
+    let myPromise = new Promise((resolve, reject) => {
+        // resolve()
+        reject()
+    })
+    myPromise.then((res) => {
+        console.log("resolved done", res)
+    })
+    myPromise.catch((err) => {
+        console.log("rejected done", err)
+    })
+    myPromise.finally(() => {
+        console.log("finally done")
+    })
+
+
+</script>
