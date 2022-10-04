@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="promises-42">
+    <list default="true" id="f68d5b3f-32da-4ca8-a308-bc37142aee8d" name="Changes" comment="prototype-1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/promises/index3.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/promises/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/promises/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,13 +100,7 @@
       <workItem from="1664723044672" duration="3255000" />
       <workItem from="1664735252464" duration="605000" />
       <workItem from="1664822459873" duration="5337000" />
-    </task>
-    <task id="LOCAL-00006" summary="lesson13-67">
-      <created>1664045837871</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1664045837871</updated>
+      <workItem from="1664905457885" duration="1388000" />
     </task>
     <task id="LOCAL-00007" summary="lesson13-68">
       <created>1664046217519</created>
@@ -444,7 +438,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664827511311</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="prototype-1">
+      <created>1664905520169</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1664905520169</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -462,7 +463,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="promises-18" />
     <MESSAGE value="promises-19" />
     <MESSAGE value="promises-20" />
     <MESSAGE value="promises-21" />
@@ -487,6 +487,7 @@
     <MESSAGE value="promises-40" />
     <MESSAGE value="promises-41" />
     <MESSAGE value="promises-42" />
-    <option name="LAST_COMMIT_MESSAGE" value="promises-42" />
+    <MESSAGE value="prototype-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="prototype-1" />
   </component>
 </project>
