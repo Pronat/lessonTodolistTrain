@@ -38,6 +38,10 @@ export type TodolistDomainType = TodolistType & {
 
 export const todolistsReducer = (state: Array<TodolistDomainType> = initialState, action: ActionsType): Array<TodolistDomainType> => {
     switch (action.type) {
+        case "SET-TODOS": {
+
+        }
+
         case 'REMOVE-TODOLIST': {
             return state.filter(tl => tl.id !== action.id)
         }
@@ -84,12 +88,10 @@ export const changeTodolistFilterAC = (id: string, filter: FilterValuesType): Ch
     return {type: 'CHANGE-TODOLIST-FILTER', id: id, filter: filter}
 }
 
-export const setTodolistsAC = (todos: TodolistType[]): SetTodolistsAT => {
-    return {type: 'SET-TODOS', todos }
+export const setTodolistsAC = (todos: TodolistType[]) => {
+    return {type: 'SET-TODOS', todos } as const
 }
 
-type SetTodolistsAT = {
-    type: 'SET-TODOS',
-    todos: TodolistType[]
-}
+type SetTodolistsAT = ReturnType<typeof setTodolistsAC>
+
 
