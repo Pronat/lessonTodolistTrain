@@ -36,13 +36,13 @@ function App() {
     const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
     const dispatch = useDispatch();
 
-    useEffect( () => {
-        let promise = todolistsAPI.getTodolists()
-        promise.then( (res) => {
-            let todos = res.data
-            dispatch()
-        })
-    })
+   useEffect( () => {
+       let promise = todolistsAPI.getTodolists()
+       promise.then( (res) => {
+           let todos = res.data
+           // dispatch(getApiAC)
+       })
+   })
 
 
 
