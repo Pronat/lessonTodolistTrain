@@ -40,7 +40,7 @@ function App() {
        let promise = todolistsAPI.getTodolists()
        promise.then( (res) => {
            let todos = res.data
-           // dispatch(getApiAC)
+          dispatch(todos)
        })
    })
 
