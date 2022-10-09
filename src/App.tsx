@@ -39,9 +39,10 @@ function App() {
     useEffect( () => {
         let promise = todolistsAPI.getTodolists()
         promise.then( (res) => {
-
+            let todos = res.data
+            dispatch()
         })
-    }, [])
+    })
 
 
 
