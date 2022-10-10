@@ -62,6 +62,10 @@ const initialState: TasksStateType = {
 
 export const tasksReducer = (state: TasksStateType = initialState, action: ActionsType): TasksStateType => {
     switch (action.type) {
+        case 'SET-TASKS': {
+
+        }
+
         case "SET-TODOS": {
             const stateCopy = {...state}
             action.todos.forEach( (el) => {
@@ -135,4 +139,18 @@ export const changeTaskStatusAC = (taskId: string, status: TaskStatuses, todolis
 export const changeTaskTitleAC = (taskId: string, title: string, todolistId: string): ChangeTaskTitleActionType => {
     return {type: 'CHANGE-TASK-TITLE', title, todolistId, taskId}
 }
+
+export type SeTasksActionType = {
+    type: 'SET-TASKS'
+    tasks: Array<TaskType>
+    todolistId: string
+}
+
+export const setTasksAC = (tasks: Array<TaskType>, todolistId: string): SeTasksActionType => {
+    return {
+        type: 'SET-TASKS', tasks, todolistId
+    } as const
+}
+
+
 
