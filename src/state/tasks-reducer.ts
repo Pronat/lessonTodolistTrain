@@ -63,7 +63,7 @@ const initialState: TasksStateType = {
 export const tasksReducer = (state: TasksStateType = initialState, action: ActionsType): TasksStateType => {
     switch (action.type) {
         case "SET-TODOS": {
-        const stateCopy = {...state}
+            const stateCopy = {...state}
             action.todos.forEach( (el) => {
                 stateCopy[el.id] = []
             })

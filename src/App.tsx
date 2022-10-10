@@ -16,7 +16,7 @@ import {
     changeTodolistFilterAC,
     changeTodolistTitleAC,
     FilterValuesType,
-    removeTodolistAC,
+    removeTodolistAC, setTodolistsAC,
     TodolistDomainType
 } from './state/todolists-reducer'
 import { addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC } from './state/tasks-reducer';
@@ -40,7 +40,7 @@ function App() {
        let promise = todolistsAPI.getTodolists()
        promise.then( (res) => {
            let todos = res.data
-          dispatch(todos)
+          dispatch(setTodolistsAC(todos))
        })
    })
 
