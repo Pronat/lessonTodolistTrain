@@ -157,11 +157,15 @@ export const setTasksAC = (tasks: Array<TaskType>, todolistId: string): SeTasksA
     } as const
 }
 
-export const fetchTasksThunk = (dispatch: Dispatch, getState: () => AppRootStateType) => {
-    const todoId = ''
-    todolistsAPI.getTasks(todoId)
-    .then( (res) => {
-                dispatch(setTodolistsAC(res.data))
-    })
-}
+// export const fetchTasksThunk = (dispatch: Dispatch, getState: () => AppRootStateType) => {
+//     // const todoId = ''
+//     todolistsAPI.getTasks(todoId).then( (res) => {
+//                 // dispatch(setTodolistsAC(res.data))
+//     })
+// }
 
+export const fetchTasksTC = (todoId: string) => {
+    return (dispatch: Dispatch, getState: () => AppRootStateType) => {
+        todolistsAPI.getTasks(todoId).then( (res) => {
+        })
+    }}
