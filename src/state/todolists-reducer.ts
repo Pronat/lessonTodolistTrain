@@ -101,6 +101,11 @@ export type SetTodolistsAT = ReturnType<typeof setTodolistsAC>
 
 // Thunk
 export const fetchTodosThunk = (dispatch: Dispatch, getState: () => AppRootStateType) => {
+    let promise = todolistsAPI.getTodolists()
+    promise.then( (res) => {
+        let todos = res.data
 
+        dispatch(setTodolistsAC(todos))
+    })
 }
 
