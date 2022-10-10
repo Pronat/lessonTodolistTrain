@@ -94,6 +94,6 @@ export const setTodolistsAC = (todos: TodolistType[]) => {
     return {type: 'SET-TODOS', todos } as const
 }
 
-type SetTodolistsAT = ReturnType<typeof setTodolistsAC>
+export type SetTodolistsAT = ReturnType<typeof setTodolistsAC>
 
 
