@@ -38,6 +38,7 @@ type ActionsType = RemoveTaskActionType | AddTaskActionType
     | RemoveTodolistActionType
     | SetTodolistsAT
     | SeTasksActionType
+    | fetchTasksActionType
 
 
 const initialState: TasksStateType = {
@@ -65,6 +66,12 @@ const initialState: TasksStateType = {
 
 export const tasksReducer = (state: TasksStateType = initialState, action: ActionsType): TasksStateType => {
     switch (action.type) {
+        case "FETCH-TASKS": {
+            const stateCopy = {...state}
+            stateCopy[action.todoId] = action.
+            return
+        }
+
         case 'SET-TASKS': {
             const stateCopy = {...state}
             stateCopy[action.todolistId] = action.tasks
@@ -157,15 +164,19 @@ export const setTasksAC = (tasks: Array<TaskType>, todolistId: string): SeTasksA
     } as const
 }
 
-// export const fetchTasksThunk = (dispatch: Dispatch, getState: () => AppRootStateType) => {
-//     // const todoId = ''
-//     todolistsAPI.getTasks(todoId).then( (res) => {
-//                 // dispatch(setTodolistsAC(res.data))
-//     })
-// }
+type fetchTasksActionType = ReturnType<typeof fetchTasksAC>
+
+
+const fetchTasksAC = (todoId: string) => {
+    return {
+        type: 'FETCH-TASKS', todoId
+    } as const
+}
 
 export const fetchTasksTC = (todoId: string) => {
     return (dispatch: Dispatch, getState: () => AppRootStateType) => {
         todolistsAPI.getTasks(todoId).then( (res) => {
+            const tasks = res.data.items
+            dispatch(fetchTasksAC(todoId))
         })
     }}
