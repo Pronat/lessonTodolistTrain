@@ -42,9 +42,9 @@ type ActionsType = RemoveTaskActionType | AddTaskActionType
 
 
 const initialState: TasksStateType = {
-    // 'todosid1': [],
-    // 'todosid2': [],
-    // 'todosid3': [],
+    'todosid1': [],
+    'todosid2': [],
+    'todosid3': [],
     /*"todolistId1": [
         { id: "1", title: "CSS", status: TaskStatuses.New, todoListId: "todolistId1", description: '',
             startDate: '', deadline: '', addedDate: '', order: 0, priority: TaskPriorities.Low },
@@ -67,9 +67,12 @@ const initialState: TasksStateType = {
 export const tasksReducer = (state: TasksStateType = initialState, action: ActionsType): TasksStateType => {
     switch (action.type) {
         case "FETCH-TASKS": {
-            const stateCopy = {...state}
-            stateCopy[action.todoId] = action.
-            return
+            // const stateCopy = {...state}
+            // stateCopy[action.todoId] = action.tasks
+            // return stateCopy
+            return {
+                ...state, [action.todoId]: action.tasks
+            }
         }
 
         case 'SET-TASKS': {
@@ -167,9 +170,9 @@ export const setTasksAC = (tasks: Array<TaskType>, todolistId: string): SeTasksA
 type fetchTasksActionType = ReturnType<typeof fetchTasksAC>
 
 
-const fetchTasksAC = (todoId: string) => {
+const fetchTasksAC = (todoId: string, tasks: TaskType[]) => {
     return {
-        type: 'FETCH-TASKS', todoId
+        type: 'FETCH-TASKS', todoId, tasks
     } as const
 }
 
@@ -177,6 +180,13 @@ export const fetchTasksTC = (todoId: string) => {
     return (dispatch: Dispatch, getState: () => AppRootStateType) => {
         todolistsAPI.getTasks(todoId).then( (res) => {
             const tasks = res.data.items
-            dispatch(fetchTasksAC(todoId))
+            dispatch(fetchTasksAC(todoId, tasks))
         })
     }}
+
+export const deleteTaskTC = (todoId: string, taskId: string) => (dispatch: Dispatch, getState: () => AppRootStateType) => {
+    todolistsAPI.deleteTask(todoId, taskId)
+        .then( (res) => {
+
+        })
+}
