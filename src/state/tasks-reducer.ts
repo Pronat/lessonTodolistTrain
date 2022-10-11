@@ -188,6 +188,12 @@ export const deleteTaskTC = (todoId: string, taskId: string) => (dispatch: Dispa
     todolistsAPI.deleteTask(todoId, taskId)
         .then( (res) => {
             dispatch(removeTaskAC(todoId, taskId))
+        })
+}
 
+export const addTaskTC = (todoId: string, title: string) => (dispatch: Dispatch, getState: () => AppRootStateType) => {
+    todolistsAPI.createTask(todoId, title)
+        .then( (res) => {
+            dispatch(addTaskAC(title, todoId))
         })
 }
