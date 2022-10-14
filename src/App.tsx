@@ -37,9 +37,10 @@ function App() {
     const dispatch = useDispatch();
 
     useEffect( () => {
-        todolistsAPI.getTodolists()
-            .then( (res) => {
-                res.data
+        let promise = todolistsAPI.getTodolists()
+            promise.then( (res) => {
+             let todos = res.data
+                // dispatch()
             })
     }, [])
 

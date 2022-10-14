@@ -83,3 +83,8 @@ export const changeTodolistFilterAC = (id: string, filter: FilterValuesType): Ch
     return {type: 'CHANGE-TODOLIST-FILTER', id: id, filter: filter}
 }
 
+export const setTodolistsAC = (todos: Array<TodolistType>) => {
+    return {
+        type: 'SET-TODOS', todos
+    }
+}
