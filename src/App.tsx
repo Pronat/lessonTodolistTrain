@@ -38,6 +38,7 @@ function App() {
 
 
    useEffect(() => {
+       debugger
        let promise = todolistsAPI.getTodolists()
        promise.then( (res) => {
            let todos = res.data

@@ -97,3 +97,8 @@ export const setTodolistsAC = (todos: TodolistType[]) => {
         type:'SET-TODOLIST', todos
     } as const
 }
+
+// Thunk
+export const fetchTodoThunk = (dispatch: any, getState: any => {
+
+}
