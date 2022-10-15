@@ -37,9 +37,9 @@ type ActionsType = RemoveTaskActionType | AddTaskActionType
     | setTodolistsActionType
 
 const initialState: TasksStateType = {
-    'todoid1': [],
-    'todoid2': [],
-    'todoid3': [],
+    // 'todoid1': [],
+    // 'todoid2': [],
+    // 'todoid3': [],
     /*"todolistId1": [
         { id: "1", title: "CSS", status: TaskStatuses.New, todoListId: "todolistId1", description: '',
             startDate: '', deadline: '', addedDate: '', order: 0, priority: TaskPriorities.Low },
