@@ -14,7 +14,7 @@ import { Menu } from '@mui/icons-material';
 import {
     addTodolistAC,
     changeTodolistFilterAC,
-    changeTodolistTitleAC,
+    changeTodolistTitleAC, fetchTodosThunk,
     FilterValuesType,
     removeTodolistAC, setTodolistsAC,
     TodolistDomainType
@@ -38,12 +38,7 @@ function App() {
 
 
    useEffect(() => {
-       debugger
-       let promise = todolistsAPI.getTodolists()
-       promise.then( (res) => {
-           let todos = res.data
-           dispatch(setTodolistsAC(todos))
-       })
+      dispatch(fetchTodosThunk)
    }, [])
 
     const removeTask = useCallback(function (id: string, todolistId: string) {

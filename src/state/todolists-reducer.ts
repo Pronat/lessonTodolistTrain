@@ -1,6 +1,7 @@
 import { v1 } from 'uuid';
 import {todolistsAPI, TodolistType} from '../api/todolists-api'
 import {Dispatch} from "redux";
+import {AppRootStateType} from "./store";
 
 
 
@@ -103,7 +104,7 @@ export const setTodolistsAC = (todos: TodolistType[]) => {
 
 // Thunk
 
-export const fetchTodosThunk = (dispatch: Dispatch) => {
+export const fetchTodosThunk = (dispatch: Dispatch, getTodolist: () => AppRootStateType) => {
     let promise = todolistsAPI.getTodolists()
     promise.then( (res) => {
         let todos = res.data
