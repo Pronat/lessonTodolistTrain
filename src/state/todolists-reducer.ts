@@ -104,7 +104,7 @@ export const setTodolistsAC = (todos: TodolistType[]) => {
 
 // Thunk
 
-export const fetchTodosThunk = (dispatch: Dispatch, getTodolist: () => AppRootStateType) => {
+export const fetchTodosThunk = (dispatch: Dispatch) => {
     let promise = todolistsAPI.getTodolists()
     promise.then( (res) => {
         let todos = res.data
