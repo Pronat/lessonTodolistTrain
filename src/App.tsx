@@ -43,7 +43,7 @@ function App() {
 
     const removeTask = useCallback(function (id: string, todolistId: string) {
         // const action = removeTaskAC(id, todolistId);
-        dispatch(removeTaskTC(todolistId, taskId));
+        dispatch(removeTaskTC(todolistId, id));
     }, []);
 
     const addTask = useCallback(function (title: string, todolistId: string) {
