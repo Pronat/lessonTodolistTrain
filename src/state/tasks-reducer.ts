@@ -184,16 +184,14 @@ export const updateTaskStatusTC = (todolistId: string, taskId: string, status: T
     const state = getState()
     const allAppTasks = state.tasks
     const tasksForCurrentTodo = allAppTasks[todolistId]
-    const changed task = tasksForCurrentTodo.find(el => {
-        return t.id === taskId
+    const changedTask = tasksForCurrentTodo.find((el) => {
+        return el.id === taskId
     })
 
-    debugger
-    const model: any = {}
+    const model: any = {...changedTask, status}
     todolistsAPI.updateTask(todolistId, taskId, model)
         .then( () => {
-            debugger
-            // const action = changeTaskStatusAC(id, status, todolistId);
+           dispatch(changeTaskStatusAC(taskId, status, todolistId))
         })
 }
 
