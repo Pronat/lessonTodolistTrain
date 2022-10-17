@@ -181,12 +181,20 @@ export const addTaskTC = (todolistId: string, title: string) => (dispatch: Dispa
 }
 
 export const updateTaskStatusTC = (todolistId: string, taskId: string, status: TaskStatuses) => (dispatch: Dispatch, getState: () => AppRootStateType) => {
+    // const state = getState()
+    // const allAppTasks = state.tasks
+    // const tasksForCurrentTodo = allAppTasks[todolistId]
+    // const changedTask = tasksForCurrentTodo.find((el) => {
+    //     return el.id === taskId
+    // })
+
     const state = getState()
-    const allAppTasks = state.tasks
-    const tasksForCurrentTodo = allAppTasks[todolistId]
-    const changedTask = tasksForCurrentTodo.find((el) => {
+    const allTasks = state.tasks
+    const currentTask = allTasks[todolistId]
+    const task = currentTask.find((el) => {
         return el.id === taskId
     })
+
 
   if (changedTask) {
       const model: UpdateTaskModelType = {
