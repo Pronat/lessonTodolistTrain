@@ -188,11 +188,20 @@ export const updateTaskStatusTC = (todolistId: string, taskId: string, status: T
         return el.id === taskId
     })
 
-    const model: any = {...changedTask, status}
-    todolistsAPI.updateTask(todolistId, taskId, model)
-        .then( () => {
-           dispatch(changeTaskStatusAC(taskId, status, todolistId))
-        })
+  if (changedTask) {
+      const model: UpdateTaskModelType = {
+          title: changedTask.title,
+          status,
+          deadline: changedTask.deadline,
+          startDate: changedTask.startDate,
+          priority: changedTask.priority,
+          description: changedTask.description
+      }
+      todolistsAPI.updateTask(todolistId, taskId, model)
+          .then( () => {
+              dispatch(changeTaskStatusAC(taskId, status, todolistId))
+          })
+  }
 }
 
 
