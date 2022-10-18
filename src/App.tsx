@@ -1,4 +1,4 @@
-import React, {useCallback, useEffect} from 'react'
+import React, {useCallback, useEffect, useState} from 'react'
 import './App.css';
 import { Todolist } from './Todolist';
 import { AddItemForm } from './AddItemForm';
@@ -16,7 +16,7 @@ import {
     changeTodolistFilterAC,
     changeTodolistTitleAC,
     FilterValuesType,
-    removeTodolistAC,
+    removeTodolistAC, setTodolistsAC,
     TodolistDomainType
 } from './state/todolists-reducer'
 import { addTaskAC, changeTaskStatusAC, changeTaskTitleAC, removeTaskAC } from './state/tasks-reducer';
@@ -36,13 +36,13 @@ function App() {
     const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
     const dispatch = useDispatch();
 
-    useEffect( () => {
-        let promise = todolistsAPI.getTodolists()
-        promise.then( (res) => {
-            let todos = res.data
-            dispatch(setTodolistAC())
-        })
-    })
+     useEffect( () => {
+         todolistsAPI.getTodolists()
+             .then( (res) => {
+                 let todos = res.data
+                 dispatch(setTodolistsAC(todos))
+             })
+     }, [])
 
     const removeTask = useCallback(function (id: string, todolistId: string) {
         const action = removeTaskAC(id, todolistId);
