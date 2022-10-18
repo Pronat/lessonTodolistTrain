@@ -37,7 +37,7 @@ function App() {
     const dispatch = useDispatch();
 
      useEffect( () => {
-         dispatch(setTodolistsTC)
+         dispatch(setTodolistsTC())
      }, [])
 
     const removeTask = useCallback(function (id: string, todolistId: string) {
