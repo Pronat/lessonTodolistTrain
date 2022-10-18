@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5bd40c3a-8a59-4da0-a866-be8ba73c3c5a" name="Changes" comment="lesson14-59">
+    <list default="true" id="5bd40c3a-8a59-4da0-a866-be8ba73c3c5a" name="Changes" comment="lesson14-60">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.ts" afterDir="false" />
     </list>
@@ -60,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666101244039</updated>
       <workItem from="1666101246697" duration="607000" />
-      <workItem from="1666102111373" duration="7969000" />
+      <workItem from="1666102111373" duration="9426000" />
     </task>
     <task id="LOCAL-00001" summary="lesson14-57">
       <created>1666102628036</created>
@@ -83,7 +83,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666119437166</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lesson14-60">
+      <created>1666120146761</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666120146761</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +111,7 @@
     <MESSAGE value="lesson14-57" />
     <MESSAGE value="lesson14-58" />
     <MESSAGE value="lesson14-59" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson14-59" />
+    <MESSAGE value="lesson14-60" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson14-60" />
   </component>
 </project>
