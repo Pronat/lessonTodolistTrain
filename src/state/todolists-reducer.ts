@@ -1,6 +1,7 @@
 import { v1 } from 'uuid';
 import {todolistsAPI, TodolistType} from '../api/todolists-api'
 import {Dispatch} from "redux";
+import {AppRootStateType} from "./store";
 
 export type RemoveTodolistActionType = {
     type: 'REMOVE-TODOLIST',
@@ -122,4 +123,17 @@ export const addTodolistTC = (title: string) => (dispatch: Dispatch) => {
             // const newTodo = res.data.data.item
             dispatch(addTodolistAC(title))
         })
+}
+
+export const changeTodolistTitleTC = (todolistId: string, title: string) => (dispatch: Dispatch, getState: () => AppRootStateType) => {
+    const allTodoFromState = getState().todolists
+    const currentTodolist = allTodoFromState.find(el => el.id === todolistId)
+    if (currentTodolist) {
+        todolistsAPI.updateTodolist(todolistId, title)
+            .then( (res) => {
+                const newTitle = res.data.data
+                dispatch(changeTodolistTitleAC(todolistId, title))
+            })
+    }
+
 }
