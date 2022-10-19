@@ -163,11 +163,13 @@ export const addTaskTC = (todolistId: string, title: string) => (dispatch: Dispa
 }
 
 export const changeTaskStatusTC = (todolistId: string, taskId: string, status: TaskStatuses) => (dispatch: Dispatch, getState: () => AppRootStateType) => {
-    const allTasksFromState = getState().tasks
-    const tasksForCurrentTodolist = allTasksFromState[todolistId]
-    const task = tasksForCurrentTodolist.find(el => el.id === taskId)
+   const allTasksFromState = getState().tasks
+    const currentTasks = allTasksFromState[todolistId]
+    const task = currentTasks.find(el => {
+        return el.id === taskId
+    })
     if (task) {
-        const model:UpdateTaskModelType = {
+        const model: UpdateTaskModelType = {
             title: task.title,
             status,
             deadline: task.deadline,
@@ -175,7 +177,6 @@ export const changeTaskStatusTC = (todolistId: string, taskId: string, status: T
             priority: task.priority,
             description: task.description
         }
-
         todolistsAPI.updateTask(todolistId, taskId, model)
             .then( (res) => {
                 dispatch(changeTaskStatusAC(taskId, status, todolistId))
