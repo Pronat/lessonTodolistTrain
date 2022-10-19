@@ -1,7 +1,7 @@
 import {TasksStateType} from '../App';
 import {v1} from 'uuid';
 import {AddTodolistActionType, RemoveTodolistActionType, SetTodolistsActionType} from './todolists-reducer';
-import {TaskPriorities, TaskStatuses, TaskType, todolistsAPI} from '../api/todolists-api'
+import {TaskPriorities, TaskStatuses, TaskType, todolistsAPI, UpdateTaskModelType} from '../api/todolists-api'
 import {Dispatch} from "redux";
 import {AppRootStateType} from "./store";
 
@@ -166,12 +166,19 @@ export const changeTaskStatusTC = (todolistId: string, taskId: string, status: T
     const allTasksFromState = getState().tasks
     const tasksForCurrentTodolist = allTasksFromState[todolistId]
     const task = tasksForCurrentTodolist.find(el => el.id === taskId)
-    const model = {...task, status}
     if (task) {
+        const model:UpdateTaskModelType = {
+            title: task.title,
+            status,
+            deadline: task.deadline,
+            startDate: task.startDate,
+            priority: task.priority,
+            description: task.description
+        }
+
         todolistsAPI.updateTask(todolistId, taskId, model)
             .then( (res) => {
-            dispatch(changeTaskStatusAC(taskId, status, todolistId))
-            }
-    })
-
+                dispatch(changeTaskStatusAC(taskId, status, todolistId))
+            })
+    }
 }
