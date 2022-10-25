@@ -1,7 +1,7 @@
 import { v1 } from 'uuid';
 import {todolistsAPI, TodolistType} from '../api/todolists-api'
 import {Dispatch} from "redux";
-import {AppRootStateType} from "./store";
+import {AppActionsType, AppRootStateType} from "./store";
 
 export type RemoveTodolistActionType = {
     type: 'REMOVE-TODOLIST',
@@ -23,7 +23,7 @@ export type ChangeTodolistFilterActionType = {
     filter: FilterValuesType
 }
 
-type TodolistsActionsType = RemoveTodolistActionType | AddTodolistActionType
+export type TodolistsActionsType = RemoveTodolistActionType | AddTodolistActionType
     | ChangeTodolistTitleActionType
     | ChangeTodolistFilterActionType
     | SetTodolistsActionType
@@ -105,21 +105,21 @@ export const setTodolistsAC = (todolists: Array<TodolistType>): SetTodolistsActi
 
 
 
-export const setTodolistsTC = () => (dispatch: Dispatch<TodolistsActionsType>) => {
+export const setTodolistsTC = () => (dispatch: Dispatch<AppActionsType>) => {
     todolistsAPI.getTodolists()
         .then( (res) => {
             dispatch(setTodolistsAC(res.data))
         })
 }
 
-export const removeTodolistTC = (todolistId: string) => (dispatch: Dispatch<TodolistsActionsType>) => {
+export const removeTodolistTC = (todolistId: string) => (dispatch: Dispatch<AppActionsType>) => {
     todolistsAPI.deleteTodolist(todolistId)
         .then( (res) => {
             dispatch(removeTodolistAC(todolistId))
         })
 }
 
-export const addTodolistTC = (title: string) => (dispatch: Dispatch<TodolistsActionsType>) => {
+export const addTodolistTC = (title: string) => (dispatch: Dispatch<AppActionsType>) => {
     todolistsAPI.createTodolist(title)
         .then( (res) => {
             // const newTodo = res.data.data.item
@@ -127,7 +127,7 @@ export const addTodolistTC = (title: string) => (dispatch: Dispatch<TodolistsAct
         })
 }
 
-export const changeTodolistTitleTC = (todolistId: string, title: string) => (dispatch: Dispatch<TodolistsActionsType>, getState: () => AppRootStateType) => {
+export const changeTodolistTitleTC = (todolistId: string, title: string) => (dispatch: Dispatch<AppActionsType>, getState: () => AppRootStateType) => {
     const allTodoFromState = getState().todolists
     const currentTodolist = allTodoFromState.find(el => el.id === todolistId)
     if (currentTodolist) {
