@@ -23,7 +23,7 @@ export type ChangeTodolistFilterActionType = {
     filter: FilterValuesType
 }
 
-type ActionsType = RemoveTodolistActionType | AddTodolistActionType
+type TodolistsActionsType = RemoveTodolistActionType | AddTodolistActionType
     | ChangeTodolistTitleActionType
     | ChangeTodolistFilterActionType
     | SetTodolistsActionType
@@ -38,7 +38,7 @@ export type TodolistDomainType = TodolistType & {
     filter: FilterValuesType
 }
 
-export const todolistsReducer = (state: Array<TodolistDomainType> = initialState, action: ActionsType): Array<TodolistDomainType> => {
+export const todolistsReducer = (state: Array<TodolistDomainType> = initialState, action: TodolistsActionsType): Array<TodolistDomainType> => {
     switch (action.type) {
 
         case 'SET-TODOLISTS': {
@@ -105,21 +105,21 @@ export const setTodolistsAC = (todolists: Array<TodolistType>): SetTodolistsActi
 
 
 
-export const setTodolistsTC = () => (dispatch: Dispatch<SetTodolistsActionType>) => {
+export const setTodolistsTC = () => (dispatch: Dispatch<TodolistsActionsType>) => {
     todolistsAPI.getTodolists()
         .then( (res) => {
             dispatch(setTodolistsAC(res.data))
         })
 }
 
-export const removeTodolistTC = (todolistId: string) => (dispatch: Dispatch) => {
+export const removeTodolistTC = (todolistId: string) => (dispatch: Dispatch<TodolistsActionsType>) => {
     todolistsAPI.deleteTodolist(todolistId)
         .then( (res) => {
             dispatch(removeTodolistAC(todolistId))
         })
 }
 
-export const addTodolistTC = (title: string) => (dispatch: Dispatch) => {
+export const addTodolistTC = (title: string) => (dispatch: Dispatch<TodolistsActionsType>) => {
     todolistsAPI.createTodolist(title)
         .then( (res) => {
             // const newTodo = res.data.data.item
@@ -127,7 +127,7 @@ export const addTodolistTC = (title: string) => (dispatch: Dispatch) => {
         })
 }
 
-export const changeTodolistTitleTC = (todolistId: string, title: string) => (dispatch: Dispatch, getState: () => AppRootStateType) => {
+export const changeTodolistTitleTC = (todolistId: string, title: string) => (dispatch: Dispatch<TodolistsActionsType>, getState: () => AppRootStateType) => {
     const allTodoFromState = getState().todolists
     const currentTodolist = allTodoFromState.find(el => el.id === todolistId)
     if (currentTodolist) {
