@@ -103,7 +103,9 @@ export const setTodolistsAC = (todolists: Array<TodolistType>): SetTodolistsActi
     return {type: 'SET-TODOLISTS', todolists}
 }
 
-export const setTodolistsTC = () => (dispatch: Dispatch) => {
+
+
+export const setTodolistsTC = () => (dispatch: Dispatch<SetTodolistsActionType>) => {
     todolistsAPI.getTodolists()
         .then( (res) => {
             dispatch(setTodolistsAC(res.data))
@@ -131,7 +133,6 @@ export const changeTodolistTitleTC = (todolistId: string, title: string) => (dis
     if (currentTodolist) {
         todolistsAPI.updateTodolist(todolistId, title)
             .then( (res) => {
-                const newTitle = res.data.data
                 dispatch(changeTodolistTitleAC(todolistId, title))
             })
     }
