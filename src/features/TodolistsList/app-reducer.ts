@@ -32,13 +32,4 @@ export const setAppStatusAC = (status: RequestStatusType) => {
     } as const
 }
 
-export const fetchTodolistsTC = () => (dispatch: Dispatch) => {
-    dispatch(setAppStatusAC("loading"))
-    todolistsAPI.getTodolists()
-        .then((res) => {
-            dispatch(setTodolistsAC(res.data))
-            dispatch(setAppStatusAC("succeeded"))
-        })
-
-}
 

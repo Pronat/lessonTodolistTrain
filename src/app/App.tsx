@@ -20,8 +20,6 @@ import {fetchTodolistsTC, RequestStatusType, setAppStatusAC} from "../features/T
 
 function App() {
     const status = useSelector<AppRootStateType, RequestStatusType>(state => state.app.status)
-    const dispatch = useDispatch()
-    dispatch(fetchTodolistsTC())
 
     return (
         <div className="App">
