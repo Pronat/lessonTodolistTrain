@@ -39,11 +39,11 @@ export const setTodolistsAC = (todolists: Array<TodolistType>) => ({type: 'SET-T
 // thunks
 export const fetchTodolistsTC = () => {
     return (dispatch: Dispatch<ActionsType>) => {
-        dispatch(setAppStatusAC('loading'))
+       dispatch(setAppStatusAC('loading'))
         todolistsAPI.getTodolists()
             .then((res) => {
                 dispatch(setTodolistsAC(res.data))
-                dispatch(setAppStatusAC('succeeded'))
+               dispatch(setAppStatusAC('succeeded'))
             })
     }
 }
