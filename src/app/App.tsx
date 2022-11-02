@@ -15,13 +15,13 @@ import { Menu } from '@mui/icons-material';
 import {LinearProgress} from "@mui/material";
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "./store";
-import {RequestStatusType, setAppStatusAC} from "../features/TodolistsList/app-reducer";
+import {fetchTodolistsTC, RequestStatusType, setAppStatusAC} from "../features/TodolistsList/app-reducer";
 
 
 function App() {
     const status = useSelector<AppRootStateType, RequestStatusType>(state => state.app.status)
     const dispatch = useDispatch()
-    dispatch(setAppStatusAC)
+    dispatch(fetchTodolistsTC())
 
     return (
         <div className="App">
