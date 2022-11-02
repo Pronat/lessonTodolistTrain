@@ -1,9 +1,3 @@
-//app-reducer.tsx
-
-
-import {Dispatch} from "redux";
-import {todolistsAPI, TodolistType} from "../../api/todolists-api";
-import {setTodolistsAC} from "./todolists-reducer";
 
 export type RequestStatusType = 'idle' | 'loading' | 'succeeded' | 'failed'
 
@@ -29,7 +23,6 @@ export type SetAppStatusAT = ReturnType<typeof setAppStatusAC>
 export const setAppStatusAC = (status: RequestStatusType) => {
     return {
         type: 'APP/SET-STATUS', status
-    } as const
+    }
 }
-
 

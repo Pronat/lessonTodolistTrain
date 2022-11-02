@@ -13,9 +13,9 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { Menu } from '@mui/icons-material';
 import {LinearProgress} from "@mui/material";
-import {useDispatch, useSelector} from "react-redux";
+import {useSelector} from "react-redux";
 import {AppRootStateType} from "./store";
-import {fetchTodolistsTC, RequestStatusType, setAppStatusAC} from "../features/TodolistsList/app-reducer";
+import {RequestStatusType, setAppStatusAC} from "../features/TodolistsList/app-reducer";
 
 
 function App() {
