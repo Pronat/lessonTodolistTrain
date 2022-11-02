@@ -35,7 +35,9 @@ function App() {
                 </Toolbar>
             </AppBar>
 
-            <LinearProgress color={"secondary"}/>
+            {status === 'loading' &&   <LinearProgress color={"secondary"}/> }
+
+
 
 
             <Container fixed>
