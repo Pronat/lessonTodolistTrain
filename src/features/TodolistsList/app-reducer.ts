@@ -1,6 +1,10 @@
 //app-reducer.tsx
 
 
+import {Dispatch} from "redux";
+import {todolistsAPI, TodolistType} from "../../api/todolists-api";
+import {setTodolistsAC} from "./todolists-reducer";
+
 export type RequestStatusType = 'idle' | 'loading' | 'succeeded' | 'failed'
 
 const initialState = {
@@ -18,12 +22,23 @@ export const appReducer = (state: InitialStateType = initialState, action: Actio
     }
 }
 
-type ActionsType = any
+type ActionsType = setAppStatusAT | Array<TodolistType>
 
 export type setAppStatusAT = ReturnType<typeof setAppStatusAC>
 
-export const setAppStatusAC = () => {
+export const setAppStatusAC = (status: RequestStatusType) => {
     return {
-        type: 'APP/SET-STATUS',
+        type: 'APP/SET-STATUS', status
     } as const
 }
+
+export const fetchTodolistsTC = () => (dispatch: Dispatch) => {
+    dispatch(setAppStatusAC("loading"))
+    todolistsAPI.getTodolists()
+        .then((res) => {
+            dispatch(setTodolistsAC(res.data))
+            dispatch(setAppStatusAC("succeeded"))
+        })
+
+}
+
