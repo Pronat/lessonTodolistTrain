@@ -73,13 +73,18 @@ export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispa
     todolistsAPI.createTask(todolistId, title)
         .then(res => {
             if (res.data.resultCode === 0) {
-            const task = res.data.data.item
-            dispatch(addTaskAC(task))
-            dispatch(setAppStatusAC('succeeded'))
-            } else {
-                dispatch(setAppErrorAC(res.data.messages[0]))
-                dispatch(setAppStatusAC('failed'))
+                const task = res.data.data.item
+                const action = addTaskAC(task)
+                dispatch(action)
+                dispatch(setAppStatusAC('succeeded'))
+            }   else {
+                if (res.data.messages.length) {
+                    dispatch((setAppErrorAC(res.data.messages[0])))
+                }   else {
+                    dispatch(setAppErrorAC('Some error occured'))
+                }
             }
+
         })
 }
 export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelType, todolistId: string) =>
