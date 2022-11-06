@@ -1,9 +1,3 @@
-//app-reducer.tsx
-
-
-import {Dispatch} from "redux";
-import {todolistsAPI, TodolistType} from "../../api/todolists-api";
-import {setTodolistsAC} from "./todolists-reducer";
 
 export type RequestStatusType = 'idle' | 'loading' | 'succeeded' | 'failed'
 
