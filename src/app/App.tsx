@@ -15,7 +15,7 @@ import { Menu } from '@mui/icons-material';
 import {LinearProgress} from "@mui/material";
 import {useSelector} from "react-redux";
 import {AppRootStateType, useAppSelector} from "./store";
-import {RequestStatusType} from "../features/TodolistsList/Todolist/app-reducer";
+import {RequestStatusType} from "../features/TodolistsList/app-reducer";
 
 
 function App() {
@@ -34,7 +34,8 @@ function App() {
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
-            <LinearProgress />
+            {status === "loading" &&  <LinearProgress color={"secondary"}/>}
+
             <Container fixed>
                 <TodolistsList/>
             </Container>

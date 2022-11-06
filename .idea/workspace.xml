@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d034d3d6-4988-45b8-87b1-b10e1461edb5" name="Changes" comment="lesson15-13">
+    <list default="true" id="d034d3d6-4988-45b8-87b1-b10e1461edb5" name="Changes" comment="lesson15-14">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/app-reducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/app-reducer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +42,12 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\features\TodolistsList" />
+      <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\features\TodolistsList\Todolist" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -66,7 +74,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667724138730</updated>
       <workItem from="1667724141034" duration="50000" />
-      <workItem from="1667724199749" duration="962000" />
+      <workItem from="1667724199749" duration="2055000" />
     </task>
     <task id="LOCAL-00001" summary="lesson15-11">
       <created>1667724440286</created>
@@ -89,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667725041286</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lesson15-14">
+      <created>1667725176259</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1667725176259</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,6 +125,7 @@
     <MESSAGE value="lesson15-11" />
     <MESSAGE value="lesson15-12" />
     <MESSAGE value="lesson15-13" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson15-13" />
+    <MESSAGE value="lesson15-14" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson15-14" />
   </component>
 </project>

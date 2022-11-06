@@ -2,7 +2,7 @@ import {tasksReducer} from '../features/TodolistsList/tasks-reducer';
 import {todolistsReducer} from '../features/TodolistsList/todolists-reducer';
 import {applyMiddleware, combineReducers, createStore} from 'redux'
 import thunkMiddleware from 'redux-thunk'
-import {appReducer} from "../features/TodolistsList/Todolist/app-reducer";
+import {appReducer} from "../features/TodolistsList/app-reducer";
 import {TypedUseSelectorHook, useSelector} from "react-redux";
 
 // объединяя reducer-ы с помощью combineReducers,
