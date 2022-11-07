@@ -72,6 +72,7 @@ export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispa
     dispatch(setAppStatusAC('loading'))
     todolistsAPI.createTask(todolistId, title)
         .then(res => {
+            debugger
             if (res.data.resultCode === 0) {
                 const task = res.data.data.item
                 const action = addTaskAC(task)
@@ -85,6 +86,11 @@ export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispa
                 }
             }
 
+        })
+        .catch((err) => {
+            debugger
+            dispatch(setAppStatusAC('failed'))
+            dispatch(setAppErrorAC(err.messages))
         })
 }
 export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelType, todolistId: string) =>
