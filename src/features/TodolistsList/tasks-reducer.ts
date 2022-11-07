@@ -76,6 +76,7 @@ export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispa
                 const task = res.data.data.item
                 const action = addTaskAC(task)
                 dispatch(action)
+                dispatch(setAppStatusAC('succeeded'))
             }   else {
                 if (res.data.messages.length) {
                     dispatch((setAppErrorAC(res.data.messages[0])))
@@ -86,10 +87,8 @@ export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispa
 
         })
         .catch((err) => {
+            dispatch(setAppStatusAC('failed'))
             dispatch(setAppErrorAC(err.messages))
-        })
-        .finally(() => {
-            dispatch((setAppStatusAC('idle')))
         })
 }
 export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelType, todolistId: string) =>
@@ -114,9 +113,18 @@ export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelT
         dispatch(setAppStatusAC('loading'))
         todolistsAPI.updateTask(todolistId, taskId, apiModel)
             .then(res => {
-                const action = updateTaskAC(taskId, domainModel, todolistId)
-                dispatch(action)
-                dispatch(setAppStatusAC('succeeded'))
+                if (res.data.resultCode === 0) {
+                    const action = updateTaskAC(taskId, domainModel, todolistId)
+                    dispatch(action)
+                    dispatch(setAppStatusAC('succeeded'))
+                }   else {
+                    dispatch(setAppErrorAC("Some error occured"))
+                }
+                dispatch(setAppStatusAC('failed'))
+            })
+            .catch( (err) => {
+                dispatch(setAppStatusAC('failed'))
+                dispatch(setAppErrorAC(err.messages))
             })
     }
 
