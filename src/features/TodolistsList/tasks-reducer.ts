@@ -3,6 +3,7 @@ import {TaskPriorities, TaskStatuses, TaskType, todolistsAPI, UpdateTaskModelTyp
 import {Dispatch} from 'redux'
 import {AppRootStateType} from '../../app/store'
 import {ActionsAppType, setAppErrorAC, setAppStatusAC} from "./app-reducer";
+import {handlwNetworkError} from "../../utils/error-utils";
 
 const initialState: TasksStateType = {}
 
@@ -123,8 +124,7 @@ export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelT
                 dispatch(setAppStatusAC('failed'))
             })
             .catch( (err) => {
-                dispatch(setAppStatusAC('failed'))
-                dispatch(setAppErrorAC(err.messages))
+              handlwNetworkError(dispatch, err.messages)
             })
     }
 
