@@ -10,10 +10,8 @@ import { fetchTasksTC } from '../tasks-reducer'
 import IconButton from '@mui/material/IconButton';
 import Button from '@mui/material/Button';
 import { Delete } from '@mui/icons-material';
-import {RequestStatusType} from "../app-reducer";
 
 type PropsType = {
-    entityStatus: RequestStatusType
     id: string
     title: string
     tasks: Array<TaskType>
@@ -64,14 +62,11 @@ export const Todolist = React.memo(function (props: PropsType) {
 
     return <div>
         <h3><EditableSpan value={props.title} onChange={changeTodolistTitle}/>
-            <IconButton onClick={removeTodolist} disabled={props.entityStatus === "loading"}>
-                <Delete />
+            <IconButton onClick={removeTodolist}>
+                <Delete/>
             </IconButton>
         </h3>
-        {/*<IconButton disabled={props.entityStatus === 'loading'}>*/}
-            <AddItemForm addItem={addTask} entityStatus={props.entityStatus}/>
-        {/*</IconButton>*/}
-
+        <AddItemForm addItem={addTask}/>
         <div>
             {
                 tasksForTodolist.map(t => <Task key={t.id} task={t} todolistId={props.id}
