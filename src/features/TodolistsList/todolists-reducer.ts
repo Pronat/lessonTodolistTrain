@@ -78,6 +78,7 @@ export const addTodolistTC = (title: string) => {
                     dispatch(addTodolistAC(res.data.data.item))
                     dispatch(setAppStatusAC('succeeded'))
                 }   else {
+                    handleAppError(dispatch, res.data)
                     // if (res.data.messages.length) {
                     //     dispatch(setAppErrorAC(res.data.messages[0]))
                     // }   else {
