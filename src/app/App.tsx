@@ -16,6 +16,7 @@ import {LinearProgress} from "@mui/material";
 import {useSelector} from "react-redux";
 import {AppRootStateType, useAppSelector} from "./store";
 import {RequestStatusType} from "../features/TodolistsList/app-reducer";
+import {ErrorSnackbar} from "../components/ErrorSnackbar/ErrorSnackbar";
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
 
     return (
         <div className="App">
+            <ErrorSnackbar />
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" color="inherit" aria-label="menu">
