@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42eb3693-787b-4f32-8e67-518cfbf5f12c" name="Changes" comment="lesson15-51">
+    <list default="true" id="42eb3693-787b-4f32-8e67-518cfbf5f12c" name="Changes" comment="lesson15-52">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
       <updated>1667931513451</updated>
       <workItem from="1667931515859" duration="6631000" />
       <workItem from="1668014446440" duration="6692000" />
-      <workItem from="1668187958408" duration="1271000" />
+      <workItem from="1668187958408" duration="2592000" />
     </task>
     <task id="LOCAL-00001" summary="lesson15-40">
       <created>1667932053368</created>
@@ -156,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668021711008</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lesson15-52">
+      <created>1668189314028</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1668189314028</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -186,6 +194,7 @@
     <MESSAGE value="lesson15-49" />
     <MESSAGE value="lesson15-50" />
     <MESSAGE value="lesson15-51" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson15-51" />
+    <MESSAGE value="lesson15-52" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson15-52" />
   </component>
 </project>
