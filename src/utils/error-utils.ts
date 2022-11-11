@@ -5,3 +5,13 @@ export const handleNetworkError = (dispatch: Dispatch<AppActionsType>, message: 
     dispatch(setAppErrorAC(message))
     dispatch(setAppStatusAC('failed'))
 }
+
+export const handleServerAppError = (dispatch: Dispatch<AppActionsType>, data: any) => {
+    if (data.messages.length) {
+        dispatch(setAppErrorAC(data.messages[0]))
+        dispatch(setAppStatusAC('idle'))
+    }   else {
+        dispatch(setAppErrorAC("some other error"))
+        dispatch(setAppStatusAC('idle'))
+    }
+}

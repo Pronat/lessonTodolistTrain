@@ -4,6 +4,7 @@ import {Dispatch} from 'redux'
 import {AppRootStateType} from '../../app/store'
 import {AppActionsType, setAppErrorAC, setAppStatusAC} from "./app-reducer";
 import {Axios, AxiosError} from "axios";
+import {handleNetworkError, handleServerAppError} from "../../utils/error-utils";
 
 const initialState: TasksStateType = {}
 
@@ -79,19 +80,19 @@ export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispa
                 dispatch(action)
                 dispatch(setAppStatusAC('succeeded'))
             }   else {
-                if (res.data.messages.length) {
-                    dispatch(setAppErrorAC(res.data.messages[0]))
-                    dispatch(setAppStatusAC('idle'))
-                }   else {
-                    dispatch(setAppErrorAC("some other error"))
-                    dispatch(setAppStatusAC('idle'))
-                }
+                handleServerAppError(dispatch, res.data.messages)
+                // if (res.data.messages.length) {
+                //     dispatch(setAppErrorAC(res.data.messages[0]))
+                //     dispatch(setAppStatusAC('idle'))
+                // }   else {
+                //     dispatch(setAppErrorAC("some other error"))
+                //     dispatch(setAppStatusAC('idle'))
+                // }
             }
 
         })
         .catch( (err: AxiosError) => {
-            dispatch(setAppErrorAC(err.message))
-            dispatch(setAppStatusAC('failed'))
+            handleNetworkError(dispatch, err.message)
         })
 
 }
