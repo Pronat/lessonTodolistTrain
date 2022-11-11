@@ -121,6 +121,10 @@ export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelT
                 dispatch(action)
                 dispatch(setAppStatusAC('succeeded'))
             })
+            .catch( (err: AxiosError) => {
+                dispatch(setAppErrorAC(err.message))
+                dispatch(setAppStatusAC("failed"))
+            })
     }
 
 // types
