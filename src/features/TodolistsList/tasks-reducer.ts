@@ -3,6 +3,7 @@ import {TaskPriorities, TaskStatuses, TaskType, todolistsAPI, UpdateTaskModelTyp
 import {Dispatch} from 'redux'
 import {AppRootStateType} from '../../app/store'
 import {AppActionsType, setAppErrorAC, setAppStatusAC} from "./app-reducer";
+import {Axios, AxiosError} from "axios";
 
 const initialState: TasksStateType = {}
 
@@ -87,6 +88,10 @@ export const addTaskTC = (title: string, todolistId: string) => (dispatch: Dispa
                 }
             }
 
+        })
+        .catch( (err: AxiosError) => {
+            dispatch(setAppErrorAC(err.message))
+            dispatch(setAppStatusAC('failed'))
         })
 }
 export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelType, todolistId: string) =>
