@@ -15,9 +15,9 @@ export const todolistsReducer = (state: Array<TodolistDomainType> = initialState
         case 'CHANGE-TODOLIST-FILTER':
             return state.map(tl => tl.id === action.id ? {...tl, filter: action.filter} : tl)
         case 'SET-TODOLISTS':
-            return action.todolists.map(tl => ({...tl, filter: 'all', entityStatus: "loading"}))
+            return action.todolists.map(tl => ({...tl, filter: 'all', entityStatus: "idle"}))
         case "CHANGE-TODOLIST-ENTITY-STATUS" :
-            return state.map(el => el.id === action.todolistId ? {...el, status: action.status} : el)
+            return state.map(el => el.id === action.todolistId ? {...el, entityStatus: "loading"} : el)
         default:
             return state
     }
@@ -52,7 +52,7 @@ export const fetchTodolistsTC = () => {
 export const removeTodolistTC = (todolistId: string) => {
     return (dispatch: Dispatch<ActionsType>) => {
         dispatch(setAppStatusAC('loading'))
-        dispatch(changeTodolistEntityStatusAC(action.todolists))
+        dispatch(changeTodolistEntityStatusAC(todolistId, 'loading'))
         todolistsAPI.deleteTodolist(todolistId)
             .then((res) => {
                 dispatch(removeTodolistAC(todolistId))
