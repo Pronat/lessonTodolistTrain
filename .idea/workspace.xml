@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42eb3693-787b-4f32-8e67-518cfbf5f12c" name="Changes" comment="lesson15-60">
+    <list default="true" id="186d04c8-6556-46f1-910a-33c841cb9553" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AddItemForm/AddItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AddItemForm/AddItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EditableSpan/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EditableSpan/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/Todolist/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/TodolistsList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/app-reducer.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/error-utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/error-utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/error-utils.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="tsconfig.json" />
-        <option value="TypeScript JSX File" />
-        <option value="TypeScript File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,24 +26,24 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2HHACuMtKUGLgZS0dq0t5FV9Vae" />
+  <component name="ProjectId" id="2HRyctYMPDMUzOINDpKvg9oXU2h" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -63,163 +64,13 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="42eb3693-787b-4f32-8e67-518cfbf5f12c" name="Changes" comment="" />
-      <created>1667931513451</created>
+      <changelist id="186d04c8-6556-46f1-910a-33c841cb9553" name="Changes" comment="" />
+      <created>1668262274788</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1667931513451</updated>
-      <workItem from="1667931515859" duration="6631000" />
-      <workItem from="1668014446440" duration="6692000" />
-      <workItem from="1668187958408" duration="9826000" />
+      <updated>1668262274788</updated>
+      <workItem from="1668262277198" duration="1926000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson15-40">
-      <created>1667932053368</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1667932053368</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson15-41">
-      <created>1667933298642</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1667933298642</updated>
-    </task>
-    <task id="LOCAL-00003" summary="lesson15-42">
-      <created>1667934601710</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1667934601710</updated>
-    </task>
-    <task id="LOCAL-00004" summary="lesson15-43">
-      <created>1667935115223</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1667935115223</updated>
-    </task>
-    <task id="LOCAL-00005" summary="lesson15-44">
-      <created>1667936226956</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1667936226956</updated>
-    </task>
-    <task id="LOCAL-00006" summary="lesson15-45">
-      <created>1667938245166</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1667938245166</updated>
-    </task>
-    <task id="LOCAL-00007" summary="lesson15-46">
-      <created>1667938807953</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1667938807953</updated>
-    </task>
-    <task id="LOCAL-00008" summary="lesson15-47">
-      <created>1668015711641</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1668015711641</updated>
-    </task>
-    <task id="LOCAL-00009" summary="lesson15-48">
-      <created>1668018125578</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1668018125578</updated>
-    </task>
-    <task id="LOCAL-00010" summary="lesson15-49">
-      <created>1668018824885</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1668018824885</updated>
-    </task>
-    <task id="LOCAL-00011" summary="lesson15-50">
-      <created>1668019897570</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1668019897570</updated>
-    </task>
-    <task id="LOCAL-00012" summary="lesson15-51">
-      <created>1668021711008</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1668021711008</updated>
-    </task>
-    <task id="LOCAL-00013" summary="lesson15-52">
-      <created>1668189314028</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1668189314028</updated>
-    </task>
-    <task id="LOCAL-00014" summary="lesson15-53">
-      <created>1668190690854</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1668190690854</updated>
-    </task>
-    <task id="LOCAL-00015" summary="lesson15-54">
-      <created>1668191651180</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1668191651180</updated>
-    </task>
-    <task id="LOCAL-00016" summary="lesson15-55">
-      <created>1668193675641</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1668193675641</updated>
-    </task>
-    <task id="LOCAL-00017" summary="lesson15-56">
-      <created>1668194303579</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1668194303579</updated>
-    </task>
-    <task id="LOCAL-00018" summary="lesson15-57">
-      <created>1668196492678</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1668196492678</updated>
-    </task>
-    <task id="LOCAL-00019" summary="lesson15-58">
-      <created>1668196737692</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1668196737692</updated>
-    </task>
-    <task id="LOCAL-00020" summary="lesson15-59">
-      <created>1668199010595</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1668199010595</updated>
-    </task>
-    <task id="LOCAL-00021" summary="lesson15-60">
-      <created>1668199590523</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1668199590523</updated>
-    </task>
-    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,29 +86,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson15-40" />
-    <MESSAGE value="lesson15-41" />
-    <MESSAGE value="lesson15-42" />
-    <MESSAGE value="lesson15-43" />
-    <MESSAGE value="lesson15-44" />
-    <MESSAGE value="lesson15-45" />
-    <MESSAGE value="lesson15-46" />
-    <MESSAGE value="lesson15-47" />
-    <MESSAGE value="lesson15-48" />
-    <MESSAGE value="lesson15-49" />
-    <MESSAGE value="lesson15-50" />
-    <MESSAGE value="lesson15-51" />
-    <MESSAGE value="lesson15-52" />
-    <MESSAGE value="lesson15-53" />
-    <MESSAGE value="lesson15-54" />
-    <MESSAGE value="lesson15-55" />
-    <MESSAGE value="lesson15-56" />
-    <MESSAGE value="lesson15-57" />
-    <MESSAGE value="lesson15-58" />
-    <MESSAGE value="lesson15-59" />
-    <MESSAGE value="lesson15-60" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson15-60" />
   </component>
 </project>

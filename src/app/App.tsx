@@ -12,20 +12,12 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { Menu } from '@mui/icons-material';
-import {LinearProgress} from "@mui/material";
-import {useSelector} from "react-redux";
-import {AppRootStateType, useAppSelector} from "./store";
-import {RequestStatusType} from "../features/TodolistsList/app-reducer";
-import {ErrorSnackbar} from "../components/ErrorSnackbar/ErrorSnackbar";
 
 
 function App() {
-    const status = useAppSelector(state => state.app.status)
 
     return (
         <div className="App">
-
-            <ErrorSnackbar />
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" color="inherit" aria-label="menu">
@@ -37,7 +29,6 @@ function App() {
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
-            {status === 'loading' && <LinearProgress color={"secondary"}/>}
             <Container fixed>
                 <TodolistsList/>
             </Container>
