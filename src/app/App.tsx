@@ -12,6 +12,7 @@ import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { Menu } from '@mui/icons-material';
+import {CircularProgress} from "@mui/material";
 
 
 function App() {
@@ -29,6 +30,8 @@ function App() {
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
+            {}
+                <CircularProgress color={"secondary"}/>
             <Container fixed>
                 <TodolistsList/>
             </Container>
