@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="186d04c8-6556-46f1-910a-33c841cb9553" name="Changes" comment="lesson15-65">
+    <list default="true" id="186d04c8-6556-46f1-910a-33c841cb9553" name="Changes" comment="lesson15-67">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/tasks-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ErrorSnackbar/ErrorSnackbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/ErrorSnackbar/ErrorSnackbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -72,7 +74,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668262274788</updated>
-      <workItem from="1668262277198" duration="4548000" />
+      <workItem from="1668262277198" duration="5922000" />
     </task>
     <task id="LOCAL-00001" summary="lesson15-62">
       <created>1668267217118</created>
@@ -102,7 +104,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668269005628</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lesson15-66">
+      <created>1668270280441</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668270280441</updated>
+    </task>
+    <task id="LOCAL-00006" summary="lesson15-67">
+      <created>1668270442679</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1668270442679</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +140,8 @@
     <MESSAGE value="lesson15-63" />
     <MESSAGE value="lesson15-64" />
     <MESSAGE value="lesson15-65" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson15-65" />
+    <MESSAGE value="lesson15-66" />
+    <MESSAGE value="lesson15-67" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson15-67" />
   </component>
 </project>
