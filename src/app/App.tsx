@@ -13,9 +13,13 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { Menu } from '@mui/icons-material';
 import {CircularProgress} from "@mui/material";
+import {useSelector} from "react-redux";
+import {AppRootStateType} from "./store";
+import {RequestStatusType} from "./app-reducer";
 
 
 function App() {
+    const status = useSelector<AppRootStateType, RequestStatusType>( state => state.app.status)
 
     return (
         <div className="App">
@@ -30,8 +34,7 @@ function App() {
                     <Button color="inherit">Login</Button>
                 </Toolbar>
             </AppBar>
-            {}
-                <CircularProgress color={"secondary"}/>
+            {status === 'loading' && <CircularProgress color={"secondary"}/>}
             <Container fixed>
                 <TodolistsList/>
             </Container>
