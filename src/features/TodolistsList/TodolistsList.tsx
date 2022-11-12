@@ -17,6 +17,7 @@ import { Todolist } from './Todolist/Todolist'
 
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
+import {RequestStatusType} from "../../app/app-reducer";
 
 export const TodolistsList: React.FC = () => {
 
@@ -83,6 +84,7 @@ export const TodolistsList: React.FC = () => {
                     return <Grid item key={tl.id}>
                         <Paper style={{padding: '10px'}}>
                             <Todolist
+                                taskEntityStatus = {tl.taskEntityStatus}
                                 entityStatus={tl.entityStatus}
                                 id={tl.id}
                                 title={tl.title}

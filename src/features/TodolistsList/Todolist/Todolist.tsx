@@ -14,6 +14,7 @@ import {RequestStatusType} from "../../../app/app-reducer";
 
 type PropsType = {
     entityStatus: RequestStatusType
+    taskEntityStatus: RequestStatusType
     id: string
     title: string
     tasks: Array<TaskType>
@@ -63,12 +64,12 @@ export const Todolist = React.memo(function (props: PropsType) {
     }
 
     return <div>
-        <h3><EditableSpan value={props.title} onChange={changeTodolistTitle}/>
+        <h3><EditableSpan value={props.title} onChange={changeTodolistTitle} taskEntityStatus={props.taskEntityStatus}/>
             <IconButton onClick={removeTodolist} disabled={props.entityStatus === 'loading'}>
                 <Delete/>
             </IconButton>
         </h3>
-        <AddItemForm addItem={addTask}/>
+        <AddItemForm addItem={addTask} entityStatus={props.entityStatus}/>
         <div>
             {
                 tasksForTodolist.map(t => <Task key={t.id} task={t} todolistId={props.id}

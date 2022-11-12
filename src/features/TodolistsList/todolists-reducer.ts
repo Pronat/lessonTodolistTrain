@@ -65,6 +65,7 @@ export const removeTodolistTC = (todolistId: string) => {
                         dispatch(setAppErrorAC('Some other error'))
                     )
                     dispatch(setAppStatusAC('failed'))
+                    dispatch(changeTodolistEntityStatusAC(todolistId, 'failed'))
                 }
             })
     }
