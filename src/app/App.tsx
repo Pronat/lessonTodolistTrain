@@ -36,6 +36,7 @@ function App() {
                 </Toolbar>
             </AppBar>
             {status === 'loading' && <CircularProgress color={"secondary"}/>}
+            <ErrorSnackbar />
             <Container fixed>
                 <TodolistsList/>
             </Container>
