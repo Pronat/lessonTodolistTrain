@@ -39,8 +39,10 @@ function App({demo = false}: PropsType) {
             </AppBar>
             <Container fixed>
                 <Routes>
-                    <Route path = '/' element = {<TodolistsList demo={demo}/>} />
-                    <Route path = '/login' element = { <Login />} />
+                    <Route path = '/' element = {<TodolistsList demo={demo}/>}/>
+                    <Route path = '/login' element = {<Login />} />
+                    {/*<Route exact path = '/' render = {() => <TodolistsList demo={demo}/>}/>*/}
+                    {/*<Route exact path = '/login' render = { () => <Login />} />*/}
                 </Routes>
 
 
