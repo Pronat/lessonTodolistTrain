@@ -31,7 +31,7 @@ export const Login = () => {
                 errors.email = 'Invalid email address'
             }
             if (!values.password) {
-                errors.password = 'You need enter password'
+                errors.password = 'Required'
 
             }   else if (values.password.length < 3) {
                 errors.password = 'password must be more than 3 symbols'
@@ -73,6 +73,7 @@ export const Login = () => {
                                    onChange={formik.handleChange}
                                    value={formik.values.password}
                         />
+                        {formik.errors.password && <div style={{color: 'red'}}>{formik.errors.password}</div>}
                         <FormControlLabel label={'Remember me'} control={<Checkbox name="rememberMe"
                                                                                    onChange={formik.handleChange}
                                                                                    checked={formik.values.rememberMe
