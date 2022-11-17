@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="896a32b1-42d3-4266-aca4-c2f99468284a" name="Changes" comment="lesson16-18" />
+    <list default="true" id="896a32b1-42d3-4266-aca4-c2f99468284a" name="Changes" comment="lesson16-19" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +75,7 @@
       <workItem from="1668446230665" duration="2252000" />
       <workItem from="1668537844276" duration="3591000" />
       <workItem from="1668619562643" duration="7519000" />
-      <workItem from="1668692570765" duration="6061000" />
+      <workItem from="1668692570765" duration="6440000" />
     </task>
     <task id="LOCAL-00001" summary="lesson16-1">
       <created>1668446507056</created>
@@ -203,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668710077900</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="lesson16-19">
+      <created>1668710664277</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668710664277</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +247,7 @@
     <MESSAGE value="lesson16-16" />
     <MESSAGE value="lesson16-17" />
     <MESSAGE value="lesson16-18" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson16-18" />
+    <MESSAGE value="lesson16-19" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson16-19" />
   </component>
 </project>
