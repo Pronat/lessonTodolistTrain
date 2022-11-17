@@ -8,9 +8,14 @@ import FormLabel from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {useFormik} from "formik";
+import {useDispatch, useSelector} from "react-redux";
+import {AppRootStateType} from "../../app/store";
+import {ResponseType} from "../../api/todolists-api";
+import {loginTC} from "./auth-reducer";
 
 export const Login = () => {
-
+    // const auth = useSelector<AppRootStateType, ResponseType<{userId: number}>>>(state => state.data.)
+    const dispatch = useDispatch()
     type FormikErrorType = {
         email?: string
         password?: string
@@ -39,7 +44,7 @@ export const Login = () => {
             return errors
         },
         onSubmit: values => {
-            alert(JSON.stringify(values))
+            dispatch(loginTC(values))
             formik.resetForm()
         },
     })
