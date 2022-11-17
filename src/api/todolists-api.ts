@@ -35,6 +35,18 @@ export const todolistsAPI = {
         return instance.put<UpdateTaskModelType, AxiosResponse<ResponseType<{ item: TaskType }>>>(`todo-lists/${todolistId}/tasks/${taskId}`, model);
     }
 }
+export type LoginParamsType = {
+    email: string,
+    password: string,
+    rememberMe: boolean,
+    captcha: boolean
+}
+export const authAPI = {
+    login() {
+        return instance.get<LoginParamsType>('todo-lists/auth/me')
+    }
+}
+
 
 // types
 export type TodolistType = {
