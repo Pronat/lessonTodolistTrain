@@ -15,8 +15,6 @@ import { Menu } from '@mui/icons-material';
 import { ErrorSnackbar } from '../components/ErrorSnackbar/ErrorSnackbar'
 import {Login} from "../features/Login/Login";
 import {Navigate, Route, Routes} from "react-router-dom";
-import {LoginParamsType} from "../api/todolists-api";
-import {AuthActionsType} from "../features/Login/auth-reducer";
 
 type PropsType = {
     demo?: boolean
@@ -24,7 +22,6 @@ type PropsType = {
 
 function App({demo = false}: PropsType) {
     const status = useSelector<AppRootStateType, RequestStatusType>((state) => state.app.status)
-    const login = useSelector<AppRootStateType, any>(state => state.auth.isLoggedIn)
     return (
         <div className="App">
             <ErrorSnackbar/>

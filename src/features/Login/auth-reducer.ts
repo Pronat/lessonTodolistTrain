@@ -23,6 +23,19 @@ export const setIsLoggedInAC = (value: boolean) =>
 
 // thunks
 export const loginTC = (data: any) => (dispatch: Dispatch<ActionsType>) => {
+    dispatch(setAppStatusAC('loading'))
+    authAPI.login(data)
+        .then( (res) => {
+            if (res.data.resultCode === 0) {
+                dispatch(setIsLoggedInAC(true))
+                dispatch(setAppStatusAC('succeeded'))
+            }   else {
+                handleServerAppError(res.data, dispatch)
+            }
+        })
+        .catch( (error) => {
+            handleServerNetworkError(error, dispatch)
+        })
 
 }
 
