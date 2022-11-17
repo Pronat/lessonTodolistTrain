@@ -14,7 +14,7 @@ import {AppRootStateType} from "../../app/store";
 import {Navigate} from "react-router-dom";
 
 export const Login = () => {
-    const isLoggedIn = useSelector<AppRootStateType>(state => state.auth.isLoggedIn)
+    const isLoggedIn = useSelector<AppRootStateType, boolean>(state => state.auth.isLoggedIn)
     const dispatch = useDispatch()
     type FormikErrorType = {
         email?: string
@@ -52,6 +52,9 @@ export const Login = () => {
         return <Navigate to={'/'} />
     }
 
+    if (!isLoggedIn) {
+        return <Navigate to={'/login'} />
+    }
 
     return <Grid container justifyContent={'center'}>
         <Grid item justifyContent={'center'}>

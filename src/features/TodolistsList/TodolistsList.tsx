@@ -24,14 +24,15 @@ type PropsType = {
 export const TodolistsList: React.FC<PropsType> = ({demo = false}) => {
     const todolists = useSelector<AppRootStateType, Array<TodolistDomainType>>(state => state.todolists)
     const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
+    const isLoggedIn = useSelector<AppRootStateType, boolean>(state => state.auth.isLoggedIn)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        if (demo) {
-            return;
+        if (isLoggedIn) {
+            const thunk = fetchTodolistsTC()
+            dispatch(thunk)
         }
-        const thunk = fetchTodolistsTC()
-        dispatch(thunk)
+
     }, [])
 
     const removeTask = useCallback(function (id: string, todolistId: string) {
