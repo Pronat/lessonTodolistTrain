@@ -39,11 +39,11 @@ export type LoginParamsType = {
     email: string,
     password: string,
     rememberMe: boolean,
-    captcha: boolean
+    captcha: string
 }
 export const authAPI = {
-    login() {
-        return instance.get<LoginParamsType>('todo-lists/auth/me')
+    login(data: LoginParamsType) {
+        return instance.post<LoginParamsType, AxiosResponse<{userId: number}>>('/auth/login', data)
     }
 }
 
