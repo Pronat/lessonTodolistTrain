@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './App.css'
 import { TodolistsList } from '../features/TodolistsList/TodolistsList'
 import {useDispatch, useSelector} from 'react-redux'
@@ -21,13 +21,13 @@ type PropsType = {
 }
 
 function App({demo = false}: PropsType) {
-    const status = useSelector<AppRootStateType, RequestStatusType>((state) => state.app.status)
-
     const dispatch = useDispatch()
-    dispatch(initializeAppTC())
-    return (
+    useEffect( () => {
+        dispatch(initializeAppTC())
+    }, [])
 
-
+    const status = useSelector<AppRootStateType, RequestStatusType>((state) => state.app.status)
+        return (
         <div className="App">
             <ErrorSnackbar/>
             <AppBar position="static">

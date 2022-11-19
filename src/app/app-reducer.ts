@@ -37,7 +37,8 @@ type ActionsType =
     | SetAppStatusActionType
 
 export const initializeAppTC = () => (dispatch: Dispatch) => {
-    authAPI.me().then(res => {
+    authAPI.me()
+        .then(res => {
         debugger
         if (res.data.resultCode === 0) {
             dispatch(setIsLoggedInAC(true));
