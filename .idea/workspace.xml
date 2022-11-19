@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="896a32b1-42d3-4266-aca4-c2f99468284a" name="Changes" comment="lesson16-28">
-      <change beforePath="$PROJECT_DIR$/src/api/todolists-api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/todolists-api.ts" afterDir="false" />
+    <list default="true" id="896a32b1-42d3-4266-aca4-c2f99468284a" name="Changes" comment="lesson16-29">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +80,7 @@
       <workItem from="1668619562643" duration="7519000" />
       <workItem from="1668692570765" duration="11002000" />
       <workItem from="1668800437148" duration="1503000" />
-      <workItem from="1668847072665" duration="2935000" />
+      <workItem from="1668847072665" duration="3594000" />
     </task>
     <task id="LOCAL-00001" summary="lesson16-1">
       <created>1668446507056</created>
@@ -277,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668850192082</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="lesson16-29">
+      <created>1668850978324</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1668850978324</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +304,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="lesson16-4" />
     <MESSAGE value="lesson16-5" />
     <MESSAGE value="lesson16-6" />
     <MESSAGE value="lesson16-7" />
@@ -321,6 +328,7 @@
     <MESSAGE value="lesson16-26" />
     <MESSAGE value="lesson16-27" />
     <MESSAGE value="lesson16-28" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson16-28" />
+    <MESSAGE value="lesson16-29" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson16-29" />
   </component>
 </project>
