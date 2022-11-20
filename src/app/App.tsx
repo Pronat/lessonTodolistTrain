@@ -39,7 +39,11 @@ debugger
         </div>
     }
 
-        return (
+    const logoutHandler = () => {
+        dispatch(logoutHandler())
+    };
+
+    return (
         <div className="App">
             <ErrorSnackbar/>
             <AppBar position="static">
@@ -51,8 +55,8 @@ debugger
                         News
                     </Typography>
 
-                    {isLoggedIn && <Button color="inherit">Logout</Button>}
-                    {!isLoggedIn && <Button color="inherit">Login</Button>}
+                    {isLoggedIn && <Button color="inherit" onClick={logoutHandler}>Logout</Button>}
+                    {/*{!isLoggedIn && <Button color="inherit">Login</Button>}*/}
 
                 </Toolbar>
                 {status === 'loading' && <LinearProgress/>}
