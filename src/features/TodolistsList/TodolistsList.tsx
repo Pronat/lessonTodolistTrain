@@ -29,6 +29,7 @@ export const TodolistsList: React.FC<PropsType> = ({demo = false}) => {
     const dispatch = useDispatch()
 
     useEffect(() => {
+        debugger
         if (isLoggedIn) {
             const thunk = fetchTodolistsTC()
             dispatch(thunk)

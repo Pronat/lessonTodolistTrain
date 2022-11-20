@@ -21,12 +21,14 @@ type PropsType = {
 }
 
 function App({demo = false}: PropsType) {
+debugger
+    const status = useSelector<AppRootStateType, RequestStatusType>((state) => state.app.status)
     const dispatch = useDispatch()
     useEffect( () => {
+        debugger
         dispatch(initializeAppTC())
     }, [])
-
-    const status = useSelector<AppRootStateType, RequestStatusType>((state) => state.app.status)
+    debugger
         return (
         <div className="App">
             <ErrorSnackbar/>
