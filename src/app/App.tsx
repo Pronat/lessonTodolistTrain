@@ -50,7 +50,10 @@ debugger
                     <Typography variant="h6">
                         News
                     </Typography>
-                    <Button color="inherit">Login</Button>
+
+                    {isLoggedIn && <Button color="inherit">Logout</Button>}
+                    {!isLoggedIn && <Button color="inherit">Login</Button>}
+
                 </Toolbar>
                 {status === 'loading' && <LinearProgress/>}
             </AppBar>
