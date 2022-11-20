@@ -15,6 +15,7 @@ import { Menu } from '@mui/icons-material';
 import { ErrorSnackbar } from '../components/ErrorSnackbar/ErrorSnackbar'
 import {Login} from "../features/Login/Login";
 import {Navigate, Route, Routes} from "react-router-dom";
+import {CircularProgress} from "@mui/material";
 
 type PropsType = {
     demo?: boolean
@@ -23,12 +24,20 @@ type PropsType = {
 function App({demo = false}: PropsType) {
 debugger
     const status = useSelector<AppRootStateType, RequestStatusType>((state) => state.app.status)
+    const isInitialized = useSelector<AppRootStateType, boolean>((state) => state.app.isInitialized)
     const dispatch = useDispatch()
     useEffect( () => {
-        debugger
+
         dispatch(initializeAppTC())
     }, [])
-    debugger
+
+    if (!isInitialized) {
+        return <div
+        style={{position: 'fixed', top: '30%', textAlign: 'center', width: '100%'}}>
+    <CircularProgress/>
+        </div>
+    }
+
         return (
         <div className="App">
             <ErrorSnackbar/>
