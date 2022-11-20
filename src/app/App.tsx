@@ -13,6 +13,8 @@ import Container from '@mui/material/Container';
 import LinearProgress from '@mui/material/LinearProgress';
 import { Menu } from '@mui/icons-material';
 import { ErrorSnackbar } from '../components/ErrorSnackbar/ErrorSnackbar'
+import {Login} from "../features/Login";
+import {Route, Routes} from "react-router-dom";
 
 type PropsType = {
     demo?: boolean
@@ -37,6 +39,10 @@ function App({demo = false}: PropsType) {
             </AppBar>
             <Container fixed>
                 <TodolistsList demo={demo}/>
+                <Routes>
+                    <Route path='/' element={<TodolistsList demo={demo}/> } />
+                           <Route path = '/login' element={<Login /> } />
+                </Routes>
             </Container>
         </div>
     )
