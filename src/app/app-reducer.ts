@@ -65,5 +65,8 @@ export const initializeAppTC = () => (dispatch: Dispatch) => {
         .catch((err) => {
             handleServerAppError(err, dispatch)
         })
+        .finally( () => {
+            dispatch(setAppIsInitializedAC(true))
+        })
 }
 
