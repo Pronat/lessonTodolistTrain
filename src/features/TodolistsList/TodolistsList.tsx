@@ -16,7 +16,6 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import { AddItemForm } from '../../components/AddItemForm/AddItemForm'
 import { Todolist } from './Todolist/Todolist'
-import {Navigate} from "react-router-dom";
 
 type PropsType = {
     demo?: boolean
@@ -25,16 +24,14 @@ type PropsType = {
 export const TodolistsList: React.FC<PropsType> = ({demo = false}) => {
     const todolists = useSelector<AppRootStateType, Array<TodolistDomainType>>(state => state.todolists)
     const tasks = useSelector<AppRootStateType, TasksStateType>(state => state.tasks)
-    const isLoggedIn = useSelector<AppRootStateType, boolean>(state => state.auth.isLoggedIn)
     const dispatch = useDispatch()
 
     useEffect(() => {
-        debugger
-        if (isLoggedIn) {
-            const thunk = fetchTodolistsTC()
-            dispatch(thunk)
+        if (demo) {
+            return;
         }
-
+        const thunk = fetchTodolistsTC()
+        dispatch(thunk)
     }, [])
 
     const removeTask = useCallback(function (id: string, todolistId: string) {
@@ -77,9 +74,6 @@ export const TodolistsList: React.FC<PropsType> = ({demo = false}) => {
         dispatch(thunk)
     }, [dispatch])
 
-    if (!isLoggedIn) {
-        return <Navigate to={'/login'} />
-    }
 
     return <>
         <Grid container style={{padding: '20px'}}>
