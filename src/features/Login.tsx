@@ -11,16 +11,17 @@ import {useFormik} from "formik";
 
 export const Login = () => {
 
-    type FormikErrorType = {
+ type FormikErrorType = {
         email?: string
         password?: string
         rememberMe?: boolean
     }
+
     const formik = useFormik({
         initialValues: {
             email: '',
             password: '',
-            rememberMe: false,
+            rememberMe: false
         },
         validate: (values) => {
             const errors: FormikErrorType = {}
@@ -32,9 +33,11 @@ export const Login = () => {
             return errors
         },
         onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
+            alert(JSON.stringify(values))
         },
-    });
+    })
+
+
     return <Grid container justifyContent={'center'}>
         <Grid item justifyContent={'center'}>
             <form onSubmit={formik.handleSubmit}>
