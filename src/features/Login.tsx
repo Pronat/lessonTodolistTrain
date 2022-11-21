@@ -33,13 +33,14 @@ export const Login = () => {
             if (!values.password) {
                 errors.password = 'Required'
             } else if (values.password.length < 3) {
-                errors.password = 'wrong password'
+                errors.password = 'password should be more 3 symbols'
             }
 
             return errors
         },
         onSubmit: values => {
             alert(JSON.stringify(values))
+            formik.resetForm()
         },
     })
 
@@ -65,8 +66,9 @@ export const Login = () => {
                         name="email"
                         onChange={formik.handleChange}
                         value={formik.values.email}
+                        onBlur={formik.handleBlur}
                     />
-                    {formik.errors.email && <div style={{color: 'red'}}>{formik.errors.email}</div>}
+                    {formik.touched.email && formik.errors.email && <div style={{color: 'red'}}>{formik.errors.email}</div>}
 
                     <TextField
                         type="password"
@@ -75,8 +77,9 @@ export const Login = () => {
                         name="password"
                         onChange={formik.handleChange}
                         value={formik.values.password}
+                        onBlur={formik.handleBlur}
                     />
-                    {formik.errors.password && <div style={{color: 'red'}}>{formik.errors.password}</div>}
+                    {formik.touched.password && formik.errors.password && <div style={{color: 'red'}}>{formik.errors.password}</div>}
 
                     <FormControlLabel
                         label={'Remember me'}
