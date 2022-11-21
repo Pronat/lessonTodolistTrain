@@ -13,6 +13,8 @@ export const Login = () => {
     const formik = useFormik({
         initialValues: {
             email: '',
+            password: '',
+            rememberMe: false
         },
         onSubmit: values => {
             alert(JSON.stringify(values, null, 2));
@@ -32,11 +34,26 @@ export const Login = () => {
                     <p>Password: free</p>
                 </FormLabel>
                 <FormGroup>
-                    <TextField label="Email" margin="normal"/>
-                    <TextField type="password" label="Password"
+                    <TextField label="Email"
                                margin="normal"
+                               name="email"
+                               onChange={formik.handleChange}
+                               value={formik.values.email}
                     />
-                    <FormControlLabel label={'Remember me'} control={<Checkbox/>}/>
+                    <TextField type="password"
+                               label="Password"
+                               margin="normal"
+                               name="password"
+                               onChange={formik.handleChange}
+                               value={formik.values.password}
+                    />
+                    <FormControlLabel label={'Remember me'}
+                                      control={<Checkbox/>}
+                                      name="rememberMe"
+                                      onChange={formik.handleChange}
+                                      value={formik.values.rememberMe}
+                    />
+
                     <Button type={'submit'} variant={'contained'} color={'primary'}>
                         Login
                     </Button>
