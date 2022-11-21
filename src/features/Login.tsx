@@ -9,21 +9,29 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {useFormik} from "formik";
 
-export const Login = () => {
+type FormikErrorType = {
+    email?: string
+    password?: string
+    rememberMe?: boolean
+}
 
-    type FormikErrorType = {
-        email?: string
-        password?: string
-        rememberMe?: boolean
-    }
+export type LoginDataType = {
+    email: string
+    password: string
+    rememberMe: boolean
+    captcha: string
+}
+
+export const Login = () => {
 
     const formik = useFormik({
         initialValues: {
             email: '',
             password: '',
-            rememberMe: false
+            rememberMe: false,
+            captcha: ''
         },
-        validate: (values) => {
+        validate: (values: LoginDataType) => {
             const errors: FormikErrorType = {}
             if (!values.email) {
                 errors.email = 'Required'
@@ -38,7 +46,7 @@ export const Login = () => {
 
             return errors
         },
-        onSubmit: values => {
+        onSubmit: (values: LoginDataType) => {
             alert(JSON.stringify(values))
             formik.resetForm()
         },
@@ -63,11 +71,7 @@ export const Login = () => {
                     <TextField
                         label="Email"
                         margin="normal"
-                        // name="email"
-                        // onChange={formik.handleChange}
-                        // value={formik.values.email}
                         {...formik.getFieldProps('email') }
-                        onBlur={formik.handleBlur}
                     />
                     {formik.touched.email && formik.errors.email && <div style={{color: 'red'}}>{formik.errors.email}</div>}
 
@@ -75,21 +79,15 @@ export const Login = () => {
                         type="password"
                         label="Password"
                         margin="normal"
-                        // name="password"
-                        // onChange={formik.handleChange}
-                        // value={formik.values.password}
                         {...formik.getFieldProps('password') }
-                        onBlur={formik.handleBlur}
                     />
                     {formik.touched.password && formik.errors.password && <div style={{color: 'red'}}>{formik.errors.password}</div>}
 
                     <FormControlLabel
                         label={'Remember me'}
                         control={<Checkbox/>}
-                        // name="rememberMe"
-                        // onChange={formik.handleChange}
-                        // checked={formik.values.rememberMe}
                         {...formik.getFieldProps('rememberMe') }
+                        checked={formik.values.rememberMe}
                     />
                     <Button type={'submit'} variant={'contained'} color={'primary'}>
                         Login
