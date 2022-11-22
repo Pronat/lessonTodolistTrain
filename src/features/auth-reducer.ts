@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux'
-import {SetAppErrorActionType, setAppStatusAC, SetAppStatusActionType} from "../app/app-reducer";
+import {SetAppErrorActionType, setAppStatusAC, SetAppStatusActionType, setInitializedAC} from "../app/app-reducer";
 import {authAPI} from "../api/todolists-api";
 import {LoginDataType} from "./Login";
 import {handleServerAppError, handleServerNetworkError} from "../utils/error-utils";
@@ -50,12 +50,15 @@ export const initializeAppTC = () => (dispatch: Dispatch) => {
             if (res.data.resultCode === 0) {
                 dispatch(setIsLoggedInAC(true));
                 dispatch(setAppStatusAC('succeeded'))
-                dispatch()
+
             } else {
                 handleServerAppError(res.data, dispatch);
             }
         })
         .catch(err => {
             handleServerNetworkError(err, dispatch)
+        })
+        .finally(() => {
+            dispatch(setInitializedAC(true))
         })
 }
