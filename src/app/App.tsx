@@ -15,6 +15,7 @@ import {Menu} from '@mui/icons-material';
 import {ErrorSnackbar} from '../components/ErrorSnackbar/ErrorSnackbar'
 import {Login} from "../features/Login";
 import {Navigate, Route, Routes} from "react-router-dom";
+import {CircularProgress} from "@mui/material";
 
 type PropsType = {
     demo?: boolean
@@ -26,8 +27,17 @@ function App({demo = false}: PropsType) {
     const isLoggedIn = useSelector<AppRootStateType, boolean>(state => state.auth.isLoggedIn)
 
     useEffect( () => {
+        debugger
         dispatch(initializeAppTC())
     }, [])
+
+    if (!isInitialized) {
+        return <div
+            style={{position: 'fixed', top: '30%', textAlign: 'center', width: '100%'}}>
+            <CircularProgress/>
+        </div>
+    }
+
 
     return (
         <div className="App">
