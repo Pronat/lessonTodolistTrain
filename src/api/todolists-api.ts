@@ -45,7 +45,7 @@ export const authAPI = {
         return instance.delete<LoginDataType, AxiosResponse<ResponseType<{userId: LoginDataType}>>>('auth/login')
     },
     me() {
-        return instance.get<ResponseType<{data: MeType}>>('/auth/me')
+        return instance.get<ResponseType>('/auth/me')
     }
 }
 
