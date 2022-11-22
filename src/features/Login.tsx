@@ -11,6 +11,7 @@ import {useFormik} from "formik";
 import {useDispatch, useSelector} from "react-redux";
 import {AppRootStateType} from "../app/store";
 import {loginTC} from "./auth-reducer";
+import {Navigate} from "react-router-dom";
 
 type FormikErrorType = {
     email?: string
@@ -58,6 +59,9 @@ export const Login = () => {
         },
     })
 
+    if (isLoggedIn) {
+        return <Navigate to={'/'} />
+    }
 
     return <Grid container justifyContent={'center'}>
         <Grid item justifyContent={'center'}>
