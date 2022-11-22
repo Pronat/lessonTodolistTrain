@@ -1,6 +1,7 @@
 import {Dispatch} from "redux";
 import {authAPI} from "../api/todolists-api";
 import {setIsLoggedInAC} from "../features/auth-reducer";
+import {handleServerAppError, handleServerNetworkError} from "../utils/error-utils";
 
 const initialState: InitialStateType = {
     status: 'idle',
@@ -37,11 +38,16 @@ type ActionsType =
     | SetAppStatusActionType
 
 export const initializeAppTC = () => (dispatch: Dispatch) => {
-    authAPI.me().then(res => {
+    authAPI.me()
+        .then(res => {
         debugger
         if (res.data.resultCode === 0) {
             dispatch(setIsLoggedInAC(true));
         } else {
+            handleServerAppError(res.data, dispatch);
         }
     })
+        .catch(err => {
+            handleServerNetworkError(err, dispatch)
+        })
 }
