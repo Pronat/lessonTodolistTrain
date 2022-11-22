@@ -15,6 +15,8 @@ export const appReducer = (state: InitialStateType = initialState, action: Actio
             return {...state, status: action.status}
         case 'APP/SET-ERROR':
             return {...state, error: action.error}
+        case "APP/SET-IS-INITIALIZED":
+            return {...state, isInitialized: action.isInitialized}
         default:
             return {...state}
     }
@@ -31,25 +33,15 @@ export type InitialStateType = {
 
 export const setAppErrorAC = (error: string | null) => ({type: 'APP/SET-ERROR', error} as const)
 export const setAppStatusAC = (status: RequestStatusType) => ({type: 'APP/SET-STATUS', status} as const)
+export const setInitializedAC = (isInitialized: RequestStatusType) => ({type: 'APP/SET-IS-INITIALIZED', isInitialized} as const)
 
 export type SetAppErrorActionType = ReturnType<typeof setAppErrorAC>
 export type SetAppStatusActionType = ReturnType<typeof setAppStatusAC>
+export type SetInitializedActionType = ReturnType<typeof setInitializedAC>
 
 type ActionsType =
     | SetAppErrorActionType
     | SetAppStatusActionType
+    | SetInitializedActionType
 
-export const initializeAppTC = () => (dispatch: Dispatch) => {
-    authAPI.me()
-        .then(res => {
-        debugger
-        if (res.data.resultCode === 0) {
-            dispatch(setIsLoggedInAC(true));
-        } else {
-            handleServerAppError(res.data, dispatch);
-        }
-    })
-        .catch(err => {
-            handleServerNetworkError(err, dispatch)
-        })
-}
+
