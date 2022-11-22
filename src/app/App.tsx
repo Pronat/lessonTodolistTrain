@@ -16,7 +16,7 @@ import {ErrorSnackbar} from '../components/ErrorSnackbar/ErrorSnackbar'
 import {Login} from "../features/Login";
 import {Navigate, Route, Routes} from "react-router-dom";
 import {CircularProgress} from "@mui/material";
-import {initializeAppTC} from "../features/auth-reducer";
+import {initializeAppTC, logoutTC} from "../features/auth-reducer";
 
 type PropsType = {
     demo?: boolean
@@ -41,6 +41,10 @@ function App({demo = false}: PropsType) {
     }
 
 
+    const logoutTCHandler = () => {
+        dispatch(logoutTC())
+    };
+
     return (
         <div className="App">
             <ErrorSnackbar/>
@@ -52,7 +56,7 @@ function App({demo = false}: PropsType) {
                     <Typography variant="h6">
                         News
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    {isLoggedIn && <Button color="inherit" onClick={logoutTCHandler}>Log out</Button>}
                 </Toolbar>
                 {status === 'loading' && <LinearProgress/>}
             </AppBar>
