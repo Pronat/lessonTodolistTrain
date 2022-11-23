@@ -63,7 +63,9 @@ export const Login = () => {
                         type="email"
                         onChange={formik.handleChange}
                         value={formik.values.email}
+                        onBlur={formik.handleBlur}
                     />
+                    {formik.touched && formik.values.email ? <div style = {{color: 'red'}}>{formik.errors.email}</div> : null }
                     <TextField
                         type="password"
                         label="Password"
@@ -71,7 +73,9 @@ export const Login = () => {
                         name="password"
                         onChange={formik.handleChange}
                         value={formik.values.password}
+                        onBlur={formik.handleBlur}
                     />
+                    {formik.touched && formik.values.password && <div style = {{color: 'red'}}>{formik.errors.password}</div> }
                     <FormControlLabel
                         label={'Remember me'}
                         control={<Checkbox/>}
