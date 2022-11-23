@@ -13,7 +13,7 @@ import Container from '@mui/material/Container';
 import LinearProgress from '@mui/material/LinearProgress';
 import { Menu } from '@mui/icons-material';
 import { ErrorSnackbar } from '../components/ErrorSnackbar/ErrorSnackbar'
-import {Route, Routes} from "react-router-dom";
+import {Navigate, Route, Routes} from "react-router-dom";
 import {Login} from "../features/Login/Login";
 
 type PropsType = {
@@ -41,8 +41,9 @@ function App({demo = false}: PropsType) {
                 <Routes>
                     <Route path={'/'} element={ <TodolistsList demo={demo}/>} />
                     <Route path={'/login'} element={<Login/> } />
+                    <Route path={'/404'} element={<h1 style = {{color: 'red', textAlign: 'center'}}>'Error 404'</h1>} />
+                    <Route path={'*'} element={<Navigate to={'/404'}/>}  />
                 </Routes>
-
             </Container>
         </div>
     )
