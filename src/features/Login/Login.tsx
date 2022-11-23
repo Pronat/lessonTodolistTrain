@@ -39,6 +39,7 @@ export const Login = () => {
         },
         onSubmit: values => {
             alert(JSON.stringify(values, null, 2));
+            formik.resetForm();
         },
     });
     return <Grid container justifyContent={'center'}>
@@ -59,29 +60,21 @@ export const Login = () => {
                     <TextField
                         label="Email"
                         margin="normal"
-                        name="email"
                         type="email"
-                        onChange={formik.handleChange}
-                        value={formik.values.email}
-                        onBlur={formik.handleBlur}
+                        {...formik.getFieldProps('email')}
                     />
-                    {formik.touched && formik.values.email ? <div style = {{color: 'red'}}>{formik.errors.email}</div> : null }
+                    {formik.touched.email && formik.values.email ? <div style = {{color: 'red'}}>{formik.errors.email}</div> : null }
                     <TextField
                         type="password"
                         label="Password"
                         margin="normal"
-                        name="password"
-                        onChange={formik.handleChange}
-                        value={formik.values.password}
-                        onBlur={formik.handleBlur}
+                        {...formik.getFieldProps('password')}
                     />
-                    {formik.touched && formik.values.password && <div style = {{color: 'red'}}>{formik.errors.password}</div> }
+                    {formik.touched.password && formik.values.password && <div style = {{color: 'red'}}>{formik.errors.password}</div> }
                     <FormControlLabel
                         label={'Remember me'}
                         control={<Checkbox/>}
-                        name="rememberMe"
-                        onChange={formik.handleChange}
-                        checked={formik.values.rememberMe}
+                        {...formik.getFieldProps('rememberMe')}
                     />
                     <Button type={'submit'} variant={'contained'} color={'primary'}>
                         Login
