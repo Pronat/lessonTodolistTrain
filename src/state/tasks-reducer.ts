@@ -6,11 +6,10 @@ export type ActionsType = RemoveTaskActionType
 export const tasksReducer = (state: TasksStateType, action: ActionsType): TasksStateType => {
     switch (action.type) {
         case "REMOVE-TASK":
-         let tasksForTodolists = {...state}
-            let tasks = tasksForTodolists[action.todolistId]
-            let filteredTasks = tasks.filter(el => el.id !== action.taskId)
-            tasksForTodolists[action.todolistId] = filteredTasks
-            return tasksForTodolists
+        return {
+            ...state,
+            [action.todolistId]: state[action.todolistId].filter(el => el.id !== action.taskId)
+        }
         default:
             return state
     }
