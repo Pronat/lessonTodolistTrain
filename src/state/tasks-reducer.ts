@@ -16,14 +16,15 @@ export const tasksReducer = (state: TasksStateType, action: ActionsType): TasksS
             }
         case "ADD-TASK":
             return {
-               ...state,
+                ...state,
                 [action.todolistId]: [{id: v1(), title: action.title, isDone: false}, ...state[action.todolistId]]
             }
         case "CHANGE-TASK-STATUS":
             return {
                 ...state,
-                // [action.todolistId]: state[action.todolistId].find(el => el.id === action.taskId ? {
-                //     ...el, el.id: action.taskId}): el
+                [action.todolistId]: state[action.todolistId].map(el => el.id === action.taskId ? {
+                    ...el, isDone: action.isDone
+                } : el)
             }
         default:
             return state

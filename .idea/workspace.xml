@@ -39,7 +39,7 @@
       <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.correct task should be added to correct array">
+  <component name="RunManager" selected="Jest.status of specified task should be changed">
     <configuration name="correct task should be added to correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -66,6 +66,19 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="status of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
+      <test-names>
+        <test-name value="status of specified task should be changed" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -78,6 +91,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.status of specified task should be changed" />
         <item itemvalue="Jest.correct task should be added to correct array" />
         <item itemvalue="Jest.correct task should be deleted from correct array" />
         <item itemvalue="npm.start" />
@@ -98,7 +112,7 @@
       <workItem from="1666119098385" duration="1395000" />
       <workItem from="1666284270352" duration="702000" />
       <workItem from="1666285081370" duration="3792000" />
-      <workItem from="1669742225188" duration="8046000" />
+      <workItem from="1669742225188" duration="9585000" />
     </task>
     <task id="LOCAL-00001" summary="lesson9-1">
       <created>1669742897222</created>
@@ -163,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669752864249</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="lesson9-9">
+      <created>1669753739570</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669753739570</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
