@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson9-8">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson9-9">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
     </list>
@@ -38,7 +39,20 @@
       <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.correct task should be deleted from correct array">
+  <component name="RunManager" selected="Jest.correct task should be added to correct array">
+    <configuration name="correct task should be added to correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
+      <test-names>
+        <test-name value="correct task should be added to correct array" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="correct task should be deleted from correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -64,6 +78,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.correct task should be added to correct array" />
         <item itemvalue="Jest.correct task should be deleted from correct array" />
         <item itemvalue="npm.start" />
       </list>
@@ -83,7 +98,7 @@
       <workItem from="1666119098385" duration="1395000" />
       <workItem from="1666284270352" duration="702000" />
       <workItem from="1666285081370" duration="3792000" />
-      <workItem from="1669742225188" duration="7161000" />
+      <workItem from="1669742225188" duration="8046000" />
     </task>
     <task id="LOCAL-00001" summary="lesson9-1">
       <created>1669742897222</created>
@@ -141,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669752245992</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lesson9-9">
+      <created>1669752864249</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669752864249</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,6 +189,7 @@
     <MESSAGE value="lesson9-6" />
     <MESSAGE value="lesson9-7" />
     <MESSAGE value="lesson9-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson9-8" />
+    <MESSAGE value="lesson9-9" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson9-9" />
   </component>
 </project>
