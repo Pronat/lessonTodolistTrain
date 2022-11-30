@@ -1,6 +1,6 @@
 import React from "react";
 import {TasksStateType} from "../App";
-import {removeTaskAC, tasksReducer} from "./tasks-reducer";
+import {addTaskAC, removeTaskAC, tasksReducer} from "./tasks-reducer";
 
 test('correct task should be deleted from correct array', () => {
     const startState: TasksStateType = {
@@ -46,13 +46,13 @@ test('correct task should be added to correct array', () => {
         ]
     }
 
-    const action = addTaskAC('juce', 'todolistId2')
+    const action = addTaskAC('todolistId2', 'juce')
 
     const endState = tasksReducer(startState, action)
 
-    expect(endState['todolistId1'].length).toBe(XXX)
-    expect(endState['todolistId2'].length).toBe(XXX)
+    expect(endState['todolistId1'].length).toBe(3)
+    expect(endState['todolistId2'].length).toBe(4)
     expect(endState['todolistId2'][0].id).toBeDefined()
-    expect(endState['todolistId2'][0].title).toBe(XXX)
-    expect(endState['todolistId2'][0].isDone).toBe(XXX)
+    expect(endState['todolistId2'][0].title).toBe('juce')
+    expect(endState['todolistId2'][0].isDone).toBe(false)
 })
