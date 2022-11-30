@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson9-17" />
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson9-18">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +29,10 @@
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src/state",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs.jest.jest_package": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/node_modules/react-scripts",
     "nodejs_package_manager_path": "yarn",
     "ts.external.directory.path": "D:\\JS_React\\React\\ToDoListForDelete\\lessonTodolistTrain\\node_modules\\typescript\\lib",
@@ -33,30 +44,17 @@
       <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src\state" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.new array should be added when new todolist is added">
-    <configuration name="correct task should be added to correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.property with todolistId should be deleted">
+    <configuration name="ids should be equals" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
+      <test-file value="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.ts" />
       <test-names>
-        <test-name value="correct task should be added to correct array" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="correct task should be deleted from correct array" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
-      <test-names>
-        <test-name value="correct task should be deleted from correct array" />
+        <test-name value="ids should be equals" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -70,6 +68,19 @@
       <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
       <test-names>
         <test-name value="new array should be added when new todolist is added" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="property with todolistId should be deleted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
+      <test-names>
+        <test-name value="property with todolistId should be deleted" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -101,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.property with todolistId should be deleted" />
+        <item itemvalue="Jest.ids should be equals" />
         <item itemvalue="Jest.new array should be added when new todolist is added" />
         <item itemvalue="Jest.title of specified task should be changed" />
         <item itemvalue="Jest.status of specified task should be changed" />
-        <item itemvalue="Jest.correct task should be added to correct array" />
-        <item itemvalue="Jest.correct task should be deleted from correct array" />
       </list>
     </recent_temporary>
   </component>
@@ -123,7 +134,8 @@
       <workItem from="1666119098385" duration="1395000" />
       <workItem from="1666284270352" duration="702000" />
       <workItem from="1666285081370" duration="3792000" />
-      <workItem from="1669821528401" duration="6120000" />
+      <workItem from="1669821528401" duration="6872000" />
+      <workItem from="1669837297123" duration="406000" />
     </task>
     <task id="LOCAL-00001" summary="lesson9-12">
       <created>1669822240193</created>
@@ -167,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669836379113</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="lesson9-18">
+      <created>1669836672250</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669836672250</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +210,7 @@
     <MESSAGE value="lesson9-15" />
     <MESSAGE value="lesson9-16" />
     <MESSAGE value="lesson9-17" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson9-17" />
+    <MESSAGE value="lesson9-18" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson9-18" />
   </component>
 </project>
