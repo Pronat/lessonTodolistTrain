@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="lesson10-7">
+    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="lesson10-9">
+      <change afterPath="$PROJECT_DIR$/src/AppWithReducer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +31,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/JS_React/React/ToDoListForDelete/lessonTodolistTrain/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -39,6 +42,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JS_React\React\ToDoListForDelete\lessonTodolistTrain\src" />
+    </key>
+  </component>
   <component name="RunManager" selected="Jest.correct filter of todolist should be changed">
     <configuration name="correct filter of todolist should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
@@ -92,26 +100,23 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="title of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
       <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.ts" />
-      <test-names>
-        <test-name value="title of specified task should be changed" />
-      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.correct filter of todolist should be changed" />
         <item itemvalue="Jest.correct todolist should change its name" />
         <item itemvalue="Jest.correct todolist should be added" />
         <item itemvalue="Jest.correct todolist should be removed" />
-        <item itemvalue="Jest.title of specified task should be changed" />
       </list>
     </recent_temporary>
   </component>
@@ -130,7 +135,7 @@
       <workItem from="1666120365600" duration="286000" />
       <workItem from="1666284290552" duration="681000" />
       <workItem from="1666285125986" duration="3399000" />
-      <workItem from="1669917191296" duration="2336000" />
+      <workItem from="1669917191296" duration="3350000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-1">
       <created>1669917400911</created>
@@ -181,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669919057428</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lesson10-8">
+      <created>1669919561331</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669919561331</updated>
+    </task>
+    <task id="LOCAL-00009" summary="lesson10-9">
+      <created>1669919786978</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669919786978</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +214,8 @@
     <MESSAGE value="lesson10-5" />
     <MESSAGE value="lesson10-6" />
     <MESSAGE value="lesson10-7" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-7" />
+    <MESSAGE value="lesson10-8" />
+    <MESSAGE value="lesson10-9" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-9" />
   </component>
 </project>
