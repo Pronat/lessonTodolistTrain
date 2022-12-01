@@ -6,7 +6,7 @@ import {AddItemForm} from './AddItemForm';
 import {AppBar, Button, Container, Grid, Paper, Toolbar, Typography} from "@mui/material";
 import IconButton from "@mui/material/IconButton/IconButton";
 import {Menu} from "@mui/icons-material";
-import {todolistsReducer} from "./state/todolists-reducer";
+import {addTodolistAC, changeTodolistTitleAC, removeTodolistAC, todolistsReducer} from "./state/todolists-reducer";
 import {tasksReducer} from "./state/tasks-reducer";
 
 
@@ -26,27 +26,12 @@ function App() {
     let todolistId1 = v1();
     let todolistId2 = v1();
 
-    // let [todolists, setTodolists] = useState<Array<TodolistType>>([
-    //     {id: todolistId1, title: "What to learn", filter: "all"},
-    //     {id: todolistId2, title: "What to buy", filter: "all"}
-    // ])
-    //
-    // let [tasks, setTasks] = useState<TasksStateType>({
-    //     [todolistId1]: [
-    //         {id: v1(), title: "HTML&CSS", isDone: true},
-    //         {id: v1(), title: "JS", isDone: true}
-    //     ],
-    //     [todolistId2]: [
-    //         {id: v1(), title: "Milk", isDone: true},
-    //         {id: v1(), title: "React Book", isDone: true}
-    //     ]
-    // });
-    let [todolists, setTodolists] = useReducer(todolistsReducer, [
+    let [todolists, dispatchToTodolists] = useReducer(todolistsReducer, [
             {id: todolistId1, title: "What to learn", filter: "all"},
             {id: todolistId2, title: "What to buy", filter: "all"}
         ])
 
-        let [tasks, setTasks] = useReducer(tasksReducer, {
+        let [tasks, dispatchToTasks] = useReducer(tasksReducer, {
                 [todolistId1]: [
                     {id: v1(), title: "HTML&CSS", isDone: true},
                     {id: v1(), title: "JS", isDone: true}
@@ -114,32 +99,17 @@ function App() {
     }
 
     function removeTodolist(id: string) {
-        // засунем в стейт список тудулистов, id которых не равны тому, который нужно выкинуть
-        setTodolists(todolists.filter(tl => tl.id != id));
-        // удалим таски для этого тудулиста из второго стейта, где мы храним отдельно таски
-        delete tasks[id]; // удаляем св-во из объекта... значением которого являлся массив тасок
-        // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-        setTasks({...tasks});
+        dispatchToTodolists(removeTodolistAC(id))
     }
 
     function changeTodolistTitle(id: string, title: string) {
         // найдём нужный todolist
-        const todolist = todolists.find(tl => tl.id === id);
-        if (todolist) {
-            // если нашёлся - изменим ему заголовок
-            todolist.title = title;
-            setTodolists([...todolists]);
-        }
+        dispatchToTodolists(changeTodolistTitleAC(id, title))
     }
 
     function addTodolist(title: string) {
-        let newTodolistId = v1();
-        let newTodolist: TodolistType = {id: newTodolistId, title: title, filter: 'all'};
-        setTodolists([newTodolist, ...todolists]);
-        setTasks({
-            ...tasks,
-            [newTodolistId]: []
-        })
+        dispatchToTodolists(addTodolistAC(title))
+        dispatchToTasks(addTodolistAC(title))
     }
 
     return (
