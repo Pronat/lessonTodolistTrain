@@ -73,6 +73,8 @@ function App() {
 
     function removeTodolist(id: string) {
         dispatchToTodolists(removeTodolistAC(id))
+        dispatchToTasks(removeTodolistAC(id))
+
     }
 
     function changeTodolistTitle(id: string, title: string) {
@@ -82,7 +84,7 @@ function App() {
 
     function addTodolist(title: string) {
         dispatchToTodolists(addTodolistAC(title))
-        dispatchToTasks(addTodolistAC(title))
+        // dispatchToTasks(addTodolistAC(title))
     }
 
     return (
