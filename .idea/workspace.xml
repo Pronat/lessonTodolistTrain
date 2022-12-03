@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1858285-c57d-4e2b-9ccc-9a051546f958" name="Default Changelist" comment="lesson12-4">
-      <change beforePath="$PROJECT_DIR$/src/stories/Task.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/Task.stories.tsx" afterDir="false" />
+    <list default="true" id="c1858285-c57d-4e2b-9ccc-9a051546f958" name="Default Changelist" comment="lesson12-5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +86,7 @@
       <workItem from="1666285151532" duration="2061000" />
       <workItem from="1670056219013" duration="2372000" />
       <workItem from="1670060133175" duration="16000" />
-      <workItem from="1670060293133" duration="6001000" />
+      <workItem from="1670060293133" duration="6773000" />
     </task>
     <task id="LOCAL-00001" summary="lesson12-1">
       <created>1670065821206</created>
@@ -116,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670077524922</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lesson12-5">
+      <created>1670078020747</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1670078020747</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +134,7 @@
     <MESSAGE value="lesson12-2" />
     <MESSAGE value="lesson12-3" />
     <MESSAGE value="lesson12-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson12-4" />
+    <MESSAGE value="lesson12-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson12-5" />
   </component>
 </project>
