@@ -6,7 +6,10 @@ export default {
 }
 
 const settings = {
-    withCredentials: true
+    withCredentials: true,
+    headers: {
+        'API-KEY': '79352066-7263-4742-bb95-6ef08001893f'
+    }
 }
 
 export const GetTodolists = () => {
@@ -14,9 +17,10 @@ export const GetTodolists = () => {
     useEffect(() => {
         const promise = axios.get('https://social-network.samuraijs.com/api/1.1/todo-lists', settings)
         promise.then((res) => {
+            debugger
+            setState(res.data)
         })
             .catch((e) => {
-                debugger
                 console.log(e)
             })
             .finally(() => {
