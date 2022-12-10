@@ -35,7 +35,6 @@ export const GetTodolists = () => {
 export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-        const data = {title: 'NewTitle123'}
        todolistAPI.createTodolist("NewswswTitle")
             .then( (res) => {
                 setState(res.data)
@@ -60,7 +59,7 @@ export const UpdateTodolistTitle = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
         const data = {title: "UpdatedTitle"}
-        const todolistId = '76e98a61-6509-41f6-89be-4623fb4956fc'
+        const todolistId = '01b4e9ef-21e8-4076-b076-0b116b5fe3a4'
         todolistAPI.updateTodolist(todolistId, "NewNewTitle")
             .then( (res) => {
                 setState(res.data)
