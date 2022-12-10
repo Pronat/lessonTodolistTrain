@@ -59,7 +59,6 @@ export const UpdateTodolistTitle = () => {
         const todolistId = '01b4e9ef-21e8-4076-b076-0b116b5fe3a4'
         todolistAPI.updateTodolist(todolistId, "NewNewTitle")
             .then( (res) => {
-                debugger
                 setState(res.data)
             })
     }, [])
@@ -69,7 +68,11 @@ export const UpdateTodolistTitle = () => {
 export const GetTasks = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-
+        const todolistId = '8db9495a-0f67-4193-9bfe-aa2670e5f290'
+        todolistAPI.getTasks(todolistId)
+            .then((res) => {
+                setState(res.data)
+            })
     }, [])
     return <div> {JSON.stringify(state)}</div>
 }
