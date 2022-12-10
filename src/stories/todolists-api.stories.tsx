@@ -29,7 +29,6 @@ export const GetTodolists = () => {
         // который в виде строки будем отображать в div-ке
 
     }, [])
-
     return <div> {JSON.stringify(state)}</div>
 }
 export const CreateTodolist = () => {
@@ -40,7 +39,6 @@ export const CreateTodolist = () => {
                 setState(res.data)
             })
     }, [])
-
     return <div> {JSON.stringify(state)}</div>
 }
 export const DeleteTodolist = () => {
@@ -52,7 +50,6 @@ export const DeleteTodolist = () => {
                 setState(res.data)
             })
     }, [])
-
     return <div> {JSON.stringify(state)}</div>
 }
 export const UpdateTodolistTitle = () => {
@@ -66,8 +63,35 @@ export const UpdateTodolistTitle = () => {
                 setState(res.data)
             })
     }, [])
-
     return <div> {JSON.stringify(state)}</div>
 }
 
+export const GetTasks = () => {
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+
+    }, [])
+    return <div> {JSON.stringify(state)}</div>
+}
+export const CreateTasks = () => {
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+
+    }, [])
+    return <div> {JSON.stringify(state)}</div>
+}
+export const DeleteTasks = () => {
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+
+    }, [])
+    return <div> {JSON.stringify(state)}</div>
+}
+export const UpdateTasks = () => {
+    const [state, setState] = useState<any>(null)
+    useEffect(() => {
+
+    }, [])
+    return <div> {JSON.stringify(state)}</div>
+}
 
