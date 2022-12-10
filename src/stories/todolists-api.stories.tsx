@@ -17,7 +17,6 @@ export const GetTodolists = () => {
     useEffect(() => {
         const promise = axios.get('https://social-network.samuraijs.com/api/1.1/todo-lists', settings)
         promise.then((res) => {
-            debugger
             setState(res.data)
         })
             .catch((e) => {
@@ -35,7 +34,8 @@ export const GetTodolists = () => {
 export const CreateTodolist = () => {
     const [state, setState] = useState<any>(null)
     useEffect(() => {
-        const promise = axios.post('https://social-network.samuraijs.com/api/1.1/todo-lists', {title: 'NewTitle123'}, settings)
+        const data = {title: 'NewTitle123'}
+        const promise = axios.post('https://social-network.samuraijs.com/api/1.1/todo-lists', data, settings)
             .then( (res) => {
                 setState(res.data)
             })
