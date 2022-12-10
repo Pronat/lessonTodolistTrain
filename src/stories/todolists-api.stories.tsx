@@ -62,10 +62,12 @@ export const UpdateTodolistTitle = () => {
         const todolistId = '01b4e9ef-21e8-4076-b076-0b116b5fe3a4'
         todolistAPI.updateTodolist(todolistId, "NewNewTitle")
             .then( (res) => {
+                debugger
                 setState(res.data)
             })
     }, [])
 
     return <div> {JSON.stringify(state)}</div>
 }
+
 
