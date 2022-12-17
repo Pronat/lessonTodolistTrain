@@ -80,8 +80,8 @@ function App() {
        // todolistsAPI.getTodolists()
        //     .then((res) => {
        //  dispatch(setTodolistsAC(res.data))
-        dispatch(fetchTodolistsThunk(dispatch))
-        })
+       //  })
+        dispatch(fetchTodolistsThunk)
     }, [])
 
     return (
