@@ -3,6 +3,7 @@ import {v1} from 'uuid';
 import {AddTodolistActionType, RemoveTodolistActionType, setTodolistsActionType} from './todolists-reducer';
 import {TaskPriorities, TaskStatuses, TaskType, todolistsAPI} from '../api/todolists-api'
 import {Dispatch} from "redux";
+import {AppRootStateType} from "./store";
 
 export type RemoveTaskActionType = {
     type: 'REMOVE-TASK',
@@ -160,4 +161,34 @@ export const addTaskTC = (todolistId: string, title: string) => (dispatch: Dispa
         .then( (res) => {
             dispatch(addTaskAC(todolistId, res.data.data.item))
         })
+}
+
+
+export const updateTaskStatusTC = (taskId: string, todolistId: string, status: TaskStatuses) => {
+    return (dispatch: Dispatch, getState: () => AppRootStateType) => {
+
+// так как мы обязаны на сервер отправить все св-ва, которые сервер ожидает, а не только
+// те, которые мы хотим обновить, соответственно нам нужно в этом месте взять таску целиком  // чтобы у неё отобрать остальные св-ва
+
+        const allTasksFromState = getState().tasks;
+        const tasksForCurrentTodolist = allTasksFromState[todolistId]
+        const task = tasksForCurrentTodolist.find(t => {
+            return t.id === taskId
+        })
+
+
+        if (task) {
+            todolistsAPI.updateTask(todolistId, taskId, {
+                title: task.title,
+                startDate: task.startDate,
+                priority: task.priority,
+                description: task.description,
+                deadline: task.deadline,
+                status: status
+            }).then(() => {
+                const action = changeTaskStatusAC(taskId, status, todolistId)
+                dispatch(action)
+            })
+        }
+    }
 }
