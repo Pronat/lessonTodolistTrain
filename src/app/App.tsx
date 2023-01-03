@@ -13,9 +13,12 @@ import Button from '@mui/material/Button';
 import Container from '@mui/material/Container';
 import { Menu } from '@mui/icons-material';
 import LinearProgress from "@mui/material/LinearProgress";
+import {RequestStatusType} from "./app-reducer";
+import {useAppSelector} from "./store";
 
 
 function App() {
+    const status = useAppSelector<RequestStatusType>(state => state.app.status)
 
     return (
         <div className="App">
