@@ -29,7 +29,7 @@ function App() {
                     </Typography>
                     <Button color="inherit">Login</Button>
                 </Toolbar>
-                <LinearProgress color="success" />
+                { status === 'loading' && <LinearProgress color="success"/> }
             </AppBar>
             <Container fixed>
                 <TodolistsList/>
