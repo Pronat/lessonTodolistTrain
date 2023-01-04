@@ -62,19 +62,8 @@ export const addTodolistTC = (title: string) => {
         dispatch(setAppStatusAC('loading'))
         todolistsAPI.createTodolist(title)
             .then((res) => {
-                dispatch(addTodolistAC(res.data.data.item))
-                dispatch(setAppStatusAC('succeeded'))
-            })
-    }
-}
-export const changeTodolistTitleTC = (id: string, title: string) => {
-    return (dispatch: Dispatch<ActionsType>) => {
-        dispatch(setAppStatusAC('loading'))
-        todolistsAPI.updateTodolist(id, title)
-            .then((res) => {
-                debugger
                 if (res.data.resultCode === 0) {
-                    dispatch(changeTodolistTitleAC(id, title))
+                    dispatch(addTodolistAC(res.data.data.item))
                     dispatch(setAppStatusAC('succeeded'))
                 }   else {
                     if (res.data.messages.length) {
@@ -84,6 +73,17 @@ export const changeTodolistTitleTC = (id: string, title: string) => {
                     }
                     dispatch(setAppStatusAC('failed'))
                 }
+
+            })
+    }
+}
+export const changeTodolistTitleTC = (id: string, title: string) => {
+    return (dispatch: Dispatch<ActionsType>) => {
+        dispatch(setAppStatusAC('loading'))
+        todolistsAPI.updateTodolist(id, title)
+            .then((res) => {
+                    dispatch(changeTodolistTitleAC(id, title))
+                    dispatch(setAppStatusAC('succeeded'))
             })
     }
 }
