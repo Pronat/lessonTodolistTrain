@@ -72,6 +72,7 @@ export const changeTodolistTitleTC = (id: string, title: string) => {
         dispatch(setAppStatusAC('loading'))
         todolistsAPI.updateTodolist(id, title)
             .then((res) => {
+                debugger
                 if (res.data.resultCode === 0) {
                     dispatch(changeTodolistTitleAC(id, title))
                     dispatch(setAppStatusAC('succeeded'))

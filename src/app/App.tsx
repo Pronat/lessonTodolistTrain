@@ -24,7 +24,7 @@ function App() {
 
     return (
         <div className="App">
-            {/*{error && <ErrorSnackbar/>}*/}
+            {error && <ErrorSnackbar/>}
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" color="inherit" aria-label="menu">
