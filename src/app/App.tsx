@@ -20,10 +20,11 @@ import {ErrorSnackbar} from "../components/ErrorSnackbar/ErrorSnackbar";
 
 function App() {
     const status = useAppSelector<RequestStatusType>(state => state.app.status)
+    const error = useAppSelector<null | string>(state => state.app.error)
 
     return (
         <div className="App">
-            {error && <ErrorSnackbar/>}
+            {/*{error && <ErrorSnackbar/>}*/}
             <AppBar position="static">
                 <Toolbar>
                     <IconButton edge="start" color="inherit" aria-label="menu">
