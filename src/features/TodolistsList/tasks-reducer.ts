@@ -118,9 +118,19 @@ export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelT
 
         todolistsAPI.updateTask(todolistId, taskId, apiModel)
             .then(res => {
-                const action = updateTaskAC(taskId, domainModel, todolistId)
-                dispatch(action)
-                dispatch(setAppStatusAC('succeeded'))
+                if (res.data.resultCode === 0) {
+                    const action = updateTaskAC(taskId, domainModel, todolistId)
+                    dispatch(action)
+                    dispatch(setAppStatusAC('succeeded'))
+                }   else {
+                    if (res.data.messages.length) {
+                        dispatch(setAppErrorAC(res.data.messages[0]))
+                    }   else {
+                        dispatch(setAppErrorAC('Some error occured'))
+                    }
+                    dispatch(setAppStatusAC('failed'))
+                }
+
             })
             .catch((error: AxiosError<{message: string}>) => {
                 const err = error.response? error.response.data.message : error.message
