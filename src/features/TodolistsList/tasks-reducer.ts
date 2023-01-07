@@ -4,7 +4,7 @@ import {Dispatch} from 'redux'
 import {AppRootStateType} from '../../app/store'
 import {setAppErrorAC, setAppErrorActionType, setAppStatusAC, SetAppStatusActioType} from "../../app/app-reducer";
 import axios, {AxiosError} from "axios";
-import {handleServerAppError} from "../../utils/error-utils";
+import {handleServerAppError, handleServerNetworkError} from "../../utils/error-utils";
 
 const initialState: TasksStateType = {}
 
@@ -86,6 +86,8 @@ export const addTaskTC = (title: string, todolistId: string) => async (dispatch:
             dispatch(action)
             dispatch(setAppStatusAC('succeeded'))
         }   else {
+            // handleServerAppError(res.messages ,dispatch)
+        }
             if (res.data.messages.length) {
                 dispatch(setAppErrorAC(res.data.messages[0]))
             }   else {
@@ -93,11 +95,12 @@ export const addTaskTC = (title: string, todolistId: string) => async (dispatch:
             }
             dispatch(setAppStatusAC('failed'))
         }
-    }
+
     catch (e) {
         if (axios.isAxiosError<AxiosError<{message: string}>>(e)) {
             const err = e.response ? e.response.data.message : e.message
-            dispatch(setAppErrorAC(e.message))
+            // handleServerNetworkError(err, dispatch)
+            dispatch(setAppErrorAC(err))
             dispatch(setAppStatusAC('failed'))
         }
     }
@@ -139,10 +142,11 @@ export const updateTaskTC = (taskId: string, domainModel: UpdateDomainTaskModelT
                 }
 
             })
-            .catch((error: AxiosError<{message: string}>) => {
-                const err = error.response? error.response.data.message : error.message
-                dispatch(setAppErrorAC(err))
-                dispatch(setAppStatusAC('failed'))
+            .catch((error: AxiosError) => {
+                const err = error.response? error.response.data : error
+                handleServerNetworkError(err.data, dispatch)
+                // dispatch(setAppErrorAC(err))
+                // dispatch(setAppStatusAC('failed'))
             })
     }
 
