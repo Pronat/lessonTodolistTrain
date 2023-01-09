@@ -16,6 +16,7 @@ import {Login} from "../features/TodolistsList/Login/Login";
 import {Route, Routes} from "react-router-dom";
 
 
+
 function App() {
     const status = useAppSelector<RequestStatusType>((state) => state.app.status)
     return (
@@ -34,12 +35,11 @@ function App() {
                 {status === 'loading' && <LinearProgress/>}
             </AppBar>
             <Container fixed>
-                <Routes>
-                    <Route path='/' element={<TodolistsList/>} />
-                    <Route path='/login' element={<Login/>} />
-                </Routes>
+               <Routes>
+                   <Route path='/' element={ <TodolistsList /> }/>
+                   <Route path='/login' element={ <Login /> }/>
+               </Routes>
             </Container>
-            <Login />
         </div>
     )
 }
