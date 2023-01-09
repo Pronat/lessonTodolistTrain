@@ -13,8 +13,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import {Menu} from '@mui/icons-material';
 import {ErrorSnackbar} from '../components/ErrorSnackbar/ErrorSnackbar'
 import {Login} from "../features/TodolistsList/Login/Login";
-import {Route, Routes} from "react-router-dom";
-
+import {Navigate, Route, Routes} from "react-router-dom";
 
 
 function App() {
@@ -35,10 +34,12 @@ function App() {
                 {status === 'loading' && <LinearProgress/>}
             </AppBar>
             <Container fixed>
-               <Routes>
-                   <Route path='/' element={ <TodolistsList /> }/>
-                   <Route path='/login' element={ <Login /> }/>
-               </Routes>
+                <Routes>
+                    <Route path='/' element={<TodolistsList/>}/>
+                    <Route path='/login' element={<Login/>}/>
+                    <Route path='/404' element={<h1>404: PAGE NOT FOUND</h1>} />
+                    <Route path='*' element={ <Navigate to={'/404'}/> } />
+                </Routes>
             </Container>
         </div>
     )
