@@ -60,28 +60,31 @@ export const Login = () => {
                         <TextField
                             label="Email"
                             margin="normal"
-                            name={"email"}
-                            onChange={formik.handleChange}
-                            value={formik.values.email}
-                            onBlur={formik.handleBlur}
+                            {...formik.getFieldProps('email') }
+                            // name={"email"}
+                            // onChange={formik.handleChange}
+                            // value={formik.values.email}
+                            // onBlur={formik.handleBlur}
                         />
-                        { formik.errors.email && formik.handleBlur === touched ? <div style={{color: 'red'}}>{formik.errors.email}</div> : null }
+                        { formik.errors.email && formik.touched.email ? <div style={{color: 'red'}}>{formik.errors.email}</div> : null }
                         <TextField
                             type="password"
                             label="Password"
                             margin="normal"
-                            name={"password"}
-                            onChange={formik.handleChange}
-                            value={formik.values.password}
-                            onBlur={formik.handleBlur}
+                            {...formik.getFieldProps('password') }
+                            // name={"password"}
+                            // onChange={formik.handleChange}
+                            // value={formik.values.password}
+                            // onBlur={formik.handleBlur}
                         />
-                        { formik.errors.password ? <div style={{color: 'red'}}>{formik.errors.password}</div> : null }
+                        { formik.errors.password  && formik.touched.password ? <div style={{color: 'red'}}>{formik.errors.password}</div> : null }
                         <FormControlLabel
                             label={'Remember me'}
                             control={<Checkbox
-                                name={"rememberMe"}
-                                onChange={formik.handleChange}
-                                checked={formik.values.rememberMe}
+                                {...formik.getFieldProps('rememberMe') }
+                                // name={"rememberMe"}
+                                // onChange={formik.handleChange}
+                                // checked={formik.values.rememberMe}
 
                             />}/>
                         <Button

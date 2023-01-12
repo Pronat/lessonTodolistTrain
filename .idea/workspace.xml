@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34456630-05c0-48b2-87cb-5efccf420057" name="Changes" comment="lesson16-11">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="34456630-05c0-48b2-87cb-5efccf420057" name="Changes" comment="lesson16-12">
       <change beforePath="$PROJECT_DIR$/src/features/TodolistsList/Login/Login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/TodolistsList/Login/Login.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +71,7 @@
       <updated>1673193334283</updated>
       <workItem from="1673193335468" duration="1614000" />
       <workItem from="1673281849738" duration="5482000" />
-      <workItem from="1673537864119" duration="5492000" />
+      <workItem from="1673537864119" duration="6119000" />
     </task>
     <task id="LOCAL-00001" summary="lesson16-1">
       <created>1673195277843</created>
@@ -151,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673553572082</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="lesson16-12">
+      <created>1673555223948</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1673555223948</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +175,7 @@
     <MESSAGE value="lesson16-9" />
     <MESSAGE value="lesson16-10" />
     <MESSAGE value="lesson16-11" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson16-11" />
+    <MESSAGE value="lesson16-12" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson16-12" />
   </component>
 </project>
