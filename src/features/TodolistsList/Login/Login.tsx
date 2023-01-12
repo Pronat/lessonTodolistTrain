@@ -9,13 +9,13 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {useFormik} from "formik";
 
-
+type FormikErrorType = {
+    email?: string
+    password?: string
+    rememberMe?: boolean
+}
 export const Login = () => {
-    type FormikErrorType = {
-        email?: string
-        password?: string
-        rememberMe?: boolean
-    }
+
 
     const formik = useFormik({
         initialValues: {
@@ -63,8 +63,9 @@ export const Login = () => {
                             name={"email"}
                             onChange={formik.handleChange}
                             value={formik.values.email}
+                            onBlur={formik.handleBlur}
                         />
-                        { formik.errors.email ? <div>{formik.errors.email}</div> : null }
+                        { formik.errors.email && formik.handleBlur === touched ? <div style={{color: 'red'}}>{formik.errors.email}</div> : null }
                         <TextField
                             type="password"
                             label="Password"
@@ -72,7 +73,9 @@ export const Login = () => {
                             name={"password"}
                             onChange={formik.handleChange}
                             value={formik.values.password}
+                            onBlur={formik.handleBlur}
                         />
+                        { formik.errors.password ? <div style={{color: 'red'}}>{formik.errors.password}</div> : null }
                         <FormControlLabel
                             label={'Remember me'}
                             control={<Checkbox
