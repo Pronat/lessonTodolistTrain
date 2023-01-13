@@ -33,13 +33,14 @@ export const Login = () => {
             }
             if (!values.password) {
                 errors.password = 'Required'
-            } else if (values.password.length <=2) {
+            } else if (values.password.length <= 2) {
                 errors.password = 'Must be 3 characters or more'
             }
             return errors
         },
         onSubmit: values => {
             alert(JSON.stringify(values));
+            formik.resetForm()
         },
     })
     return <Grid container justifyContent={'center'}>
@@ -60,32 +61,23 @@ export const Login = () => {
                         <TextField
                             label="Email"
                             margin="normal"
-                            {...formik.getFieldProps('email') }
-                            // name={"email"}
-                            // onChange={formik.handleChange}
-                            // value={formik.values.email}
-                            // onBlur={formik.handleBlur}
+                            {...formik.getFieldProps('email')}
                         />
-                        { formik.errors.email && formik.touched.email ? <div style={{color: 'red'}}>{formik.errors.email}</div> : null }
+                        {formik.errors.email && formik.touched.email ?
+                            <div style={{color: 'red'}}>{formik.errors.email}</div> : null}
                         <TextField
                             type="password"
                             label="Password"
                             margin="normal"
-                            {...formik.getFieldProps('password') }
-                            // name={"password"}
-                            // onChange={formik.handleChange}
-                            // value={formik.values.password}
-                            // onBlur={formik.handleBlur}
+                            {...formik.getFieldProps('password')}
                         />
-                        { formik.errors.password  && formik.touched.password ? <div style={{color: 'red'}}>{formik.errors.password}</div> : null }
+                        {formik.errors.password && formik.touched.password ?
+                            <div style={{color: 'red'}}>{formik.errors.password}</div> : null}
                         <FormControlLabel
                             label={'Remember me'}
                             control={<Checkbox
-                                {...formik.getFieldProps('rememberMe') }
-                                // name={"rememberMe"}
-                                // onChange={formik.handleChange}
-                                // checked={formik.values.rememberMe}
-
+                                {...formik.getFieldProps('rememberMe')}
+                                checked={formik.values.rememberMe}
                             />}/>
                         <Button
                             type={'submit'}
