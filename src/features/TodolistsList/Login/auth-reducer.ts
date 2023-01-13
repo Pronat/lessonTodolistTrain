@@ -21,8 +21,13 @@ export const setIsLoggedInAC = (value: boolean) =>
     ({type: 'login/SET-IS-LOGGED-IN', value} as const)
 
 // thunks
-export const loginTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionsType>) => {
+export const loginTC = (data: LoginParamsType) => async (dispatch: Dispatch<ActionsType>) => {
     dispatch(setAppStatusAC('loading'))
+    try {
+        
+    } catch (e) {
+        
+    }
 }
 
 // types
