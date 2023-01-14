@@ -1,4 +1,4 @@
-import { Dispatch } from 'redux'
+import {Dispatch} from 'redux'
 import {SetAppErrorActionType, setAppStatusAC, SetAppStatusActionType} from "../../../app/app-reducer";
 import {authAPI, LoginParamsType, ResponseResultCode} from "../../../api/todolists-api";
 import {handleServerAppError, handleServerNetworkError} from "../../../utils/error-utils";
@@ -29,14 +29,29 @@ export const loginTC = (data: LoginParamsType) => async (dispatch: Dispatch<Acti
         if (res.data.resultCode === ResponseResultCode.OK) {
             dispatch(setIsLoggedInAC(true))
             dispatch(setAppStatusAC('succeeded'))
-        }   else {
+        } else {
             handleServerAppError(res.data, dispatch)
         }
     } catch (error: any) {
         handleServerNetworkError(error, dispatch);
-    }   finally {
-        
+    } finally {
+
     }
+}
+
+export const meTC = () => async (dispatch: Dispatch<ActionsType>) => {
+    try {
+        const res = await authAPI.me()
+        if (res.data.resultCode === ResponseResultCode.OK) {
+            dispatch(setIsLoggedInAC(true))
+            dispatch(setAppStatusAC('succeeded'))
+        } else {
+            handleServerAppError(res.data, dispatch)
+        }
+    } catch (err: any) {
+        handleServerNetworkError(err, dispatch)
+    }
+
 }
 
 // types
