@@ -5,7 +5,8 @@ import {handleServerAppError, handleServerNetworkError} from "../../../utils/err
 
 
 const initialState = {
-    isLoggedIn: false
+    isLoggedIn: false,
+    isInitialized: false
 }
 type InitialStateType = typeof initialState
 
@@ -20,6 +21,8 @@ export const authReducer = (state: InitialStateType = initialState, action: Acti
 // actions
 export const setIsLoggedInAC = (value: boolean) =>
     ({type: 'login/SET-IS-LOGGED-IN', value} as const)
+export const setisInitializedAC = (value: boolean) =>
+    ({type: 'login/SET-IS-INITIALIZED-IN', value} as const)
 
 // thunks
 export const loginTC = (data: LoginParamsType) => async (dispatch: Dispatch<ActionsType>) => {
