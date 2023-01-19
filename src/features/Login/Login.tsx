@@ -38,7 +38,7 @@ export const Login = () => {
         },
         onSubmit: values => {
             alert(JSON.stringify(values));
-            formik.resetForm()
+            formik.resetForm();
         },
     });
     return <Grid container justifyContent={'center'}>
