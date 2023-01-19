@@ -1,8 +1,8 @@
-import {LoginParamsType, todolistsAPI} from "../../api/todolists-api";
+import {authAPI, LoginParamsType, todolistsAPI} from "../../api/todolists-api";
 import {Dispatch} from "redux";
-import {setAppStatusAC} from "../../app/app-reducer";
+import {SetAppErrorActionType, setAppStatusAC, SetAppStatusActionType} from "../../app/app-reducer";
 import {handleServerAppError, handleServerNetworkError} from "../../utils/error-utils";
-import {addTaskAC} from "../TodolistsList/tasks-reducer";
+
 
 
 const initialState = {
@@ -10,7 +10,7 @@ const initialState = {
 }
 
 type InitialStateType = typeof initialState
-type ActionsType = ReturnType<typeof setIsLoggedInAC>
+type ActionsType = ReturnType<typeof setIsLoggedInAC> | SetAppStatusActionType | SetAppErrorActionType
 
 export const authReducer = (state: InitialStateType = initialState, action: ActionsType) => {
     switch(action.type) {
@@ -29,12 +29,11 @@ export const setIsLoggedInAC = (value: boolean) => {
 
 export const setIsLoggedInTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionsType>) => {
     dispatch(setAppStatusAC('loading'))
-    todolistsAPI.createTask(todolistId, title)
+    authAPI.login(data)
         .then(res => {
             if (res.data.resultCode === 0) {
-                const task = res.data.data.item
-                const action = addTaskAC(task)
                 dispatch(setIsLoggedInAC(true))
+                dispatch(setAppStatusAC('succeeded'))
             } else {
                 handleServerAppError(res.data, dispatch);
             }
@@ -42,5 +41,4 @@ export const setIsLoggedInTC = (data: LoginParamsType) => (dispatch: Dispatch<Ac
         .catch((error) => {
             handleServerNetworkError(error, dispatch)
         })
-
 }

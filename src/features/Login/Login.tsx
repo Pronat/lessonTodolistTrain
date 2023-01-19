@@ -8,6 +8,8 @@ import FormLabel from '@mui/material/FormLabel';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
 import {useFormik} from "formik";
+import {useAppDispatch} from "../../app/store";
+import {setIsLoggedInTC} from "./auth-reducer";
 
 type FormikErrorType = {
     email?: string
@@ -16,6 +18,7 @@ type FormikErrorType = {
 }
 
 export const Login = () => {
+    const dispatch = useAppDispatch()
     const formik = useFormik({
         initialValues: {
             email: '',
@@ -38,6 +41,7 @@ export const Login = () => {
         },
         onSubmit: values => {
             alert(JSON.stringify(values));
+            // dispatch(setIsLoggedInTC(values))
             formik.resetForm();
         },
     });
