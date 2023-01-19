@@ -23,10 +23,7 @@ export const authReducer = (state: InitialStateType = initialState, action: Acti
             return {
                 ...state, isLoggedIn: action.value
             }
-        case "LOGIN/ME-STATUS":
-            return {
-                ...state
-            }
+
         default:
             return state
     }
@@ -38,11 +35,7 @@ export const setIsLoggedInAC = (value: boolean) => {
     } as const
 }
 
-export const meAC = () => {
-    return {
-        type: 'LOGIN/ME-STATUS'
-    } as const
-}
+
 
 export const setIsLoggedInTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionsType>) => {
     dispatch(setAppStatusAC('loading'))
@@ -65,7 +58,7 @@ export const meTC = () => (dispatch: Dispatch<ActionsType>) => {
     authAPI.me()
         .then(res => {
             if (res.data.resultCode === 0) {
-                dispatch(meAC())
+                dispatch(setIsLoggedInAC(true))
                 dispatch(setAppStatusAC('succeeded'))
             } else {
                 handleServerAppError(res.data, dispatch);
