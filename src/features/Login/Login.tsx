@@ -40,8 +40,8 @@ export const Login = () => {
             return errors
         },
         onSubmit: values => {
-            alert(JSON.stringify(values));
-            // dispatch(setIsLoggedInTC(values))
+            // alert(JSON.stringify(values));
+            dispatch(setIsLoggedInTC(values))
             formik.resetForm();
         },
     });

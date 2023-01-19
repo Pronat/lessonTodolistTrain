@@ -12,12 +12,14 @@ const initialState = {
 type InitialStateType = typeof initialState
 type ActionsType = ReturnType<typeof setIsLoggedInAC> | SetAppStatusActionType | SetAppErrorActionType
 
-export const authReducer = (state: InitialStateType = initialState, action: ActionsType) => {
+export const authReducer = (state: InitialStateType = initialState, action: ActionsType): InitialStateType   => {
     switch(action.type) {
         case 'LOGIN/SET-IS-LOGGED-IN':
             return {
                 ...state, isLoggedIn: action.value
             }
+        default:
+            return state
     }
 }
 
