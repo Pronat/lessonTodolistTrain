@@ -41,7 +41,7 @@ export const authAPI = {
         return instance.post<LoginParamsType ,AxiosResponse<ResponseType<{ userId: number }>>>(`auth/login`, data)
     },
     me() {
-        return instance.get<AxiosResponse<ResponseType>>(`auth/me`)
+        return instance.get<AxiosResponse<ResponseType<{ data: meType }>>>(`auth/me`)
     }
 }
 
@@ -52,6 +52,12 @@ export type LoginParamsType = {
     password: string
     rememberMe?: boolean
     captcha?: string
+}
+export type meType = {
+
+        id: number,
+        email: string
+        login: string
 }
 
 export type TodolistType = {
