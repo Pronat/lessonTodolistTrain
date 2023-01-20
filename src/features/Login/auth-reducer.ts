@@ -13,7 +13,6 @@ const initialState = {
 type InitialStateType = typeof initialState
 type ActionsType =
     ReturnType<typeof setIsLoggedInAC>
-    | ReturnType<typeof meAC>
     | SetAppStatusActionType
     | SetAppErrorActionType
 

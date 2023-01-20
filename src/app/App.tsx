@@ -19,10 +19,15 @@ import {meTC} from "../features/Login/auth-reducer";
 
 function App() {
     const status = useAppSelector<RequestStatusType>((state) => state.app.status)
+    const isInitialized = useAppSelector<RequestStatusType>(state => state.app.isInitialized)
     const dispatch = useAppDispatch()
     useEffect( () => {
+        debugger
         dispatch(meTC())
     }, [])
+
+    if()
+
     return (
         <div className="App">
             <ErrorSnackbar/>
