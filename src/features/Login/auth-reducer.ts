@@ -22,7 +22,7 @@ type ActionsType =
     | SetAppStatusActionType
     | SetAppErrorActionType
     | SsInitializedACActionType
-    | ReturnType<typeof logoutAC>
+
 
 export const authReducer = (state: InitialStateType = initialState, action: ActionsType): InitialStateType   => {
     switch(action.type) {
@@ -78,9 +78,9 @@ export const meTC = () => (dispatch: Dispatch<ActionsType>) => {
         })
 }
 
-export const logoutTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionsType>) => {
+export const logoutTC = () => (dispatch: Dispatch<ActionsType>) => {
     dispatch(setAppStatusAC('loading'))
-    authAPI.login(data)
+    authAPI.logout()
         .then(res => {
             if (res.data.resultCode === 0) {
                 dispatch(setIsLoggedInAC(false))
