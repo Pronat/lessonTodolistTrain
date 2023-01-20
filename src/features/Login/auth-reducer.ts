@@ -42,8 +42,6 @@ export const setIsLoggedInAC = (value: boolean) => {
     } as const
 }
 
-export const logoutAC = (value: boolean) => ({type: 'LOGIN/SET-IS-LOGGED-IN', value }as const)
-
 
 export const setIsLoggedInTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionsType>) => {
     dispatch(setAppStatusAC('loading'))
@@ -80,8 +78,18 @@ export const meTC = () => (dispatch: Dispatch<ActionsType>) => {
         })
 }
 
-export const logoutTC (data: LogoutParamsType) => (dispatch: Dispatch) => {
-    authAPI.logout(data)
-        .then( () => {
-        }
+export const logoutTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionsType>) => {
+    dispatch(setAppStatusAC('loading'))
+    authAPI.login(data)
+        .then(res => {
+            if (res.data.resultCode === 0) {
+                dispatch(setIsLoggedInAC(false))
+                dispatch(setAppStatusAC('succeeded'))
+            } else {
+                handleServerAppError(res.data, dispatch);
+            }
+        })
+        .catch((error) => {
+            handleServerNetworkError(error, dispatch)
+        })
 }
