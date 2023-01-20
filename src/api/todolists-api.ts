@@ -42,10 +42,19 @@ export const authAPI = {
     },
     me() {
         return instance.get<ResponseType<meType>>(`auth/me`)
+    },
+    logout(data: LogoutParamsType) {
+        return instance.delete<LogoutParamsType>(`auth/login`, data)
     }
 }
 
 // types
+
+export type LogoutParamsType<D = {}> = {
+    resultCode: number
+    messages: Array<string>
+    data: D
+}
 
 export type LoginParamsType = {
     email: string

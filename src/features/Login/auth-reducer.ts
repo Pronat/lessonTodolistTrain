@@ -61,7 +61,6 @@ export const setIsLoggedInTC = (data: LoginParamsType) => (dispatch: Dispatch<Ac
 
 export const meTC = () => (dispatch: Dispatch<ActionsType>) => {
     dispatch(setAppStatusAC('loading'))
-    dispatch(setisInitializedAC(true))
     authAPI.me()
         .then(res => {
             if (res.data.resultCode === 0) {
@@ -73,5 +72,8 @@ export const meTC = () => (dispatch: Dispatch<ActionsType>) => {
         })
         .catch((error) => {
             handleServerNetworkError(error, dispatch)
+        })
+        .finally( () => {
+            dispatch(setisInitializedAC(true))
         })
 }
