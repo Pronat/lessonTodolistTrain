@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c4b94ded-82e6-44e8-8f28-d90792f5ee16" name="Changes" comment="lesson16-42">
+    <list default="true" id="c4b94ded-82e6-44e8-8f28-d90792f5ee16" name="Changes" comment="lesson16-43">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/Login/auth-reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +66,7 @@
       <updated>1674058935043</updated>
       <workItem from="1674058936288" duration="8026000" />
       <workItem from="1674140491409" duration="14179000" />
-      <workItem from="1674227918687" duration="2191000" />
+      <workItem from="1674227918687" duration="4466000" />
     </task>
     <task id="LOCAL-00001" summary="lesson16-27">
       <created>1674060191048</created>
@@ -180,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674233471487</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="lesson16-43">
+      <created>1674234457758</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674234457758</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -203,6 +210,7 @@
     <MESSAGE value="lesson16-40" />
     <MESSAGE value="lesson16-41" />
     <MESSAGE value="lesson16-42" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson16-42" />
+    <MESSAGE value="lesson16-43" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson16-43" />
   </component>
 </project>
