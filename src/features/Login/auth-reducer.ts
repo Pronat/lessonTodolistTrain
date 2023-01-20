@@ -1,4 +1,4 @@
-import {authAPI, LoginParamsType, meType, todolistsAPI} from "../../api/todolists-api";
+import {authAPI, LoginParamsType, LogoutParamsType, meType, todolistsAPI} from "../../api/todolists-api";
 import {Dispatch} from "redux";
 import {
     SetAppErrorActionType,
@@ -22,6 +22,7 @@ type ActionsType =
     | SetAppStatusActionType
     | SetAppErrorActionType
     | SsInitializedACActionType
+    | ReturnType<typeof logoutAC>
 
 export const authReducer = (state: InitialStateType = initialState, action: ActionsType): InitialStateType   => {
     switch(action.type) {
@@ -41,6 +42,7 @@ export const setIsLoggedInAC = (value: boolean) => {
     } as const
 }
 
+export const logoutAC = (value: boolean) => ({type: 'LOGIN/SET-IS-LOGGED-IN', value }as const)
 
 
 export const setIsLoggedInTC = (data: LoginParamsType) => (dispatch: Dispatch<ActionsType>) => {
@@ -76,4 +78,10 @@ export const meTC = () => (dispatch: Dispatch<ActionsType>) => {
         .finally( () => {
             dispatch(setisInitializedAC(true))
         })
+}
+
+export const logoutTC (data: LogoutParamsType) => (dispatch: Dispatch) => {
+    authAPI.logout(data)
+        .then( () => {
+        }
 }
