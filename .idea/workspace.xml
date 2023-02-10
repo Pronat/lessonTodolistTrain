@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="562a5b00-8035-4fc1-881b-b1b901c98833" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="562a5b00-8035-4fc1-881b-b1b901c98833" name="Changes" comment="lesson2-12">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
@@ -61,11 +63,23 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676060909053</updated>
-      <workItem from="1676060910428" duration="379000" />
+      <workItem from="1676060910428" duration="763000" />
     </task>
+    <task id="LOCAL-00001" summary="lesson2-12">
+      <created>1676061313343</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676061313343</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lesson2-12" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson2-12" />
   </component>
 </project>
