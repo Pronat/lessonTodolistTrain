@@ -1,6 +1,6 @@
 import React from 'react';
 
-type TaskType = {
+export type TaskType = {
     id: number
     title: string
     isDone: boolean
@@ -9,7 +9,8 @@ type TaskType = {
 type PropsType = {
     title: string
     tasks: Array<TaskType>
-    deleteTasks: (id: number, hello: string) => void
+    deleteTasks: (id: number) => void
+    changeFilter: (consist: string) => void
 
 }
 
@@ -26,7 +27,7 @@ export function Todolist(props: PropsType) {
                     return (
                         <li key={el.id}><input type={'checkbox'} checked={el.isDone}/>{el.title}
                             <button onClick={() => {
-                                props.deleteTasks(el.id, 'Hello world')
+                                props.deleteTasks(el.id)
                             }}>✖️
                             </button>
                         </li>
@@ -37,7 +38,7 @@ export function Todolist(props: PropsType) {
 
         </ul>
         <div>
-            <button>All</button>
+            <button onClick={()=>{props.changeFilter('all')}}>All</button>
             <button>Active</button>
             <button>Completed</button>
         </div>
