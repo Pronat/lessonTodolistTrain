@@ -12,9 +12,10 @@ function App() {
         { id: 5, title: "Redux", isDone: true }
     ])
 
-    const deleteTasks = (taskId: number) => {
-        let tasksNew = tasks.filter((el) => el.id !== taskId)
-        setTasks(tasksNew)
+    const deleteTasks = (taskId: number, hello: string) => {
+        // let tasksNew = tasks.filter((el) => el.id !== taskId)
+        // setTasks(tasksNew)
+        console.log(taskId, hello)
     }
 
     return (
