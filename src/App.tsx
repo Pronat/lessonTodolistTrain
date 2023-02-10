@@ -4,7 +4,7 @@ import {Todolist} from './Todolist';
 
 function App() {
 
-    const [tasks,setTasks] = useState([
+    const [tasks, setTasks] = useState([
         { id: 1, title: "HTML&CSS", isDone: true },
         { id: 2, title: "JS", isDone: true },
         { id: 3, title: "ReactJS", isDone: false },
@@ -12,15 +12,14 @@ function App() {
         { id: 5, title: "Redux", isDone: true }
     ])
 
-
-    const deleteTask = (id: number) => {
-       let tasks1 = tasks.filter((el) => el.id !== id)
-        setTasks(tasks1)
+    const deleteTasks = (taskId: number) => {
+        let tasksNew = tasks.filter((el) => el.id !== taskId)
+        setTasks(tasksNew)
     }
 
     return (
         <div className="App">
-            <Todolist title="What to learn" tasks={tasks} deleteTask={deleteTask} />
+            <Todolist title="What to learn" tasks={tasks} deleteTasks={deleteTasks}/>
         </div>
     );
 }
