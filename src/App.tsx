@@ -18,7 +18,7 @@ function App() {
         setTasks1(tasksNew)
     }
 
-    const [filter, setFilter] = useState('all')
+    const [filter, setFilter] = useState<FilterType>('all')
     let tasksAfterFilter = tasks1
     if (filter === "active") {
         tasksAfterFilter = tasks1.filter((el) => el.isDone)
