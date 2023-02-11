@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="562a5b00-8035-4fc1-881b-b1b901c98833" name="Changes" comment="lesson2-13">
+    <list default="true" id="18d0033a-2f0b-4fa0-bb6a-22769cf00d37" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
@@ -19,7 +20,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2LYvc7VRJCYcbMcrBjKHa6r4ggT" />
+  <component name="ProjectId" id="2La0N0ff79aoiAkClpu9isndyw8" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -58,36 +59,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="562a5b00-8035-4fc1-881b-b1b901c98833" name="Changes" comment="" />
-      <created>1676060909053</created>
+      <changelist id="18d0033a-2f0b-4fa0-bb6a-22769cf00d37" name="Changes" comment="" />
+      <created>1676093846193</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1676060909053</updated>
-      <workItem from="1676060910428" duration="1787000" />
+      <updated>1676093846193</updated>
+      <workItem from="1676093847585" duration="1491000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson2-12">
-      <created>1676061313343</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1676061313343</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson2-13">
-      <created>1676061962389</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1676061962389</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson2-12" />
-    <MESSAGE value="lesson2-13" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2-13" />
   </component>
 </project>
