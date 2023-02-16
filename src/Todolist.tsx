@@ -22,6 +22,12 @@ export function Todolist(props: PropsType) {
         setTaskTitle(e.currentTarget.value)
     }
 
+    const onKeyPressAddTaskHandler = (e: React.KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === 'Enter') {
+            onClickAddTaskHandler()
+        }
+    }
+
     const onClickAddTaskHandler = () => {
         props.addTask(taskTitle)
         setTaskTitle('')
@@ -32,8 +38,7 @@ export function Todolist(props: PropsType) {
             <input
                 onChange={onChangeAddTaskHandler}
                 value={taskTitle}
-                onKeyPress={(e: KeyboardEventHandler<HTMLInputElement>) => {
-                    console.log()}}
+                onKeyPress={onKeyPressAddTaskHandler}
             />
             <button onClick={onClickAddTaskHandler}>+</button>
         </div>
@@ -42,18 +47,27 @@ export function Todolist(props: PropsType) {
                 props.tasks.map(t => <li key={t.id}>
                     <input type="checkbox" checked={t.isDone}/>
                     <span>{t.title}</span>
-                    <button onClick={ () => { props.removeTask(t.id) } }>x</button>
+                    <button onClick={() => {
+                        props.removeTask(t.id)
+                    }}>x
+                    </button>
                 </li>)
             }
         </ul>
         <div>
-            <button onClick={ () => { props.changeFilter("all") } }>
+            <button onClick={() => {
+                props.changeFilter("all")
+            }}>
                 All
             </button>
-            <button onClick={ () => { props.changeFilter("active") } }>
+            <button onClick={() => {
+                props.changeFilter("active")
+            }}>
                 Active
             </button>
-            <button onClick={ () => { props.changeFilter("completed") } }>
+            <button onClick={() => {
+                props.changeFilter("completed")
+            }}>
                 Completed
             </button>
         </div>
