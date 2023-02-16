@@ -32,6 +32,16 @@ export function Todolist(props: PropsType) {
         props.addTask(taskTitle)
         setTaskTitle('')
     }
+    const onClickAllHandler = () => {
+        props.changeFilter("all")
+    }
+    const onClickActiveHandler = () => {
+        props.changeFilter("all")
+    }
+    const onClickCompletedHandler = () => {
+        props.changeFilter("all")
+    }
+
     return <div>
         <h3>{props.title}</h3>
         <div>
@@ -55,19 +65,13 @@ export function Todolist(props: PropsType) {
             }
         </ul>
         <div>
-            <button onClick={() => {
-                props.changeFilter("all")
-            }}>
+            <button onClick={onClickAllHandler}>
                 All
             </button>
-            <button onClick={() => {
-                props.changeFilter("active")
-            }}>
+            <button onClick={onClickActiveHandler}>
                 Active
             </button>
-            <button onClick={() => {
-                props.changeFilter("completed")
-            }}>
+            <button onClick={onClickCompletedHandler}>
                 Completed
             </button>
         </div>
