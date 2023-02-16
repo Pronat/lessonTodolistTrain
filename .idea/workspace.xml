@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18d0033a-2f0b-4fa0-bb6a-22769cf00d37" name="Changes" comment="lesson2-17">
+    <list default="true" id="20d9ae6c-34ce-420c-8281-11fddd49c0fd" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,7 +22,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2La0N0ff79aoiAkClpu9isndyw8" />
+  <component name="ProjectId" id="2LpSqq5U0jQXTXtQAUmqTEgONhR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,36 +61,16 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="18d0033a-2f0b-4fa0-bb6a-22769cf00d37" name="Changes" comment="" />
-      <created>1676093846193</created>
+      <changelist id="20d9ae6c-34ce-420c-8281-11fddd49c0fd" name="Changes" comment="" />
+      <created>1676566725106</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1676093846193</updated>
-      <workItem from="1676093847585" duration="3824000" />
+      <updated>1676566725106</updated>
+      <workItem from="1676566727905" duration="652000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson2-16">
-      <created>1676095580979</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1676095580979</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson2-17">
-      <created>1676096389177</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1676096389177</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson2-16" />
-    <MESSAGE value="lesson2-17" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson2-17" />
   </component>
 </project>
