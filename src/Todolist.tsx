@@ -32,14 +32,9 @@ export function Todolist(props: PropsType) {
         props.addTask(taskTitle)
         setTaskTitle('')
     }
-    const onClickAllHandler = () => {
-        props.changeFilter("all")
-    }
-    const onClickActiveHandler = () => {
-        props.changeFilter("all")
-    }
-    const onClickCompletedHandler = () => {
-        props.changeFilter("all")
+
+    const onClickMainHandler = (name: FilterValuesType) => {
+        props.changeFilter(name)
     }
 
     return <div>
@@ -69,16 +64,16 @@ export function Todolist(props: PropsType) {
                 }
 
                 )
-            }
+            }  
         </ul>
         <div>
-            <button onClick={onClickAllHandler}>
+            <button onClick={()=>onClickMainHandler("all")}>
                 All
             </button>
-            <button onClick={onClickActiveHandler}>
+            <button onClick={()=>onClickMainHandler("active")}>
                 Active
             </button>
-            <button onClick={onClickCompletedHandler}>
+            <button onClick={()=>onClickMainHandler("completed")}>
                 Completed
             </button>
         </div>
