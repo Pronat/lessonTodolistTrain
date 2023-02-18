@@ -49,6 +49,10 @@ export function Todolist(props: PropsType) {
         setTitle('')
     }
 
+    const removeTaskHandler = (taskId: string, id: number) => {
+        props.removeTask(taskId, id)
+    }
+
 
     return <div>
         <h3> {props.title}
@@ -76,7 +80,8 @@ export function Todolist(props: PropsType) {
                     return <li key={t.taskId} className={t.isDone ? "is-done" : ""}>
                         <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
                         <span>{t.title}</span>
-                        <button onClick={() => {'removeTask'}}>x</button>
+                        <button onClick={() => {removeTaskHandler(t.taskId, props.id)}}>x</button>
+                        {/*<button onClick={() => {props.removeTask(t.taskId, props.id)}}>x</button>*/}
                     </li>
                 })
             }
