@@ -40,12 +40,14 @@ export function Todolist(props: PropsType) {
        props.changeFilter(name, todoId)
     }
 
+    const removeTodolistHandler = () => {
+        props.removeTodolist(props.id)
+    }
+
 
     return <div>
         <h3> {props.title}
-            <button onClick={() => {
-                'removeTodolist'
-            }}>x
+            <button onClick={removeTodolistHandler}>x
             </button>
 
         </h3>
@@ -74,19 +76,24 @@ export function Todolist(props: PropsType) {
                 })
             }
         </ul>
-        <div >
-            <SuperButton
+        <span>
+            <div> <SuperButton
                 filter={props.filter}
                 name={'all'}
-                callBack={()=>{onClickChangeFilterHandler('all', props.id)}} />
+                callBack={()=>{onClickChangeFilterHandler('all', props.id)}}
+            />
+            </div>
+
             <SuperButton
                 filter={props.filter}
                 name={'active'}
-                callBack={()=>{onClickChangeFilterHandler('active', props.id)}} />
+                callBack={()=>{onClickChangeFilterHandler('active', props.id)}}
+            />
             <SuperButton
                 filter={props.filter}
                 name={'completed'}
-                callBack={()=>{onClickChangeFilterHandler('completed', props.id)}} />
+                callBack={()=>{onClickChangeFilterHandler('completed', props.id)}}
+            />
 
             {/*<button className={props.filter === 'all' ? "active-filter" : ""}*/}
             {/*        onClick={()=>{}}>All*/}
@@ -97,7 +104,7 @@ export function Todolist(props: PropsType) {
             {/*<button className={props.filter === 'completed' ? "active-filter" : ""}*/}
             {/*        onClick={()=>{}}>Completed*/}
             {/*</button>*/}
-        </div>
+        </span>
         <p></p>
         {
             props.students.map((el) => {

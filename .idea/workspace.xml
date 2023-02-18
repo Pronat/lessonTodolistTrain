@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4e87bf35-0987-4037-939e-4159d5828ab4" name="Changes" comment="dopiMonday2-5">
+    <list default="true" id="4e87bf35-0987-4037-939e-4159d5828ab4" name="Changes" comment="dopiMonday2-6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
@@ -70,7 +70,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1676696382715</updated>
-      <workItem from="1676696384054" duration="4738000" />
+      <workItem from="1676696384054" duration="6606000" />
     </task>
     <task id="LOCAL-00001" summary="dopiMonday2-1">
       <created>1676696485589</created>
@@ -107,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676701419718</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="dopiMonday2-6">
+      <created>1676702296591</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676702296591</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -119,6 +126,7 @@
     <MESSAGE value="dopiMonday2-3" />
     <MESSAGE value="dopiMonday2-4" />
     <MESSAGE value="dopiMonday2-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="dopiMonday2-5" />
+    <MESSAGE value="dopiMonday2-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="dopiMonday2-6" />
   </component>
 </project>
