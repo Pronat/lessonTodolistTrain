@@ -1,5 +1,6 @@
 import React, {ChangeEvent, useState, KeyboardEvent} from 'react';
 import {FilterValuesType, TasksType} from './App';
+import {SuperButton} from "./components/SuperButton";
 
 
 // export type TaskType = {
@@ -33,6 +34,10 @@ export function Todolist(props: PropsType) {
         if (e.charCode === 13) {
             // addTask();
         }
+    }
+
+    const onClickChangeFilterHandler = (name: FilterValuesType) => {
+       props.changeFilter(name)
     }
 
 
@@ -70,6 +75,8 @@ export function Todolist(props: PropsType) {
             }
         </ul>
         <div>
+            <SuperButton name={'All'} callBack={()=>{}} />
+
             <button className={props.filter === 'all' ? "active-filter" : ""}
                     onClick={()=>{}}>All
             </button>
