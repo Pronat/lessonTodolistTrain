@@ -3,11 +3,11 @@ import {FilterValuesType, TasksType} from './App';
 import {SuperButton} from "./components/SuperButton";
 
 
-// export type TaskType = {
-//     id: string
-//     title: string
-//     isDone: boolean
-// }
+export type TaskType = {
+    id: string
+    title: string
+    isDone: boolean
+}
 
 type PropsType = {
     id: number
@@ -32,7 +32,7 @@ export function Todolist(props: PropsType) {
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
         setError(null);
         if (e.charCode === 13) {
-            // addTask();
+            addTaskHandler()
         }
     }
 
@@ -52,7 +52,19 @@ export function Todolist(props: PropsType) {
     const removeTaskHandler = (taskId: string, id: number) => {
         props.removeTask(taskId, id)
     }
+    const mapTasks =  props.tasks.map(t => {
+        const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
+            let newIsDoneValue = e.currentTarget.checked;
+            props.changeTaskStatus(t.taskId, newIsDoneValue, props.id);
+        }
 
+        return <li key={t.taskId} className={t.isDone ? "is-done" : ""}>
+            <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
+            <span>{t.title}</span>
+            <button onClick={() => {removeTaskHandler(t.taskId, props.id)}}>x</button>
+            {/*<button onClick={() => {props.removeTask(t.taskId, props.id)}}>x</button>*/}
+        </li>
+    })
 
     return <div>
         <h3> {props.title}
@@ -71,19 +83,7 @@ export function Todolist(props: PropsType) {
         </div>
         <ul>
             {
-                props.tasks.map(t => {
-                    const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
-                        let newIsDoneValue = e.currentTarget.checked;
-                        props.changeTaskStatus(t.taskId, newIsDoneValue, props.id);
-                    }
-
-                    return <li key={t.taskId} className={t.isDone ? "is-done" : ""}>
-                        <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
-                        <span>{t.title}</span>
-                        <button onClick={() => {removeTaskHandler(t.taskId, props.id)}}>x</button>
-                        {/*<button onClick={() => {props.removeTask(t.taskId, props.id)}}>x</button>*/}
-                    </li>
-                })
+                mapTasks
             }
         </ul>
         <span>
