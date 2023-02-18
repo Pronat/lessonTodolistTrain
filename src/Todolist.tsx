@@ -36,8 +36,8 @@ export function Todolist(props: PropsType) {
         }
     }
 
-    const onClickChangeFilterHandler = (name: FilterValuesType) => {
-       props.changeFilter(name)
+    const onClickChangeFilterHandler = (name: FilterValuesType, todoId: number) => {
+       props.changeFilter(name, todoId)
     }
 
 
@@ -74,8 +74,17 @@ export function Todolist(props: PropsType) {
                 })
             }
         </ul>
-        <div>
-            <SuperButton name={'All'} callBack={()=>{}} />
+        <div >
+            <SuperButton
+                filter={props.filter}
+                name={'All'}
+                callBack={()=>{onClickChangeFilterHandler('all', props.id)}} />
+            <SuperButton
+                name={'Active'}
+                callBack={()=>{onClickChangeFilterHandler('active', props.id)}} />
+            <SuperButton
+                name={'Completed'}
+                callBack={()=>{onClickChangeFilterHandler('completed', props.id)}} />
 
             <button className={props.filter === 'all' ? "active-filter" : ""}
                     onClick={()=>{}}>All

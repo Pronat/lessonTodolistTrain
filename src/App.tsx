@@ -28,7 +28,9 @@ function App() {
             filter: "all",
             tasks: [
                 {taskId: v1(), title: "HTML&CSS", isDone: true},
-                {taskId: v1(), title: "JS", isDone: true}
+                {taskId: v1(), title: "JS", isDone: true},
+                {taskId: v1(), title: "Css", isDone: true},
+                {taskId: v1(), title: "Redux", isDone: true},
             ],
             students: [
                 'Rick Kane',
@@ -88,7 +90,9 @@ function App() {
             filter: "all",
             tasks: [
                 {taskId: v1(), title: "HTML&CSS2", isDone: true},
-                {taskId: v1(), title: "JS2", isDone: true}
+                {taskId: v1(), title: "JS2", isDone: true},
+                {taskId: v1(), title: "Css", isDone: true},
+                {taskId: v1(), title: "Redux", isDone: true},
             ],
             students: [
                 'Jago Wormald1',
