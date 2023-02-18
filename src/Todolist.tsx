@@ -36,8 +36,8 @@ export function Todolist(props: PropsType) {
         }
     }
 
-    const onClickChangeFilterHandler = (name: FilterValuesType, todoId: number) => {
-        props.changeFilter(name, todoId)
+    const onClickChangeFilterHandler = (name: FilterValuesType) => {
+        props.changeFilter(name, props.id)
     }
 
     const removeTodolistHandler = () => {
@@ -94,21 +94,21 @@ export function Todolist(props: PropsType) {
               filter={props.filter}
               name={'all'}
               callBack={() => {
-                  onClickChangeFilterHandler('all', props.id)
+                  onClickChangeFilterHandler('all')
               }}
           />
             <SuperButton
                 filter={props.filter}
                 name={'active'}
                 callBack={() => {
-                    onClickChangeFilterHandler('active', props.id)
+                    onClickChangeFilterHandler('active')
                 }}
             />
             <SuperButton
                 filter={props.filter}
                 name={'completed'}
                 callBack={() => {
-                    onClickChangeFilterHandler('completed', props.id)
+                    onClickChangeFilterHandler('completed')
                 }}
             />
         </span>
