@@ -77,24 +77,26 @@ export function Todolist(props: PropsType) {
         <div >
             <SuperButton
                 filter={props.filter}
-                name={'All'}
+                name={'all'}
                 callBack={()=>{onClickChangeFilterHandler('all', props.id)}} />
             <SuperButton
-                name={'Active'}
+                filter={props.filter}
+                name={'active'}
                 callBack={()=>{onClickChangeFilterHandler('active', props.id)}} />
             <SuperButton
-                name={'Completed'}
+                filter={props.filter}
+                name={'completed'}
                 callBack={()=>{onClickChangeFilterHandler('completed', props.id)}} />
 
-            <button className={props.filter === 'all' ? "active-filter" : ""}
-                    onClick={()=>{}}>All
-            </button>
-            <button className={props.filter === 'active' ? "active-filter" : ""}
-                    onClick={()=>{}}>Active
-            </button>
-            <button className={props.filter === 'completed' ? "active-filter" : ""}
-                    onClick={()=>{}}>Completed
-            </button>
+            {/*<button className={props.filter === 'all' ? "active-filter" : ""}*/}
+            {/*        onClick={()=>{}}>All*/}
+            {/*</button>*/}
+            {/*<button className={props.filter === 'active' ? "active-filter" : ""}*/}
+            {/*        onClick={()=>{}}>Active*/}
+            {/*</button>*/}
+            {/*<button className={props.filter === 'completed' ? "active-filter" : ""}*/}
+            {/*        onClick={()=>{}}>Completed*/}
+            {/*</button>*/}
         </div>
         <p></p>
         {
