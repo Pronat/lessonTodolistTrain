@@ -44,6 +44,11 @@ export function Todolist(props: PropsType) {
         props.removeTodolist(props.id)
     }
 
+    const addTaskHandler = () => {
+        props.addTask(title, props.id)
+        setTitle('')
+    }
+
 
     return <div>
         <h3> {props.title}
@@ -57,7 +62,7 @@ export function Todolist(props: PropsType) {
                    onKeyPress={onKeyPressHandler}
                    className={error ? "error" : ""}
             />
-            <button onClick={() => {'addTask'}}>+</button>
+            <button onClick={addTaskHandler}>+</button>
             {error && <div className="error-message">{error}</div>}
         </div>
         <ul>
