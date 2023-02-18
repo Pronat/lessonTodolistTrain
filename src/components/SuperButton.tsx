@@ -4,7 +4,7 @@ import {FilterValuesType} from "../App";
 export type SuperButtonPropsType = {
     name: string
     callBack: () => void
-    filter: FilterValuesType
+    filter?: FilterValuesType
 }
 export const SuperButton = (props: SuperButtonPropsType) => {
     return (

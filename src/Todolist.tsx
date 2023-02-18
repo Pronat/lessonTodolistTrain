@@ -37,7 +37,7 @@ export function Todolist(props: PropsType) {
     }
 
     const onClickChangeFilterHandler = (name: FilterValuesType, todoId: number) => {
-       props.changeFilter(name, todoId)
+        props.changeFilter(name, todoId)
     }
 
     const removeTodolistHandler = () => {
@@ -52,7 +52,7 @@ export function Todolist(props: PropsType) {
     const removeTaskHandler = (taskId: string, id: number) => {
         props.removeTask(taskId, id)
     }
-    const mapTasks =  props.tasks.map(t => {
+    const mapTasks = props.tasks.map(t => {
         const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
             let newIsDoneValue = e.currentTarget.checked;
             props.changeTaskStatus(t.taskId, newIsDoneValue, props.id);
@@ -61,15 +61,17 @@ export function Todolist(props: PropsType) {
         return <li key={t.taskId} className={t.isDone ? "is-done" : ""}>
             <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
             <span>{t.title}</span>
-            <button onClick={() => {removeTaskHandler(t.taskId, props.id)}}>x</button>
-            {/*<button onClick={() => {props.removeTask(t.taskId, props.id)}}>x</button>*/}
+            <button onClick={() => {
+                removeTaskHandler(t.taskId, props.id)
+            }}>x
+            </button>
         </li>
     })
 
     return <div>
         <h3> {props.title}
-            <button onClick={removeTodolistHandler}>x
-            </button>
+            {/*<button onClick={removeTodolistHandler}>x</button>*/}
+            <SuperButton name={'x'} callBack={removeTodolistHandler} />
 
         </h3>
         <div>
@@ -78,7 +80,8 @@ export function Todolist(props: PropsType) {
                    onKeyPress={onKeyPressHandler}
                    className={error ? "error" : ""}
             />
-            <button onClick={addTaskHandler}>+</button>
+            {/*<button onClick={addTaskHandler}>+</button>*/}
+            <SuperButton name={'+'} callBack={addTaskHandler} />
             {error && <div className="error-message">{error}</div>}
         </div>
         <ul>
@@ -87,33 +90,27 @@ export function Todolist(props: PropsType) {
             }
         </ul>
         <span>
-            <div> <SuperButton
-                filter={props.filter}
-                name={'all'}
-                callBack={()=>{onClickChangeFilterHandler('all', props.id)}}
-            />
-            </div>
-
+          <SuperButton
+              filter={props.filter}
+              name={'all'}
+              callBack={() => {
+                  onClickChangeFilterHandler('all', props.id)
+              }}
+          />
             <SuperButton
                 filter={props.filter}
                 name={'active'}
-                callBack={()=>{onClickChangeFilterHandler('active', props.id)}}
+                callBack={() => {
+                    onClickChangeFilterHandler('active', props.id)
+                }}
             />
             <SuperButton
                 filter={props.filter}
                 name={'completed'}
-                callBack={()=>{onClickChangeFilterHandler('completed', props.id)}}
+                callBack={() => {
+                    onClickChangeFilterHandler('completed', props.id)
+                }}
             />
-
-            {/*<button className={props.filter === 'all' ? "active-filter" : ""}*/}
-            {/*        onClick={()=>{}}>All*/}
-            {/*</button>*/}
-            {/*<button className={props.filter === 'active' ? "active-filter" : ""}*/}
-            {/*        onClick={()=>{}}>Active*/}
-            {/*</button>*/}
-            {/*<button className={props.filter === 'completed' ? "active-filter" : ""}*/}
-            {/*        onClick={()=>{}}>Completed*/}
-            {/*</button>*/}
         </span>
         <p></p>
         {
