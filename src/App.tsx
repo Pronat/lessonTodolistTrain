@@ -26,6 +26,10 @@ function App() {
         setTasks(newTasks);
     }
 
+    const changeTaskStatus = () => {
+
+    }
+
     let [filter, setFilter] = useState<FilterValuesType>("all");
 
     let tasksForTodolist = tasks;
@@ -49,7 +53,11 @@ function App() {
                       tasks={tasksForTodolist}
                       removeTask={removeTask}
                       changeFilter={changeFilter}
-                      addTask={addTask} />
+                      addTask={addTask}
+                      changeTaskStatus={changeTaskStatus}
+
+            />
+
         </div>
     );
 }
