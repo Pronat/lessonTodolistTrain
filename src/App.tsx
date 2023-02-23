@@ -26,7 +26,7 @@ function App() {
         setTasks(newTasks);
     }
 
-    const changeTaskStatus = () => {
+    const changeTaskStatus = (todolistId: string, newValue: boolean) => {
 
     }
 
