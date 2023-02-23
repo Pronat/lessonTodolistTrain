@@ -26,9 +26,7 @@ function App() {
         setTasks(newTasks);
     }
 
-    const changeTaskStatus = (todolistId: string, newValue: boolean) => {
 
-    }
 
     let [filter, setFilter] = useState<FilterValuesType>("all");
 
@@ -54,7 +52,7 @@ function App() {
                       removeTask={removeTask}
                       changeFilter={changeFilter}
                       addTask={addTask}
-                      changeTaskStatus={changeTaskStatus}
+
 
             />
 
