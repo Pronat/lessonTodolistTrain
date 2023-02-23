@@ -43,6 +43,10 @@ function App() {
         setFilter(value);
     }
 
+    const changeTaskIsDone = (taskId: string, newIsDone: boolean) => {
+
+    }
+
 
 
     return (
@@ -52,7 +56,7 @@ function App() {
                       removeTask={removeTask}
                       changeFilter={changeFilter}
                       addTask={addTask}
-
+                      changeTaskIsDone={changeTaskIsDone}
 
             />
 
