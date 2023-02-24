@@ -22,8 +22,11 @@ export function Todolist(props: PropsType) {
     let [title, setTitle] = useState("")
 
     const addTask = () => {
-        props.addTask(title);
-        setTitle("");
+        if (title.trim() !== '') {
+            props.addTask(title.trim())
+            setTitle('')
+        }
+
     }
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
@@ -55,8 +58,8 @@ export function Todolist(props: PropsType) {
                 props.tasks.map(t => {
 
                     const onClickHandler = () => props.removeTask(t.id)
-                    const changeTaskIsDoneHandler = () => {
-                        props.changeTaskIsDone(t.id, )
+                    const changeTaskIsDoneHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+                        props.changeTaskIsDone(t.id, e.currentTarget.checked)
                     }
 
 
