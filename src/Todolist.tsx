@@ -1,5 +1,6 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 import {FilterValuesType} from './App';
+import s from './App.module.css'
 
 type TaskType = {
     id: string
@@ -19,12 +20,15 @@ type PropsType = {
 
 export function Todolist(props: PropsType) {
 
-    let [title, setTitle] = useState("")
+    const [title, setTitle] = useState("")
+    const [error, setError] = useState<string | null>(null)
 
     const addTask = () => {
         if (title.trim() !== '') {
             props.addTask(title.trim())
             setTitle('')
+        }   else {
+            setError('Title is required')
         }
 
     }
@@ -50,8 +54,10 @@ export function Todolist(props: PropsType) {
             <input value={title}
                    onChange={ onChangeHandler }
                    onKeyPress={ onKeyPressHandler }
+                   className={error ? s.error : ''}
             />
             <button onClick={addTask}>+</button>
+            {error} && <div classname={s.errorMessage}>{error}</div>
         </div>
         <ul>
             {
