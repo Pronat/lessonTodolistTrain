@@ -31,6 +31,7 @@ export function Todolist(props: PropsType) {
             setError('Title is required')
         }
 
+
     }
 
     const onChangeHandler = (e: ChangeEvent<HTMLInputElement>) => {
