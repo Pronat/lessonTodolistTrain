@@ -60,7 +60,11 @@ export function Todolist(props: PropsType) {
         props.changeFilter("completed")
         setFilterValueForButton("completed")
     };
+    const onClickHandler = (taskId: string) => props.removeTask(taskId)
 
+    const changeTaskIsDoneHandler = (e: React.ChangeEvent<HTMLInputElement>, taskId: string) => {
+        props.changeTaskIsDone(taskId, e.currentTarget.checked)
+    }
 
     return <div>
         <h3>{props.title}</h3>
@@ -77,16 +81,10 @@ export function Todolist(props: PropsType) {
             {
                 props.tasks.map(t => {
 
-                    const onClickHandler = () => props.removeTask(t.id)
-                    const changeTaskIsDoneHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
-                        props.changeTaskIsDone(t.id, e.currentTarget.checked)
-                    }
-
-
-                    return <li key={t.id} className={t.isDone ===true ? s.isDone : ''}>
-                        <input type="checkbox" checked={t.isDone} onChange={changeTaskIsDoneHandler} />
+                    return <li key={t.id} className={t.isDone ? s.isDone : ''}>
+                        <input type="checkbox" checked={t.isDone} onChange={(e: React.ChangeEvent<HTMLInputElement>)=>{changeTaskIsDoneHandler(e, t.id)}} />
                         <span>{t.title}</span>
-                        <button onClick={onClickHandler}>x</button>
+                        <button onClick={() => {onClickHandler(t.id)}}>x</button>
                     </li>
                 })
             }
