@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec965677-07a2-4963-95d4-bde53200b13c" name="Changes" comment="less4-15">
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+    <list default="true" id="ec965677-07a2-4963-95d4-bde53200b13c" name="Changes" comment="less4-16">
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +64,7 @@
       <updated>1677172274806</updated>
       <workItem from="1677172276607" duration="606000" />
       <workItem from="1677173316683" duration="8728000" />
-      <workItem from="1677252109304" duration="5374000" />
+      <workItem from="1677252109304" duration="5790000" />
     </task>
     <task id="LOCAL-00001" summary="less4-1">
       <created>1677173988607</created>
@@ -172,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677259257308</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="less4-16">
+      <created>1677259458669</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1677259458669</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -194,6 +200,7 @@
     <MESSAGE value="less4-13" />
     <MESSAGE value="less4-14" />
     <MESSAGE value="less4-15" />
-    <option name="LAST_COMMIT_MESSAGE" value="less4-15" />
+    <MESSAGE value="less4-16" />
+    <option name="LAST_COMMIT_MESSAGE" value="less4-16" />
   </component>
 </project>
