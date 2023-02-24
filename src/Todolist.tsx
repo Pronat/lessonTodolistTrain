@@ -38,6 +38,7 @@ export function Todolist(props: PropsType) {
     }
 
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
+        setError(null)
         if (e.charCode === 13) {
             addTask();
         }
@@ -57,7 +58,7 @@ export function Todolist(props: PropsType) {
                    className={error ? s.error : ''}
             />
             <button onClick={addTask}>+</button>
-            {error} && <div classname={s.errorMessage}>{error}</div>
+            {{error} && <div className={s.errorMessage}>{error}</div>}
         </div>
         <ul>
             {
