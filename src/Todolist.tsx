@@ -13,7 +13,7 @@ type PropsType = {
     removeTask: (taskId: string) => void
     changeFilter: (value: FilterValuesType) => void
     addTask: (title: string) => void
-    changeTaskIsDone:
+    changeTaskIsDone: (taskId: string, newIsDone: boolean) => void
 
 }
 
@@ -56,14 +56,14 @@ export function Todolist(props: PropsType) {
 
                     const onClickHandler = () => props.removeTask(t.id)
                     const changeTaskIsDoneHandler = () => {
-
+                        props.changeTaskIsDone(t.id, )
                     }
 
 
                     return <li key={t.id}>
-                        <input type="checkbox" checked={t.isDone}  />
+                        <input type="checkbox" checked={t.isDone} onChange={changeTaskIsDoneHandler} />
                         <span>{t.title}</span>
-                        <button onClick={ onClickHandler }>x</button>
+                        <button onClick={onClickHandler}>x</button>
                     </li>
                 })
             }

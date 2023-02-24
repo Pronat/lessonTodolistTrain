@@ -43,8 +43,9 @@ function App() {
         setFilter(value);
     }
 
-    const changeTaskIsDone = () => {
-
+    const changeTaskIsDone = (taskId: string, newIsDone: boolean) => {
+        const tasks2 = tasks.map((el) => el.id === taskId ? {...el, isDone: newIsDone}: el)
+        setTasks(tasks2)
     }
 
 
