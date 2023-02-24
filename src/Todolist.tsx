@@ -22,14 +22,14 @@ type PropsType = {
 export function Todolist(props: PropsType) {
 
     const [title, setTitle] = useState("")
-    const [error, setError] = useState<boolean>(false)
+    const [error, setError] = useState<string | null>(null)
 
     const addTask = () => {
         if (title.trim() !== '') {
             props.addTask(title.trim())
             setTitle('')
         }   else {
-            setError(true)
+            setError('Title is required')
         }
 
 
@@ -40,7 +40,7 @@ export function Todolist(props: PropsType) {
     }
 
     const onKeyPressHandler = (e: KeyboardEvent<HTMLInputElement>) => {
-        setError(false)
+        setError('')
         if (e.charCode === 13) {
             addTask();
         }
