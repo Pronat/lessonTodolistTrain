@@ -23,6 +23,7 @@ export function Todolist(props: PropsType) {
 
     const [title, setTitle] = useState("")
     const [error, setError] = useState<string | null>(null)
+    const [filterValueForButton, setFilterValueForButton] = useState<FilterValuesType>('all')
 
     const addTask = () => {
         if (title.trim() !== '') {
@@ -46,9 +47,19 @@ export function Todolist(props: PropsType) {
         }
     }
 
-    const onAllClickHandler = () => props.changeFilter("all");
-    const onActiveClickHandler = () => props.changeFilter("active");
-    const onCompletedClickHandler = () => props.changeFilter("completed");
+    const onAllClickHandler = () => {
+        props.changeFilter("all")
+        setFilterValueForButton("all")
+    }
+
+    const onActiveClickHandler = () => {
+        props.changeFilter("active")
+        setFilterValueForButton("active")
+    }
+    const onCompletedClickHandler = () => {
+        props.changeFilter("completed")
+        setFilterValueForButton("completed")
+    };
 
 
     return <div>
@@ -72,7 +83,7 @@ export function Todolist(props: PropsType) {
                     }
 
 
-                    return <li key={t.id}>
+                    return <li key={t.id} className={t.isDone ===true ? s.isDone : ''}>
                         <input type="checkbox" checked={t.isDone} onChange={changeTaskIsDoneHandler} />
                         <span>{t.title}</span>
                         <button onClick={onClickHandler}>x</button>
@@ -81,9 +92,9 @@ export function Todolist(props: PropsType) {
             }
         </ul>
         <div>
-            <button onClick={ onAllClickHandler } className={(props.filter === 'all') ? s.activeButtonFilter : ''}>All</button>
-            <button onClick={ onActiveClickHandler }  className={props.filter === 'active' ? s.activeButtonFilter : ''}>Active</button>
-            <button onClick={ onCompletedClickHandler }  className={props.filter === 'completed' ? s.activeButtonFilter : ''}>Completed</button>
+            <button onClick={ onAllClickHandler } className={(filterValueForButton === 'all') ? s.activeButtonFilter : ''}>All</button>
+            <button onClick={ onActiveClickHandler }  className={filterValueForButton === 'active' ? s.activeButtonFilter : ''}>Active</button>
+            <button onClick={ onCompletedClickHandler }  className={filterValueForButton === 'completed' ? s.activeButtonFilter : ''}>Completed</button>
         </div>
     </div>
 }
