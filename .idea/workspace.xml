@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ec965677-07a2-4963-95d4-bde53200b13c" name="Changes" comment="less4-13">
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
+    <list default="true" id="ec965677-07a2-4963-95d4-bde53200b13c" name="Changes" comment="less4-14">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +65,7 @@
       <updated>1677172274806</updated>
       <workItem from="1677172276607" duration="606000" />
       <workItem from="1677173316683" duration="8728000" />
-      <workItem from="1677252109304" duration="3364000" />
+      <workItem from="1677252109304" duration="5048000" />
     </task>
     <task id="LOCAL-00001" summary="less4-1">
       <created>1677173988607</created>
@@ -157,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677255731603</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="less4-14">
+      <created>1677255942078</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1677255942078</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,6 +185,7 @@
     <MESSAGE value="less4-11" />
     <MESSAGE value="less4-12" />
     <MESSAGE value="less4-13" />
-    <option name="LAST_COMMIT_MESSAGE" value="less4-13" />
+    <MESSAGE value="less4-14" />
+    <option name="LAST_COMMIT_MESSAGE" value="less4-14" />
   </component>
 </project>

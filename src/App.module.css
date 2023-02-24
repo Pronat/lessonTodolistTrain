@@ -14,3 +14,7 @@
 .errorMessage {
   color: red
 }
+
+.activeButtonFilter {
+  background-color: aqua;
+}
