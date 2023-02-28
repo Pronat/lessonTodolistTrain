@@ -68,7 +68,7 @@ function App() {
         <div className="App">
             {
                 todolists.map((el)=> {
-                    return (
+                    return(
                         <Todolist title={el.title}
                                   tasks={tasksForTodolist}
                                   removeTask={removeTask}
@@ -80,14 +80,6 @@ function App() {
                     )
                 })
             }
-            {/*<Todolist title="What to learn"*/}
-            {/*          tasks={tasksForTodolist}*/}
-            {/*          removeTask={removeTask}*/}
-            {/*          changeFilter={changeFilter}*/}
-            {/*          addTask={addTask}*/}
-            {/*          changeTaskStatus={changeStatus}*/}
-            {/*          filter={filter}*/}
-            {/*/>*/}
         </div>
     );
 }
