@@ -50,17 +50,13 @@ function App() {
     }
 
 
-    // let tasksForTodolist = tasks;
-    // if (filter === "active") {
-    //     tasksForTodolist = tasks.filter(t => t.isDone === false);
-    // }
-    // if (filter === "completed") {
-    //     tasksForTodolist = tasks.filter(t => t.isDone === true);
-    // }
 
-    function changeFilter() {
-
-        // setFilter(value);
+    function changeFilter(todolistId: string, value: FilterValuesType) {
+        let todolist = todolists.find((el)=>el.id === todolistId)
+        if (todolist) {
+            todolist.filter = value
+        }
+        setTodolists([...todolists])
     }
 
 
@@ -76,7 +72,10 @@ function App() {
                         tasksForTodolist = tasks.filter(t => t.isDone === true);
                     }
                     return(
-                        <Todolist title={el.title}
+                        <Todolist
+                            todolistId={el.id}
+                            key={el.id}
+                            title={el.title}
                                   tasks={tasksForTodolist}
                                   removeTask={removeTask}
                                   changeFilter={changeFilter}

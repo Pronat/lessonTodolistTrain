@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less5-5">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less5-7">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
       <workItem from="1666600082186" duration="471000" />
       <workItem from="1666601331667" duration="982000" />
       <workItem from="1677601485505" duration="4073000" />
-      <workItem from="1677689673831" duration="3256000" />
+      <workItem from="1677689673831" duration="4670000" />
     </task>
     <task id="LOCAL-00001" summary="less5-1">
       <created>1677601797475</created>
@@ -111,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677694653189</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="less5-6">
+      <created>1677696009409</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1677696009409</updated>
+    </task>
+    <task id="LOCAL-00007" summary="less5-7">
+      <created>1677696123889</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1677696123889</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +138,8 @@
     <MESSAGE value="less5-3" />
     <MESSAGE value="less5-4" />
     <MESSAGE value="less5-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="less5-5" />
+    <MESSAGE value="less5-6" />
+    <MESSAGE value="less5-7" />
+    <option name="LAST_COMMIT_MESSAGE" value="less5-7" />
   </component>
 </project>
