@@ -52,11 +52,8 @@ function App() {
 
 
     function changeFilter(todolistId: string, value: FilterValuesType) {
-        let todolist = todolists.find((el)=>el.id === todolistId)
-        if (todolist) {
-            todolist.filter = value
-        }
-        setTodolists([...todolists])
+        let todolist = todolists.map((el)=>el.id === todolistId ? {...el, filter: value} : el)
+        setTodolists([...todolist])
     }
 
 
