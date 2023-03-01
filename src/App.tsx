@@ -26,7 +26,6 @@ function App() {
         {id: v1(), title: "Rest API", isDone: false},
         {id: v1(), title: "GraphQL", isDone: false},
     ]);
-
     // let [filter, setFilter] = useState<FilterValuesType>("all");
 
 
@@ -59,12 +58,7 @@ function App() {
     //     tasksForTodolist = tasks.filter(t => t.isDone === true);
     // }
 
-    function changeFilter(todolistsId: string, value: FilterValuesType) {
-        const todolist = todolists.find((el) => el.id === todolistsId)
-        if (todolist) {
-            todolist.filter = value
-            setTodolists([...todolists])
-        }
+    function changeFilter() {
 
         // setFilter(value);
     }
@@ -73,7 +67,7 @@ function App() {
     return (
         <div className="App">
             {
-                todolists.map((el) => {
+                todolists.map((el)=> {
                     let tasksForTodolist = tasks;
                     if (el.filter === "active") {
                         tasksForTodolist = tasks.filter(t => t.isDone === false);
@@ -81,17 +75,14 @@ function App() {
                     if (el.filter === "completed") {
                         tasksForTodolist = tasks.filter(t => t.isDone === true);
                     }
-                    return (
-                        <Todolist
-                            todolistId={el.id}
-                            key={el.id}
-                            title={el.title}
-                            tasks={tasksForTodolist}
-                            removeTask={removeTask}
-                            changeFilter={changeFilter}
-                            addTask={addTask}
-                            changeTaskStatus={changeStatus}
-                            filter={el.filter}
+                    return(
+                        <Todolist title={el.title}
+                                  tasks={tasksForTodolist}
+                                  removeTask={removeTask}
+                                  changeFilter={changeFilter}
+                                  addTask={addTask}
+                                  changeTaskStatus={changeStatus}
+                                  filter={el.filter}
                         />
                     )
                 })
