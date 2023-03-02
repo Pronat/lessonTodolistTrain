@@ -45,15 +45,13 @@ function App() {
         if (task) {
             task.isDone = isDone;
         }
-
         setTasks([...tasks]);
     }
 
 
 
     function changeFilter(todolistId: string, value: FilterValuesType) {
-        let todolist = todolists.map((el)=>el.id === todolistId ? {...el, filter: value} : el)
-        setTodolists([...todolist])
+       setTodolists(todolists.map(el=> el.id === todolistId ? {...el, filter: value} : el))
     }
 
 
