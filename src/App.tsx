@@ -46,10 +46,10 @@ function App() {
     }
 
     function addTask(todolistId: string, title: string) {
-        let newTask = {id: v1(), title: title, isDone: false}
-        let tasksForTodolist = tasks[todolistId]
-        let allTasks = {...tasksForTodolist, newTask}
-        setTasks({...allTasks})
+       let newTask =  {id: v1(), title: title, isDone: false}
+        let tasksForTodo = tasks[todolistId]
+        tasks[todolistId] = [newTask, ...tasksForTodo]
+        setTasks({...tasks})
 
         // let newTask = {id: v1(), title: title, isDone: false}
         // setTasks({...tasks, [todolistId]: {...tasks[todolistId], newTask}  })
