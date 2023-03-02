@@ -26,20 +26,23 @@ function App() {
             {id: v1(), title: "HTML&CSS", isDone: true},
             {id: v1(), title: "JS", isDone: true},
             {id: v1(), title: "ReactJS", isDone: false},
+            {id: v1(), title: "ctJS", isDone: true},
+            {id: v1(), title: "RJS", isDone: false},
+            {id: v1(), title: "Rea", isDone: true},
         ],
         [todolistId2]: [
             {id: v1(), title: "Rest API", isDone: false},
             {id: v1(), title: "GraphQL", isDone: true},
             {id: v1(), title: "Redux", isDone: false},
+            {id: v1(), title: "Red", isDone: true},
+            {id: v1(), title: "ux", isDone: true},
+            {id: v1(), title: "edux", isDone: false},
         ] }
     );
 
 
     function removeTask(todolistId: string ,taskId: string) {
-        let todolistsTasks = tasks[todolistId]
-        tasks[todolistId] = todolistsTasks.filter((el)=> el.id !== taskId)
-        setTasks({...tasks})
-
+       setTasks({...tasks, [todolistId]: tasks[todolistId].filter(el=>el.id !== taskId)})
     }
 
     function addTask(title: string) {
