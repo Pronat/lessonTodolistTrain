@@ -49,7 +49,7 @@ export function Todolist(props: PropsType) {
     const onCompletedClickHandler = () => props.changeFilter(props.todolistId, "completed");
 
     const onClickRemoveTodolist = () => {
-        props.removeTodolist(todolistId)
+        props.removeTodolist(props.todolistId)
     }
 
 
