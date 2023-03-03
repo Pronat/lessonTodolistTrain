@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less5-23">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less5-25">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +72,7 @@
       <workItem from="1666600048185" duration="8000" />
       <workItem from="1666600082186" duration="471000" />
       <workItem from="1666601331667" duration="982000" />
-      <workItem from="1677873845942" duration="536000" />
+      <workItem from="1677873845942" duration="835000" />
     </task>
     <task id="LOCAL-00001" summary="less5-23">
       <created>1677873898111</created>
@@ -81,7 +81,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677873898111</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="less5-24">
+      <created>1677874415132</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1677874415132</updated>
+    </task>
+    <task id="LOCAL-00003" summary="less5-25">
+      <created>1677874497593</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677874497593</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +103,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="less5-23" />
-    <option name="LAST_COMMIT_MESSAGE" value="less5-23" />
+    <MESSAGE value="less5-24" />
+    <MESSAGE value="less5-25" />
+    <option name="LAST_COMMIT_MESSAGE" value="less5-25" />
   </component>
 </project>
