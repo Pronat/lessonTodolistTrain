@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="tuesday-dop1-9">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="tuesday-dop1-11">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
       <workItem from="1666600082186" duration="471000" />
       <workItem from="1666601331667" duration="982000" />
       <workItem from="1677873845942" duration="4154000" />
-      <workItem from="1677943342097" duration="9079000" />
+      <workItem from="1677943342097" duration="11321000" />
     </task>
     <task id="LOCAL-00001" summary="less5-23">
       <created>1677873898111</created>
@@ -216,7 +217,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677953097103</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="tuesday-dop1-10">
+      <created>1677954175010</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1677954175010</updated>
+    </task>
+    <task id="LOCAL-00022" summary="tuesday-dop1-11">
+      <created>1677955240444</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1677955240444</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +258,9 @@
     <MESSAGE value="tuesday-dop1-7" />
     <MESSAGE value="tuesday-dop1-8" />
     <MESSAGE value="tuesday-dop1-9" />
-    <option name="LAST_COMMIT_MESSAGE" value="tuesday-dop1-9" />
+    <MESSAGE value="tuesday-dop1-10" />
+    <MESSAGE value="tuesday-dop1-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="tuesday-dop1-11" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
