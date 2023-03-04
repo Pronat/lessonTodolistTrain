@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import {v1} from 'uuid';
+import {runInNewContext} from "vm";
 
 export type FilterValuesType = "all" | "active" | "completed";
 type TodolistsType = { id: string, title: string}
@@ -80,7 +81,12 @@ function App() {
     }
     function addTask(todolistId: string, title: string) {
         let newTask = {id: v1(), title: title, isDone: false};
-        setTasks({...tasks, [todolistId]: tasks[todolistId]})
+        setTasks({...tasks, [todolistId]: {...tasks[todolistId], data: [...tasks[todolistId].data, newTask]}})
+
+
+
+
+        // setTasks({...tasks, [todolistId]: tasks[todolistId]})
 
         // setTasks({...tasks, [todolistId]: [...tasks[todolistId], newTask]})
         // let newTasks = [task, ...tasks];
