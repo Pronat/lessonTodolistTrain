@@ -76,13 +76,13 @@ function App() {
         delete tasks[todolistId]
     }
     function removeTask(todolistId: string, taskId: string) {
-        setTasks({...tasks, [todolistId]: {...tasks[todolistId], data: tasks[todolistId].data.filter(el=> el.id !== taskId)}})
-        // setTasks({...tasks, [todolistId]: tasks[todolistId].filter(el => el.id !== taskId)})
+       setTasks({...tasks, [todolistId]: {...tasks[todolistId], data: tasks[todolistId].data.filter(el=> el.id !== taskId)}})
     }
     function addTask(todolistId: string, title: string) {
-        // let newTask = {id: v1(), title: title, isDone: false};
-        // setTasks({...tasks, [todolistId]: [...tasks[todolistId], newTask]})
+        let newTask = {id: v1(), title: title, isDone: false};
+        setTasks({...tasks, [todolistId]: tasks[todolistId]})
 
+        // setTasks({...tasks, [todolistId]: [...tasks[todolistId], newTask]})
         // let newTasks = [task, ...tasks];
         // setTasks(newTasks);
     }
