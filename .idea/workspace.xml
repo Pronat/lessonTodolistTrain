@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="tuesday-dop1-1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="tuesday-dop1-2">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +73,7 @@
       <workItem from="1666600082186" duration="471000" />
       <workItem from="1666601331667" duration="982000" />
       <workItem from="1677873845942" duration="4154000" />
-      <workItem from="1677943342097" duration="1498000" />
+      <workItem from="1677943342097" duration="2195000" />
     </task>
     <task id="LOCAL-00001" summary="less5-23">
       <created>1677873898111</created>
@@ -160,7 +159,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677943503708</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="tuesday-dop1-2">
+      <created>1677945051769</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1677945051769</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +185,7 @@
     <MESSAGE value="less5-32" />
     <MESSAGE value="less5-33" />
     <MESSAGE value="tuesday-dop1-1" />
-    <option name="LAST_COMMIT_MESSAGE" value="tuesday-dop1-1" />
+    <MESSAGE value="tuesday-dop1-2" />
+    <option name="LAST_COMMIT_MESSAGE" value="tuesday-dop1-2" />
   </component>
 </project>

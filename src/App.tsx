@@ -5,17 +5,17 @@ import {v1} from 'uuid';
 
 export type FilterValuesType = "all" | "active" | "completed";
 type TodolistsType = { id: string, title: string}
-type TasksType = {
-    [key: string]: TaskType[]
-}
+// type TasksType = {
+//     [key: string]: TaskType[]
+// }
 type TasksStateType = {
     [key: string]: {
-        data: {
-            TaskType[]
-        },
+        data: TaskType[]
+        ,
         filter: FilterValuesType
     }
 }
+
 type TaskType = {
     id: string
     title: string
