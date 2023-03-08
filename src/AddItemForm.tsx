@@ -1,14 +1,15 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 export type AddItemFormType = {
-
+    addItem: (title: string, todolistId: string) => void
+    todolistId: string
 }
-export const AddItemForm:React.FC<AddItemFormType> = (props) => {
+export const AddItemForm:React.FC<AddItemFormType> = ({addItem, todolistId}) => {
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
     const addTask = () => {
         let newTitle = title.trim();
         if (newTitle !== "") {
-            props.addTask(newTitle, props.id);
+            addItem(newTitle, todolistId);
             setTitle("");
         } else {
             setError("Title is required");
