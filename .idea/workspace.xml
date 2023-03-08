@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="associatArray-6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="associatArray-8">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +73,7 @@
       <workItem from="1666600082186" duration="471000" />
       <workItem from="1666601331667" duration="982000" />
       <workItem from="1678275809959" duration="109000" />
-      <workItem from="1678275934845" duration="4157000" />
+      <workItem from="1678275934845" duration="5099000" />
     </task>
     <task id="LOCAL-00001" summary="associatArray-1">
       <created>1678275881169</created>
@@ -119,7 +117,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678282069085</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="associatArray-7">
+      <created>1678283931724</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1678283931724</updated>
+    </task>
+    <task id="LOCAL-00008" summary="associatArray-8">
+      <created>1678284100085</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678284100085</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +144,8 @@
     <MESSAGE value="associatArray-4" />
     <MESSAGE value="associatArray-5" />
     <MESSAGE value="associatArray-6" />
-    <option name="LAST_COMMIT_MESSAGE" value="associatArray-6" />
+    <MESSAGE value="associatArray-7" />
+    <MESSAGE value="associatArray-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="associatArray-8" />
   </component>
 </project>
