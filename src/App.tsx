@@ -56,10 +56,11 @@ function App() {
         // setTasks(filteredTasks);
     }
 
-    function addTask(todolistId: string ,title: string) {
+    function addTask(todolistId: string, title: string) {
         let task = {id: v1(), title: title, isDone: false};
-        let newTasks = {task, ...tasks};
-        setTasks({task, ...tasks});
+        // let newTasks = {task, ...tasks};
+        // setTasks({task, ...tasks});
+        setTasks({...tasks, [todolistId]: [...tasks[todolistId], task]})
     }
 
     function changeStatus(taskId: string, isDone: boolean) {
@@ -72,14 +73,7 @@ function App() {
     }
 
 
-    let tasksForTodolist = tasks;
 
-    // if (filter === "active") {
-    //     tasksForTodolist = tasks.filter(t => t.isDone === false);
-    // }
-    // if (filter === "completed") {
-    //     tasksForTodolist = tasks.filter(t => t.isDone === true);
-    // }
 
     function changeFilter(value: FilterValuesType) {
         // setFilter(value);
@@ -89,19 +83,27 @@ function App() {
     return (
         <div className="App">
             {
-                todolists.map((el)=> {
-                    return(
+                todolists.map((el) => {
+                    let tasksForTodolist = tasks[el.id];
+
+                    if (el.filter === "active") {
+                        tasksForTodolist = tasks[el.id].filter(t => t.isDone === false);
+                    }
+                    if (el.filter === "completed") {
+                        tasksForTodolist = tasks[el.id].filter(t => t.isDone === true);
+                    }
+                    return (
                         <Todolist
 
                             todolistId={el.id}
                             key={el.id}
                             title="What to learn"
-                                  tasks={tasksForTodolist}
-                                  removeTask={removeTask}
-                                  changeFilter={changeFilter}
-                                  addTask={addTask}
-                                  changeTaskStatus={changeStatus}
-                                  filter={el.filter}
+                            tasks={tasksForTodolist}
+                            removeTask={removeTask}
+                            changeFilter={changeFilter}
+                            addTask={addTask}
+                            changeTaskStatus={changeStatus}
+                            filter={el.filter}
                         />
                     )
                 })

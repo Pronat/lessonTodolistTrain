@@ -25,7 +25,7 @@ export function Todolist(props: PropsType) {
 
     const addTask = () => {
         if (title.trim() !== "") {
-            props.addTask( ,title.trim());
+            props.addTask(props.todolistId ,title.trim());
             setTitle("");
         } else {
             setError("Title is required");

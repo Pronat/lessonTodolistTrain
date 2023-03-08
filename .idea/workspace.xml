@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="associatArray-3">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="associatArray-4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +74,7 @@
       <workItem from="1666600082186" duration="471000" />
       <workItem from="1666601331667" duration="982000" />
       <workItem from="1678275809959" duration="109000" />
-      <workItem from="1678275934845" duration="1912000" />
+      <workItem from="1678275934845" duration="2674000" />
     </task>
     <task id="LOCAL-00001" summary="associatArray-1">
       <created>1678275881169</created>
@@ -98,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678277235670</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="associatArray-4">
+      <created>1678277876819</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1678277876819</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,6 +114,7 @@
     <MESSAGE value="associatArray-1" />
     <MESSAGE value="associatArray-2" />
     <MESSAGE value="associatArray-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="associatArray-3" />
+    <MESSAGE value="associatArray-4" />
+    <option name="LAST_COMMIT_MESSAGE" value="associatArray-4" />
   </component>
 </project>
