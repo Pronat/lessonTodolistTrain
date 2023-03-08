@@ -12,9 +12,10 @@ type PropsType = {
     tasks: TasksStateType
     removeTask: (taskId: string) => void
     changeFilter: (value: FilterValuesType) => void
-    addTask: (title: string) => void
+    addTask: (todolistId: string ,title: string) => void
     changeTaskStatus: (taskId: string, isDone: boolean) => void
     filter: FilterValuesType
+    todolistId: string
 }
 
 export function Todolist(props: PropsType) {
@@ -24,7 +25,7 @@ export function Todolist(props: PropsType) {
 
     const addTask = () => {
         if (title.trim() !== "") {
-            props.addTask(title.trim());
+            props.addTask( ,title.trim());
             setTitle("");
         } else {
             setError("Title is required");

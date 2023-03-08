@@ -52,14 +52,14 @@ function App() {
 
 
     function removeTask(taskId: string) {
-        let filteredTasks = tasks.filter(t => t.id !== taskId);
-        setTasks(filteredTasks);
+        // let filteredTasks = tasks.filter(t => t.id !== taskId);
+        // setTasks(filteredTasks);
     }
 
-    function addTask(title: string) {
+    function addTask(todolistId: string ,title: string) {
         let task = {id: v1(), title: title, isDone: false};
-        // let newTasks = [task, ...tasks];
-        // setTasks(newTasks);
+        let newTasks = {task, ...tasks};
+        setTasks({task, ...tasks});
     }
 
     function changeStatus(taskId: string, isDone: boolean) {
@@ -89,9 +89,13 @@ function App() {
     return (
         <div className="App">
             {
-                tasks.map((el)=> {
+                todolists.map((el)=> {
                     return(
-                        <Todolist title="What to learn"
+                        <Todolist
+
+                            todolistId={el.id}
+                            key={el.id}
+                            title="What to learn"
                                   tasks={tasksForTodolist}
                                   removeTask={removeTask}
                                   changeFilter={changeFilter}
