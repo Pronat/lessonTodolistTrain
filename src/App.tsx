@@ -85,10 +85,17 @@ function App() {
         // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
         setTasks({...tasks});
     }
+    const addTodolist = (title: string) => {
+        const newTodolist = {id: v1(), title, filter: "all"}
+        setTodolists(...todolists, newTodolist)
+    }
+    const addItemTodolist = (title: string) => {
+        addTodolist(title)
+    }
 
     return (
         <div className="App">
-            <AddItemForm addItem={()=>{}} todolistId={''} />
+            <AddItemForm addItem={addItemTodolist}/>
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id];
