@@ -57,7 +57,7 @@ function App() {
 
     function addTask(todolistId: string, title: string) {
         let task = {id: v1(), title: title, isDone: false};
-        setTasks({...tasks, [todolistId]: [...tasks[todolistId], task]})
+        setTasks({...tasks, [todolistId]: [task, ...tasks[todolistId]]})
     }
 
     function changeStatus(todolistId: string, taskId: string, isDone: boolean) {
@@ -89,7 +89,7 @@ function App() {
 
                             todolistId={el.id}
                             key={el.id}
-                            title="What to learn"
+                            title={el.title}
                             tasks={tasksForTodolist}
                             removeTask={removeTask}
                             changeFilter={changeFilter}
