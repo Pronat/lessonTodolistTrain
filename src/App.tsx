@@ -67,8 +67,8 @@ function App() {
 
 
 
-    function changeFilter(value: FilterValuesType) {
-        // setFilter(value);
+    function changeFilter(todolistId: string, value: FilterValuesType) {
+        setTodolists(todolists.map(el=>el.id === todolistId ? {...el, filter: value}: el))
     }
 
 
