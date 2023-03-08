@@ -1,15 +1,15 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 export type AddItemFormType = {
-    addItem: (title: string) => void
+    callBack: (title: string) => void
 
 }
-export const AddItemForm:React.FC<AddItemFormType> = ({addItem}) => {
+export const AddItemForm:React.FC<AddItemFormType> = ({callBack}) => {
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
     const addTask = () => {
         let newTitle = title.trim();
         if (newTitle !== "") {
-            addItem(newTitle);
+            callBack(newTitle);
             setTitle("");
         } else {
             setError("Title is required");

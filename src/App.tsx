@@ -49,11 +49,12 @@ function App() {
     function addTask(title: string, todolistId: string) {
         let task = {id: v1(), title: title, isDone: false};
         //достанем нужный массив по todolistId:
-        let todolistTasks = tasks[todolistId];
-        // перезапишем в этом объекте массив для нужного тудулиста копией, добавив в начало новую таску:
-        tasks[todolistId] = [task, ...todolistTasks];
-        // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-        setTasks({...tasks});
+        // let todolistTasks = tasks[todolistId];
+        // // перезапишем в этом объекте массив для нужного тудулиста копией, добавив в начало новую таску:
+        // tasks[todolistId] = [task, ...todolistTasks];
+        // // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
+        // setTasks({...tasks});
+        setTasks({...tasks, [todolistId]:[...tasks[todolistId], task]})
     }
 
     function changeStatus(id: string, isDone: boolean, todolistId: string) {
@@ -86,8 +87,11 @@ function App() {
         setTasks({...tasks});
     }
     const addTodolist = (title: string) => {
-        const newTodolist = {id: v1(), title, filter: "all"}
-        setTodolists(...todolists, newTodolist)
+        let newTodolistId = v1()
+        let newTodolist = {id: newTodolistId, title: title, filter: "all"}
+        setTodolists([newTodolist, ...todolists])
+        setTasks({...tasks, [newTodolistId]: []})
+        // console.log([...todolists, newTodolist])
     }
     const addItemTodolist = (title: string) => {
         addTodolist(title)
@@ -95,7 +99,7 @@ function App() {
 
     return (
         <div className="App">
-            <AddItemForm addItem={addItemTodolist}/>
+            <AddItemForm callBack={addItemTodolist}/>
             {
                 todolists.map(tl => {
                     let allTodolistTasks = tasks[tl.id];
