@@ -1,6 +1,7 @@
 import React, {ChangeEvent, useState, KeyboardEvent} from 'react';
 import {FilterValuesType} from './App';
 import {AddItemForm} from "./AddItemForm";
+import EditableSpan from "./EditableSpan";
 
 export type TaskType = {
     id: string
@@ -44,11 +45,15 @@ export function Todolist(props: PropsType) {
                         props.changeTaskStatus(t.id, newIsDoneValue, props.id);
                     }
 
-                    return <li key={t.id} className={t.isDone ? "is-done" : ""}>
-                        <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
-                        <span>{t.title}</span>
-                        <button onClick={onClickHandler}>x</button>
-                    </li>
+                    return(
+                        <li key={t.id} className={t.isDone ? "is-done" : ""}>
+                            <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
+                            {/*<span>{t.title}</span>*/}
+                            <EditableSpan value={t.title} />
+                            <button onClick={onClickHandler}>x</button>
+                        </li>
+                        )
+
                 })
             }
         </ul>
