@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 type EditableSpanType = {
     value: string
-    callBack: () => void
+    callBack: (newTitle: string) => void
 }
 export const EditableSpan: React.FC<EditableSpanType> = (props) => {
     const [edit, setEdit] = useState<boolean>(false)
@@ -10,8 +10,9 @@ export const EditableSpan: React.FC<EditableSpanType> = (props) => {
     const changeEditMode = () => {
         setEdit(!edit)
     }
-    const onChangeTitleHandler = () => {
-        props.callBack()
+    const onChangeTitleHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setEditTitle(e.currentTarget.value)
+        props.callBack(editTitle)
     }
     return (
         edit
