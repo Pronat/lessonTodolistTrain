@@ -1,7 +1,8 @@
 import React, {ChangeEvent, useState, KeyboardEvent} from 'react';
 import {FilterValuesType} from './App';
 import {AddItemForm} from "./AddItemForm";
-import EditableSpan from "./EditableSpan";
+import {EditableSpan} from "./EditableSpan";
+
 
 export type TaskType = {
     id: string
