@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson6-10">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson6-12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <workItem from="1666600082186" duration="471000" />
       <workItem from="1678290941786" duration="6223000" />
       <workItem from="1678300581454" duration="4469000" />
-      <workItem from="1678371855756" duration="3582000" />
+      <workItem from="1678371855756" duration="4291000" />
     </task>
     <task id="LOCAL-00001" summary="lesson6-1">
       <created>1678291005087</created>
@@ -154,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678374173896</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="lesson6-11">
+      <created>1678379935271</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678379935271</updated>
+    </task>
+    <task id="LOCAL-00012" summary="lesson6-12">
+      <created>1678380134699</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1678380134699</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +184,9 @@
     <MESSAGE value="lesson6-8" />
     <MESSAGE value="lesson6-9" />
     <MESSAGE value="lesson6-10" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6-10" />
+    <MESSAGE value="lesson6-11" />
+    <MESSAGE value="lesson6-12" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6-12" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -5,12 +5,14 @@ type EditableSpanType = {
 }
 export const EditableSpan: React.FC<EditableSpanType> = ({value}) => {
     const [edit, setEdit] = useState<boolean>(false)
-    const [newTitle, setNewTitle] = useState('')
-    const editHandler = () => {
+    const [newTitle, setNewTitle] = useState(value)
+    const activateEditMode = () => {
         setEdit(true)
+        setNewTitle(value)
     }
-    const editHandlerOnBLur = () => {
+    const activateViewMode = () => {
         setEdit(false)
+        // setNewTitle(value)
     }
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNewTitle(e.currentTarget.value)
@@ -18,8 +20,8 @@ export const EditableSpan: React.FC<EditableSpanType> = ({value}) => {
 
     return (
         edit
-        ? <input value={newTitle} autoFocus={true} onBlur={editHandlerOnBLur} onChange={onChangeHandler}/>
-        : <span onDoubleClick={editHandler}>{value}</span>
+        ? <input value={newTitle} autoFocus={true} onBlur={activateViewMode} onChange={onChangeHandler}/>
+        : <span onDoubleClick={activateEditMode}>{value}</span>
     );
 };
 
