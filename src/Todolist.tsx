@@ -20,6 +20,7 @@ type PropsType = {
     removeTodolist: (id: string) => void
     filter: FilterValuesType
     updateTask: (todolistId: string, taskId: string, newTitle: string)=>void
+    updateTodolist: (todolistId: string, newTitle: string)=>void
 }
 
 export function Todolist(props: PropsType) {
@@ -32,10 +33,15 @@ export function Todolist(props: PropsType) {
     const onCompletedClickHandler = () => props.changeFilter("completed", props.id);
     const addTaskUniv = (title: string) => {
         props.addTask(title, props.id)
-
     }
+    const updateTodolistHandler = (newTitle: string) => {
+        props.updateTodolist(props.id, newTitle)
+    }
+
     return <div>
-        <h3> {props.title}
+        <h3>
+            {/*{props.title}*/}
+            <EditableSpan value={props.title} callBack={updateTodolistHandler} />
             <button onClick={removeTodolist}>x</button>
         </h3>
         <AddItemForm callBack={addTaskUniv}/>

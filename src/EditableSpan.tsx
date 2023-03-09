@@ -9,15 +9,18 @@ export const EditableSpan: React.FC<EditableSpanType> = (props) => {
     const [editTitle, setEditTitle] = useState(props.value)
     const changeEditMode = () => {
         setEdit(!edit)
+        props.callBack(editTitle)
     }
     const onChangeTitleHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setEditTitle(e.currentTarget.value)
-        props.callBack(editTitle)
-    }
+            }
+
+
     return (
         edit
-            ? <input value={props.value} autoFocus={true} onBlur={changeEditMode} onChange={onChangeTitleHandler}/>
-            : <span onDoubleClick={changeEditMode}>{props.value}</span>
+            ? <input value={editTitle} autoFocus={true}
+                     onBlur={changeEditMode} onChange={onChangeTitleHandler}/>
+            : <span onDoubleClick={changeEditMode}>{editTitle}</span>
     );
 };
 
