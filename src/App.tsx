@@ -92,7 +92,7 @@ function App() {
         setTasks({...tasks, [newTodoId]:[]})
     }
     const updateTask = (todolistId: string, taskId: string, newTitle: string) => {
-        console.log(tasks[todolistId].map(el=>el.id === taskId ? {...el, title: newTitle} : el))
+        setTasks({...tasks, [todolistId]:tasks[todolistId].map(el=>el.id === taskId ? {...el, title: newTitle} : el)})
     }
     const updateTodolist = (todolistId: string, newTitle: string) => {
         setTodolists(todolists.map(el=>el.id===todolistId ? {...el, title: newTitle} : el))

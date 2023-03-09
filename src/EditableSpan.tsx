@@ -20,7 +20,7 @@ export const EditableSpan: React.FC<EditableSpanType> = (props) => {
         edit
             ? <input value={editTitle} autoFocus={true}
                      onBlur={changeEditMode} onChange={onChangeTitleHandler}/>
-            : <span onDoubleClick={changeEditMode}>{editTitle}</span>
+            : <span onDoubleClick={changeEditMode}>{props.value}</span>
     );
 };
 

@@ -38,6 +38,9 @@ export function Todolist(props: PropsType) {
         props.updateTodolist(props.id, newTitle)
     }
 
+    const updateTaskHandler = (taskId: string, newTitle: string) => {
+        props.updateTask(props.id,taskId, newTitle)
+    }
     return <div>
         <h3>
             {/*{props.title}*/}
@@ -53,13 +56,13 @@ export function Todolist(props: PropsType) {
                         let newIsDoneValue = e.currentTarget.checked;
                         props.changeTaskStatus(t.id, newIsDoneValue, props.id);
                     }
-                    const updateTaskHandler = (newTitle: string) => {
-                        props.updateTask(props.id, t.id, newTitle)
-                    }
+                    // const updateTaskHandler = (newTitle: string) => {
+                    //     props.updateTask(props.id, t.id, newTitle)
+                    // }
 
                     return <li key={t.id} className={t.isDone ? "is-done" : ""}>
                         <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
-                        <EditableSpan value={t.title} callBack={updateTaskHandler}/>
+                        <EditableSpan value={t.title} callBack={(newTitle)=>updateTaskHandler(t.id, newTitle)}/>
                         <button onClick={onClickHandler}>x</button>
                     </li>
                 })
