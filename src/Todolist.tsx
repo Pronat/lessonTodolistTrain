@@ -46,12 +46,15 @@ export function Todolist(props: PropsType) {
                         let newIsDoneValue = e.currentTarget.checked;
                         props.changeTaskStatus(t.id, newIsDoneValue, props.id);
                     }
+                    const onChangeTasksTitle = (newTitle: string) => {
+                        props.changeTaskTitle(props.id, t.id, newTitle)
+                    }
 
                     return(
                         <li key={t.id} className={t.isDone ? "is-done" : ""}>
                             <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
                             {/*<span>{t.title}</span>*/}
-                            <EditableSpan value={t.title} onChange={onChange}/>
+                            <EditableSpan value={t.title} onChange={onChangeTasksTitle}/>
                             <button onClick={onClickHandler}>x</button>
                         </li>
                         )
