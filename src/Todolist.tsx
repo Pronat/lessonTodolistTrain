@@ -21,6 +21,7 @@ type PropsType = {
     removeTodolist: (id: string) => void
     filter: FilterValuesType
     changeTaskTitle: (todolistId: string, taskId: string, newTitle: string)=>void
+    changeTodolistTitle: (todolistId: string, newTitle: string) => void
 }
 
 export function Todolist(props: PropsType) {
@@ -36,8 +37,12 @@ export function Todolist(props: PropsType) {
     const onChangeTasksTitle = (taskId: string, newTitle: string) => {
         props.changeTaskTitle(props.id, taskId, newTitle)
     }
+    const changeTodolistTitleHandler = (newTitle: string) => {
+        props.changeTodolistTitle(props.id, newTitle)
+    }
     return <div>
-        <h3> {props.title}
+        <h3>
+            <EditableSpan value={props.title} callBack={(newTitle)=>changeTodolistTitleHandler(newTitle)} />
             <button onClick={removeTodolist}>x</button>
         </h3>
        <AddItemForm callBack={addItemTask}/>
@@ -49,9 +54,6 @@ export function Todolist(props: PropsType) {
                         let newIsDoneValue = e.currentTarget.checked;
                         props.changeTaskStatus(t.id, newIsDoneValue, props.id);
                     }
-                    // const onChangeTasksTitle = (newTitle: string) => {
-                    //     props.changeTaskTitle(props.id, t.id, newTitle)
-                    // }
 
                     return(
                         <li key={t.id} className={t.isDone ? "is-done" : ""}>
