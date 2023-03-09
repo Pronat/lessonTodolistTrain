@@ -11,12 +11,17 @@ export const EditableSpan: React.FC<EditableSpanType> = ({value, callBack}) => {
     const UpdTask = (newTitle: string) => {
         callBack(newTitle)
     }
-    const activateEditMode = () => {
-        setEdit(true)
-        // setNewTitle(value)
-    }
-    const activateViewMode = () => {
-        setEdit(false)
+    // const activateEditMode = () => {
+    //     setEdit(true)
+    //     // setNewTitle(value)
+    // }
+    // const activateViewMode = () => {
+    //     setEdit(false)
+    //     UpdTask(newTitle)
+    // }
+
+    const changeEdit = () => {
+        setEdit(!edit)
         UpdTask(newTitle)
     }
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -25,8 +30,8 @@ export const EditableSpan: React.FC<EditableSpanType> = ({value, callBack}) => {
 
     return (
         edit
-        ? <input value={newTitle} autoFocus={true} onBlur={activateViewMode} onChange={onChangeHandler}/>
-        : <span onDoubleClick={activateEditMode}>{value}</span>
+        ? <input value={newTitle} autoFocus={true} onBlur={changeEdit} onChange={onChangeHandler}/>
+        : <span onDoubleClick={changeEdit}>{value}</span>
     );
 };
 
