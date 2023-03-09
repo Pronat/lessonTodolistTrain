@@ -57,7 +57,7 @@ export function Todolist(props: PropsType) {
                         <li key={t.id} className={t.isDone ? "is-done" : ""}>
                             <input type="checkbox" onChange={onChangeHandler} checked={t.isDone}/>
                             {/*<span>{t.title}</span>*/}
-                            <EditableSpan value={t.title} onChange={(newTitle)=>onChangeTasksTitle(t.id, newTitle)}/>
+                            <EditableSpan value={t.title} callBack={(newTitle)=>onChangeTasksTitle(t.id, newTitle)}/>
                             <button onClick={onClickHandler}>x</button>
                         </li>
                         )
