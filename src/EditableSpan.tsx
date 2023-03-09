@@ -2,8 +2,10 @@ import React, {useState} from 'react';
 
 type EditableSpanType = {
     value: string
+    onChange: (newTitle: string)=>void
+
 }
-export const EditableSpan: React.FC<EditableSpanType> = ({value}) => {
+export const EditableSpan: React.FC<EditableSpanType> = ({value, onChange}) => {
     const [edit, setEdit] = useState<boolean>(false)
     const [newTitle, setNewTitle] = useState(value)
     const activateEditMode = () => {
@@ -12,7 +14,7 @@ export const EditableSpan: React.FC<EditableSpanType> = ({value}) => {
     }
     const activateViewMode = () => {
         setEdit(false)
-        // setNewTitle(value)
+        onChange(newTitle)
     }
     const onChangeHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
         setNewTitle(e.currentTarget.value)

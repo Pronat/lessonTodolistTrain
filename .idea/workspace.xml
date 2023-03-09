@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson6-12">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson6-13">
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +82,7 @@
       <workItem from="1666600082186" duration="471000" />
       <workItem from="1678290941786" duration="6223000" />
       <workItem from="1678300581454" duration="4469000" />
-      <workItem from="1678371855756" duration="4291000" />
+      <workItem from="1678371855756" duration="5122000" />
     </task>
     <task id="LOCAL-00001" summary="lesson6-1">
       <created>1678291005087</created>
@@ -167,11 +168,29 @@
       <option name="project" value="LOCAL" />
       <updated>1678380134699</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="lesson6-13">
+      <created>1678380672332</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1678380672332</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson6-1" />
@@ -186,7 +205,8 @@
     <MESSAGE value="lesson6-10" />
     <MESSAGE value="lesson6-11" />
     <MESSAGE value="lesson6-12" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6-12" />
+    <MESSAGE value="lesson6-13" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6-13" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -195,6 +215,12 @@
           <url>file://$PROJECT_DIR$/src/Todolist.tsx</url>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/EditableSpan.tsx</url>
+          <line>16</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
