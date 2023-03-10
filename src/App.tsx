@@ -167,7 +167,8 @@ function App() {
         // tasks[todolistId] = todolistTasks.filter(t => t.id != id);
         // // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
         // setTasks({...tasks});
-        setTodo([...todo])
+        // setTodo(todo.filter(el=> el.tasks === id))
+        console.log(todo.filter(el=> el.tasks[id].taskId !== id ))
     }
 
     function addTask(title: string, todolistId: string) {
@@ -213,7 +214,7 @@ function App() {
     return (
         <div className="App">
             {
-                todo.map(tl => {
+                todo.map((tl, index) => {
                     let allTodolistTasks = tl.tasks
                     let tasksForTodolist = allTodolistTasks;
 
@@ -225,8 +226,8 @@ function App() {
                     }
 
                     return <Todolist
-                        key={tl.title}
-                        id={tl.title}
+                        key={index}
+                        id={index)}
                         title={tl.title}
                         tasks={tasksForTodolist}
                         removeTask={removeTask}
