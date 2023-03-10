@@ -157,19 +157,9 @@ function App() {
         }
     ])
 
-
-
-
     function removeTask(taskId: string, todolistId: number) {
-        //достанем нужный массив по todolistId:
-        // let todolistTasks = tasks[todolistId];
-        // // перезапишем в этом объекте массив для нужного тудулиста отфилтрованным массивом:
-        // tasks[todolistId] = todolistTasks.filter(t => t.id != id);
-        // // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-        // setTasks({...tasks});
-        // setTodo(todo.filter(el=> el.tasks ===  id))
-        // setTodo(todo.filter(el=> el.tasks[id].taskId !== id ))
-        setTodo(todo.filter(el=>index !== taskId) )
+        setTodo(todo.map((el, index)=>index===todolistId ? {...el, tasks: el.tasks.filter(el=>el.taskId !== taskId)} : el))
+
     }
 
     function addTask(title: string, todolistId: number) {
@@ -220,10 +210,10 @@ function App() {
                     let tasksForTodolist = allTodolistTasks;
 
                     if (tl.filter === "active") {
-                        tasksForTodolist = allTodolistTasks.filter(t => t.isDone === false);
+                        tasksForTodolist = allTodolistTasks.filter(t => !t.isDone);
                     }
                     if (tl.filter === "completed") {
-                        tasksForTodolist = allTodolistTasks.filter(t => t.isDone === true);
+                        tasksForTodolist = allTodolistTasks.filter(t => t.isDone);
                     }
 
                     return <Todolist
