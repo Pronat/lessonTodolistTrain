@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson6-27">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/EditableSpan.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/EditableSpan.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson6-28" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +76,7 @@
       <workItem from="1666599273420" duration="131000" />
       <workItem from="1666600048185" duration="8000" />
       <workItem from="1666600082186" duration="471000" />
-      <workItem from="1678392369864" duration="4854000" />
+      <workItem from="1678392369864" duration="4864000" />
     </task>
     <task id="LOCAL-00001" summary="lesson6-20">
       <created>1678392391922</created>
@@ -139,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678396468165</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="lesson6-28">
+      <created>1678397290855</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678397290855</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -154,6 +156,7 @@
     <MESSAGE value="lesson6-25" />
     <MESSAGE value="lesson6-26" />
     <MESSAGE value="lesson6-27" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson6-27" />
+    <MESSAGE value="lesson6-28" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson6-28" />
   </component>
 </project>
