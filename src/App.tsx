@@ -160,18 +160,19 @@ function App() {
 
 
 
-    function removeTask(id: string, todolistId: string) {
+    function removeTask(taskId: string, todolistId: number) {
         //достанем нужный массив по todolistId:
         // let todolistTasks = tasks[todolistId];
         // // перезапишем в этом объекте массив для нужного тудулиста отфилтрованным массивом:
         // tasks[todolistId] = todolistTasks.filter(t => t.id != id);
         // // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
         // setTasks({...tasks});
-        // setTodo(todo.filter(el=> el.tasks === id))
-        console.log(todo.filter(el=> el.tasks[id].taskId !== id ))
+        // setTodo(todo.filter(el=> el.tasks ===  id))
+        // setTodo(todo.filter(el=> el.tasks[id].taskId !== id ))
+        setTodo(todo.filter(el=>index !== taskId) )
     }
 
-    function addTask(title: string, todolistId: string) {
+    function addTask(title: string, todolistId: number) {
         // let task = {id: v1(), title: title, isDone: false};
         // //достанем нужный массив по todolistId:
         // let todolistTasks = tasks[todolistId];
@@ -181,7 +182,7 @@ function App() {
         // setTasks({...tasks});
     }
 
-    function changeStatus(id: string, isDone: boolean, todolistId: string) {
+    function changeStatus(id: string, isDone: boolean, todolistId: number) {
         //достанем нужный массив по todolistId:
         // let todolistTasks = tasks[todolistId];
         // // найдём нужную таску:
@@ -194,7 +195,7 @@ function App() {
         // }
     }
 
-    function changeFilter(value: FilterValuesType, todolistId: string) {
+    function changeFilter(value: FilterValuesType, todolistId: number) {
         // let todolist = todolists.find(tl => tl.id === todolistId);
         // if (todolist) {
         //     todolist.filter = value;
@@ -202,7 +203,7 @@ function App() {
         // }
     }
 
-    function removeTodolist(id: string) {
+    function removeTodolist(id: number) {
         // // засунем в стейт список тудулистов, id которых не равны тому, который нужно выкинуть
         // setTodolists(todolists.filter(tl => tl.id != id));
         // // удалим таски для этого тудулиста из второго стейта, где мы храним отдельно таски
@@ -227,7 +228,7 @@ function App() {
 
                     return <Todolist
                         key={index}
-                        id={index)}
+                        id={index}
                         title={tl.title}
                         tasks={tasksForTodolist}
                         removeTask={removeTask}
