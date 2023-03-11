@@ -8,14 +8,14 @@ export type TaskType = {
 }
 
 type PropsType = {
-    id: string
+    id: number
     title: string
     tasks: Array<TaskType>
-    removeTask: (taskId: string, todolistId: string) => void
-    changeFilter: (value: FilterValuesType, todolistId: string) => void
-    addTask: (title: string, todolistId: string) => void
-    changeTaskStatus: (id: string, isDone: boolean, todolistId: string) => void
-    removeTodolist: (id: string) => void
+    removeTask: (taskId: string, todolistId: number) => void
+    changeFilter: (value: FilterValuesType, todolistId: number) => void
+    addTask: (title: string, todolistId: number) => void
+    changeTaskStatus: (id: string, isDone: boolean, todolistId: number) => void
+    removeTodolist: (id: number) => void
     filter: FilterValuesType
 }
 
