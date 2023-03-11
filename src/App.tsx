@@ -170,24 +170,11 @@ function App() {
     }
 
     function changeStatus(id: string, isDone: boolean, todolistId: number) {
-        //достанем нужный массив по todolistId:
-        // let todolistTasks = tasks[todolistId];
-        // // найдём нужную таску:
-        // let task = todolistTasks.find(t => t.id === id);
-        // //изменим таску, если она нашлась
-        // if (task) {
-        //     task.isDone = isDone;
-        //     // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-        //     setTasks({...tasks});
-        // }
+      setTodo(todo.map((el,index)=>index===todolistId? {...el, tasks: el.tasks.map(t=>t.taskId===id?{...t,isDone}:t) } :el))
     }
 
     function changeFilter(value: FilterValuesType, todolistId: number) {
-        // let todolist = todolists.find(tl => tl.id === todolistId);
-        // if (todolist) {
-        //     todolist.filter = value;
-        //     setTodolists([...todolists])
-        // }
+       setTodo(todo.map((el,index)=>index===todolistId? {...el,filter:value}:el))
     }
 
     function removeTodolist(id: number) {

@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="dopi-vtornik3-12">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="dopi-vtornik3-14">
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +81,7 @@
       <workItem from="1678392369864" duration="4864000" />
       <workItem from="1678449880250" duration="15128000" />
       <workItem from="1678514142181" duration="3628000" />
-      <workItem from="1678518183279" duration="1238000" />
+      <workItem from="1678518183279" duration="2055000" />
     </task>
     <task id="LOCAL-00001" summary="lesson6-20">
       <created>1678392391922</created>
@@ -231,7 +230,21 @@
       <option name="project" value="LOCAL" />
       <updated>1678519126253</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="dopi-vtornik3-13">
+      <created>1678519447039</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1678519447039</updated>
+    </task>
+    <task id="LOCAL-00023" summary="dopi-vtornik3-14">
+      <created>1678519671082</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1678519671082</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,6 +283,8 @@
     <MESSAGE value="dopi-vtornik3-10" />
     <MESSAGE value="dopi-vtornik3-11" />
     <MESSAGE value="dopi-vtornik3-12" />
-    <option name="LAST_COMMIT_MESSAGE" value="dopi-vtornik3-12" />
+    <MESSAGE value="dopi-vtornik3-13" />
+    <MESSAGE value="dopi-vtornik3-14" />
+    <option name="LAST_COMMIT_MESSAGE" value="dopi-vtornik3-14" />
   </component>
 </project>
