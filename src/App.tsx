@@ -156,27 +156,15 @@ function App() {
             ]
         }
     ])
-
     function removeTask(taskId: string, todolistId: number) {
         setTodo(todo.map((el, index)=>index===todolistId? {...el, tasks: el.tasks.filter(el=>el.taskId!==taskId)} :el))
     }
-
     function addTask(title: string, todolistId: number) {
         const newTask = {taskId: v1(), title, isDone: false}
-       setTodo(todo.map((el, index)=>index===todolistId ? {...el, tasks: [...el.tasks, newTask]} :el))
+        setTodo(todo.map((el, index) => index === todolistId ? {...el, tasks: [...el.tasks, newTask]} : el))
     }
-
-    function changeStatus(id: string, isDone: boolean, todolistId: number) {
-        //достанем нужный массив по todolistId:
-        // let todolistTasks = tasks[todolistId];
-        // // найдём нужную таску:
-        // let task = todolistTasks.find(t => t.id === id);
-        // //изменим таску, если она нашлась
-        // if (task) {
-        //     task.isDone = isDone;
-        //     // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-        //     setTasks({...tasks});
-        // }
+    function changeStatus(taskId: string, isDone: boolean, todolistId: number) {
+       setTodo(todo.map((el, index)=>index===todolistId? {...el, tasks: el.tasks.map(el=>el.taskId===taskId? {...el, isDone: isDone } :el )  } :el))
     }
 
     function changeFilter(value: FilterValuesType, todolistId: number) {
