@@ -4,7 +4,7 @@ import {TaskType} from "../Todolist";
 export const TasksReducer = (state: TaskType[], action: ActionsType): TaskType[] => {
     switch (action.type) {
         case 'REMOVE-TASK': {
-            return state
+          return state.filter(el=>el.id !== action.payload.id)
         }
         default: return state
     }
@@ -12,8 +12,11 @@ export const TasksReducer = (state: TaskType[], action: ActionsType): TaskType[]
 
 type ActionsType = RemoveTaskAT
 type RemoveTaskAT = ReturnType<typeof removeTaskAC>
-export const removeTaskAC = (  ) => {
+export const removeTaskAC = (id: string) => {
     return{
         type: 'REMOVE-TASK',
+        payload: {
+            id
+        }
     } as const
 }

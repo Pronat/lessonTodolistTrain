@@ -2,7 +2,7 @@ import React, {useReducer, useState} from 'react';
 import './App.css';
 import {Todolist} from './Todolist';
 import { v1 } from 'uuid';
-import {TasksReducer} from "./reducers/tasksReducer";
+import {removeTaskAC, TasksReducer} from "./reducers/tasksReducer";
 
 export type FilterValuesType = "all" | "active" | "completed";
 
@@ -25,14 +25,16 @@ function App() {
     ]);
 
     function removeTask(id: string) {
-        let filteredTasks = tasks.filter(t => t.id !== id);
-        setTasks(filteredTasks);
+        // let filteredTasks = tasks.filter(t => t.id !== id);
+        // setTasks(filteredTasks);
+        tasksDispatch(removeTaskAC(id))
     }
 
     function addTask(title: string) {
-        let task = { id: v1(), title: title, isDone: false };
-        let newTasks = [task, ...tasks];
-        setTasks(newTasks);
+        // let task = { id: v1(), title: title, isDone: false };
+        // let newTasks = [task, ...tasks];
+        // setTasks(newTasks);
+
     }
 
     let [filter, setFilter] = useState<FilterValuesType>("all");
