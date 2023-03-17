@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson7-4">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="lesson7-5">
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +70,7 @@
       <workItem from="1666597776372" duration="1369000" />
       <workItem from="1666599273420" duration="131000" />
       <workItem from="1678997351263" duration="433000" />
-      <workItem from="1679061840944" duration="4818000" />
+      <workItem from="1679061840944" duration="5286000" />
     </task>
     <task id="LOCAL-00001" summary="lesson7-1">
       <created>1678997377674</created>
@@ -100,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679067150414</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lesson7-5">
+      <created>1679067383433</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679067383433</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -111,6 +118,7 @@
     <MESSAGE value="lesson7-2" />
     <MESSAGE value="lesson7-3" />
     <MESSAGE value="lesson7-4" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson7-4" />
+    <MESSAGE value="lesson7-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson7-5" />
   </component>
 </project>
