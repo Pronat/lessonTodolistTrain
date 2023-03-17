@@ -44,17 +44,20 @@ const buttonStyle = {
         {/*       className={error ? "error" : ""}*/}
         {/*/>*/}
         <TextField
-            id="standard-basic" label="input" variant="standard"
+            id="standard-basic"
+            label={error?'Title is required': 'input'}
+            variant="standard"
             size={'small'}
             value={title}
             onChange={onChangeHandler}
             onKeyPress={onKeyPressHandler}
-            className={error ? "error" : ""}
+            // className={error ? "error" : ""}
+            error={!!error}
         />
         {/*<button onClick={addItem}>+</button>*/}
 
         <Button variant="contained" onClick={addItem} style={buttonStyle}>+</Button>
 
-        {error && <div className="error-message">{error}</div>}
+        {/*{error && <div className="error-message">{error}</div>}*/}
     </div>
 }
