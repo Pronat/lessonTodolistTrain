@@ -4,29 +4,18 @@ import {FilterValuesType} from "../App";
 
 export const filterReducer = (state: FilterValuesType, action: ActionsType): FilterValuesType => {
     switch (action.type) {
-        case 'Filter-ALL': {
-          return state
+        case "CHANGE-FILTER": {
+            return action.value
         }
-
         default: return state
     }
 };
 
-type ActionsType = ReturnType<typeof filterAllAC> | ReturnType<typeof filterActiveAC> | ReturnType<typeof filterCompletedAC>
+type ActionsType = ReturnType<typeof filterAllAC>
 
 
     export const filterAllAC = (value: FilterValuesType) => {
     return {
-        type: 'Filter-ALL', value
-    } as const
-    }
-    export const filterActiveAC = (value: FilterValuesType) => {
-    return {
-        type: 'Filter-ALL', value
-    } as const
-    }
-    export const filterCompletedAC = (value: FilterValuesType) => {
-    return {
-        type: 'Filter-ALL', value
+        type: 'CHANGE-FILTER', value
     } as const
     }

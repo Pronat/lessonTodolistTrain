@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34f61d14-5384-4a8c-8f78-a70120271405" name="Changes" comment="lesson7-17">
+    <list default="true" id="34f61d14-5384-4a8c-8f78-a70120271405" name="Changes" comment="lesson7-18">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/reducers/filterReducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/filterReducer.ts" afterDir="false" />
@@ -78,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1679082302799</updated>
       <workItem from="1679082303998" duration="3119000" />
-      <workItem from="1679118032061" duration="1259000" />
+      <workItem from="1679118032061" duration="2418000" />
     </task>
     <task id="LOCAL-00001" summary="lesson7-11">
       <created>1679082384742</created>
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679118376729</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lesson7-18">
+      <created>1679119313167</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679119313167</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +150,7 @@
     <MESSAGE value="lesson7-15" />
     <MESSAGE value="lesson7-16" />
     <MESSAGE value="lesson7-17" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson7-17" />
+    <MESSAGE value="lesson7-18" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson7-18" />
   </component>
 </project>
