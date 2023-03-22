@@ -1,11 +1,11 @@
-import React from 'react';
+import React, {ChangeEvent} from 'react';
 type CheckboxType = {
     isDone: boolean
-    callBack: ()=>void
+    callBack: (isDone: boolean)=>void
 }
 export const CheckboxUniversal = (props: CheckboxType) => {
-    const onChangeHandler = () => {
-        props.callBack()
+    const onChangeHandler = (e:ChangeEvent<HTMLInputElement>) => {
+        props.callBack(e.currentTarget.checked)
     }
     return (
         <div>
