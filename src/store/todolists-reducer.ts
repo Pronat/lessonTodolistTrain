@@ -1,4 +1,4 @@
-import {TodolistType} from "../App";
+import {FilterValuesType, TodolistType} from "../App";
 import {v1} from "uuid";
 
 type StateType = {
@@ -9,7 +9,8 @@ type StateType = {
 type ActionType =
     ReturnType<typeof removeTodolistAC> |
     ReturnType<typeof addTodolistAC> |
-    ReturnType<typeof changeTodolistTitle>
+    ReturnType<typeof changeTodolistTitle> |
+    ReturnType<typeof changeTodolistFilter>
 
 // меня вызовут и дадут мне стейт (почти всегда объект)
 // и инструкцию (action, тоже объект)
@@ -24,6 +25,8 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
         }
         case "CHANGE-TODOLIST-TITLE":
             return state.map(el=> el.id === action.payload.todolistId ? {...el, title: action.payload.newTodolistTitle}: el )
+        case "CHANGE-TODOLIST-FILTER":
+            return state.map(el => el.id === action.payload.todolistId ? {...el, filter: action.payload.newFilter} : el)
         default:
             throw new Error('I don\'t understand this type')
     }
@@ -44,4 +47,10 @@ export const changeTodolistTitle = (todolistId: string, newTodolistTitle: string
     return {
         type: 'CHANGE-TODOLIST-TITLE', payload: {todolistId, newTodolistTitle}
             } as const
+}
+
+export const changeTodolistFilter = (todolistId: string, newFilter: FilterValuesType) => {
+    return {
+        type: 'CHANGE-TODOLIST-FILTER', payload: {todolistId, newFilter}
+    }   as const
 }
