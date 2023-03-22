@@ -6,7 +6,10 @@ type StateType = {
     childrenCount: number
     name: string
 }
-type ActionType = ReturnType<typeof removeTodolistAC> | ReturnType<typeof addTodolistAC>
+type ActionType =
+    ReturnType<typeof removeTodolistAC> |
+    ReturnType<typeof addTodolistAC> |
+    ReturnType<typeof changeTodolistTitle>
 
 // меня вызовут и дадут мне стейт (почти всегда объект)
 // и инструкцию (action, тоже объект)
@@ -16,9 +19,11 @@ export const todolistsReducer = (state: Array<TodolistType>, action: ActionType)
         case 'REMOVE-TODOLIST':
             return state.filter(el=>el.id !== action.payload.todolistId)
         case "ADD-TODOLIST": {
-            let newElement: TodolistType = {id: v1(), title: action.payload.newTodolistTitle, filter: "all"}
-            return [...state, newElement]
+            let newTodolist: TodolistType = {id: v1(), title: action.payload.newTodolistTitle, filter: "all"}
+            return [...state, newTodolist]
         }
+        case "CHANGE-TODOLIST-TITLE":
+            return state.map(el=> el.id === action.payload.todolistId ? {...el, title: action.payload.newTodolistTitle}: el )
         default:
             throw new Error('I don\'t understand this type')
     }
@@ -34,4 +39,9 @@ export const addTodolistAC = (newTodolistTitle: string) => {
     return {
         type: 'ADD-TODOLIST', payload: {newTodolistTitle}
     } as const
+}
+export const changeTodolistTitle = (todolistId: string, newTodolistTitle: string) => {
+    return {
+        type: 'CHANGE-TODOLIST-TITLE', payload: {todolistId, newTodolistTitle}
+            } as const
 }
