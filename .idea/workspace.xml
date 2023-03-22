@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less8-9">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less8-11">
+      <change afterPath="$PROJECT_DIR$/src/components/checkbox.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/todolists-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +18,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -51,7 +52,7 @@
       <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\store" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.correct todolist should change its name">
+  <component name="RunManager" selected="Jest.correct filter of todolist should be changed">
     <configuration name="change name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -62,6 +63,19 @@
       <test-file value="$PROJECT_DIR$/src/store/user-redcer.test.ts" />
       <test-names>
         <test-name value="change name" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="correct filter of todolist should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" />
+      <test-names>
+        <test-name value="correct filter of todolist should be changed" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -104,26 +118,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="user reducer should increment only childrenCount" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/user-redcer.test.ts" />
-      <test-names>
-        <test-name value="user reducer should increment only childrenCount" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.correct filter of todolist should be changed" />
         <item itemvalue="Jest.correct todolist should change its name" />
         <item itemvalue="Jest.correct todolist should be added" />
         <item itemvalue="Jest.test todolist" />
         <item itemvalue="Jest.change name" />
-        <item itemvalue="Jest.user reducer should increment only childrenCount" />
       </list>
     </recent_temporary>
   </component>
@@ -142,7 +143,7 @@
       <workItem from="1666284270352" duration="702000" />
       <workItem from="1666285081370" duration="3792000" />
       <workItem from="1666595082608" duration="1223000" />
-      <workItem from="1679500700725" duration="8336000" />
+      <workItem from="1679500700725" duration="10369000" />
     </task>
     <task id="LOCAL-00001" summary="less8-1">
       <created>1679500966462</created>
@@ -207,7 +208,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679508247209</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="less8-10">
+      <created>1679510184517</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1679510184517</updated>
+    </task>
+    <task id="LOCAL-00011" summary="less8-11">
+      <created>1679510588371</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679510588371</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +238,8 @@
     <MESSAGE value="less8-7" />
     <MESSAGE value="less8-8" />
     <MESSAGE value="less8-9" />
-    <option name="LAST_COMMIT_MESSAGE" value="less8-9" />
+    <MESSAGE value="less8-10" />
+    <MESSAGE value="less8-11" />
+    <option name="LAST_COMMIT_MESSAGE" value="less8-11" />
   </component>
 </project>
