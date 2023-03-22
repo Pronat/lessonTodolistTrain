@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less8-3">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less8-5">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/user-redcer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user-redcer.test.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/user-redcer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/user-redcer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +51,20 @@
       <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\store" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.user reducer should increment only childrenCount">
+  <component name="RunManager" selected="Jest.change name">
+    <configuration name="change name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/user-redcer.test.ts" />
+      <test-names>
+        <test-name value="change name" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="user reducer should increment only age" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -88,6 +103,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.change name" />
         <item itemvalue="Jest.user reducer should increment only childrenCount" />
         <item itemvalue="Jest.user reducer should increment only age" />
         <item itemvalue="npm.start" />
@@ -109,7 +125,7 @@
       <workItem from="1666284270352" duration="702000" />
       <workItem from="1666285081370" duration="3792000" />
       <workItem from="1666595082608" duration="1223000" />
-      <workItem from="1679500700725" duration="1449000" />
+      <workItem from="1679500700725" duration="2237000" />
     </task>
     <task id="LOCAL-00001" summary="less8-1">
       <created>1679500966462</created>
@@ -132,7 +148,21 @@
       <option name="project" value="LOCAL" />
       <updated>1679501998622</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="less8-4">
+      <created>1679502428826</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679502428826</updated>
+    </task>
+    <task id="LOCAL-00005" summary="less8-5">
+      <created>1679502568207</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1679502568207</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +172,8 @@
     <MESSAGE value="less8-1" />
     <MESSAGE value="less8-2" />
     <MESSAGE value="less8-3" />
-    <option name="LAST_COMMIT_MESSAGE" value="less8-3" />
+    <MESSAGE value="less8-4" />
+    <MESSAGE value="less8-5" />
+    <option name="LAST_COMMIT_MESSAGE" value="less8-5" />
   </component>
 </project>
