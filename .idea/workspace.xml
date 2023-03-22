@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less8-7">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less8-8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/todolists-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/todolists-reducer.ts" afterDir="false" />
@@ -51,7 +51,7 @@
       <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\store" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.test todolist">
+  <component name="RunManager" selected="Jest.correct todolist should be added">
     <configuration name="change name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -62,6 +62,19 @@
       <test-file value="$PROJECT_DIR$/src/store/user-redcer.test.ts" />
       <test-names>
         <test-name value="change name" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="correct todolist should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" />
+      <test-names>
+        <test-name value="correct todolist should be added" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -104,23 +117,13 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.correct todolist should be added" />
         <item itemvalue="Jest.test todolist" />
         <item itemvalue="Jest.change name" />
         <item itemvalue="Jest.user reducer should increment only childrenCount" />
         <item itemvalue="Jest.user reducer should increment only age" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +142,7 @@
       <workItem from="1666284270352" duration="702000" />
       <workItem from="1666285081370" duration="3792000" />
       <workItem from="1666595082608" duration="1223000" />
-      <workItem from="1679500700725" duration="4923000" />
+      <workItem from="1679500700725" duration="7231000" />
     </task>
     <task id="LOCAL-00001" summary="less8-1">
       <created>1679500966462</created>
@@ -190,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679504822929</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="less8-8">
+      <created>1679506086534</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679506086534</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +214,7 @@
     <MESSAGE value="less8-5" />
     <MESSAGE value="less8-6" />
     <MESSAGE value="less8-7" />
-    <option name="LAST_COMMIT_MESSAGE" value="less8-7" />
+    <MESSAGE value="less8-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="less8-8" />
   </component>
 </project>
