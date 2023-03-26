@@ -4,13 +4,12 @@
 export function sum(...nums: Array<number>): number {
     console.log(nums)
     let sumAll = 0
-    // nums.map(el=> el + sumAll )
+
+    // for (let i = 0; i < nums.length; i++) {
+    //     sumAll += nums[i]
+    // }
     // return sumAll
-    //
-    for (let i = 0; i < nums.length; i++) {
-        sumAll += nums[i]
-    }
-    return sumAll
+    return nums.reduce((acc, el)=>acc + el)
 }
 
 
@@ -25,6 +24,9 @@ export function sum(...nums: Array<number>): number {
 export function getTriangleType(a: number,b: number,c: number): string {
     //...здесь пишем код.
     // В return стоит "заглушка", чтоб typescript не ругался
+    if (a === b || b == c) {
+
+    }
     return ""
 }
 
