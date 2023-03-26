@@ -35,7 +35,7 @@ export function getTriangleType(a: number,b: number,c: number): string {
     }
     if (a > b && a > c) {
         return '00'
-    }
+    }   else return 'x'
 }
 
 
@@ -45,6 +45,10 @@ export function getTriangleType(a: number,b: number,c: number): string {
 export function getSum(number: number): number{
     //...здесь пишем код.
     // В return стоит "заглушка", чтоб typescript не ругался
+    let sum = String(number).split(',')
+    Number(sum).reduce((acc, el)=>)
+
+
     return 123
 }
 
