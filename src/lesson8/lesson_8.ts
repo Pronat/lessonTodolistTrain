@@ -45,12 +45,13 @@ export function getTriangleType(a: number,b: number,c: number): string {
 export function getSum(number: number): number{
     //...здесь пишем код.
     // В return стоит "заглушка", чтоб typescript не ругался
-    let sum = String(number).split(',')
-    Number(sum).reduce((acc, el)=>)
+    let sum = 'number'.split(',')
+    let sumAll = 0
+    for (let i = 0; i < sum.length; i++) {
+            sumAll += Number(sum[i])
+        }
+    return sumAll
 
-
-    return 123
-}
 
 
 // 4. Функция isEvenIndexSumGreater принимает  параметром массив чисел.
@@ -61,7 +62,16 @@ export function getSum(number: number): number{
 export const isEvenIndexSumGreater = (arr: Array<number>): boolean => {
     //...здесь пишем код.
     // В return стоит "заглушка", чтоб typescript не ругался
-    return true
+    let sumChetn = 0
+    let sumNechetn = 0
+    for (let i = 0; i < arr.length; i++) {
+        if (i % 2) {
+            sumChetn += arr[i]
+        }    else {
+            sumNechetn += arr[i]
+        }
+    }
+    return sumChetn > sumNechetn
 }
 
 // 5. Функция getSquarePositiveIntegers принимает параметром массив чисел и возвращает новый массив. 
