@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="js8-2">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="js8-3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson8/lesson_8.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson8/lesson_8.ts" afterDir="false" />
     </list>
@@ -51,7 +51,7 @@
       <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\store" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.sum">
+  <component name="RunManager" selected="Jest.get Triangle Type">
     <configuration name="correct filter of todolist should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -65,19 +65,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="correct todolist should be added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" />
-      <test-names>
-        <test-name value="correct todolist should be added" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="correct todolist should change its name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -88,6 +75,19 @@
       <test-file value="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" />
       <test-names>
         <test-name value="correct todolist should change its name" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="get Triangle Type" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/lesson8/lesson_8.test.ts" />
+      <test-names>
+        <test-name value="get Triangle Type" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -116,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.get Triangle Type" />
         <item itemvalue="Jest.sum" />
         <item itemvalue="npm.start" />
         <item itemvalue="Jest.correct filter of todolist should be changed" />
         <item itemvalue="Jest.correct todolist should change its name" />
-        <item itemvalue="Jest.correct todolist should be added" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +140,7 @@
       <workItem from="1666285081370" duration="3792000" />
       <workItem from="1666595082608" duration="1223000" />
       <workItem from="1679500700725" duration="12569000" />
-      <workItem from="1679823801320" duration="4795000" />
+      <workItem from="1679823801320" duration="5941000" />
     </task>
     <task id="LOCAL-00001" summary="less8-1">
       <created>1679500966462</created>
@@ -247,7 +247,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679835933048</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="js8-3">
+      <created>1679839829370</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1679839829370</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +276,7 @@
     <MESSAGE value="less8-13" />
     <MESSAGE value="js8-1" />
     <MESSAGE value="js8-2" />
-    <option name="LAST_COMMIT_MESSAGE" value="js8-2" />
+    <MESSAGE value="js8-3" />
+    <option name="LAST_COMMIT_MESSAGE" value="js8-3" />
   </component>
 </project>

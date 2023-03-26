@@ -24,10 +24,18 @@ export function sum(...nums: Array<number>): number {
 export function getTriangleType(a: number,b: number,c: number): string {
     //...здесь пишем код.
     // В return стоит "заглушка", чтоб typescript не ругался
-    if (a === b || b == c) {
-
+    if (a === b && b == c) {
+        return "10"
     }
-    return ""
+     if (a < b && a < c && b == c || c < b && c < a && a == b) {
+        return "01"
+    }
+     if (a < b && b > c && a > c ) {
+        return "11"
+    }
+    if (a > b && a > c) {
+        return '00'
+    }
 }
 
 
