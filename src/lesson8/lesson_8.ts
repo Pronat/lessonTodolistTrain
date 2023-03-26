@@ -42,15 +42,16 @@ export function getTriangleType(a: number,b: number,c: number): string {
 // 3. Функция getSum принимает параметром целое число и возвращает
 // сумму цифр этого числа
 
-export function getSum(number: number): number{
+export function getSum(number: number): number {
     //...здесь пишем код.
     // В return стоит "заглушка", чтоб typescript не ругался
-    let sum = 'number'.split(',')
-    let sumAll = 0
-    for (let i = 0; i < sum.length; i++) {
-            sumAll += Number(sum[i])
-        }
-    return sumAll
+    let sum = 0;
+    const digits = number.toString().split('').map(Number);
+    for (let i = 0; i < digits.length; i++) {
+        sum += digits[i];
+    }
+    return sum;
+}
 
 
 
@@ -59,20 +60,19 @@ export function getSum(number: number): number{
 // суммы чисел с нечётными ИНДЕКСАМИ!!!, то функция возвращает true.
 // В противном случае - false.
 
-export const isEvenIndexSumGreater = (arr: Array<number>): boolean => {
-    //...здесь пишем код.
-    // В return стоит "заглушка", чтоб typescript не ругался
-    let sumChetn = 0
-    let sumNechetn = 0
-    for (let i = 0; i < arr.length; i++) {
-        if (i % 2) {
-            sumChetn += arr[i]
-        }    else {
-            sumNechetn += arr[i]
-        }
-    }
-    return sumChetn > sumNechetn
-}
+// export const isEvenIndexSumGreater = (arr: Array<number>): boolean => {
+//
+//     let sumChetn = 0
+//     let sumNechetn = 0
+//     for (let i = 0; i < arr.length; i++) {
+//         if (i % 2 == 0) {
+//             sumChetn += arr[i]
+//         } else {
+//             sumNechetn += arr[i]
+//         }
+//         if (sumChetn && sumNechetn)
+//         return sumChetn > sumNechetn
+//     }}
 
 // 5. Функция getSquarePositiveIntegers принимает параметром массив чисел и возвращает новый массив. 
 // Новый массив состоит из квадратов целых положительных чисел, котрые являются элементами исходгого массива.

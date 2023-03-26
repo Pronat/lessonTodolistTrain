@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="js8-5">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="js8-6">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lesson8/lesson_8.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson8/lesson_8.ts" afterDir="false" />
     </list>
@@ -51,7 +51,7 @@
       <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\store" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.is Even Sum Greater">
+  <component name="RunManager" selected="Jest.get Sum ">
     <configuration name="get Sum " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -116,8 +116,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.is Even Sum Greater" />
         <item itemvalue="Jest.get Sum " />
+        <item itemvalue="Jest.is Even Sum Greater" />
         <item itemvalue="Jest.get Triangle Type" />
         <item itemvalue="Jest.sum" />
         <item itemvalue="npm.start" />
@@ -140,7 +140,7 @@
       <workItem from="1666285081370" duration="3792000" />
       <workItem from="1666595082608" duration="1223000" />
       <workItem from="1679500700725" duration="12569000" />
-      <workItem from="1679823801320" duration="8786000" />
+      <workItem from="1679823801320" duration="11412000" />
     </task>
     <task id="LOCAL-00001" summary="less8-1">
       <created>1679500966462</created>
@@ -268,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679844013441</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="js8-6">
+      <created>1679845632778</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1679845632778</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +300,7 @@
     <MESSAGE value="js8-3" />
     <MESSAGE value="js8-4" />
     <MESSAGE value="js8-5" />
-    <option name="LAST_COMMIT_MESSAGE" value="js8-5" />
+    <MESSAGE value="js8-6" />
+    <option name="LAST_COMMIT_MESSAGE" value="js8-6" />
   </component>
 </project>
