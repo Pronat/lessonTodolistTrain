@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less8-13">
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="js8-1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lesson8/lesson_8.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson8/lesson_8.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,39 +32,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/src/store",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/node_modules/react-scripts",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "D:\\js_react\\react\\ToDoListForTrain\\lessonTodolistTrain\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/src/store&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/node_modules/react-scripts&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\js_react\\react\\ToDoListForTrain\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\store" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.correct filter of todolist should be changed">
-    <configuration name="change name" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/user-redcer.test.ts" />
-      <test-names>
-        <test-name value="change name" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Jest.sum">
     <configuration name="correct filter of todolist should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -103,26 +91,36 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="test todolist" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+    <configuration name="sum" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
       <working-dir value="$PROJECT_DIR$" />
       <envs />
       <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/store/todolists-reducer.test.ts" />
+      <test-file value="$PROJECT_DIR$/src/lesson8/lesson_8.test.ts" />
       <test-names>
-        <test-name value="test todolist" />
+        <test-name value="sum" />
       </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.sum" />
+        <item itemvalue="npm.start" />
         <item itemvalue="Jest.correct filter of todolist should be changed" />
         <item itemvalue="Jest.correct todolist should change its name" />
         <item itemvalue="Jest.correct todolist should be added" />
-        <item itemvalue="Jest.test todolist" />
-        <item itemvalue="Jest.change name" />
       </list>
     </recent_temporary>
   </component>
@@ -142,6 +140,7 @@
       <workItem from="1666285081370" duration="3792000" />
       <workItem from="1666595082608" duration="1223000" />
       <workItem from="1679500700725" duration="12569000" />
+      <workItem from="1679823801320" duration="2068000" />
     </task>
     <task id="LOCAL-00001" summary="less8-1">
       <created>1679500966462</created>
@@ -234,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679514862854</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="js8-1">
+      <created>1679823822677</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1679823822677</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,6 +260,7 @@
     <MESSAGE value="less8-11" />
     <MESSAGE value="less8-12" />
     <MESSAGE value="less8-13" />
-    <option name="LAST_COMMIT_MESSAGE" value="less8-13" />
+    <MESSAGE value="js8-1" />
+    <option name="LAST_COMMIT_MESSAGE" value="js8-1" />
   </component>
 </project>

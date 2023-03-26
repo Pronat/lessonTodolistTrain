@@ -2,10 +2,15 @@
 // числа (неопределённое кол-во) и возвращает их сумму (rest).
 
 export function sum(...nums: Array<number>): number {
-    // console.log(nums)
-    //...здесь пишем код.
-    // В return стоит "заглушка", чтоб typescript не ругался
-    return 123
+    console.log(nums)
+    let sumAll = 0
+    // nums.map(el=> el + sumAll )
+    // return sumAll
+    //
+    for (let i = 0; i < nums.length; i++) {
+        sumAll += nums[i]
+    }
+    return sumAll
 }
 
 
