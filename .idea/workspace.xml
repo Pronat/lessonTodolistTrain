@@ -1,109 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="js8-6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lesson8/lesson_8.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lesson8/lesson_8.ts" afterDir="false" />
-    </list>
+    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GJozbdy2i56pHeFVZuRTo7LgOw" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/src/store&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/node_modules/react-scripts&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\js_react\\react\\ToDoListForTrain\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\store" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../New folder" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Users\Valery\Desktop\it-incubator-todolist-ts-09\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Jest.get Sum ">
-    <configuration name="get Sum " type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/lesson8/lesson_8.test.ts" />
-      <test-names>
-        <test-name value="get Sum " />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="get Triangle Type" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/lesson8/lesson_8.test.ts" />
-      <test-names>
-        <test-name value="get Triangle Type" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="is Even Sum Greater" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/lesson8/lesson_8.test.ts" />
-      <test-names>
-        <test-name value="is Even Sum Greater" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="sum" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/lesson8/lesson_8.test.ts" />
-      <test-names>
-        <test-name value="sum" />
-      </test-names>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -116,10 +36,6 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.get Sum " />
-        <item itemvalue="Jest.is Even Sum Greater" />
-        <item itemvalue="Jest.get Triangle Type" />
-        <item itemvalue="Jest.sum" />
         <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
@@ -138,169 +54,10 @@
       <workItem from="1666119098385" duration="1395000" />
       <workItem from="1666284270352" duration="702000" />
       <workItem from="1666285081370" duration="3792000" />
-      <workItem from="1666595082608" duration="1223000" />
-      <workItem from="1679500700725" duration="12569000" />
-      <workItem from="1679823801320" duration="11412000" />
     </task>
-    <task id="LOCAL-00001" summary="less8-1">
-      <created>1679500966462</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679500966462</updated>
-    </task>
-    <task id="LOCAL-00002" summary="less8-2">
-      <created>1679501179741</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1679501179741</updated>
-    </task>
-    <task id="LOCAL-00003" summary="less8-3">
-      <created>1679501998622</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1679501998622</updated>
-    </task>
-    <task id="LOCAL-00004" summary="less8-4">
-      <created>1679502428826</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1679502428826</updated>
-    </task>
-    <task id="LOCAL-00005" summary="less8-5">
-      <created>1679502568207</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1679502568207</updated>
-    </task>
-    <task id="LOCAL-00006" summary="less8-6">
-      <created>1679503316711</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1679503316711</updated>
-    </task>
-    <task id="LOCAL-00007" summary="less8-7">
-      <created>1679504822929</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1679504822929</updated>
-    </task>
-    <task id="LOCAL-00008" summary="less8-8">
-      <created>1679506086534</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1679506086534</updated>
-    </task>
-    <task id="LOCAL-00009" summary="less8-9">
-      <created>1679508247209</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1679508247209</updated>
-    </task>
-    <task id="LOCAL-00010" summary="less8-10">
-      <created>1679510184517</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1679510184517</updated>
-    </task>
-    <task id="LOCAL-00011" summary="less8-11">
-      <created>1679510588371</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1679510588371</updated>
-    </task>
-    <task id="LOCAL-00012" summary="less8-12">
-      <created>1679513245160</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1679513245160</updated>
-    </task>
-    <task id="LOCAL-00013" summary="less8-13">
-      <created>1679514862854</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1679514862854</updated>
-    </task>
-    <task id="LOCAL-00014" summary="js8-1">
-      <created>1679823822677</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1679823822677</updated>
-    </task>
-    <task id="LOCAL-00015" summary="js8-2">
-      <created>1679835933048</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1679835933048</updated>
-    </task>
-    <task id="LOCAL-00016" summary="js8-3">
-      <created>1679839829370</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1679839829370</updated>
-    </task>
-    <task id="LOCAL-00017" summary="js8-4">
-      <created>1679841533565</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1679841533565</updated>
-    </task>
-    <task id="LOCAL-00018" summary="js8-5">
-      <created>1679844013441</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1679844013441</updated>
-    </task>
-    <task id="LOCAL-00019" summary="js8-6">
-      <created>1679845632778</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1679845632778</updated>
-    </task>
-    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="less8-1" />
-    <MESSAGE value="less8-2" />
-    <MESSAGE value="less8-3" />
-    <MESSAGE value="less8-4" />
-    <MESSAGE value="less8-5" />
-    <MESSAGE value="less8-6" />
-    <MESSAGE value="less8-7" />
-    <MESSAGE value="less8-8" />
-    <MESSAGE value="less8-9" />
-    <MESSAGE value="less8-10" />
-    <MESSAGE value="less8-11" />
-    <MESSAGE value="less8-12" />
-    <MESSAGE value="less8-13" />
-    <MESSAGE value="js8-1" />
-    <MESSAGE value="js8-2" />
-    <MESSAGE value="js8-3" />
-    <MESSAGE value="js8-4" />
-    <MESSAGE value="js8-5" />
-    <MESSAGE value="js8-6" />
-    <option name="LAST_COMMIT_MESSAGE" value="js8-6" />
   </component>
 </project>
