@@ -1,12 +1,21 @@
 import {TasksStateType} from "../App";
-import {Dispatch} from "react";
 
-type ActionsType = any
+
+type ActionsType = RemoveTaskAT
+type RemoveTaskAT = ReturnType<typeof removeTaskAC>
 export const tasksReducer = (state: TasksStateType, action: ActionsType) => {
     switch(action.type) {
-        case 'XXX':
-            return state
+        case 'REMOVE-TASK':
+            return {
+                ...state, [action.payload.todolistId]: state.filter(el=>el.id !)
+            }
         default:
             return state
     }
+}
+
+export const removeTaskAC = (todolistId: string, taskId: string) => {
+    return {
+        type: 'REMOVE-TASK', payload: {todolistId, taskId}
+    } as const
 }
