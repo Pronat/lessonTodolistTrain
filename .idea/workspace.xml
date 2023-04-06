@@ -1,237 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="less9-11">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/tasks-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/tasks-reducer.ts" afterDir="false" />
-    </list>
+    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2GJozbdy2i56pHeFVZuRTo7LgOw" />
+  <component name="ProjectId" id="2GJqhdPE3Ql6rdOLtmDnT0vbQHQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/src/state",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs.jest.jest_package": "D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/node_modules/react-scripts",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "D:\\js_react\\react\\ToDoListForTrain\\lessonTodolistTrain\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\state" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Users\Valery\Desktop\it-incubator-todolist-ts-10\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager" selected="Jest.property with todolistId should be deleted">
-    <configuration name="ids should be equals" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager">
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
       <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
       <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/todolists-tasks-reducer.test.tsx" />
-      <test-names>
-        <test-name value="ids should be equals" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="new array should be added when new todolist is added" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
-      <test-names>
-        <test-name value="new array should be added when new todolist is added" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="property with todolistId should be deleted" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
-      <test-names>
-        <test-name value="property with todolistId should be deleted" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="status of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
-      <test-names>
-        <test-name value="status of specified task should be changed" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="title of specified task should be changed" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/state/tasks-reducer.test.tsx" />
-      <test-names>
-        <test-name value="title of specified task should be changed" />
-      </test-names>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.property with todolistId should be deleted" />
-        <item itemvalue="Jest.ids should be equals" />
-        <item itemvalue="Jest.new array should be added when new todolist is added" />
-        <item itemvalue="Jest.title of specified task should be changed" />
-        <item itemvalue="Jest.status of specified task should be changed" />
+        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="59460528-36a1-48ac-b6a0-fcb7b5e98aa1" name="Default Changelist" comment="" />
-      <created>1666116314096</created>
+      <changelist id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="" />
+      <created>1666117169434</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666116314096</updated>
-      <workItem from="1666116316295" duration="885000" />
-      <workItem from="1666117234299" duration="1364000" />
-      <workItem from="1666118648218" duration="205000" />
-      <workItem from="1666119098385" duration="1395000" />
-      <workItem from="1666284270352" duration="702000" />
-      <workItem from="1666285081370" duration="3792000" />
-      <workItem from="1679939128749" duration="1279000" />
-      <workItem from="1680191154673" duration="9339000" />
+      <updated>1666117169434</updated>
+      <workItem from="1666117172295" duration="41000" />
+      <workItem from="1666118676067" duration="542000" />
+      <workItem from="1666119268596" duration="1037000" />
+      <workItem from="1666120329768" duration="14000" />
+      <workItem from="1666120365600" duration="286000" />
+      <workItem from="1666284290552" duration="681000" />
+      <workItem from="1666285125986" duration="3399000" />
     </task>
-    <task id="LOCAL-00001" summary="less9-1">
-      <created>1679939211936</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1679939211936</updated>
-    </task>
-    <task id="LOCAL-00002" summary="less9-2">
-      <created>1680195001003</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680195001003</updated>
-    </task>
-    <task id="LOCAL-00003" summary="less9-3">
-      <created>1680195440507</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680195440507</updated>
-    </task>
-    <task id="LOCAL-00004" summary="less9-4">
-      <created>1680195565108</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1680195565108</updated>
-    </task>
-    <task id="LOCAL-00005" summary="less9-5">
-      <created>1680196168190</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1680196168190</updated>
-    </task>
-    <task id="LOCAL-00006" summary="less9-6">
-      <created>1680197621950</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1680197621950</updated>
-    </task>
-    <task id="LOCAL-00007" summary="less9-7">
-      <created>1680197815221</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1680197815221</updated>
-    </task>
-    <task id="LOCAL-00008" summary="less9-8">
-      <created>1680199171032</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1680199171032</updated>
-    </task>
-    <task id="LOCAL-00009" summary="less9-9">
-      <created>1680203114318</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1680203114318</updated>
-    </task>
-    <task id="LOCAL-00010" summary="less9-10">
-      <created>1680203349156</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1680203349156</updated>
-    </task>
-    <task id="LOCAL-00011" summary="less9-11">
-      <created>1680203675506</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1680203675506</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="less9-1" />
-    <MESSAGE value="less9-2" />
-    <MESSAGE value="less9-3" />
-    <MESSAGE value="less9-4" />
-    <MESSAGE value="less9-5" />
-    <MESSAGE value="less9-6" />
-    <MESSAGE value="less9-7" />
-    <MESSAGE value="less9-8" />
-    <MESSAGE value="less9-9" />
-    <MESSAGE value="less9-10" />
-    <MESSAGE value="less9-11" />
-    <option name="LAST_COMMIT_MESSAGE" value="less9-11" />
   </component>
 </project>
