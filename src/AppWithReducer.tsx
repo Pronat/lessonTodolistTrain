@@ -81,9 +81,9 @@ function App() {
     }
 
     function addTodolist(title: string) {
-        dispatchTasks(addTodolistAC(title))
-        dispatchTodolists(addTodolistAC(title))
-
+        let action = addTodolistAC(title)
+        dispatchTodolists(action)
+        dispatchTasks(action)
     }
 
     return (
