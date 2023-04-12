@@ -4,14 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="lesson10-11">
+    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="lesson10-12">
+      <change afterPath="$PROJECT_DIR$/src/AppWithRedux.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/state/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppWithReducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -74,7 +85,7 @@
       <workItem from="1666120365600" duration="286000" />
       <workItem from="1666284290552" duration="681000" />
       <workItem from="1666285125986" duration="3399000" />
-      <workItem from="1681315120865" duration="2359000" />
+      <workItem from="1681315120865" duration="3699000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-8">
       <created>1681315277330</created>
@@ -104,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681317086944</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lesson10-12">
+      <created>1681317847035</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681317847035</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +133,7 @@
     <MESSAGE value="lesson10-9" />
     <MESSAGE value="lesson10-10" />
     <MESSAGE value="lesson10-11" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-11" />
+    <MESSAGE value="lesson10-12" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-12" />
   </component>
 </project>
