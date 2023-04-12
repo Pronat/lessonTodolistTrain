@@ -1,46 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="lesson10-6">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AppWithReducer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/AppWithReducer.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GJqhdPE3Ql6rdOLtmDnT0vbQHQ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/src",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "D:\\js_react\\react\\ToDoListForTrain\\lessonTodolistTrain\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
-  }
-}]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src" />
-    </key>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="ts.external.directory.path" value="C:\Users\Valery\Desktop\it-incubator-todolist-ts-10\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -74,63 +54,10 @@
       <workItem from="1666120365600" duration="286000" />
       <workItem from="1666284290552" duration="681000" />
       <workItem from="1666285125986" duration="3399000" />
-      <workItem from="1680800889127" duration="5592000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson10-1">
-      <created>1680800983715</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1680800983715</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson10-2">
-      <created>1680806000113</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1680806000113</updated>
-    </task>
-    <task id="LOCAL-00003" summary="lesson10-3">
-      <created>1680807392474</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1680807392474</updated>
-    </task>
-    <task id="LOCAL-00004" summary="lesson10-4">
-      <created>1680807548278</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1680807548278</updated>
-    </task>
-    <task id="LOCAL-00005" summary="lesson10-5">
-      <created>1680807757247</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1680807757247</updated>
-    </task>
-    <task id="LOCAL-00006" summary="lesson10-6">
-      <created>1680808195626</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1680808195626</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson10-1" />
-    <MESSAGE value="lesson10-2" />
-    <MESSAGE value="lesson10-3" />
-    <MESSAGE value="lesson10-4" />
-    <MESSAGE value="lesson10-5" />
-    <MESSAGE value="lesson10-6" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-6" />
   </component>
 </project>
