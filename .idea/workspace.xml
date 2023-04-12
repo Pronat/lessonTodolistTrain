@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="lesson10-8">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/state/todolists-reducer.test.tsx" afterDir="false" />
+    <list default="true" id="e8ad171b-7f7d-4f80-95af-7578662dfd9c" name="Default Changelist" comment="lesson10-9">
+      <change afterPath="$PROJECT_DIR$/src/AppWithReducer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/js_react/react/ToDoListForTrain/lessonTodolistTrain/src",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -68,7 +69,7 @@
       <workItem from="1666120365600" duration="286000" />
       <workItem from="1666284290552" duration="681000" />
       <workItem from="1666285125986" duration="3399000" />
-      <workItem from="1681315120865" duration="1009000" />
+      <workItem from="1681315120865" duration="1424000" />
     </task>
     <task id="LOCAL-00001" summary="lesson10-8">
       <created>1681315277330</created>
@@ -77,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681315277330</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="lesson10-9">
+      <created>1681316512850</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681316512850</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lesson10-8" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson10-8" />
+    <MESSAGE value="lesson10-9" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson10-9" />
   </component>
 </project>
