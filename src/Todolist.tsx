@@ -62,7 +62,7 @@ export function Todolist(props: PropsType) {
                     }
 
 
-                    return <div key={t.id} className={t.isDone ? "is-done" : ""}>
+                    return <div key={t.id} className={t .isDone ? "is-done" : ""}>
                         <Checkbox
                             checked={t.isDone}
                             color="primary"
