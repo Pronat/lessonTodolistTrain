@@ -44,6 +44,15 @@ export const Todolist = React.memo((props: PropsType) => {
     const onActiveClickHandler = () => props.changeFilter("active", props.id);
     const onCompletedClickHandler = () => props.changeFilter("completed", props.id);
 
+    let tasks = props.tasks
+
+    if (props.filter === "active") {
+        tasks = props.tasks.filter(t => t.isDone === false);
+    }
+    if (props.filter === "completed") {
+        tasks = props.tasks.filter(t => t.isDone === true);
+    }
+
     return <div>
         <h3> <EditableSpan value={props.title} onChange={changeTodolistTitle} />
             <IconButton onClick={removeTodolist}>
