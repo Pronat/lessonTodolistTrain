@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc39356-801e-4d8f-93c9-3f65c5f49b76" name="Default Changelist" comment="lesson11-7">
+    <list default="true" id="dbc39356-801e-4d8f-93c9-3f65c5f49b76" name="Default Changelist" comment="lesson11-8">
+      <change afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
     </list>
@@ -12,6 +13,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -72,7 +80,7 @@
       <workItem from="1683135649040" duration="6000" />
       <workItem from="1683135675462" duration="8385000" />
       <workItem from="1683445456216" duration="2201000" />
-      <workItem from="1683547077185" duration="1211000" />
+      <workItem from="1683547077185" duration="1852000" />
     </task>
     <task id="LOCAL-00001" summary="lesson11-1">
       <created>1682709143926</created>
@@ -123,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683446126420</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="lesson11-8">
+      <created>1683548717216</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683548717216</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +152,7 @@
     <MESSAGE value="lesson11-5" />
     <MESSAGE value="lesson11-6" />
     <MESSAGE value="lesson11-7" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson11-7" />
+    <MESSAGE value="lesson11-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="lesson11-8" />
   </component>
 </project>

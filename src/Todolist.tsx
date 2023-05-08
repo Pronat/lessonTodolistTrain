@@ -73,18 +73,18 @@ export const Todolist = React.memo((props: PropsType) => {
                     }
 
 
-                    return <div key={t.id} className={t .isDone ? "is-done" : ""}>
-                        <Checkbox
-                            checked={t.isDone}
-                            color="primary"
-                            onChange={onChangeHandler}
-                        />
-
-                        <EditableSpan value={t.title} onChange={onTitleChangeHandler} />
-                        <IconButton onClick={onClickHandler}>
-                            <Delete />
-                        </IconButton>
-                    </div>
+                    // return <div key={t.id} className={t .isDone ? "is-done" : ""}>
+                    //     <Checkbox
+                    //         checked={t.isDone}
+                    //         color="primary"
+                    //         onChange={onChangeHandler}
+                    //     />
+                    //
+                    //     <EditableSpan value={t.title} onChange={onTitleChangeHandler} />
+                    //     <IconButton onClick={onClickHandler}>
+                    //         <Delete />
+                    //     </IconButton>
+                    // </div>
                 })
             }
         </div>
