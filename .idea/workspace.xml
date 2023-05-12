@@ -1,49 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc39356-801e-4d8f-93c9-3f65c5f49b76" name="Default Changelist" comment="lesson11-9">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Task.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Task.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Todolist.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Todolist.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="c1858285-c57d-4e2b-9ccc-9a051546f958" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
-  </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectId" id="2GJxDyI2CHmB2mn3m0Lw6jYPxZm" />
+  <component name="ProjectId" id="2GK070ETuj7cwcTupZ2SBxLEmZ5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\js_react\\react\\ToDoListForTrain\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\Valery\Desktop\it-incubator-todolist-ts-12\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
   <component name="RunManager">
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -64,103 +42,20 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="dbc39356-801e-4d8f-93c9-3f65c5f49b76" name="Default Changelist" comment="" />
-      <created>1666120372104</created>
+      <changelist id="c1858285-c57d-4e2b-9ccc-9a051546f958" name="Default Changelist" comment="" />
+      <created>1666121796708</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1666120372104</updated>
-      <workItem from="1666120374237" duration="1052000" />
-      <workItem from="1666284301281" duration="670000" />
-      <workItem from="1666285141167" duration="2712000" />
-      <workItem from="1682708380207" duration="733000" />
-      <workItem from="1682790495877" duration="458000" />
-      <workItem from="1682840068051" duration="1792000" />
-      <workItem from="1682881576970" duration="1193000" />
-      <workItem from="1683135594289" duration="18000" />
-      <workItem from="1683135649040" duration="6000" />
-      <workItem from="1683135675462" duration="8385000" />
-      <workItem from="1683445456216" duration="2201000" />
-      <workItem from="1683547077185" duration="3689000" />
+      <updated>1666121796708</updated>
+      <workItem from="1666121797999" duration="357000" />
+      <workItem from="1666177840693" duration="813000" />
+      <workItem from="1666178769095" duration="505000" />
+      <workItem from="1666284309634" duration="659000" />
+      <workItem from="1666285151532" duration="2061000" />
     </task>
-    <task id="LOCAL-00001" summary="lesson11-1">
-      <created>1682709143926</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1682709143926</updated>
-    </task>
-    <task id="LOCAL-00002" summary="lesson11-2">
-      <created>1682790531143</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1682790531143</updated>
-    </task>
-    <task id="LOCAL-00003" summary="lesson11-3">
-      <created>1683139654085</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1683139654085</updated>
-    </task>
-    <task id="LOCAL-00004" summary="lesson11-4">
-      <created>1683140992606</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1683140992606</updated>
-    </task>
-    <task id="LOCAL-00005" summary="lesson11-5">
-      <created>1683145193320</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1683145193320</updated>
-    </task>
-    <task id="LOCAL-00006" summary="lesson11-6">
-      <created>1683146647145</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1683146647145</updated>
-    </task>
-    <task id="LOCAL-00007" summary="lesson11-7">
-      <created>1683446126420</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1683446126420</updated>
-    </task>
-    <task id="LOCAL-00008" summary="lesson11-8">
-      <created>1683548717216</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1683548717216</updated>
-    </task>
-    <task id="LOCAL-00009" summary="lesson11-9">
-      <created>1683549321120</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1683549321120</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="lesson11-1" />
-    <MESSAGE value="lesson11-2" />
-    <MESSAGE value="lesson11-3" />
-    <MESSAGE value="lesson11-4" />
-    <MESSAGE value="lesson11-5" />
-    <MESSAGE value="lesson11-6" />
-    <MESSAGE value="lesson11-7" />
-    <MESSAGE value="lesson11-8" />
-    <MESSAGE value="lesson11-9" />
-    <option name="LAST_COMMIT_MESSAGE" value="lesson11-9" />
   </component>
 </project>
