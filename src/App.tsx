@@ -18,28 +18,16 @@ export type TasksStateType = {
     [key: string]: Array<TaskType>
 }
 
+let todolistId1 = v1();
+let todolistId2 = v1();
 function useTodolists() {
     let [todolists, setTodolists] = useState<Array<TodolistType>>([
         {id: todolistId1, title: "What to learn", filter: "all"},
         {id: todolistId2, title: "What to buy", filter: "all"}
     ])
-    return [todolists, setTodolists]
+    return [todolists, setTodolists] as const
 }
 function useTasks() {
-
-}
-
-function App() {
-    let todolistId1 = v1();
-    let todolistId2 = v1();
-
-    // let [todolists, setTodolists] = useState<Array<TodolistType>>([
-    //     {id: todolistId1, title: "What to learn", filter: "all"},
-    //     {id: todolistId2, title: "What to buy", filter: "all"}
-    // ])
-    let [todolists, setTodolists] = useTodolists()
-
-
     let [tasks, setTasks] = useState<TasksStateType>({
         [todolistId1]: [
             {id: v1(), title: "HTML&CSS", isDone: true},
@@ -50,6 +38,30 @@ function App() {
             {id: v1(), title: "React Book", isDone: true}
         ]
     });
+    return [tasks, setTasks] as const
+}
+
+function App() {
+
+
+    // let [todolists, setTodolists] = useState<Array<TodolistType>>([
+    //     {id: todolistId1, title: "What to learn", filter: "all"},
+    //     {id: todolistId2, title: "What to buy", filter: "all"}
+    // ])
+    let [todolists, setTodolists] = useTodolists()
+
+
+    // let [tasks, setTasks] = useState<TasksStateType>({
+    //     [todolistId1]: [
+    //         {id: v1(), title: "HTML&CSS", isDone: true},
+    //         {id: v1(), title: "JS", isDone: true}
+    //     ],
+    //     [todolistId2]: [
+    //         {id: v1(), title: "Milk", isDone: true},
+    //         {id: v1(), title: "React Book", isDone: true}
+    //     ]
+    // });
+    let [tasks, setTasks] = useTasks()
 
     function removeTask(id: string, todolistId: string) {
         //достанем нужный массив по todolistId:
