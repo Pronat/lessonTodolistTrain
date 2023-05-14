@@ -42,7 +42,7 @@ function App() {
         changeFilter,
         removeTodolist,
         changeTodolistTitle,
-        addTodolist} = useTodolists()
+        addTodolist} = useTodolists(tasks, setTasks)
 
 
 

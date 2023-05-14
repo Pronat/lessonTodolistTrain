@@ -2,10 +2,11 @@
 // let todolistId2 = v1();
 import {useState} from "react";
 import {todolistId1, todolistId2} from "../id_utils";
-import {FilterValuesType, TodolistType} from "../App";
+import {FilterValuesType, TasksStateType, TodolistType} from "../App";
 import {v1} from "uuid";
+import {Dispatch} from "redux";
 
-export function useTodolists() {
+export function useTodolists(tasks: TasksStateType, setTasks: any  ) {
     let [todolists, setTodolists] = useState<Array<TodolistType>>([
         {id: todolistId1, title: "What to learn", filter: "all"},
         {id: todolistId2, title: "What to buy", filter: "all"}
