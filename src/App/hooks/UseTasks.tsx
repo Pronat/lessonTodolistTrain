@@ -65,6 +65,13 @@ export function useTasks() {
         setTasks({...tasks});
     }
 
+    function addTaskInAddTodolist (newTodolistId: string) {
+        setTasks({
+            ...tasks,
+            [newTodolistId]: []
+        })
+    }
+
     return {
         tasks,
         setTasks,
@@ -72,6 +79,7 @@ export function useTasks() {
         addTask,
         changeStatus,
         changeTaskTitle,
-        completelyRemoveTasksForTodolist
+        completelyRemoveTasksForTodolist,
+        addTaskInAddTodolist
     }
 }

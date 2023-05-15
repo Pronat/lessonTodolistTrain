@@ -28,7 +28,9 @@ function App() {
             removeTask,
             addTask,
             changeStatus,
-            changeTaskTitle
+            changeTaskTitle,
+            completelyRemoveTasksForTodolist,
+            addTaskInAddTodolist
         } = useTasks()
 
     const {todolists,
@@ -36,7 +38,7 @@ function App() {
         removeTodolist,
         changeTodolistTitle,
         addTodolist
-        } = useTodolists(tasks, setTasks)
+        } = useTodolists(tasks, completelyRemoveTasksForTodolist, addTaskInAddTodolist)
 
     return (
         <div className="App">

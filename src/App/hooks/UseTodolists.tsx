@@ -6,7 +6,7 @@ import {FilterValuesType, TasksStateType, TodolistType} from "../App";
 import {v1} from "uuid";
 import {Dispatch} from "redux";
 
-export function useTodolists(tasks: TasksStateType, completelyRemoveTasksForTodolist: (id:string)=>void  ) {
+export function useTodolists(tasks: TasksStateType, onTodolistRemoved: (id:string)=>void, addTaskInAddTodolist: (newTodolistId:string)=>void ) {
     let [todolists, setTodolists] = useState<Array<TodolistType>>([
         {id: todolistId1, title: "What to learn", filter: "all"},
         {id: todolistId2, title: "What to buy", filter: "all"}
@@ -26,7 +26,7 @@ export function useTodolists(tasks: TasksStateType, completelyRemoveTasksForTodo
         // delete tasks[id]; // удаляем св-во из объекта... значением которого являлся массив тасок
         // // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
         // setTasks({...tasks});
-        completelyRemoveTasksForTodolist(id)
+        onTodolistRemoved(id)
     }
 
     function changeTodolistTitle(id: string, title: string) {
@@ -43,10 +43,11 @@ export function useTodolists(tasks: TasksStateType, completelyRemoveTasksForTodo
         let newTodolistId = v1();
         let newTodolist: TodolistType = {id: newTodolistId, title: title, filter: 'all'};
         setTodolists([newTodolist, ...todolists]);
-        setTasks({
-            ...tasks,
-            [newTodolistId]: []
-        })
+        // setTasks({
+        //     ...tasks,
+        //     [newTodolistId]: []
+        // })
+        addTaskInAddTodolist(newTodolistId)
     }
     return {
         todolists,
