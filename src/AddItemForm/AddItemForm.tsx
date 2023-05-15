@@ -12,7 +12,11 @@ type AddItemFormPropsType = {
 
 export const AddItemForm = React.memo( (props: AddItemFormPropsType) => {
     const {
-        title
+        title,
+        error,
+        onChangeHandler,
+        onKeyPressHandler,
+        addItem
     } = UseAddItemForm
 
     return <div>

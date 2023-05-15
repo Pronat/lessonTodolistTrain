@@ -1,12 +1,15 @@
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 
-export const UseAddItemForm = () => {
+export const UseAddItemForm = (addItem2: (title:string)=>void,
+                               error,
+                               onChangeHandler,
+                               onKeyPressHandler,) => {
     let [title, setTitle] = useState("")
     let [error, setError] = useState<string | null>(null)
 
     const addItem = () => {
         if (title.trim() !== "") {
-            props.addItem(title);
+            addItem2(title);
             setTitle("");
         } else {
             setError("Title is required");
