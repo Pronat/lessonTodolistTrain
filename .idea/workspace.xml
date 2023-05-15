@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1858285-c57d-4e2b-9ccc-9a051546f958" name="Default Changelist" comment="customHooks-9">
+    <list default="true" id="c1858285-c57d-4e2b-9ccc-9a051546f958" name="Default Changelist" comment="customHooks-10">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/hooks/UseTasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/hooks/UseTasks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/hooks/UseTodolists.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/hooks/UseTodolists.tsx" afterDir="false" />
@@ -84,7 +85,7 @@
       <workItem from="1666284309634" duration="659000" />
       <workItem from="1666285151532" duration="2061000" />
       <workItem from="1684088636411" duration="4669000" />
-      <workItem from="1684149471514" duration="1747000" />
+      <workItem from="1684149471514" duration="2700000" />
     </task>
     <task id="LOCAL-00001" summary="customHooks-1">
       <created>1684088855411</created>
@@ -142,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684151183924</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="customHooks-10">
+      <created>1684151729485</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1684151729485</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +166,7 @@
     <MESSAGE value="customHooks-7" />
     <MESSAGE value="customHooks-8" />
     <MESSAGE value="customHooks-9" />
-    <option name="LAST_COMMIT_MESSAGE" value="customHooks-9" />
+    <MESSAGE value="customHooks-10" />
+    <option name="LAST_COMMIT_MESSAGE" value="customHooks-10" />
   </component>
 </project>

@@ -74,7 +74,6 @@ export function useTasks() {
 
     return {
         tasks,
-        setTasks,
         removeTask,
         addTask,
         changeStatus,
