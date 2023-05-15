@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1858285-c57d-4e2b-9ccc-9a051546f958" name="Default Changelist" comment="customHooks-7">
+    <list default="true" id="c1858285-c57d-4e2b-9ccc-9a051546f958" name="Default Changelist" comment="customHooks-8">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App/hooks/UseTasks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/hooks/UseTasks.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App/hooks/UseTodolists.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App/hooks/UseTodolists.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -32,18 +33,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "ts.external.directory.path": "D:\\js_react\\react\\ToDoListForTrain\\lessonTodolistTrain\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\js_react\\react\\ToDoListForTrain\\lessonTodolistTrain\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\js_react\react\ToDoListForTrain\lessonTodolistTrain\src\App" />
@@ -83,7 +84,8 @@
       <workItem from="1666178769095" duration="505000" />
       <workItem from="1666284309634" duration="659000" />
       <workItem from="1666285151532" duration="2061000" />
-      <workItem from="1684088636411" duration="4645000" />
+      <workItem from="1684088636411" duration="4669000" />
+      <workItem from="1684149471514" duration="1289000" />
     </task>
     <task id="LOCAL-00001" summary="customHooks-1">
       <created>1684088855411</created>
@@ -127,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684092054284</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="customHooks-8">
+      <created>1684094236958</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684094236958</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +150,7 @@
     <MESSAGE value="customHooks-5" />
     <MESSAGE value="customHooks-6" />
     <MESSAGE value="customHooks-7" />
-    <option name="LAST_COMMIT_MESSAGE" value="customHooks-7" />
+    <MESSAGE value="customHooks-8" />
+    <option name="LAST_COMMIT_MESSAGE" value="customHooks-8" />
   </component>
 </project>

@@ -22,12 +22,6 @@ export type TasksStateType = {
 
 function App() {
 
-
-
-
-
-
-
         const {
             tasks,
             setTasks,
@@ -38,14 +32,11 @@ function App() {
         } = useTasks()
 
     const {todolists,
-        setTodolists,
         changeFilter,
         removeTodolist,
         changeTodolistTitle,
-        addTodolist} = useTodolists(tasks, setTasks)
-
-
-
+        addTodolist
+        } = useTodolists(tasks, setTasks)
 
     return (
         <div className="App">

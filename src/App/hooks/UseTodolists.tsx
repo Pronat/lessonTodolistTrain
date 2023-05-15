@@ -6,7 +6,7 @@ import {FilterValuesType, TasksStateType, TodolistType} from "../App";
 import {v1} from "uuid";
 import {Dispatch} from "redux";
 
-export function useTodolists(tasks: TasksStateType, setTasks: any  ) {
+export function useTodolists(tasks: TasksStateType, completelyRemoveTasksForTodolist: (id:string)=>void  ) {
     let [todolists, setTodolists] = useState<Array<TodolistType>>([
         {id: todolistId1, title: "What to learn", filter: "all"},
         {id: todolistId2, title: "What to buy", filter: "all"}
@@ -23,9 +23,10 @@ export function useTodolists(tasks: TasksStateType, setTasks: any  ) {
         // засунем в стейт список тудулистов, id которых не равны тому, который нужно выкинуть
         setTodolists(todolists.filter(tl => tl.id != id));
         // удалим таски для этого тудулиста из второго стейта, где мы храним отдельно таски
-        delete tasks[id]; // удаляем св-во из объекта... значением которого являлся массив тасок
-        // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
-        setTasks({...tasks});
+        // delete tasks[id]; // удаляем св-во из объекта... значением которого являлся массив тасок
+        // // засетаем в стейт копию объекта, чтобы React отреагировал перерисовкой
+        // setTasks({...tasks});
+        completelyRemoveTasksForTodolist(id)
     }
 
     function changeTodolistTitle(id: string, title: string) {
